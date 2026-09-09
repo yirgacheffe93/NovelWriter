@@ -1,0 +1,1999 @@
+{
+  "schema_version": "chapter-canon-extraction-v1.0",
+  "parse_status": "success",
+  "source": {
+    "source_path": "data/raw/chapters_src/chapter-020.md",
+    "source_hash": "3fd3d29b410170840717afcb6bf17f702a0b36aef491689b6586a6d39bc01557",
+    "canon_level": "official",
+    "chapter_id_hint": "020"
+  },
+  "chapter_metadata": {
+    "chapter_id": "第二十章",
+    "chapter_title": "零尘诀",
+    "volume_title": "临界·爵迹",
+    "chapter_number": 20,
+    "detected_heading": "第二十章 零尘诀",
+    "narrative_person": "third_person",
+    "viewpoint_type": "limited_third_person",
+    "primary_viewpoint_character": "银尘/麒零（双线交替）",
+    "viewpoint_stability": "stable_within_scene",
+    "primary_reality_layer": "present_reality",
+    "factual_abstract": "银尘与鬼山莲泉在雷恩海域苏醒，莲泉体内两套灵魂回路已融合。二人乘魂兽海银下潜深海进入魂塚。途中银尘向莲泉展示护心镜，讲述女神的裙摆碎片来历、黑暗状态的本质及格兰仕为救他而暗化的往事。到达魂塚下层石门，两枚棋子均失效，二人被迫决定杀死上古魂兽祝福。另一线，麒零在雷恩驿站醒来感到失落，冰帝使告知冰帝艾欧斯失踪、疑被风源带走，白银祭司召集所有王爵使徒回帝都。麒零告别雷恩前往帝都。旁白暗示此别与银尘永不再见。"
+  },
+  "chapter_boundaries": {
+    "single_chapter_confirmed": true,
+    "detected_chapter_count": 1,
+    "detected_boundaries": [
+      {
+        "heading": "第二十章 零尘诀",
+        "start": "chapter_start",
+        "end": "chapter_end"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "scene_id": "S001",
+      "sequence_index": 1,
+      "scene_title_generated": "雷恩海域悬崖—下潜深海",
+      "reality_layer": "present_reality",
+      "viewpoint_character": "银尘",
+      "time": {
+        "absolute_time": "unknown",
+        "relative_time": "永生岛大战后次日清晨",
+        "time_of_day": "清晨/冬日",
+        "duration": "片刻至数小时下潜",
+        "sequence_relation": "紧接上章",
+        "confidence": 0.8
+      },
+      "location": {
+        "primary_location": "雷恩海域悬崖",
+        "sub_location": "海银口腔内",
+        "location_change_from_previous_scene": false
+      },
+      "participants": [
+        "银尘",
+        "鬼山莲泉"
+      ],
+      "scene_goal": "潜入深海魂塚以营救吉尔伽美什",
+      "opening_state": "银尘醒来，莲泉已醒并站在悬崖边",
+      "factual_summary": "莲泉体内两种灵魂回路彻底融合。莲泉解释魂塚棋子一次性设定的原因及祝福被囚困充当封印。二人乘海银下潜，莲泉召唤闇翅。进入海银口腔后银尘用护心镜照明，并解释护心镜功能。",
+      "closing_state": "二人在海银口腔内向深海下潜，途中继续交谈",
+      "transition_reason": "location_switch",
+      "source_span": {
+        "start_marker": "【西之亚斯蓝帝国雷恩海域】",
+        "end_marker": "【西之亚斯蓝帝国港口城市雷恩】之前"
+      }
+    },
+    {
+      "scene_id": "S002",
+      "sequence_index": 2,
+      "scene_title_generated": "雷恩驿站—冰帝使召见",
+      "reality_layer": "present_reality",
+      "viewpoint_character": "麒零",
+      "time": {
+        "absolute_time": "unknown",
+        "relative_time": "与S001约略同时的清晨",
+        "time_of_day": "清晨/冬日",
+        "duration": "一个上午",
+        "sequence_relation": "parallel_to_S001",
+        "confidence": 0.6
+      },
+      "location": {
+        "primary_location": "雷恩驿站",
+        "sub_location": "大堂/门口",
+        "location_change_from_previous_scene": true
+      },
+      "participants": [
+        "麒零",
+        "天束幽花",
+        "冰帝使"
+      ],
+      "scene_goal": "麒零等待银尘；接受白银祭司召集令前往帝都",
+      "opening_state": "麒零在驿站醒来，感到失落",
+      "factual_summary": "麒零与幽花共进早餐。四位冰帝使到来，告知冰帝艾欧斯失踪、寝宫残留风元素魂术痕迹，疑被风源王爵或使徒带走，白银祭司召集所有王爵使徒回帝都。麒零为等银尘起初拒绝，得知银尘也会被召回后同意前往。麒零告别雷恩。",
+      "closing_state": "麒零随冰帝使离开雷恩前往帝都",
+      "transition_reason": "location_switch",
+      "source_span": {
+        "start_marker": "【西之亚斯蓝帝国港口城市雷恩】",
+        "end_marker": "【西之亚斯蓝帝国雷恩海域】(第二次出现)"
+      }
+    },
+    {
+      "scene_id": "S003",
+      "sequence_index": 3,
+      "scene_title_generated": "海银口腔—黑暗状态回忆—魂塚石门棋子失效",
+      "reality_layer": "present_reality",
+      "viewpoint_character": "银尘",
+      "time": {
+        "absolute_time": "unknown",
+        "relative_time": "紧接S001下潜过程",
+        "time_of_day": "unknown",
+        "duration": "unknown",
+        "sequence_relation": "continues_from_S001",
+        "confidence": 0.8
+      },
+      "location": {
+        "primary_location": "深海海银口腔内→魂塚石门平台",
+        "sub_location": "魂塚石门前",
+        "location_change_from_previous_scene": true
+      },
+      "participants": [
+        "银尘",
+        "鬼山莲泉"
+      ],
+      "scene_goal": "潜入魂塚下层；途中银尘讲述黑暗状态往事；到达后发现棋子失效",
+      "opening_state": "二人在海银口腔内继续下潜",
+      "factual_summary": "银尘解释女神的裙摆碎片来历（格兰仕黑暗状态下斩断特蕾娅裙摆）、黑暗状态的本质与代价、格兰仕为救他暗化的往事，情绪激动一度熄灭光源。海银被海底峡谷卡住。莲泉先以闇翅与锁链穿出倒悬海面进入魂塚下层空间，再拉银尘下来。二人骑闇翅到石门，发现两枚棋子均失效，确认‘他们’封锁了直达尤图尔遗迹的道路，决定唯有杀掉祝福。",
+      "closing_state": "二人决定杀死祝福才能进入下一层",
+      "transition_reason": "chapter_end",
+      "source_span": {
+        "start_marker": "【西之亚斯蓝帝国雷恩海域】(第二次出现)",
+        "end_marker": "他缓慢地点了点头。"
+      }
+    }
+  ],
+  "events": [
+    {
+      "event_id": "E001",
+      "scene_id": "S001",
+      "sequence_index": 1,
+      "event_type": "other",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "清晨",
+      "location": "雷恩海域悬崖",
+      "participants": [
+        "鬼山莲泉"
+      ],
+      "initiator": "unknown",
+      "target": "鬼山莲泉",
+      "trigger": "一夜休息",
+      "action": "莲泉体内两种灵魂回路彻底融合",
+      "result": "莲泉魂力汹涌、拥有四套灵魂回路与两头魂兽",
+      "immediate_consequence": "莲泉实力大增",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [],
+      "causes_event_ids": [],
+      "importance": "normal",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "经过一晚上的休息，她体内两种截然不同的灵魂回路已经彻底地融合到了一起",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E002",
+      "scene_id": "S001",
+      "sequence_index": 2,
+      "event_type": "movement",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "清晨",
+      "location": "雷恩海域悬崖→海银头上",
+      "participants": [
+        "鬼山莲泉",
+        "银尘",
+        "海银"
+      ],
+      "initiator": "鬼山莲泉",
+      "target": "鬼山莲泉、银尘",
+      "trigger": "需要下潜深海",
+      "action": "莲泉召唤海银浮出水面，二人骑闇翅跳上海银头部",
+      "result": "二人准备由海银载入深海",
+      "immediate_consequence": "进入海银口腔",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [],
+      "causes_event_ids": [
+        "E003"
+      ],
+      "importance": "normal",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "海银庞然大物般的躯体浮出了水面……“它带我们去。”",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E003",
+      "scene_id": "S001",
+      "sequence_index": 3,
+      "event_type": "movement",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "清晨",
+      "location": "海银口腔",
+      "participants": [
+        "银尘",
+        "鬼山莲泉"
+      ],
+      "initiator": "银尘、鬼山莲泉",
+      "target": "银尘、鬼山莲泉",
+      "trigger": "需要闭气抵达深海魂塚",
+      "action": "二人钻进海银嘴里潜入深海",
+      "result": "开始深海下潜",
+      "immediate_consequence": "进入黑暗密闭空间",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E002"
+      ],
+      "causes_event_ids": [],
+      "importance": "normal",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "银尘却对鬼山莲泉有一种没有来由的信任……就一低头钻进了那个长满森然白色獠牙的大嘴",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E004",
+      "scene_id": "S001",
+      "sequence_index": 4,
+      "event_type": "acquisition",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "narrator_confirmed",
+      "time": "下潜途中",
+      "location": "海银口腔内",
+      "participants": [
+        "银尘",
+        "鬼山莲泉"
+      ],
+      "initiator": "银尘",
+      "target": "鬼山莲泉",
+      "trigger": "莲泉询问银尘魂器数量",
+      "action": "银尘展示护心镜并解释其功能（抵一次心脏致命攻击、夜间发光照明）",
+      "result": "莲泉了解银尘天赋（无限魂器）及麒零使徒关系",
+      "immediate_consequence": "莲泉得知银尘拥有庞大魂器、麒零为其使徒",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [],
+      "causes_event_ids": [],
+      "importance": "normal",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "“这是一面护心镜，能抵御所有对心脏的致命攻击……但是也只有一次抵挡的作用”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        },
+        {
+          "scene_id": "S001",
+          "quote": "“麒零是我的使徒，他的天赋和我是一样的，能够同时使用的魂器，在数量上没有上限。”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E005",
+      "scene_id": "S002",
+      "sequence_index": 5,
+      "event_type": "task_assigned",
+      "event_status": "ordered",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "清晨",
+      "location": "雷恩驿站大堂",
+      "participants": [
+        "冰帝使",
+        "麒零",
+        "天束幽花"
+      ],
+      "initiator": "白银祭司（经由冰帝使传达）",
+      "target": "全体王爵与使徒（含麒零、天束幽花）",
+      "trigger": "冰帝艾欧斯失踪",
+      "action": "白银祭司召集所有王爵使徒回帝都，任务是寻找失踪的冰帝",
+      "result": "麒零、幽花被命令随冰帝使前往帝都",
+      "immediate_consequence": "麒零同意前往帝都（因银尘也会被召回）",
+      "long_term_consequence_explicit": "全体王爵使徒集结帝都",
+      "caused_by_event_ids": [],
+      "causes_event_ids": [],
+      "importance": "critical",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "“不仅仅是找你们，而是所有的王爵和使徒，都被召唤了……你们的任务，是寻找冰帝——因为，冰帝失踪了。”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E006",
+      "scene_id": "S002",
+      "sequence_index": 6,
+      "event_type": "other",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "character_claim",
+      "time": "清晨",
+      "location": "雷恩驿站大堂",
+      "participants": [
+        "冰帝使"
+      ],
+      "initiator": "unknown",
+      "target": "冰帝艾欧斯",
+      "trigger": "unknown",
+      "action": "冰帝寝宫残留大面积风元素魂术痕迹，疑被风源王爵或使徒带走",
+      "result": "白银祭司判断为风源所为",
+      "immediate_consequence": "发起全体召集",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [],
+      "causes_event_ids": [
+        "E005"
+      ],
+      "importance": "critical",
+      "confidence": 0.7,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "“在他失踪的那天早上，我们在他空荡荡的寝宫里，发现了曾经有风元素魂术使用残留过的痕迹。我们怀疑，有风源的人，将冰帝带走了。”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E007",
+      "scene_id": "S002",
+      "sequence_index": 7,
+      "event_type": "movement",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "清晨/上午",
+      "location": "雷恩→帝都方向",
+      "participants": [
+        "麒零",
+        "天束幽花",
+        "冰帝使"
+      ],
+      "initiator": "麒零",
+      "target": "麒零",
+      "trigger": "得知银尘也会被召回帝都",
+      "action": "麒零随冰帝使离开雷恩前往帝都",
+      "result": "麒零告别雷恩",
+      "immediate_consequence": "麒零离开等待银尘之地",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E005"
+      ],
+      "causes_event_ids": [],
+      "importance": "critical",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "“好，那我去。”麒零吞下一个点心，冲他们点点头。",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E008",
+      "scene_id": "S002",
+      "sequence_index": 8,
+      "event_type": "other",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "narrator_confirmed",
+      "time": "麒零离开雷恩时",
+      "location": "雷恩",
+      "participants": [
+        "银尘",
+        "麒零"
+      ],
+      "initiator": "unknown",
+      "target": "银尘、麒零",
+      "trigger": "麒零前往帝都",
+      "action": "旁白预告：此别之后银尘与麒零漫长岁月再无相见",
+      "result": "二人长久分别",
+      "immediate_consequence": "unknown",
+      "long_term_consequence_explicit": "从此之后，多少年，他们都再也没有相见过",
+      "caused_by_event_ids": [
+        "E007"
+      ],
+      "causes_event_ids": [],
+      "importance": "critical",
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "只是他并不知道，这一别，就和银尘别了那么漫长的岁月。从此之后，多少年，他们都再也没有相见过。",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E009",
+      "scene_id": "S003",
+      "sequence_index": 9,
+      "event_type": "rule_triggered",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "narrator_confirmed",
+      "time": "下潜途中",
+      "location": "海银口腔内",
+      "participants": [
+        "银尘"
+      ],
+      "initiator": "银尘",
+      "target": "鬼山莲泉",
+      "trigger": "莲泉询问格兰仕如何斩断女神的裙摆",
+      "action": "银尘讲述黑暗状态的本质、代价，及格兰仕为救他暗化之事",
+      "result": "莲泉了解黑暗状态禁忌",
+      "immediate_consequence": "银尘情绪激动一度熄灭光源落泪",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [],
+      "causes_event_ids": [],
+      "importance": "normal",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "“黑暗状态，就是不将魂兽释放到体外，而是直接将魂兽释放到身体内部，让魂兽和自己融为一体进行战斗的邪恶魂术。”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E010",
+      "scene_id": "S003",
+      "sequence_index": 10,
+      "event_type": "movement",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "海银抵达深海峡谷",
+      "location": "海银口腔→魂塚下层空间",
+      "participants": [
+        "鬼山莲泉",
+        "银尘",
+        "海银"
+      ],
+      "initiator": "鬼山莲泉",
+      "target": "鬼山莲泉、银尘",
+      "trigger": "海银被峡谷卡住无法再下潜",
+      "action": "莲泉先以闇翅与回生锁链穿出倒悬海面进入魂塚下层，再以锁链拉银尘下来",
+      "result": "二人进入魂塚下一层空间，立于闇翅背上",
+      "immediate_consequence": "抵达石门平台",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [],
+      "causes_event_ids": [
+        "E011"
+      ],
+      "importance": "normal",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "鬼山莲泉已经冲了出去……她双手一紧，整个人仿佛一条急速的银鱼一样，飞快向海底射去。",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E011",
+      "scene_id": "S003",
+      "sequence_index": 11,
+      "event_type": "other",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "到达魂塚石门后",
+      "location": "魂塚石门前",
+      "participants": [
+        "鬼山莲泉",
+        "银尘"
+      ],
+      "initiator": "unknown",
+      "target": "魂塚两枚棋子",
+      "trigger": "莲泉拉动铜环",
+      "action": "莲泉与银尘先后拉动两枚铜环棋子，均无反应，棋子失效",
+      "result": "确认‘他们’封锁了直达尤图尔遗迹的道路",
+      "immediate_consequence": "唯一通路被封",
+      "long_term_consequence_explicit": "决定杀死祝福才能下行",
+      "caused_by_event_ids": [
+        "E010"
+      ],
+      "causes_event_ids": [],
+      "importance": "critical",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "“两枚棋子都失效了。‘他们’封锁了直接通往尤图尔遗迹的道路。”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E012",
+      "scene_id": "S003",
+      "sequence_index": 12,
+      "event_type": "decision",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "棋子失效后",
+      "location": "魂塚石门前",
+      "participants": [
+        "银尘",
+        "鬼山莲泉"
+      ],
+      "initiator": "鬼山莲泉（提出）",
+      "target": "祝福（上古四大魂兽之一）",
+      "trigger": "棋子失效，无法绕过祝福",
+      "action": "二人决定杀掉下方的祝福才能通往下一层",
+      "result": "银尘缓慢点头确认",
+      "immediate_consequence": "进入下一章的对抗祝福计划",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E011"
+      ],
+      "causes_event_ids": [],
+      "importance": "critical",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "“你是指杀掉下面的……那个东西么？”……银尘沉默了，过了半晌，他缓慢地点了点头。",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "C001",
+      "canonical_name": "银尘",
+      "mentions": [
+        "七度王爵",
+        "天之使徒"
+      ],
+      "aliases_in_chapter": [
+        "银尘"
+      ],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        "亚斯蓝七度王爵",
+        "原上代一度王爵吉尔伽美什的使徒（仍称吉尔伽美什为‘我的王爵’）"
+      ],
+      "appearance_facts": [
+        "皮肤吹弹得破，瘦弱",
+        "穿白衣"
+      ],
+      "ability_facts": [
+        "天赋为无限魂器同调（可同时使用数量无上限的魂器）"
+      ],
+      "behavior_facts": [
+        "醒来与莲泉打招呼",
+        "进入海银口腔下潜",
+        "用护心镜照明并向莲泉解释魂器",
+        "讲述黑暗状态与格兰仕往事时落泪、一度熄灭光源",
+        "拉动第二枚棋子铜环",
+        "点头确认杀祝福的决定"
+      ],
+      "emotion_facts": [
+        "讲述格兰仕往事时落泪"
+      ],
+      "goal_facts": [
+        "营救吉尔伽美什，不惜一切危险"
+      ],
+      "psychological_facts": [
+        "对莲泉有无来由的信任",
+        "为救吉尔伽美什什么样的危险都不在考虑范围",
+        "格兰仕往事是其封印的心理禁区"
+      ],
+      "knowledge_facts": [
+        "知道魂塚棋子一次性设定的原因",
+        "知道女神的裙摆碎片来历与黑暗状态本质",
+        "知道格兰仕暗化经过",
+        "知道麒零是其使徒、天赋相同"
+      ],
+      "possession_facts": [
+        "持有护心镜（抵一次心脏致命攻击、夜间发光照明）",
+        "持有女神的裙摆碎片（多颗，曾给麒零一颗）",
+        "持有大量魂器"
+      ],
+      "relationship_facts": [
+        "麒零是其使徒",
+        "吉尔伽美什是其王爵",
+        "格兰仕是曾经的同僚（地之使徒）",
+        "对莲泉建立信任"
+      ],
+      "physical_state_at_end": "魂力完好，骑闇翅立于魂塚石门平台",
+      "location_at_end": "魂塚下层石门前",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "决定杀死祝福以进入囚禁之地下一层",
+      "identity_resolution_confidence": 1.0,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "“麒零是我的使徒，他的天赋和我是一样的，能够同时使用的魂器，在数量上没有上限。”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C002",
+      "canonical_name": "鬼山莲泉",
+      "mentions": [
+        "五度王爵",
+        "六度王爵",
+        "双身女爵"
+      ],
+      "aliases_in_chapter": [
+        "鬼山莲泉",
+        "莲泉"
+      ],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        "亚斯蓝第一个双身女爵（五度+六度王爵）",
+        "缝魂之妹"
+      ],
+      "appearance_facts": [
+        "面容冷静美艳，年轻女子如花面容上凝固悲怆疲惫"
+      ],
+      "ability_facts": [
+        "拥有四套灵魂回路",
+        "拥有两头魂兽（海银、闇翅），回生锁链作为魂兽容器仍空着，今后可再收服一头",
+        "天赋为操纵魂兽"
+      ],
+      "behavior_facts": [
+        "清晨站在悬崖边",
+        "召唤海银、闇翅",
+        "先冲出海银口腔进入魂塚下层",
+        "以锁链拉银尘下来",
+        "拉动石门铜环发现失效",
+        "提出杀祝福"
+      ],
+      "emotion_facts": [
+        "刚经历失去哥哥的悲痛，面容疲惫"
+      ],
+      "goal_facts": [
+        "营救吉尔伽美什",
+        "完成缝魂遗愿、为他报仇"
+      ],
+      "psychological_facts": [
+        "对缝魂往事‘这样的感觉，我懂’，体谅银尘"
+      ],
+      "knowledge_facts": [
+        "知道海银可载他们下潜",
+        "知道两枚棋子都通向尤图尔遗迹（幽花曾告知）"
+      ],
+      "possession_facts": [
+        "持有回生锁链（魂器）",
+        "拥有魂兽海银、闇翅"
+      ],
+      "relationship_facts": [
+        "缝魂之妹",
+        "西流尔赐印其永生回路",
+        "与银尘建立信任",
+        "幽花曾将她推向棋子"
+      ],
+      "physical_state_at_end": "魂力完好",
+      "location_at_end": "魂塚下层石门前",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "决定杀死祝福",
+      "identity_resolution_confidence": 1.0,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "这个如今亚斯蓝领域上第一个双身女爵，并且她现在已经拥有了两头魂兽",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C003",
+      "canonical_name": "麒零",
+      "mentions": [
+        "七度使徒"
+      ],
+      "aliases_in_chapter": [
+        "麒零"
+      ],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        "银尘的使徒（七度使徒）",
+        "原福泽镇驿站店小二"
+      ],
+      "appearance_facts": [
+        "又长高了，胸膛和手臂肌肉结实",
+        "俊美的脸，洁白整齐的牙齿，湿漉漉的眼睛"
+      ],
+      "ability_facts": [
+        "天赋与银尘相同（无限魂器同调）",
+        "持半刃巨剑（断剑）"
+      ],
+      "behavior_facts": [
+        "驿站醒来感到失落",
+        "与幽花共进早餐",
+        "起初拒绝去帝都、要等银尘",
+        "得知银尘也会被召回后同意前往",
+        "一步一回头离开雷恩",
+        "在心里对大海说‘银尘你一定要没事’"
+      ],
+      "emotion_facts": [
+        "醒来感到悲凉、心里像被挖走一块",
+        "眼眶红红",
+        "落泪"
+      ],
+      "goal_facts": [
+        "等待银尘回来",
+        "相信银尘不会不要他"
+      ],
+      "psychological_facts": [
+        "坚定认为银尘不会不要自己",
+        "舍不得离开雷恩，怕银尘找不到自己"
+      ],
+      "knowledge_facts": [
+        "知道银尘随莲泉离去",
+        "被冰帝使告知冰帝失踪、全体召集"
+      ],
+      "possession_facts": [
+        "持有银尘留下的钱（不肯乱花）",
+        "持半刃巨剑"
+      ],
+      "relationship_facts": [
+        "银尘是其王爵，对银尘有深厚依恋",
+        "与幽花彼此陪伴",
+        "对幽花有好感表达（靠得近、笑容）"
+      ],
+      "physical_state_at_end": "健康，日渐挺拔",
+      "location_at_end": "离开雷恩前往帝都途中",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "随冰帝使前往帝都寻找冰帝",
+      "identity_resolution_confidence": 1.0,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "“他不会不要我的。我在这里等他。”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C004",
+      "canonical_name": "天束幽花",
+      "mentions": [
+        "六度使徒"
+      ],
+      "aliases_in_chapter": [
+        "天束幽花",
+        "幽花"
+      ],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        "六度使徒",
+        "皇室郡主"
+      ],
+      "appearance_facts": [
+        "富有，用精致白银器皿吃早餐"
+      ],
+      "ability_facts": [],
+      "behavior_facts": [
+        "已坐下吃早餐",
+        "对麒零靠近脸红、装冷漠",
+        "把蜜饯点心给麒零",
+        "认出冰帝使并告知麒零",
+        "听说冰帝失踪脸色发白",
+        "知道召集令无法拒绝"
+      ],
+      "emotion_facts": [
+        "脸红",
+        "对莲泉语气讥讽",
+        "心里某角落软软陷下去（对麒零）"
+      ],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [
+        "知道冰帝使是冰帝专使",
+        "知道艾欧斯是亚斯蓝皇帝",
+        "知道艾欧斯魂力与修川地藏几乎不相上下"
+      ],
+      "possession_facts": [],
+      "relationship_facts": [
+        "与麒零彼此陪伴",
+        "对麒零有好感"
+      ],
+      "physical_state_at_end": "健康",
+      "location_at_end": "随冰帝使前往帝都",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "前往帝都",
+      "identity_resolution_confidence": 1.0,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "“他们是【冰帝使】，是冰帝专用的使节。”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C005",
+      "canonical_name": "冰帝使",
+      "mentions": [],
+      "aliases_in_chapter": [
+        "冰帝使"
+      ],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        "冰帝专用的使节，共四人",
+        "穿银白色皇族侍卫服，戴遮眼兜帽"
+      ],
+      "appearance_facts": [
+        "四人个子、身材、走路姿势都一样，银边刺绣奢华"
+      ],
+      "ability_facts": [],
+      "behavior_facts": [
+        "走进驿站直奔麒零幽花",
+        "鞠躬恭敬传达召集令",
+        "语气不容置疑",
+        "承诺会留人在雷恩召唤银尘"
+      ],
+      "emotion_facts": [],
+      "goal_facts": [
+        "执行白银祭司召集令，寻找冰帝"
+      ],
+      "psychological_facts": [],
+      "knowledge_facts": [
+        "知道冰帝失踪、寝宫残留风元素魂术痕迹",
+        "知道白银祭司下令召集全体王爵使徒"
+      ],
+      "possession_facts": [],
+      "relationship_facts": [],
+      "physical_state_at_end": "unknown",
+      "location_at_end": "带领麒零幽花前往帝都",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "护送麒零幽花回帝都、留人等候银尘",
+      "identity_resolution_confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "四个穿着银白色皇族侍卫衣服的人……“六度使徒、七度使徒，请随我们一起，到雷恩的教堂去一趟。”",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C006",
+      "canonical_name": "格兰仕",
+      "mentions": [
+        "地之使徒",
+        "地狱之使徒"
+      ],
+      "aliases_in_chapter": [
+        "格兰仕"
+      ],
+      "appearance_type": "mentioned",
+      "identity_facts": [
+        "原一度使徒中的地之使徒（地狱之使徒）"
+      ],
+      "appearance_facts": [],
+      "ability_facts": [
+        "曾使用黑暗状态",
+        "黑暗状态下力量大增到能斩断女神的裙摆"
+      ],
+      "behavior_facts": [
+        "四年前为救银尘使用黑暗状态",
+        "黑暗状态下利刃斩断特蕾娅的女神的裙摆"
+      ],
+      "emotion_facts": [],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [
+        "为救银尘而暗化"
+      ],
+      "physical_state_at_end": "unknown",
+      "location_at_end": "unknown",
+      "availability_state_at_end": "unknown",
+      "current_task_at_end": "unknown",
+      "identity_resolution_confidence": 1.0,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "当时地之使徒格兰仕，他为了救我，不惜使用了黑暗状态，他身体上的利刃，将特蕾娅的裙摆割断了",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C007",
+      "canonical_name": "特蕾娅",
+      "mentions": [
+        "四度王爵"
+      ],
+      "aliases_in_chapter": [
+        "特蕾娅"
+      ],
+      "appearance_type": "mentioned",
+      "identity_facts": [
+        "四度王爵",
+        "原女神的裙摆持有人"
+      ],
+      "appearance_facts": [],
+      "ability_facts": [
+        "天赋能提前感应攻击，躲闪及时"
+      ],
+      "behavior_facts": [
+        "曾在猎杀天地海三使徒时身穿女神的裙摆",
+        "靠天赋躲过格兰仕攻击幸存"
+      ],
+      "emotion_facts": [],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [
+        "原持女神的裙摆（被格兰仕斩断部分碎片散落）"
+      ],
+      "relationship_facts": [],
+      "physical_state_at_end": "unknown",
+      "location_at_end": "unknown",
+      "availability_state_at_end": "unknown",
+      "current_task_at_end": "unknown",
+      "identity_resolution_confidence": 1.0,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "如果不是特蕾娅靠着她与生俱来的天赋能提前感应格兰仕的攻击，所以躲闪及时，她早就丧命了。",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C008",
+      "canonical_name": "艾欧斯",
+      "mentions": [
+        "冰帝"
+      ],
+      "aliases_in_chapter": [
+        "冰帝",
+        "艾欧斯"
+      ],
+      "appearance_type": "mentioned",
+      "identity_facts": [
+        "亚斯蓝皇帝（冰帝）"
+      ],
+      "appearance_facts": [],
+      "ability_facts": [
+        "魂力登峰造极，与一度王爵修川地藏几乎不相上下"
+      ],
+      "behavior_facts": [],
+      "emotion_facts": [],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [],
+      "physical_state_at_end": "失踪",
+      "location_at_end": "unknown（疑被风源带走）",
+      "availability_state_at_end": "失踪",
+      "current_task_at_end": "unknown",
+      "identity_resolution_confidence": 1.0,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "“艾欧斯的魂力登峰造极，他和现任的一度王爵修川地藏几乎不相上下”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C009",
+      "canonical_name": "吉尔伽美什",
+      "mentions": [
+        "上代一度王爵"
+      ],
+      "aliases_in_chapter": [
+        "吉尔伽美什"
+      ],
+      "appearance_type": "mentioned",
+      "identity_facts": [
+        "上代一度王爵，银尘的王爵"
+      ],
+      "appearance_facts": [],
+      "ability_facts": [
+        "能较精准控制黑暗状态，可维持在兽性吞噬人性前的临界点",
+        "处于巅峰的魂术师"
+      ],
+      "behavior_facts": [],
+      "emotion_facts": [],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [
+        "银尘的王爵"
+      ],
+      "physical_state_at_end": "被囚禁",
+      "location_at_end": "雷恩海域深海岛屿下的囚禁之地",
+      "availability_state_at_end": "被囚禁",
+      "current_task_at_end": "unknown",
+      "identity_resolution_confidence": 1.0,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "“比如我的王爵吉尔伽美什，”……他依然称呼吉尔伽美什为“我的王爵”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C010",
+      "canonical_name": "修川地藏",
+      "mentions": [
+        "一度王爵"
+      ],
+      "aliases_in_chapter": [
+        "修川地藏"
+      ],
+      "appearance_type": "mentioned",
+      "identity_facts": [
+        "现任一度王爵"
+      ],
+      "appearance_facts": [],
+      "ability_facts": [],
+      "behavior_facts": [],
+      "emotion_facts": [],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [],
+      "physical_state_at_end": "unknown",
+      "location_at_end": "unknown",
+      "availability_state_at_end": "unknown",
+      "current_task_at_end": "unknown",
+      "identity_resolution_confidence": 1.0,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "他和现任的一度王爵修川地藏几乎不相上下",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    }
+  ],
+  "character_state_changes": [
+    {
+      "change_id": "CS001",
+      "character_id": "C002",
+      "scene_id": "S001",
+      "dimension": "ability",
+      "before": "拥有西流尔赐印但回路尚未完全融合",
+      "change": "经过一夜休息，体内两种灵魂回路彻底融合",
+      "after": "拥有四套灵魂回路、两头魂兽，实力未知上限",
+      "change_status": "confirmed",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "经过一晚上的休息，她体内两种截然不同的灵魂回路已经彻底地融合到了一起",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "change_id": "CS002",
+      "character_id": "C001",
+      "scene_id": "S001",
+      "dimension": "location",
+      "before": "雷恩海域悬崖",
+      "change": "进入海银口腔下潜深海",
+      "after": "深海海银口腔内",
+      "change_status": "confirmed",
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "银尘翻身上去，刚刚坐稳，闇翅发出一声尖锐的鸣叫后，就跃出悬崖",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "change_id": "CS003",
+      "character_id": "C003",
+      "scene_id": "S002",
+      "dimension": "location",
+      "before": "雷恩驿站",
+      "change": "随冰帝使离开雷恩前往帝都",
+      "after": "前往帝都途中",
+      "change_status": "confirmed",
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "他一步一回头地离开了雷恩，前往帝都。",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "change_id": "CS004",
+      "character_id": "C001",
+      "scene_id": "S003",
+      "dimension": "location",
+      "before": "海银口腔内",
+      "change": "随锁链穿出倒悬海面进入魂塚下层",
+      "after": "魂塚石门平台",
+      "change_status": "confirmed",
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "银尘深吸一口气，飞快地随着锁链的力量冲进海水里……跌落在闇翅的后背上。",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "change_id": "CS005",
+      "character_id": "C001",
+      "scene_id": "S003",
+      "dimension": "goal",
+      "before": "通过棋子直达尤图尔遗迹",
+      "change": "棋子失效，转为决定杀死祝福",
+      "after": "目标变为杀死祝福以进入下一层",
+      "change_status": "confirmed",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "“看来，如果要通往下一层的话，只有唯一的一个办法了。”……他缓慢地点了点头。",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    }
+  ],
+  "knowledge_states": [
+    {
+      "knowledge_id": "K001",
+      "subject": "鬼山莲泉",
+      "information": "银尘的天赋是无限魂器同调，麒零是银尘的使徒且天赋相同",
+      "knowledge_status": "knows",
+      "acquired_in_scene": "S001",
+      "source_of_information": "银尘亲口告知",
+      "reliability": "confirmed",
+      "concealed_from": [],
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "“麒零是我的使徒，他的天赋和我是一样的，能够同时使用的魂器，在数量上没有上限。”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "knowledge_id": "K002",
+      "subject": "鬼山莲泉",
+      "information": "黑暗状态是将魂兽释放到体内与自身融为一体的禁忌魂术，会逐渐吞噬神志",
+      "knowledge_status": "knows",
+      "acquired_in_scene": "S003",
+      "source_of_information": "银尘讲述",
+      "reliability": "confirmed",
+      "concealed_from": [],
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "“黑暗状态，就是不将魂兽释放到体外，而是直接将魂兽释放到身体内部”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "knowledge_id": "K003",
+      "subject": "鬼山莲泉",
+      "information": "银尘持有的女神的裙摆是特蕾娅原件被格兰仕黑暗状态下斩断后的碎片凝固而成",
+      "knowledge_status": "knows",
+      "acquired_in_scene": "S003",
+      "source_of_information": "银尘讲述",
+      "reliability": "confirmed",
+      "concealed_from": [],
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "“其实我所拥有的女神的裙摆，只是那面‘盾牌’的碎片……它们已经凝固成了三颗陶瓷棋子般的固体”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "knowledge_id": "K004",
+      "subject": "银尘",
+      "information": "魂塚两枚棋子都失效了，直达尤图尔遗迹的道路被封锁",
+      "knowledge_status": "knows",
+      "acquired_in_scene": "S003",
+      "source_of_information": "亲自拉动铜环验证",
+      "reliability": "confirmed",
+      "concealed_from": [],
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "“两枚棋子都失效了。‘他们’封锁了直接通往尤图尔遗迹的道路。”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "knowledge_id": "K005",
+      "subject": "麒零",
+      "information": "冰帝艾欧斯失踪，寝宫残留风元素魂术痕迹，疑被风源带走，白银祭司召集全体王爵使徒",
+      "knowledge_status": "knows",
+      "acquired_in_scene": "S002",
+      "source_of_information": "冰帝使告知",
+      "reliability": "confirmed",
+      "concealed_from": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "“冰帝失踪了……我们怀疑，有风源的人，将冰帝带走了。”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "L001",
+      "canonical_name": "雷恩海域",
+      "aliases": [
+        "雷恩海域"
+      ],
+      "parent_location": "西之亚斯蓝帝国",
+      "location_type": "海域/悬崖",
+      "observable_features": [
+        "蔚蓝色大海一望无垠，冬日海面冷清",
+        "飞鸟躲在崖壁石穴",
+        "海面零星碎冰",
+        "悬崖下方深海有海银栖息"
+      ],
+      "entry_conditions": [],
+      "hazards": [
+        "深海快速变化的水压可致七窍流血而死"
+      ],
+      "rules": [
+        "魂塚棋子一次性，已进过魂塚者无法再用"
+      ],
+      "state_changes": [],
+      "events_in_chapter": [
+        "E001",
+        "E002",
+        "E003",
+        "E009",
+        "E010"
+      ],
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "蔚蓝色的大海一望无垠。冬日的海面晃动着一层淡淡的冷清。",
+          "evidence_type": "environmental_observation",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "location_id": "L002",
+      "canonical_name": "雷恩",
+      "aliases": [
+        "雷恩",
+        "港口城市雷恩"
+      ],
+      "parent_location": "西之亚斯蓝帝国",
+      "location_type": "港口城市",
+      "observable_features": [
+        "繁华海港城市，白色建筑、白色尖顶",
+        "驿站木质结构散发木香",
+        "居民出海、店铺营业、白烟笼罩",
+        "海鸟穿梭云缝"
+      ],
+      "entry_conditions": [],
+      "hazards": [],
+      "rules": [],
+      "state_changes": [],
+      "events_in_chapter": [
+        "E005",
+        "E006",
+        "E007"
+      ],
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "灿烂的阳光照耀着这个繁华的海港城市",
+          "evidence_type": "environmental_observation",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "location_id": "L003",
+      "canonical_name": "魂塚",
+      "aliases": [
+        "魂塚"
+      ],
+      "parent_location": "雷恩海域深海岛屿下",
+      "location_type": "地下空间/魂器产地",
+      "observable_features": [
+        "空间违反物理规律，海水不会倾倒而入但人会坠落",
+        "倒悬的海面",
+        "峡谷尽头有石门、铜环棋子",
+        "下方雾海深处峡谷有祝福"
+      ],
+      "entry_conditions": [
+        "需通过一次性棋子或杀祝福进入下层",
+        "棋子限制：未进过魂塚者才能触发"
+      ],
+      "hazards": [
+        "祝福（上古四大魂兽之一）守在下层"
+      ],
+      "rules": [
+        "雷恩十七神像棋子为一次性，进过魂塚者无法再用",
+        "空间违反物理规律"
+      ],
+      "state_changes": [
+        "两枚直达尤图尔遗迹的棋子失效，道路被封锁"
+      ],
+      "events_in_chapter": [
+        "E010",
+        "E011",
+        "E012"
+      ],
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "魂塚里面的空间是违反物理规律的，因为下面巨大的水元素魂力磁场，海水不会倾斜到下面的空间里",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "item_id": "I001",
+      "canonical_name": "护心镜",
+      "aliases": [
+        "护心镜"
+      ],
+      "item_type": "魂器（防具）",
+      "holder_at_start": "银尘",
+      "holder_at_end": "银尘",
+      "location_at_end": "银尘处",
+      "explicit_functions": [
+        "能抵御所有对心脏的致命攻击（元素魂术或物理硬伤）",
+        "只有一次抵挡作用，再次攻击无效",
+        "夜间会释放柔和光亮，可照明"
+      ],
+      "explicit_costs": [],
+      "explicit_limitations": [
+        "只能抵挡一次心脏致命攻击"
+      ],
+      "state_at_end": "完好",
+      "related_event_ids": [
+        "E004"
+      ],
+      "possible_hook": false,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "“这是一面护心镜，能抵御所有对心脏的致命攻击……但是也只有一次抵挡的作用”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "item_id": "I002",
+      "canonical_name": "女神的裙摆（碎片）",
+      "aliases": [
+        "女神的裙摆"
+      ],
+      "item_type": "魂器（顶级盾/防具）",
+      "holder_at_start": "银尘",
+      "holder_at_end": "银尘（部分曾给麒零）",
+      "location_at_end": "银尘处",
+      "explicit_functions": [
+        "抵御所有间接进攻",
+        "硬度仅次于第一防具龙鳞漆和第一盾牌雪妖的闪光，超过死灵镜面",
+        "魂力催动下可恢复成丝绸质地的盾牌"
+      ],
+      "explicit_costs": [
+        "需魂力催动才能激发"
+      ],
+      "explicit_limitations": [
+        "银尘持有的是碎片，凝固成陶瓷棋子般固体，需魂力激发"
+      ],
+      "state_at_end": "完好",
+      "related_event_ids": [
+        "E004",
+        "E009"
+      ],
+      "possible_hook": false,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "“它们已经凝固成了三颗陶瓷棋子般的固体，只有在魂力催动的情况下，才能重新恢复成丝绸质地的”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "item_id": "I003",
+      "canonical_name": "半刃巨剑",
+      "aliases": [
+        "巨剑"
+      ],
+      "item_type": "魂器（武器）",
+      "holder_at_start": "麒零",
+      "holder_at_end": "麒零",
+      "location_at_end": "麒零处",
+      "explicit_functions": [
+        "又大又重，长期挥舞使身体强壮"
+      ],
+      "explicit_costs": [],
+      "explicit_limitations": [],
+      "state_at_end": "完好",
+      "related_event_ids": [],
+      "possible_hook": true,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "那把又大又重的巨剑，没事儿每天扛着，挥舞来挥舞去，自然身体越来越壮",
+          "evidence_type": "internal_monologue",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "item_id": "I004",
+      "canonical_name": "回生锁链",
+      "aliases": [
+        "回生锁链"
+      ],
+      "item_type": "魂器（武器/魂兽容器）",
+      "holder_at_start": "鬼山莲泉",
+      "holder_at_end": "鬼山莲泉",
+      "location_at_end": "莲泉处",
+      "explicit_functions": [
+        "可射进岩石作为信号与牵引",
+        "可作为魂兽容器（目前仍空着）"
+      ],
+      "explicit_costs": [],
+      "explicit_limitations": [],
+      "state_at_end": "完好",
+      "related_event_ids": [
+        "E010"
+      ],
+      "possible_hook": false,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "将钉在崖壁上的锁链迅速拉回，朝头顶的倒悬海面激射而出",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    }
+  ],
+  "factions": [
+    {
+      "faction_id": "F001",
+      "canonical_name": "白银祭司阵营",
+      "aliases": [
+        "白银祭司"
+      ],
+      "members_mentioned": [],
+      "leader_explicit": "三位白银祭司",
+      "goal_explicit": [
+        "召集所有王爵使徒寻找失踪的冰帝",
+        "封锁直达尤图尔遗迹的棋子道路（‘他们’）"
+      ],
+      "controlled_locations": [
+        "心脏"
+      ],
+      "relations": [],
+      "actions_in_chapter": [
+        "下令全体王爵使徒回帝都",
+        "封锁魂塚棋子"
+      ],
+      "state_changes": [],
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "“‘他们’封锁了直接通往尤图尔遗迹的道路。”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    }
+  ],
+  "world_rules": [
+    {
+      "rule_id": "R001",
+      "rule_name": "黑暗状态",
+      "rule_category": "禁忌魂术",
+      "rule_statement": "黑暗状态是将魂兽不释放到体外，而是直接释放到身体内部，让魂兽和自身融为一体进行战斗的邪恶魂术",
+      "scope": "魂术师（拥有魂兽者）",
+      "trigger": "魂兽冲破爵印后、钻出身体前，在体表用魂力制造封印困住魂兽于体内",
+      "effect": "魂兽能量迅速侵蚀魂术师肉体，使人兽器三者融合成怪物，魂力战斗指数大幅混乱上升；上升倍数因人天赋而异",
+      "cost": "魂兽能量侵蚀肉身并飞速浸染神志，理智善良本真被兽性压制，持续越久神志被吞噬越多，最终变成人不人兽不兽的怪物",
+      "limitations": [
+        "变化取决于魂兽类型、大小、天赋及魂术师天赋、体内魂器",
+        "未使用前无人知道自己的黑暗状态是什么样子"
+      ],
+      "exceptions": [
+        "巅峰魂术师（如吉尔伽美什）可较精准控制，能随时终止，甚至维持在兽性将吞噬人性而未突破的临界点"
+      ],
+      "violation_consequence": "逐渐失去人性变为怪物",
+      "epistemic_status": "character_claim",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "“黑暗状态，就是不将魂兽释放到体外，而是直接将魂兽释放到身体内部，让魂兽和自己融为一体进行战斗的邪恶魂术。”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R002",
+      "rule_name": "魂塚棋子一次性规则",
+      "rule_category": "特殊地点规则/道具规则",
+      "rule_statement": "雷恩十七神像通往魂塚的棋子是一次性的，已进过魂塚者无法再用；这是白银祭司为减少他人靠近吉尔伽美什机会而设",
+      "scope": "雷恩十七神像棋子使用者",
+      "trigger": "进入过魂塚后再次尝试使用该棋子",
+      "effect": "无法再次触发传送",
+      "cost": "unknown",
+      "limitations": [],
+      "exceptions": [],
+      "violation_consequence": "unknown",
+      "epistemic_status": "character_claim",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "“当初白银祭司作出这个设定来，一定是为了减少别人靠近吉尔伽美什的机会。”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R003",
+      "rule_name": "魂兽战斗力优势规则",
+      "rule_category": "魂术战斗规则",
+      "rule_statement": "魂兽战斗力远强于魂术师，有魂兽的魂术师实力远高于同等级无魂兽者；两个魂力相近的魂术师战斗时，一方释放魂兽则无魂兽一方必败",
+      "scope": "魂术师对战",
+      "trigger": "魂力相近的魂术师战斗",
+      "effect": "释放魂兽方压倒性胜出",
+      "cost": "unknown",
+      "limitations": [],
+      "exceptions": [],
+      "violation_consequence": "unknown",
+      "epistemic_status": "character_claim",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "“只要其中一方释放出魂兽，那么，另外没有魂兽的一方，必败无疑”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    }
+  ],
+  "hooks_and_clues": [
+    {
+      "hook_id": "H001",
+      "scene_id": "S002",
+      "hook_type": "explicit_setup",
+      "content": "银尘与麒零此别后漫长岁月再未相见",
+      "related_entities": [
+        "银尘",
+        "麒零"
+      ],
+      "introduced_or_updated": "introduced",
+      "current_status": "unresolved",
+      "known_by": [
+        "读者（旁白预告）"
+      ],
+      "unknown_to": [
+        "银尘",
+        "麒零"
+      ],
+      "urgency": "medium",
+      "canon_eligible": true,
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "从此之后，多少年，他们都再也没有相见过。",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "hook_id": "H002",
+      "scene_id": "S002",
+      "hook_type": "explicit_question",
+      "content": "冰帝艾欧斯为何失踪，是否真被风源带走",
+      "related_entities": [
+        "艾欧斯",
+        "风源"
+      ],
+      "introduced_or_updated": "introduced",
+      "current_status": "unresolved",
+      "known_by": [
+        "冰帝使",
+        "麒零",
+        "天束幽花"
+      ],
+      "unknown_to": [],
+      "urgency": "high",
+      "canon_eligible": true,
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "“我们怀疑，有风源的人，将冰帝带走了。”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "hook_id": "H003",
+      "scene_id": "S003",
+      "hook_type": "explicit_question",
+      "content": "谁封锁了魂塚直达尤图尔遗迹的两枚棋子",
+      "related_entities": [
+        "白银祭司"
+      ],
+      "introduced_or_updated": "introduced",
+      "current_status": "unresolved",
+      "known_by": [
+        "银尘",
+        "鬼山莲泉"
+      ],
+      "unknown_to": [],
+      "urgency": "high",
+      "canon_eligible": true,
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "“‘他们’封锁了直接通往尤图尔遗迹的道路。”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "hook_id": "H004",
+      "scene_id": "S001",
+      "hook_type": "implicit_clue_candidate",
+      "content": "莲泉回生锁链作为魂兽容器仍空着，今后还能收服第三头魂兽，实力未知上限",
+      "related_entities": [
+        "鬼山莲泉",
+        "回生锁链"
+      ],
+      "introduced_or_updated": "reinforced",
+      "current_status": "unresolved",
+      "known_by": [
+        "读者"
+      ],
+      "unknown_to": [],
+      "urgency": "low",
+      "canon_eligible": false,
+      "confidence": 0.7,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "她的魂器回生锁链作为魂兽的容器，至今依然空着，今后的日子，她还能收服一头魂兽供自己驱使",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    },
+    {
+      "hook_id": "H005",
+      "scene_id": "S002",
+      "hook_type": "implicit_clue_candidate",
+      "content": "四名冰帝使个子身材走路姿势完全一样，身份可疑",
+      "related_entities": [
+        "冰帝使"
+      ],
+      "introduced_or_updated": "introduced",
+      "current_status": "unresolved",
+      "known_by": [
+        "读者"
+      ],
+      "unknown_to": [
+        "麒零"
+      ],
+      "urgency": "low",
+      "canon_eligible": false,
+      "confidence": 0.5,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "四个人一样的个子，身材都非常挺拔，而且看起来连走路的姿势都一样。",
+          "evidence_type": "environmental_observation",
+          "source_path": "data/raw/chapters_src/chapter-020.md"
+        }
+      ]
+    }
+  ],
+  "timelines": [
+    {
+      "timeline_entry_id": "T001",
+      "timeline_type": "main",
+      "sequence_index": 1,
+      "absolute_time": "unknown",
+      "relative_time": "永生岛大战后次日清晨",
+      "duration": "半天至一天",
+      "location": "雷恩海域悬崖→深海海银口腔→魂塚石门",
+      "participants": [
+        "银尘",
+        "鬼山莲泉"
+      ],
+      "current_task": "潜入深海魂塚营救吉尔伽美什",
+      "event_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E004",
+        "E009",
+        "E010",
+        "E011",
+        "E012"
+      ],
+      "plot_description": "银尘与莲泉乘海银下潜，途中银尘讲述黑暗状态往事，到达魂塚石门发现棋子失效，决定杀祝福",
+      "result": "二人决定杀死祝福进入下一层",
+      "relation_to_other_entries": [
+        {
+          "relation_type": "simultaneous_with",
+          "target_timeline_entry": "T002"
+        }
+      ],
+      "confidence": 0.7
+    },
+    {
+      "timeline_entry_id": "T002",
+      "timeline_type": "parallel",
+      "sequence_index": 2,
+      "absolute_time": "unknown",
+      "relative_time": "与T001约略同时",
+      "duration": "一个上午",
+      "location": "雷恩驿站→离开雷恩",
+      "participants": [
+        "麒零",
+        "天束幽花",
+        "冰帝使"
+      ],
+      "current_task": "接受召集令前往帝都寻找冰帝",
+      "event_ids": [
+        "E005",
+        "E006",
+        "E007",
+        "E008"
+      ],
+      "plot_description": "麒零醒来等待银尘，冰帝使传达召集令，麒零告别雷恩前往帝都",
+      "result": "麒零离开雷恩，与银尘长久分别",
+      "relation_to_other_entries": [
+        {
+          "relation_type": "simultaneous_with",
+          "target_timeline_entry": "T001"
+        }
+      ],
+      "confidence": 0.6
+    }
+  ],
+  "cliffhanger_analysis": {
+    "enabled": false,
+    "last_scene_ids": [],
+    "immediate_conflicts": [],
+    "unfinished_actions": [],
+    "characters_in_danger": [],
+    "active_time_pressure": [],
+    "urgency": "unknown",
+    "must_continue_states": [],
+    "resolved_at_chapter_end": false
+  },
+  "style_profile": {
+    "narrative_person": "third_person",
+    "viewpoint_pattern": "第三人称限知，双线场景内视角稳定，章节中段切换为麒零线再切回银尘线",
+    "sentence_length_tendency": "medium",
+    "paragraph_length_tendency": "medium",
+    "dialogue_ratio": "high",
+    "action_description_ratio": "medium",
+    "environment_description_ratio": "medium",
+    "psychological_description_ratio": "medium",
+    "dominant_sensory_channels": [
+      "视觉",
+      "触觉",
+      "嗅觉（腥味/木香/茶香）"
+    ],
+    "common_rhetorical_devices": [
+      "比喻",
+      "排比",
+      "对比"
+    ],
+    "dominant_emotional_tones": [
+      "悲怆",
+      "失落",
+      "坚定",
+      "阴森"
+    ],
+    "pace": "medium",
+    "pace_changes": [
+      "S001平缓",
+      "S002感伤",
+      "S003压抑推进"
+    ],
+    "transition_patterns": [
+      "地点标记【】切换",
+      "旁白预告式插叙"
+    ],
+    "distinctive_expression_patterns": [
+      "长段解释性对话铺陈世界观",
+      "旁白式命运预告"
+    ],
+    "evidence_examples": [
+      "他的眼眶红红的，像是被海风吹进了沙子。",
+      "仿佛从死亡的边缘走了回来。"
+    ]
+  },
+  "entity_resolution_issues": [
+    {
+      "issue_id": "ER001",
+      "references": [
+        "‘他们’（封锁棋子者）",
+        "白银祭司"
+      ],
+      "possible_resolution": "‘他们’即白银祭司一方",
+      "resolution_status": "likely_resolved",
+      "confidence": 0.7,
+      "reason": "棋子失效被推断为白银祭司封锁，本章未明确点名"
+    }
+  ],
+  "continuity_issues": [],
+  "interpretation_candidates": [
+    {
+      "candidate_id": "IC001",
+      "interpretation_type": "character_motivation",
+      "content": "银尘对莲泉‘没有来由的信任’可能源于其天性中对正气之人的认同",
+      "supporting_observations": [
+        "银尘毫不犹豫钻进海银口腔"
+      ],
+      "alternative_explanations": [
+        "或因救吉尔伽美什不顾一切危险"
+      ],
+      "confidence": 0.5,
+      "canon_eligible": false
+    },
+    {
+      "candidate_id": "IC002",
+      "interpretation_type": "hidden_identity",
+      "content": "四名冰帝使外貌姿势完全一致，可能如白银使者般是银尘容貌的复制体",
+      "supporting_observations": [
+        "四个人一样的个子，身材都非常挺拔，而且看起来连走路的姿势都一样"
+      ],
+      "alternative_explanations": [
+        "仅是统一着装训练的侍卫"
+      ],
+      "confidence": 0.4,
+      "canon_eligible": false
+    }
+  ],
+  "chapter_end_state": {
+    "current_time": "unknown",
+    "active_locations": [
+      "魂塚石门前（银尘/莲泉）",
+      "前往帝都途中（麒零/幽花）"
+    ],
+    "active_characters": [
+      "银尘",
+      "鬼山莲泉",
+      "麒零",
+      "天束幽花",
+      "冰帝使"
+    ],
+    "ongoing_events": [
+      "银尘莲泉决定杀死祝福",
+      "麒零幽花前往帝都"
+    ],
+    "unfinished_tasks": [
+      "营救吉尔伽美什",
+      "寻找冰帝"
+    ],
+    "unresolved_hooks": [
+      "H001",
+      "H002",
+      "H003",
+      "H004",
+      "H005"
+    ],
+    "critical_character_states": [
+      "银尘与莲泉立于魂塚石门前，决定杀祝福",
+      "麒零离开雷恩，旁白预告与银尘永别"
+    ],
+    "critical_item_states": [
+      "护心镜、女神的裙摆碎片在银尘处",
+      "魂塚两枚棋子失效"
+    ],
+    "next_chapter_continuity_constraints": [
+      "银尘与莲泉必须面对下方的祝福才能下行",
+      "麒零与幽花正在前往帝都途中",
+      "全体王爵使徒正被召集回帝都"
+    ]
+  },
+  "validation_issues": [],
+  "quality_checks": {
+    "all_scenes_have_source_spans": true,
+    "all_critical_events_have_evidence": true,
+    "all_state_changes_have_evidence": true,
+    "dreams_and_memories_separated": true,
+    "character_claims_not_treated_as_confirmed_fact": true,
+    "planned_events_not_treated_as_occurred": true,
+    "unknown_values_not_fabricated": true,
+    "timeline_order_checked": true,
+    "entity_aliases_checked": true,
+    "latest_chapter_cliffhanger_checked": true
+  }
+}

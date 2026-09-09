@@ -1,0 +1,1670 @@
+{
+  "schema_version": "chapter-canon-extraction-v1.0",
+  "parse_status": "success",
+  "source": {
+    "source_path": "data/raw/chapters_src/chapter-025.md",
+    "source_hash": "62010750ed469424536b782f662db875227df179e9fa3ec8a1241c46a6883ba6",
+    "canon_level": "official",
+    "chapter_id_hint": "025"
+  },
+  "chapter_metadata": {
+    "chapter_id": "尾声",
+    "chapter_title": "零度王爵",
+    "volume_title": "临界·爵迹",
+    "chapter_number": 25,
+    "detected_heading": "尾声 零度王爵",
+    "narrative_person": "third_person",
+    "viewpoint_type": "limited_third_person",
+    "primary_viewpoint_character": "艾欧斯/漆拉",
+    "viewpoint_stability": "stable_within_scene",
+    "primary_reality_layer": "flashback",
+    "factual_abstract": "（27年前回溯）年幼冰帝艾欧斯被神秘力量召唤至风源极北凝腥洞穴外，遇风源一度王爵铂伊司与风后西鲁芙。漆拉（时为水爵一度）现身救下艾欧斯，与铂伊司西鲁芙对峙交锋后带走艾欧斯。艾欧斯被漆拉安置于阿切特拉市旅店。半夜风源二人（铂伊司西鲁芙）破窗袭击夺回某物，漆拉重伤昏迷前将艾欧斯与一个华丽锦缎包裹的婴儿通过棋子转移至后街小巷。艾欧斯发现婴儿脚踝有‘零’字刺青、散发白银祭司般邪恶气息，意识到此即风源追索之物，遂将婴儿放进路过的运货马车后箱。旁白揭示婴儿即失落的‘零度王爵’（白银祭司制造的完美容器）。该马车最终抵达福泽镇，驿站夫妇发现婴儿并据‘零’字刺青收养，取名麒零。全书完。"
+  },
+  "chapter_boundaries": {
+    "single_chapter_confirmed": true,
+    "detected_chapter_count": 1,
+    "detected_boundaries": [
+      {
+        "heading": "尾声 零度王爵",
+        "start": "chapter_start",
+        "end": "chapter_end（全书完）"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "scene_id": "S001",
+      "sequence_index": 1,
+      "scene_title_generated": "风源极北凝腥洞穴外—漆拉救艾欧斯对峙铂伊司西鲁芙",
+      "reality_layer": "flashback",
+      "viewpoint_character": "艾欧斯/漆拉",
+      "time": {
+        "absolute_time": "27年前",
+        "relative_time": "现时间线27年前",
+        "time_of_day": "大雪白天",
+        "duration": "片刻",
+        "sequence_relation": " flashback_before_main_timeline",
+        "confidence": 0.9
+      },
+      "location": {
+        "primary_location": "风源因德帝国极北凝腥洞穴外",
+        "sub_location": "雪原",
+        "location_change_from_previous_scene": false
+      },
+      "participants": [
+        "艾欧斯",
+        "铂伊司",
+        "漆拉",
+        "西鲁芙"
+      ],
+      "scene_goal": "漆拉救下被召唤至风源的艾欧斯，与风源二人对峙",
+      "opening_state": "铂伊司扶起跌倒的艾欧斯",
+      "factual_summary": "年幼艾欧斯（蓝袍少年）被某种召唤来到风源极北凝腥洞穴外。铂伊司（15-16岁银发钻石黑冠少年）扶起艾欧斯，察觉其非风源人。漆拉（黑袍俊美男子）悄无声息出现，单手抱住艾欧斯，艾欧斯说漆拉刚救了他（洞穴有怪物）。漆拉向铂伊司致谢欲带艾欧斯离开。风后西鲁芙（冷冷少女声）现身阻拦，与漆拉交锋：西鲁芙偷袭漆拉后背被躲过，再斩被漆拉以冰墙冰刃反击，铂伊司以气盾挡冰刃保护西鲁芙。漆拉认出二人为高位风爵。铂伊司点破漆拉为水爵一度王爵，西鲁芙揭示铂伊司很早就是一度王爵、自己是12岁即位风后。铂伊司点破艾欧斯是现在或未来的冰帝，以宣战相胁后放漆拉带走艾欧斯。艾欧斯内心涌动难过，旁白预告命运齿轮早已安排。",
+      "closing_state": "漆拉抱艾欧斯转身离去，艾欧斯偷瞄铂伊司",
+      "transition_reason": "location_change",
+      "source_span": {
+        "start_marker": "【北之因德凝腥洞穴外】",
+        "end_marker": "【西之亚斯蓝阿切特拉市】之前"
+      }
+    },
+    {
+      "scene_id": "S002",
+      "sequence_index": 2,
+      "scene_title_generated": "阿切特拉市旅店—风源夜袭—婴儿转移",
+      "reality_layer": "flashback",
+      "viewpoint_character": "艾欧斯",
+      "time": {
+        "absolute_time": "27年前（S001后不久）",
+        "relative_time": "S001后当夜",
+        "time_of_day": "深夜",
+        "duration": "片刻",
+        "sequence_relation": "continues_from_S001",
+        "confidence": 0.9
+      },
+      "location": {
+        "primary_location": "阿切特拉市旅店→后街小巷",
+        "sub_location": "艾欧斯房间→黑色石板路后巷",
+        "location_change_from_previous_scene": true
+      },
+      "participants": [
+        "艾欧斯",
+        "漆拉",
+        "婴儿（零度王爵）",
+        "铂伊司",
+        "西鲁芙"
+      ],
+      "scene_goal": "漆拉保护艾欧斯、夺回被风源追索的婴儿（零度王爵）",
+      "opening_state": "漆拉带艾欧斯住进旅店，叮嘱其别乱跑后离开",
+      "factual_summary": "漆拉将艾欧斯安顿旅店后离去（疑返回风源）。半夜漆拉未归，艾欧斯醒着。漆拉突然显影按住床头，将艾欧斯的床变为棋子转移。转移后艾欧斯见漆拉浑身无数伤口昏迷躺后街小巷，手边是华丽锦缎包裹的婴儿（熟睡无呼吸状）。艾欧斯回忆起最后瞬间窗外破窗而入的两个风速身影即铂伊司西鲁芙，他们满脸盛怒仿佛被偷走最重要之物。艾欧斯推断漆拉从风源手中偷走的就是这婴儿。巷口来马车装货，艾欧斯感应到婴儿散发白银祭司般剧烈邪恶气息（漆黑冰冷粘稠液体包裹自己、锐利尖刺涌入），意识到此即风源追索之物，将婴儿放进马车后箱，见婴儿右脚踝有‘零’字刺青。",
+      "closing_state": "艾欧斯将婴儿放进马车后箱",
+      "transition_reason": "location_switch",
+      "source_span": {
+        "start_marker": "【西之亚斯蓝阿切特拉市】",
+        "end_marker": "那个刺青是一个字，零。"
+      }
+    },
+    {
+      "scene_id": "S003",
+      "sequence_index": 3,
+      "scene_title_generated": "福泽镇驿站—婴儿收养取名麒零",
+      "reality_layer": "flashback",
+      "viewpoint_character": "unknown（驿站夫妇）",
+      "time": {
+        "absolute_time": "27年前（S002后不久）",
+        "relative_time": "S002后不久",
+        "time_of_day": "夕阳",
+        "duration": "片刻",
+        "sequence_relation": "continues_from_S002",
+        "confidence": 0.8
+      },
+      "location": {
+        "primary_location": "福泽镇驿站",
+        "sub_location": "驿站门口",
+        "location_change_from_previous_scene": true
+      },
+      "participants": [
+        "驿站夫妇",
+        "婴儿（麒零）"
+      ],
+      "scene_goal": "驿站夫妇发现并收养婴儿",
+      "opening_state": "夕阳笼罩福泽镇驿站",
+      "factual_summary": "（场景描写福泽镇初冬景色与香料贸易。）驿站夫妇从阿切特拉市运来的器皿中发现婴儿。夫妇讨论收养，发现婴儿脚腕有‘零’字，遂据其（与夫家姓氏）取名‘麒零’。全书完。",
+      "closing_state": "婴儿被取名麒零收养（全书完）",
+      "transition_reason": "chapter_end",
+      "source_span": {
+        "start_marker": "【西之亚斯蓝福泽镇】",
+        "end_marker": "（全书完）"
+      }
+    }
+  ],
+  "events": [
+    {
+      "event_id": "E001",
+      "scene_id": "S001",
+      "sequence_index": 1,
+      "event_type": "movement",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "narrator_confirmed",
+      "time": "27年前大雪白天",
+      "location": "风源极北凝腥洞穴外",
+      "participants": [
+        "艾欧斯"
+      ],
+      "initiator": "unknown（神秘召唤）",
+      "target": "艾欧斯",
+      "trigger": "感觉有东西召唤他",
+      "action": "年幼艾欧斯被某种召唤带到风源因德帝国极北凝腥洞穴外",
+      "result": "艾欧斯只身出现在风源边境",
+      "immediate_consequence": "遇铂伊司",
+      "long_term_consequence_explicit": "命运齿轮开始转动",
+      "caused_by_event_ids": [],
+      "causes_event_ids": [
+        "E002"
+      ],
+      "importance": "critical",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "“我是水源亚斯蓝帝国的……”艾欧斯小声地回答着……“我也不知道……感觉有什么东西，在召唤我……”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E002",
+      "scene_id": "S001",
+      "sequence_index": 2,
+      "event_type": "other",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "directly_observed",
+      "time": "27年前",
+      "location": "风源极北凝腥洞穴外",
+      "participants": [
+        "铂伊司",
+        "艾欧斯"
+      ],
+      "initiator": "铂伊司",
+      "target": "艾欧斯",
+      "trigger": "艾欧斯跌坐",
+      "action": "铂伊司扶起艾欧斯，察觉其传递的是与自己截然不同的元素魂力，确认其非风源人",
+      "result": "得知艾欧斯来自水源亚斯蓝",
+      "immediate_consequence": "漆拉现身",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E001"
+      ],
+      "causes_event_ids": [
+        "E003"
+      ],
+      "importance": "normal",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "铂伊司的表情突然凝重了起来……“你不是风源因德帝国的人？”",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E003",
+      "scene_id": "S001",
+      "sequence_index": 3,
+      "event_type": "combat",
+      "event_status": "interrupted",
+      "reality_layer": "flashback",
+      "epistemic_status": "directly_observed",
+      "time": "27年前",
+      "location": "风源极北凝腥洞穴外",
+      "participants": [
+        "漆拉",
+        "西鲁芙",
+        "铂伊司"
+      ],
+      "initiator": "西鲁芙",
+      "target": "漆拉",
+      "trigger": "西鲁芙欲教训漆拉",
+      "action": "西鲁芙偷袭漆拉后背被躲过，再以双气旋斩被漆拉冰墙挡住；漆拉以数十冰刃反击，铂伊司以气盾挡冰刃保护西鲁芙",
+      "result": "双方对峙后停手",
+      "immediate_consequence": "互相摸清身份",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E002"
+      ],
+      "causes_event_ids": [
+        "E004"
+      ],
+      "importance": "normal",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "两道锋利的气旋斩朝着漆拉雷霆万钧的斩去……漆拉迅速地转过身来……突然“铿——”地一声拔地而起一面厚厚的冰墙",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E004",
+      "scene_id": "S001",
+      "sequence_index": 4,
+      "event_type": "secret_reveal",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "directly_observed",
+      "time": "对峙后",
+      "location": "风源极北凝腥洞穴外",
+      "participants": [
+        "铂伊司",
+        "西鲁芙",
+        "漆拉"
+      ],
+      "initiator": "铂伊司/西鲁芙",
+      "target": "漆拉",
+      "trigger": "互相亮明身份",
+      "action": "铂伊司点破漆拉为水爵一度王爵；西鲁芙揭示铂伊司很早就是一度王爵、自己12岁即位风后",
+      "result": "漆拉惊讶于二人身份",
+      "immediate_consequence": "铂伊司以宣战相胁后放行",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E003"
+      ],
+      "causes_event_ids": [
+        "E005"
+      ],
+      "importance": "critical",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "“他啊，很早就是一度王爵了呀……她啊，从十二岁那年开始，就已经是风后了”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E005",
+      "scene_id": "S001",
+      "sequence_index": 5,
+      "event_type": "movement",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "directly_observed",
+      "time": "对峙后",
+      "location": "风源极北凝腥洞穴外",
+      "participants": [
+        "漆拉",
+        "艾欧斯"
+      ],
+      "initiator": "铂伊司",
+      "target": "漆拉、艾欧斯",
+      "trigger": "铂伊司放行",
+      "action": "铂伊司以艾欧斯为冰帝、对西鲁芙冒犯即视为宣战为由，放漆拉带艾欧斯离开",
+      "result": "漆拉抱艾欧斯转身朝南方离去",
+      "immediate_consequence": "艾欧斯离开风源",
+      "long_term_consequence_explicit": "艾欧斯心中难过（命运伏笔）",
+      "caused_by_event_ids": [
+        "E004"
+      ],
+      "causes_event_ids": [
+        "E006"
+      ],
+      "importance": "critical",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "铂伊司轻轻地摇了摇头……“漆拉，你带着艾欧斯走吧”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E006",
+      "scene_id": "S002",
+      "sequence_index": 6,
+      "event_type": "movement",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "directly_observed",
+      "time": "27年前当夜",
+      "location": "风源→阿切特拉市旅店",
+      "participants": [
+        "漆拉",
+        "艾欧斯"
+      ],
+      "initiator": "漆拉",
+      "target": "艾欧斯",
+      "trigger": "带艾欧斯回亚斯蓝",
+      "action": "漆拉带艾欧斯住进阿切特拉市旅店，叮嘱其别乱跑后离去",
+      "result": "艾欧斯被安置旅店，漆拉离去",
+      "immediate_consequence": "艾欧斯独等漆拉",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E005"
+      ],
+      "causes_event_ids": [
+        "E007"
+      ],
+      "importance": "normal",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "漆拉带着年幼的冰帝艾欧斯，在离极北之地很近的阿切特拉市住下来。",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E007",
+      "scene_id": "S002",
+      "sequence_index": 7,
+      "event_type": "combat",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "reported_event",
+      "time": "27年前深夜",
+      "location": "阿切特拉市旅店",
+      "participants": [
+        "漆拉",
+        "铂伊司",
+        "西鲁芙",
+        "婴儿（零度王爵）"
+      ],
+      "initiator": "漆拉",
+      "target": "铂伊司、西鲁芙",
+      "trigger": "漆拉从风源偷走婴儿",
+      "action": "（艾欧斯推断）漆拉返回风源从铂伊司西鲁芙手中偷走婴儿，遭风源二人破窗追击，浑身被无数风速气流切成无数伤口",
+      "result": "漆拉重伤但仍携婴儿逃回",
+      "immediate_consequence": "漆拉显影旅店转移艾欧斯与婴儿",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E006"
+      ],
+      "causes_event_ids": [
+        "E008"
+      ],
+      "importance": "critical",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "躺在他面前地面上的漆拉，浑身无数道伤口，仿佛被看不见的成千上万把刀刃旋转切割了一样……那两个人，就是刚刚之前遇见的铂伊司和那个女孩儿西鲁芙。",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E008",
+      "scene_id": "S002",
+      "sequence_index": 8,
+      "event_type": "movement",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "directly_observed",
+      "time": "27年前深夜",
+      "location": "阿切特拉市旅店→后街小巷",
+      "participants": [
+        "漆拉",
+        "艾欧斯",
+        "婴儿"
+      ],
+      "initiator": "漆拉",
+      "target": "艾欧斯、婴儿",
+      "trigger": "风源追击",
+      "action": "漆拉重伤显影旅店，将艾欧斯的床变为棋子，携婴儿与艾欧斯转移至后街小巷，随即昏迷",
+      "result": "三人转移至小巷，漆拉昏迷，婴儿在侧",
+      "immediate_consequence": "艾欧斯独自面对婴儿",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E007"
+      ],
+      "causes_event_ids": [
+        "E009"
+      ],
+      "importance": "critical",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "瞬间将他的手按到自己的床头……他就讲艾欧斯的床变成了一枚棋子，和他一起，瞬间移动了。",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E009",
+      "scene_id": "S002",
+      "sequence_index": 9,
+      "event_type": "secret_reveal",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "internal_confirmed",
+      "time": "转移后",
+      "location": "后街小巷",
+      "participants": [
+        "艾欧斯",
+        "婴儿"
+      ],
+      "initiator": "婴儿（被动）",
+      "target": "艾欧斯",
+      "trigger": "艾欧斯接近婴儿",
+      "action": "艾欧斯感应到婴儿散发剧烈邪恶气息（漆黑冰冷粘稠液体包裹自己、锐利尖刺涌入），与白银祭司同质",
+      "result": "艾欧斯意识到婴儿即风源追索之物（零度王爵）",
+      "immediate_consequence": "艾欧斯决定送走婴儿",
+      "long_term_consequence_explicit": "婴儿辗转至福泽镇",
+      "caused_by_event_ids": [
+        "E008"
+      ],
+      "causes_event_ids": [
+        "E010"
+      ],
+      "importance": "critical",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "那个包裹在襁褓中婴儿，此刻，正散发着剧烈的邪恶气息，仿佛有一团漆黑而冰冷的粘稠液体突然包裹住了自己，无数锐利的细小尖刺正在涌进他的身体",
+          "evidence_type": "internal_monologue",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E010",
+      "scene_id": "S002",
+      "sequence_index": 10,
+      "event_type": "movement",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "directly_observed",
+      "time": "转移后",
+      "location": "后街小巷→运货马车后箱",
+      "participants": [
+        "艾欧斯",
+        "婴儿"
+      ],
+      "initiator": "艾欧斯",
+      "target": "婴儿",
+      "trigger": "巷口来运货马车",
+      "action": "艾欧斯捡起婴儿放进步入巷口装货的马车后箱，见婴儿右脚踝有‘零’字刺青",
+      "result": "婴儿随马车离开",
+      "immediate_consequence": "婴儿开始辗转旅程",
+      "long_term_consequence_explicit": "婴儿最终抵达福泽镇",
+      "caused_by_event_ids": [
+        "E009"
+      ],
+      "causes_event_ids": [
+        "E011"
+      ],
+      "importance": "critical",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "他将婴儿，悄悄地放到了马车的后箱里。婴儿的脚……右脚脚腕处，仿佛有一个小小的刺青，那个刺青是一个字，零。",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E011",
+      "scene_id": "S003",
+      "sequence_index": 11,
+      "event_type": "acquisition",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "directly_observed",
+      "time": "27年前（马车抵达福泽镇后）",
+      "location": "福泽镇驿站",
+      "participants": [
+        "驿站夫妇",
+        "婴儿"
+      ],
+      "initiator": "驿站夫妇",
+      "target": "婴儿",
+      "trigger": "在阿切特拉市运来的器皿中发现婴儿",
+      "action": "驿站夫妇发现婴儿，因无子决定收养，见脚腕‘零’字据夫家姓氏取名‘麒零’",
+      "result": "婴儿被收养取名麒零",
+      "immediate_consequence": "麒零在福泽镇长大",
+      "long_term_consequence_explicit": "麒零日后成为主角",
+      "caused_by_event_ids": [
+        "E010"
+      ],
+      "causes_event_ids": [],
+      "importance": "critical",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "“正好我们也没有孩子啊，那就收养了吧。”……“你这么喜欢，那就跟你的姓好了。就叫他麒零吧。”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "C001",
+      "canonical_name": "艾欧斯",
+      "mentions": [
+        "冰帝"
+      ],
+      "aliases_in_chapter": [
+        "艾欧斯",
+        "蓝袍少年"
+      ],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        "年幼冰帝（27年前回溯），当时为现在或未来的冰帝",
+        "水源亚斯蓝帝国人",
+        "从小被漆拉带大，视漆拉如父亲"
+      ],
+      "appearance_facts": [
+        "比铂伊司矮一个头的小男孩",
+        "蓝袍少年，纤长苍白手指",
+        "金发",
+        "年幼大大的眼睛"
+      ],
+      "ability_facts": [
+        "拥有与风源截然不同的元素魂力（水属性）",
+        "日后实力与修川地藏几乎不相上下",
+        "日后天赋【摄魂】"
+      ],
+      "behavior_facts": [
+        "被召唤至风源极北",
+        "被铂伊司扶起",
+        "被漆拉抱走",
+        "被安置阿切特拉市旅店",
+        "半夜醒着等漆拉",
+        "被棋子转移至小巷",
+        "回忆风源二人破窗身影",
+        "感应婴儿邪恶气息",
+        "将婴儿放进马车后箱",
+        "看到婴儿‘零’字刺青",
+        "趴漆拉肩头望铂伊司西鲁芙"
+      ],
+      "emotion_facts": [
+        "紧张如犯错小孩",
+        "吓坏把脸埋漆拉脖子",
+        "年幼心里涌动难过"
+      ],
+      "goal_facts": [
+        "长大后要去找铂伊司"
+      ],
+      "psychological_facts": [
+        "说不上来为什么一定要找到铂伊司",
+        "感应到命运伏笔：‘原来从那个时候，一切就已经开始了。一直在召唤我的……就是你啊。’"
+      ],
+      "knowledge_facts": [
+        "知道自己是冰帝",
+        "感应到婴儿气息与白银祭司同质",
+        "意识到婴儿即风源追索之物"
+      ],
+      "possession_facts": [],
+      "relationship_facts": [
+        "漆拉如父亲般带大他",
+        "与铂伊司有神秘命运羁绊"
+      ],
+      "physical_state_at_end": "年幼健康",
+      "location_at_end": "后街小巷（27年前）",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "将婴儿送走",
+      "identity_resolution_confidence": 1.0,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "“我是水源亚斯蓝帝国的……”艾欧斯小声地回答着",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C002",
+      "canonical_name": "漆拉",
+      "mentions": [
+        "水爵一度王爵"
+      ],
+      "aliases_in_chapter": [
+        "漆拉"
+      ],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        "当时（27年前）为水爵一度王爵",
+        "后降为三度（previous_context）",
+        "亚斯蓝唯一能自由制造棋子与阵之人"
+      ],
+      "appearance_facts": [
+        "黑袍，隐隐黑色金线图案",
+        "俊美如出水雪莲精致、比大多数女子貌美",
+        "粉红嘴唇挺拔秀气鼻梁",
+        "低沉性感磁性声音",
+        "双眼充满流转光泽"
+      ],
+      "ability_facts": [
+        "可悄无声息如鬼魅般移动",
+        "可制造气墙/透明墙壁",
+        "可操控冰元素（拔地冰墙、数十冰刃）",
+        "可制造棋子转移（将床变为棋子）",
+        "感知力极高（提前预知西鲁芙偷袭）"
+      ],
+      "behavior_facts": [
+        "悄无声息出现救艾欧斯",
+        "向铂伊司致谢欲离开",
+        "躲过西鲁芙偷袭",
+        "以冰墙冰刃反击",
+        "抱艾欧斯离去",
+        "安置艾欧斯旅店后离去",
+        "重伤显影转移艾欧斯与婴儿",
+        "昏迷"
+      ],
+      "emotion_facts": [
+        "淡然冷漠",
+        "抱艾欧斯更紧（警惕风源二人）"
+      ],
+      "goal_facts": [
+        "保护艾欧斯",
+        "从风源偷走婴儿（零度王爵）"
+      ],
+      "psychological_facts": [
+        "对风源二人有难以言喻的不安"
+      ],
+      "knowledge_facts": [
+        "知道艾欧斯是冰帝",
+        "知道铂伊司西鲁芙身份"
+      ],
+      "possession_facts": [],
+      "relationship_facts": [
+        "艾欧斯的监护人如父",
+        "与吉尔伽美什曾为朋友"
+      ],
+      "physical_state_at_end": "重伤昏迷",
+      "location_at_end": "后街小巷（27年前）",
+      "availability_state_at_end": "昏迷",
+      "current_task_at_end": "unknown（重伤昏迷）",
+      "identity_resolution_confidence": 1.0,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "“我叫漆拉。我现在带他回去了。”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C003",
+      "canonical_name": "铂伊司",
+      "mentions": [
+        "风源一度王爵"
+      ],
+      "aliases_in_chapter": [
+        "铂伊司"
+      ],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        "风源因德帝国一度王爵",
+        "当时15-16岁银发钻石黑冠少年",
+        "很早就是一度王爵",
+        "额中植有黄金瞳孔（previous_context/第二十四章揭示）"
+      ],
+      "appearance_facts": [
+        "满脸钻石般光芒英俊极了",
+        "15-16岁残留男孩稚气",
+        "银发钻石黑冠少年",
+        "平静淡然如隐士、阿鹿斯港香料般高贵气味",
+        "天使般闪烁钻石光芒面容"
+      ],
+      "ability_facts": [
+        "可凝聚高密度气盾抵挡冰刃",
+        "可瞬息移动挡在西鲁芙前",
+        "感知到艾欧斯非风源元素魂力"
+      ],
+      "behavior_facts": [
+        "扶起艾欧斯",
+        "察觉艾欧斯非风源人",
+        "警告洞穴有怪物不适合停留",
+        "挡冰刃保护西鲁芙",
+        "点破漆拉一度水爵身份",
+        "放漆拉带艾欧斯走",
+        "半夜破窗袭击漆拉夺回婴儿"
+      ],
+      "emotion_facts": [
+        "轻轻皱眉显得更英气",
+        "叹气如听无奈的事",
+        "年少英俊脸上隐隐看穿岁月的淡然"
+      ],
+      "goal_facts": [
+        "保护风源利益、不让漆拉艾欧斯知道凝腥洞穴发生之事",
+        "夺回被漆拉偷走的婴儿（零度王爵）"
+      ],
+      "psychological_facts": [
+        "淡然如度无数岁月的隐士"
+      ],
+      "knowledge_facts": [
+        "知道漆拉是一度水爵",
+        "知道艾欧斯是冰帝",
+        "知道凝腥洞穴秘密"
+      ],
+      "possession_facts": [
+        "额中植有黄金瞳孔（previous_context）"
+      ],
+      "relationship_facts": [
+        "与西鲁芙并肩如年轻璧人",
+        "与艾欧斯有神秘命运羁绊"
+      ],
+      "physical_state_at_end": "unknown（27年前）",
+      "location_at_end": "阿切特拉市旅店（追击漆拉）",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "追夺婴儿",
+      "identity_resolution_confidence": 1.0,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "“知道。漆拉，水爵一度王爵。”铂伊司平静地说着",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C004",
+      "canonical_name": "西鲁芙",
+      "mentions": [
+        "风后"
+      ],
+      "aliases_in_chapter": [
+        "西鲁芙"
+      ],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        "风后",
+        "12岁即位",
+        "与铂伊司并肩的最高统治者之一"
+      ],
+      "appearance_facts": [
+        "清秀里透隐隐艳丽、16-17岁少女",
+        "将来成熟后必美艳无比",
+        "身萦与生俱来尊贵感",
+        "飘逸长袍"
+      ],
+      "ability_facts": [
+        "可凝聚透明气流为气斩/气旋斩",
+        "可瞬息移动（闪电般扭曲出现）",
+        "可摘‘隐形花瓣’化为电光气流高速攻击"
+      ],
+      "behavior_facts": [
+        "冷冷声阻拦漆拉",
+        "偷袭漆拉后背被躲过",
+        "再以双气旋斩攻击",
+        "挑衅嘲讽漆拉",
+        "半夜与铂伊司破窗袭击漆拉"
+      ],
+      "emotion_facts": [
+        "高傲不屑挑衅",
+        "一脸怒气（偷袭落空）",
+        "冷傲轻蔑",
+        "娇生惯养公主样",
+        "盛怒（被偷走婴儿）"
+      ],
+      "goal_facts": [
+        "教训漆拉、维护风源颜面",
+        "夺回婴儿"
+      ],
+      "psychological_facts": [
+        "典型少女表情、狡诈"
+      ],
+      "knowledge_facts": [
+        "知道铂伊司很早是一度王爵",
+        "知道艾欧斯是冰帝"
+      ],
+      "possession_facts": [],
+      "relationship_facts": [
+        "与铂伊司并肩如璧人"
+      ],
+      "physical_state_at_end": "unknown",
+      "location_at_end": "阿切特拉市旅店（追击漆拉）",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "追夺婴儿",
+      "identity_resolution_confidence": 1.0,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "“她啊，从十二岁那年开始，就已经是风后了”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C005",
+      "canonical_name": "麒零（婴儿/零度王爵）",
+      "mentions": [
+        "零度王爵",
+        "完美容器"
+      ],
+      "aliases_in_chapter": [
+        "婴儿",
+        "麒零"
+      ],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        "婴儿（27年前），即白银祭司制造的失落的零度王爵/完美容器",
+        "右脚踝有‘零’字刺青",
+        "未种植灵魂回路故无魂力感应、无法追踪",
+        "被风源追索、漆拉偷走、艾欧斯送走、辗转至福泽镇被收养取名麒零"
+      ],
+      "appearance_facts": [
+        "华丽锦缎包裹的婴儿",
+        "闭眼熟睡、不哭闹无动作甚至似无呼吸",
+        "右脚脚腕有‘零’字刺青",
+        "脚会从襁褓露出"
+      ],
+      "ability_facts": [
+        "散发剧烈邪恶气息（漆黑冰冷粘稠液体、锐利尖刺涌入接近者）——与白银祭司灵魂同质",
+        "无魂力感应（因未种植回路）"
+      ],
+      "behavior_facts": [
+        "熟睡状",
+        "脚从襁褓露出露出‘零’字"
+      ],
+      "emotion_facts": [],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [
+        "被驿站夫妇收养"
+      ],
+      "physical_state_at_end": "婴儿被收养",
+      "location_at_end": "福泽镇驿站",
+      "availability_state_at_end": "被收养",
+      "current_task_at_end": "unknown（婴儿）",
+      "identity_resolution_confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "婴儿的脚，从襁褓里突然露了出来……那个刺青是一个字，零。",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C006",
+      "canonical_name": "驿站夫妇",
+      "mentions": [],
+      "aliases_in_chapter": [
+        "老头子",
+        "老婆",
+        "驿站夫妇"
+      ],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        "福泽镇镇口驿站夫妇",
+        "无孩子"
+      ],
+      "appearance_facts": [],
+      "ability_facts": [],
+      "behavior_facts": [
+        "从阿切特拉市运来的器皿中发现婴儿",
+        "讨论收养",
+        "发现婴儿脚腕‘零’字",
+        "据‘零’字与夫家姓氏取名麒零"
+      ],
+      "emotion_facts": [
+        "惊讶"
+      ],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [
+        "收养麒零"
+      ],
+      "physical_state_at_end": "unknown",
+      "location_at_end": "福泽镇驿站",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "收养麒零",
+      "identity_resolution_confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "“正好我们也没有孩子啊，那就收养了吧。”……“你这么喜欢，那就跟你的姓好了。就叫他麒零吧。”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    }
+  ],
+  "character_state_changes": [
+    {
+      "change_id": "CS001",
+      "character_id": "C005",
+      "scene_id": "S003",
+      "dimension": "identity",
+      "before": "无名婴儿（零度王爵/完美容器）",
+      "change": "被驿站夫妇据‘零’字刺青与夫家姓氏取名麒零收养",
+      "after": "麒零（在福泽镇长大）",
+      "change_status": "confirmed",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "“就叫他麒零吧。”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    },
+    {
+      "change_id": "CS002",
+      "character_id": "C005",
+      "scene_id": "S003",
+      "dimension": "location",
+      "before": "后街小巷（运货马车后箱）",
+      "change": "马车辗转抵达福泽镇驿站",
+      "after": "福泽镇驿站",
+      "change_status": "confirmed",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "这么多刚刚从阿切特拉市运来的器皿……这怎么有个婴儿啊！",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    },
+    {
+      "change_id": "CS003",
+      "character_id": "C002",
+      "scene_id": "S002",
+      "dimension": "physical_state",
+      "before": "完好",
+      "change": "从风源偷婴儿遭风源二人风速气流切割，浑身无数伤口",
+      "after": "重伤昏迷",
+      "change_status": "confirmed",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "躺在他面前地面上的漆拉，浑身无数道伤口，仿佛被看不见的成千上万把刀刃旋转切割了一样",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    }
+  ],
+  "knowledge_states": [
+    {
+      "knowledge_id": "K001",
+      "subject": "艾欧斯",
+      "information": "婴儿（零度王爵）散发与白银祭司同质的剧烈邪恶气息，即风源追索之物",
+      "knowledge_status": "knows",
+      "acquired_in_scene": "S002",
+      "source_of_information": "亲身感应",
+      "reliability": "confirmed",
+      "concealed_from": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "那个包裹在襁褓中婴儿，此刻，正散发着剧烈的邪恶气息，仿佛有一团漆黑而冰冷的粘稠液体突然包裹住了自己",
+          "evidence_type": "internal_monologue",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    },
+    {
+      "knowledge_id": "K002",
+      "subject": "铂伊司",
+      "information": "漆拉是水爵一度王爵、艾欧斯是冰帝",
+      "knowledge_status": "knows",
+      "acquired_in_scene": "S001",
+      "source_of_information": "自身判断",
+      "reliability": "confirmed",
+      "concealed_from": [],
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "“知道。漆拉，水爵一度王爵。”……“你手里那个小孩儿……应该就是现在或者未来的冰帝吧？”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    },
+    {
+      "knowledge_id": "K003",
+      "subject": "读者（旁白揭示）",
+      "information": "婴儿即失落的零度王爵（白银祭司制造的接近成功的完美容器），长大后即麒零",
+      "knowledge_status": "knows",
+      "acquired_in_scene": "S002",
+      "source_of_information": "旁白与第二十四章零度王爵设定对照",
+      "reliability": "narrator_confirmed",
+      "concealed_from": [
+        "艾欧斯",
+        "漆拉",
+        "驿站夫妇"
+      ],
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "那个刺青是一个字，零。",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "L001",
+      "canonical_name": "风源因德帝国极北凝腥洞穴外",
+      "aliases": [
+        "凝腥洞穴外",
+        "极北之地"
+      ],
+      "parent_location": "风源因德帝国",
+      "location_type": "雪原/洞穴外",
+      "observable_features": [
+        "漫天大雪吹稀薄视线听觉",
+        "幽深漆黑洞穴",
+        "极北边境"
+      ],
+      "entry_conditions": [],
+      "hazards": [
+        "凝腥洞穴内有怪物"
+      ],
+      "rules": [
+        "为风源领地，外人不便停留"
+      ],
+      "state_changes": [],
+      "events_in_chapter": [
+        "E001",
+        "E002",
+        "E003",
+        "E004",
+        "E005"
+      ],
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "漫天的大雪将所有的视线和听觉，都吹得稀薄。",
+          "evidence_type": "environmental_observation",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    },
+    {
+      "location_id": "L002",
+      "canonical_name": "阿切特拉市",
+      "aliases": [
+        "阿切特拉市"
+      ],
+      "parent_location": "西之亚斯蓝帝国（离极北近）",
+      "location_type": "城市",
+      "observable_features": [
+        "旅店、油灯、壁炉",
+        "后街小巷：黑色石板路、两边房屋石墙后门",
+        "窗外巨大树枝冬天掉光叶子如鬼手"
+      ],
+      "entry_conditions": [],
+      "hazards": [],
+      "rules": [],
+      "state_changes": [],
+      "events_in_chapter": [
+        "E006",
+        "E007",
+        "E008",
+        "E009",
+        "E010"
+      ],
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "看起来像是在一条后街的小巷子里，地面是黑色的石板路，两边是房屋的石墙",
+          "evidence_type": "environmental_observation",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    },
+    {
+      "location_id": "L003",
+      "canonical_name": "福泽镇",
+      "aliases": [
+        "福泽镇"
+      ],
+      "parent_location": "西之亚斯蓝帝国（南方靠海）",
+      "location_type": "小镇",
+      "observable_features": [
+        "镇口驿站，夕阳橙色光芒",
+        "灰白岩石笔直小道年代久远光滑",
+        "初冬枯黄草坪、风卷枯草碎屑如金沙尘",
+        "枫槐木根须香料贸易（南方港口热卖）",
+        "蜂蜜浆果酒水果热茶香味",
+        "黄金粉末般温馨"
+      ],
+      "entry_conditions": [],
+      "hazards": [],
+      "rules": [],
+      "state_changes": [],
+      "events_in_chapter": [
+        "E011"
+      ],
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "整个福泽看起来就像是一座被黄金粉末粉刷之后的温馨小镇",
+          "evidence_type": "environmental_observation",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "item_id": "I001",
+      "canonical_name": "零字刺青（婴儿脚踝）",
+      "aliases": [
+        "零字刺青"
+      ],
+      "item_type": "身体标记",
+      "holder_at_start": "婴儿（零度王爵）",
+      "holder_at_end": "麒零",
+      "location_at_end": "麒零右脚脚腕",
+      "explicit_functions": [
+        "白银祭司对完美容器（零度王爵）的标记",
+        "被驿站夫妇用作取名依据"
+      ],
+      "explicit_costs": [],
+      "explicit_limitations": [],
+      "state_at_end": "存留",
+      "related_event_ids": [
+        "E010",
+        "E011"
+      ],
+      "possible_hook": true,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "婴儿的右脚脚腕处，仿佛有一个小小的刺青，那个刺青是一个字，零。",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    },
+    {
+      "item_id": "I002",
+      "canonical_name": "华丽锦缎（包裹婴儿）",
+      "aliases": [
+        "锦缎",
+        "襁褓"
+      ],
+      "item_type": "包裹布",
+      "holder_at_start": "婴儿",
+      "holder_at_end": "unknown",
+      "location_at_end": "unknown",
+      "explicit_functions": [],
+      "explicit_costs": [],
+      "explicit_limitations": [],
+      "state_at_end": "unknown",
+      "related_event_ids": [
+        "E008"
+      ],
+      "possible_hook": false,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "一个包裹在华丽锦缎里的婴儿",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    }
+  ],
+  "factions": [
+    {
+      "faction_id": "F001",
+      "canonical_name": "风源因德帝国（铂伊司西鲁芙）",
+      "aliases": [
+        "风源"
+      ],
+      "members_mentioned": [
+        "铂伊司",
+        "西鲁芙"
+      ],
+      "leader_explicit": "铂伊司（一度王爵）、西鲁芙（风后）",
+      "goal_explicit": [
+        "守护凝腥洞穴秘密",
+        "追索被偷走的零度王爵婴儿"
+      ],
+      "controlled_locations": [
+        "风津道",
+        "凝腥洞穴"
+      ],
+      "relations": [
+        "与水源亚斯蓝有秘密风水合约",
+        "追击漆拉夺婴儿"
+      ],
+      "actions_in_chapter": [
+        "凝腥洞穴外与漆拉对峙",
+        "半夜破窗袭击漆拉夺婴儿"
+      ],
+      "state_changes": [],
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "他们的脸上是盛怒的面容，仿佛被人偷走了最重要的东西。",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    }
+  ],
+  "world_rules": [
+    {
+      "rule_id": "R001",
+      "rule_name": "零度王爵（完美容器）特性",
+      "rule_category": "超自然机制/白银祭司计划",
+      "rule_statement": "零度王爵（白银祭司制造的接近成功的完美容器）因未种植灵魂回路而无魂力感应、无法追踪；但其身体已散发与白银祭司同质的剧烈邪恶气息（漆黑冰冷粘稠液体、锐利尖刺）；脚踝有‘零’字标记",
+      "scope": "零度王爵",
+      "trigger": "接近零度王爵",
+      "effect": "感应到白银祭司般邪恶气息",
+      "cost": "unknown",
+      "limitations": [
+        "未种植回路时无魂力感应、无法追踪"
+      ],
+      "exceptions": [],
+      "violation_consequence": "unknown",
+      "epistemic_status": "narrator_confirmed",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "那个包裹在襁褓中婴儿，此刻，正散发着剧烈的邪恶气息，仿佛有一团漆黑而冰冷的粘稠液体突然包裹住了自己",
+          "evidence_type": "internal_monologue",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R002",
+      "rule_name": "棋子转移规则（物品化）",
+      "rule_category": "魂术机制",
+      "rule_statement": "漆拉可将物体（如床）变为棋子，与人一起瞬间移动至另一地点",
+      "scope": "漆拉制造的特殊棋子",
+      "trigger": "漆拉按住物体释放魂力",
+      "effect": "物体变棋子，与人瞬间转移",
+      "cost": "unknown",
+      "limitations": [],
+      "exceptions": [],
+      "violation_consequence": "unknown",
+      "epistemic_status": "directly_observed",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "他就讲艾欧斯的床变成了一枚棋子，和他一起，瞬间移动了。",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R003",
+      "rule_name": "元素魂力辨识（风源水源）",
+      "rule_category": "元素体系",
+      "rule_statement": "不同国家的魂术师拥有截然不同的元素魂力（风源为风、水源为水），可通过接触感知辨识其国籍",
+      "scope": "魂术师",
+      "trigger": "接触对方释放魂力",
+      "effect": "可辨识对方所属元素与国籍",
+      "cost": "unknown",
+      "limitations": [],
+      "exceptions": [],
+      "violation_consequence": "unknown",
+      "epistemic_status": "directly_observed",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "从蓝袍少年纤长而苍白的手指上传递过来的，分明是一种和自己截然不同的元素魂力。",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    }
+  ],
+  "hooks_and_clues": [
+    {
+      "hook_id": "H001",
+      "scene_id": "S002",
+      "hook_type": "hook_resolved",
+      "content": "零度王爵（白银祭司失踪的完美容器）的身份：即婴儿时期被辗转送至福泽镇的麒零",
+      "related_entities": [
+        "零度王爵",
+        "麒零",
+        "白银祭司"
+      ],
+      "introduced_or_updated": "resolved",
+      "current_status": "unresolved",
+      "known_by": [
+        "读者"
+      ],
+      "unknown_to": [
+        "艾欧斯",
+        "漆拉",
+        "驿站夫妇",
+        "麒零本人"
+      ],
+      "urgency": "low",
+      "canon_eligible": true,
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "那个刺青是一个字，零。",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        },
+        {
+          "scene_id": "S003",
+          "quote": "“就叫他麒零吧。”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    },
+    {
+      "hook_id": "H002",
+      "scene_id": "S001",
+      "hook_type": "explicit_setup",
+      "content": "艾欧斯与铂伊司有神秘命运羁绊（艾欧斯被召唤、感觉一定要找到铂伊司）",
+      "related_entities": [
+        "艾欧斯",
+        "铂伊司"
+      ],
+      "introduced_or_updated": "introduced",
+      "current_status": "unresolved",
+      "known_by": [
+        "艾欧斯",
+        "读者"
+      ],
+      "unknown_to": [],
+      "urgency": "low",
+      "canon_eligible": true,
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "“原来从那个时候，一切就已经开始了。一直在召唤我的……就是你啊。”",
+          "evidence_type": "internal_monologue",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    },
+    {
+      "hook_id": "H003",
+      "scene_id": "S001",
+      "hook_type": "explicit_question",
+      "content": "凝腥洞穴里发生了什么、铂伊司西鲁芙在守护/进行什么‘正经事’",
+      "related_entities": [
+        "凝腥洞穴",
+        "铂伊司",
+        "西鲁芙"
+      ],
+      "introduced_or_updated": "introduced",
+      "current_status": "partially_resolved",
+      "known_by": [
+        "铂伊司",
+        "西鲁芙"
+      ],
+      "unknown_to": [
+        "艾欧斯",
+        "漆拉"
+      ],
+      "urgency": "low",
+      "canon_eligible": true,
+      "confidence": 0.7,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "“我们该去做正经事情了。事情比我想象得严重……”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    },
+    {
+      "hook_id": "H004",
+      "scene_id": "S002",
+      "hook_type": "explicit_setup",
+      "content": "漆拉不惜重伤从风源偷走零度王爵婴儿，动机未明（是个人决定还是受命）",
+      "related_entities": [
+        "漆拉",
+        "零度王爵",
+        "风源"
+      ],
+      "introduced_or_updated": "introduced",
+      "current_status": "unresolved",
+      "known_by": [
+        "漆拉"
+      ],
+      "unknown_to": [
+        "艾欧斯",
+        "读者"
+      ],
+      "urgency": "low",
+      "canon_eligible": true,
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "艾欧斯想，难道漆拉从他们手里偷走的就是这个小孩子？",
+          "evidence_type": "internal_monologue",
+          "source_path": "data/raw/chapters_src/chapter-025.md"
+        }
+      ]
+    }
+  ],
+  "timelines": [
+    {
+      "timeline_entry_id": "T001",
+      "timeline_type": "flashback",
+      "sequence_index": 1,
+      "absolute_time": "27年前",
+      "relative_time": "现时间线27年前",
+      "duration": "数日",
+      "location": "风源极北凝腥洞穴外→阿切特拉市→福泽镇",
+      "participants": [
+        "艾欧斯",
+        "漆拉",
+        "铂伊司",
+        "西鲁芙",
+        "婴儿（零度王爵/麒零）"
+      ],
+      "current_task": "漆拉救艾欧斯、偷走零度王爵婴儿辗转送至福泽镇",
+      "event_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E004",
+        "E005",
+        "E006",
+        "E007",
+        "E008",
+        "E009",
+        "E010",
+        "E011"
+      ],
+      "plot_description": "年幼艾欧斯被召唤至风源遇铂伊司西鲁芙，漆拉救走艾欧斯并偷走零度王爵婴儿，重伤转移后艾欧斯将婴儿放进马车，婴儿辗转至福泽镇被收养取名麒零",
+      "result": "零度王爵婴儿成为麒零，命运伏笔闭环",
+      "relation_to_other_entries": [
+        {
+          "relation_type": "precedes",
+          "target_timeline_entry": "main_timeline"
+        }
+      ],
+      "confidence": 0.8
+    }
+  ],
+  "cliffhanger_analysis": {
+    "enabled": false,
+    "last_scene_ids": [],
+    "immediate_conflicts": [],
+    "unfinished_actions": [],
+    "characters_in_danger": [],
+    "active_time_pressure": [],
+    "urgency": "unknown",
+    "must_continue_states": [],
+    "resolved_at_chapter_end": false
+  },
+  "style_profile": {
+    "narrative_person": "third_person",
+    "viewpoint_pattern": "第三人称限知，S001艾欧斯漆拉交替，S002艾欧斯视角，S003驿站夫妇对话",
+    "sentence_length_tendency": "medium",
+    "paragraph_length_tendency": "medium",
+    "dialogue_ratio": "medium",
+    "action_description_ratio": "high",
+    "environment_description_ratio": "high",
+    "psychological_description_ratio": "medium",
+    "dominant_sensory_channels": [
+      "视觉（雪白/钻石/金橙夕阳）",
+      "触觉（冰冷邪恶）"
+    ],
+    "common_rhetorical_devices": [
+      "比喻（璧人/鬼手/隐士）",
+      "命运旁白",
+      "首尾呼应"
+    ],
+    "dominant_emotional_tones": [
+      "宿命",
+      "神秘",
+      "温馨（结尾）",
+      "难过"
+    ],
+    "pace": "medium",
+    "pace_changes": [
+      "S001紧张对峙",
+      "S002惊险夜袭",
+      "S003温馨收束"
+    ],
+    "transition_patterns": [
+      "地点标记【】切换",
+      "命运旁白串场"
+    ],
+    "distinctive_expression_patterns": [
+      "命运齿轮式旁白",
+      "首尾福泽镇呼应"
+    ],
+    "evidence_examples": [
+      "原来命运里，早就安排下了一切的伏笔",
+      "整个福泽看起来就像是一座被黄金粉末粉刷之后的温馨小镇"
+    ]
+  },
+  "entity_resolution_issues": [
+    {
+      "issue_id": "ER001",
+      "references": [
+        "婴儿（零字刺青）",
+        "麒零"
+      ],
+      "possible_resolution": "婴儿即婴儿时期的麒零，亦即白银祭司失踪的零度王爵",
+      "resolution_status": "resolved",
+      "confidence": 0.95,
+      "reason": "婴儿脚踝‘零’字刺青+被驿站夫妇取名麒零+与第二十四章零度王爵设定吻合"
+    }
+  ],
+  "continuity_issues": [],
+  "interpretation_candidates": [
+    {
+      "candidate_id": "IC001",
+      "interpretation_type": "plot_connection",
+      "content": "漆拉偷走零度王爵婴儿并将其辗转送至福泽镇，是为对抗白银祭司计划、保护婴儿不被用作容器",
+      "supporting_observations": [
+        "漆拉不惜重伤偷婴儿",
+        "婴儿最终被安全收养于福泽镇"
+      ],
+      "alternative_explanations": [
+        "或受吉尔伽美什等所托",
+        "或为个人决定"
+      ],
+      "confidence": 0.5,
+      "canon_eligible": false
+    },
+    {
+      "candidate_id": "IC002",
+      "interpretation_type": "character_motivation",
+      "content": "艾欧斯被召唤至风源，实为与零度王爵（完美容器）的命运牵引，暗示其摄魂天赋日后用于银尘复活亦与此相关",
+      "supporting_observations": [
+        "艾欧斯说感觉被召唤",
+        "旁白‘一直在召唤我的就是你啊’"
+      ],
+      "alternative_explanations": [
+        "或为白银祭司引导"
+      ],
+      "confidence": 0.5,
+      "canon_eligible": false
+    }
+  ],
+  "chapter_end_state": {
+    "current_time": "27年前（福泽镇夕阳）",
+    "active_locations": [
+      "福泽镇驿站"
+    ],
+    "active_characters": [
+      "驿站夫妇",
+      "婴儿（麒零）"
+    ],
+    "ongoing_events": [
+      "婴儿被收养取名麒零"
+    ],
+    "unfinished_tasks": [],
+    "unresolved_hooks": [
+      "H002",
+      "H003",
+      "H004"
+    ],
+    "critical_character_states": [
+      "零度王爵婴儿被收养为麒零，在福泽镇长大",
+      "漆拉重伤昏迷（27年前）",
+      "艾欧斯送走婴儿（27年前）"
+    ],
+    "critical_item_states": [
+      "零字刺青在麒零脚踝存留"
+    ],
+    "next_chapter_continuity_constraints": [
+      "全书完，无下一章；本尾声为现时间线伏笔之源"
+    ]
+  },
+  "validation_issues": [],
+  "quality_checks": {
+    "all_scenes_have_source_spans": true,
+    "all_critical_events_have_evidence": true,
+    "all_state_changes_have_evidence": true,
+    "dreams_and_memories_separated": true,
+    "character_claims_not_treated_as_confirmed_fact": true,
+    "planned_events_not_treated_as_occurred": true,
+    "unknown_values_not_fabricated": true,
+    "timeline_order_checked": true,
+    "entity_aliases_checked": true,
+    "latest_chapter_cliffhanger_checked": true
+  }
+}

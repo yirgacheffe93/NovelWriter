@@ -1,0 +1,2829 @@
+{
+  "schema_version": "chapter-canon-extraction-v1.0",
+  "parse_status": "success",
+  "source": {
+    "source_path": "data/raw/chapters_src/chapter-014.md",
+    "source_hash": "75b1856dfc6332729e307721e5374f297322c866584063a7112b69b213b6081f",
+    "canon_level": "official",
+    "chapter_id_hint": "014"
+  },
+  "chapter_metadata": {
+    "chapter_id": "第十四章",
+    "chapter_title": "女神的裙摆",
+    "volume_title": "unknown",
+    "chapter_number": 14,
+    "detected_heading": "第十四章 女神的裙摆",
+    "narrative_person": "第三人称",
+    "viewpoint_type": "限知多视角",
+    "primary_viewpoint_character": "鬼山莲泉 / 麒零",
+    "viewpoint_stability": "不稳定（随场景切换）",
+    "primary_reality_layer": "present_reality",
+    "factual_abstract": "本章为永生岛大战高潮。鬼山缝魂将残余魂力输送莲泉、令其趁乱进地壳唤醒西流尔，自己留下断后。莲泉骑海蝶钻入洞穴，特蕾娅追入。岛上众人抵御魂兽大军：幽冥神音借战斗提升魂力、霓虹徒手撕碎魂兽、漆拉以阵御敌、银尘抛出多件魂器迎敌。天束幽花向麒零揭示女神的裙摆魂器（顶级变形盾、一切间接攻击无效）并讲述皇室与王爵魂术体系关系、冰帝艾欧斯。洞穴内西流尔制造迷宫之阵、移动山体阻特蕾娅，莲泉借西流尔指引找到其心脏所在；西流尔自述无法出洞救人、移动岩石如动脚趾。缝魂与霓虹同归于尽：缝魂拼死一击引发巨大爆炸，霓虹重伤昏迷坠落、缝魂尸体坠海。岛屿中心爆炸，海银浮出，莲泉立于海银头上——西流尔临死前赐印莲泉使其继承六度王爵，莲泉体内共存五度+六度两套回路（西流尔死后回路复制，莲泉拥有三套回路），成亚斯蓝首个身兼双王爵之人。特蕾娅令众人联手绞杀莲泉，但莲泉对银尘说‘你跟我走，我带你去找吉尔伽美什’，银尘遂释放魂器阻众人，带莲泉离去。"
+  },
+  "chapter_boundaries": {
+    "single_chapter_confirmed": true,
+    "detected_chapter_count": 1,
+    "detected_boundaries": []
+  },
+  "scenes": [
+    {
+      "scene_id": "S001",
+      "sequence_index": 1,
+      "scene_title_generated": "缝魂授魂力于莲泉令其入洞",
+      "reality_layer": "present_reality",
+      "viewpoint_character": "鬼山莲泉",
+      "time": {
+        "absolute_time": "unknown",
+        "relative_time": "紧接第十三章末",
+        "time_of_day": "落日",
+        "duration": "数分钟",
+        "sequence_relation": "接续第十三章",
+        "confidence": 0.85
+      },
+      "location": {
+        "primary_location": "西之亚斯蓝帝国·雷恩海域岛屿上空",
+        "sub_location": "闇翅背上",
+        "location_change_from_previous_scene": false
+      },
+      "participants": [
+        "鬼山莲泉",
+        "鬼山缝魂"
+      ],
+      "scene_goal": "缝魂牺牲自己为莲泉创造唤醒西流尔的机会",
+      "opening_state": "魂兽怒吼翻涌，莲泉双眼赤红血泪",
+      "factual_summary": "莲泉恐惧缝魂调动过多海底魂兽会失控引发灾难，称自己魂力近崩溃。缝魂拉起莲泉揽入胸膛，告知将驱动所有魂兽冲击王爵、趁混乱莲泉须冲进地壳深处找永生王爵、转告其先前的话、若能唤醒或可活着离开，并坦言见漆拉加入则无生还机会。缝魂将精纯魂力源源不断输送莲泉体内。莲泉意识到缝魂正放弃生存希望、将生命可能留给自己。缝魂抚摸莲泉眼睑、脸上是幸福表情。",
+      "closing_state": "缝魂输送残余魂力，诀别在即",
+      "transition_reason": "切至银尘回护麒零",
+      "source_span": {
+        "start_marker": "天地间的怒吼没有减弱",
+        "end_marker": "他脸上是幸福的表情。"
+      }
+    },
+    {
+      "scene_id": "S002",
+      "sequence_index": 2,
+      "scene_title_generated": "银尘回护麒零幽花并部署",
+      "reality_layer": "present_reality",
+      "viewpoint_character": "麒零",
+      "time": {
+        "absolute_time": "unknown",
+        "relative_time": "与S001并行",
+        "time_of_day": "落日",
+        "duration": "数分钟",
+        "sequence_relation": "与S001并行",
+        "confidence": 0.75
+      },
+      "location": {
+        "primary_location": "西之亚斯蓝帝国·雷恩海域岛屿",
+        "sub_location": "银色盾牌防护范围内",
+        "location_change_from_previous_scene": true
+      },
+      "participants": [
+        "银尘",
+        "麒零",
+        "天束幽花"
+      ],
+      "scene_goal": "银尘向麒零幽花说明战局并部署保护",
+      "opening_state": "白色光芒坠至麒零前、银尘皱眉现身",
+      "factual_summary": "银尘躲入盾后告知麒零幽花：当前为杀戮王爵与杀戮使徒追杀五度王爵与五度使徒、疑与深渊回廊苍白男孩有关；岛上除一度王爵外所有使徒王爵到齐，其他王爵观望中立。银尘令二人无论何事都待在盾内。话未说完麒零幽花神色惊悚：天地间密密麻麻魂兽如黑色重云席卷而来、岛屿轰然震动、岩石崩落、海啸席卷。银尘收回盾牌、将白色棋子状物射入麒零脚下地面，无数纯白柔软海草状物破土而出，将一切袭来魂力与轰响隔绝在外、时间似乎放慢，形成寂静海底般的小空间。银尘已飞掠远处。麒零大喊问银尘藏了多少好东西、抱怨自己只有一把破剑。",
+      "closing_state": "银尘远去迎战，麒零幽花被纯白海草状物（女神的裙摆）保护",
+      "transition_reason": "全景描写众人迎战魂兽",
+      "source_span": {
+        "start_marker": "一道白色的光芒从天空里仿佛闪电般地朝麒零坠落过来",
+        "end_marker": "会给你丢脸的！”"
+      }
+    },
+    {
+      "scene_id": "S003",
+      "sequence_index": 3,
+      "scene_title_generated": "缝魂诀别推走莲泉，莲泉骑海蝶入洞",
+      "reality_layer": "present_reality",
+      "viewpoint_character": "鬼山莲泉",
+      "time": {
+        "absolute_time": "unknown",
+        "relative_time": "紧接S001",
+        "time_of_day": "落日",
+        "duration": "数分钟",
+        "sequence_relation": "接续S001",
+        "confidence": 0.85
+      },
+      "location": {
+        "primary_location": "西之亚斯蓝帝国·雷恩海域岛屿上空→洞穴入口",
+        "sub_location": "闇翅背→海蝶背上",
+        "location_change_from_previous_scene": true
+      },
+      "participants": [
+        "鬼山莲泉",
+        "鬼山缝魂"
+      ],
+      "scene_goal": "莲泉入洞唤醒西流尔",
+      "opening_state": "兄妹骑闇翅随魂兽急速朝岛屿坠落",
+      "factual_summary": "接近地面时缝魂深望莲泉、嘱其无论如何答应唤醒西流尔并活着离开，双手捧莲泉脸、将最后残余魂力注入其耳下爵印（最后仅有的残余魂力）。缝魂魂力减少致越来越多魂兽从催眠苏醒失控。缝魂怒吼‘去吧莲泉’用力推其背，莲泉身影从闇翅背高飞出去。莲泉无声对缝魂背影说若其死了自己一辈子不原谅他，随即飞掠至一头湿淋淋小型海蝶背上、按其后颈催眠之，海蝶朝莲泉探到西流尔魂力的洞口飞去。除特蕾娅外无人注意莲泉入洞。",
+      "closing_state": "莲泉骑海蝶钻入洞穴入口，特蕾娅追入",
+      "transition_reason": "特蕾娅追莲泉入洞",
+      "source_span": {
+        "start_marker": "鬼山缝魂和鬼山莲泉骑在闇翅的背上",
+        "end_marker": "低头冲进了洞穴。"
+      }
+    },
+    {
+      "scene_id": "S004",
+      "sequence_index": 4,
+      "scene_title_generated": "女神的裙摆：幽花向麒零解魂器与体系",
+      "reality_layer": "present_reality",
+      "viewpoint_character": "麒零",
+      "time": {
+        "absolute_time": "unknown",
+        "relative_time": "与S002并行（魂兽冲击期间）",
+        "time_of_day": "落日",
+        "duration": "约半小时",
+        "sequence_relation": "与S002并行",
+        "confidence": 0.75
+      },
+      "location": {
+        "primary_location": "西之亚斯蓝帝国·雷恩海域岛屿",
+        "sub_location": "纯白丝绸（女神的裙摆）保护范围内",
+        "location_change_from_previous_scene": false
+      },
+      "participants": [
+        "麒零",
+        "天束幽花"
+      ],
+      "scene_goal": "幽花向麒零解释女神的裙摆与皇室魂术体系",
+      "opening_state": "麒零透过纯白水草望天翻地覆、耳边无声",
+      "factual_summary": "幽花告知麒零包裹他们的并非水草而是一根根丝绸，即著名魂器女神的裙摆：其神奇在于绸缎缠绕交错无风自动、领域内任何间接攻击无效（弓箭等远程、冰箭冰刃冰雪藤蔓等元素类、海啸水滴石穿等操纵液态水、乃至魂兽攻击皆被定义为间接攻击）。女神的裙摆以强大到不合理的武器天性将除魂术师本人魂力进攻外的一切攻击强行定义为间接攻击，是亚斯蓝防御类魂器中最顶级盾牌之一，排名超越幽冥的死灵镜面。唯刀砍剑刺牙齿咬脚踢等直接攻击可伤其主。麒零沮丧自叹半刃巨剑如小孩玩具。幽花讲述皇室血统辅佐帝王、母亲负责亚斯蓝资料与历史记录；皇族体系与王爵魂术体系如国家与军队；现统治亚斯蓝的冰帝艾欧斯传说能力与一度王爵修川地藏并驾齐驱、灵魂回路异于王爵、皇族中唯冰帝具王爵级魂力；白银祭司为宗教体系、是所有魂术师心中的天神。此时白绸变长变粗成十几米高，第一批凶猛魂兽撞击过来，白绸卷动如花瓣包裹二人。",
+      "closing_state": "第一批魂兽撞击被女神的裙摆抵御",
+      "transition_reason": "切至众人抵御魂兽全景",
+      "source_span": {
+        "start_marker": "漫天翻涌的魂兽，从海底破水而出",
+        "end_marker": "把他们包裹在花心中间。"
+      }
+    },
+    {
+      "scene_id": "S005",
+      "sequence_index": 5,
+      "scene_title_generated": "众人抵御魂兽：幽冥神音霓虹漆拉银尘",
+      "reality_layer": "present_reality",
+      "viewpoint_character": "天束幽花",
+      "time": {
+        "absolute_time": "unknown",
+        "relative_time": "与S004并行",
+        "time_of_day": "落日",
+        "duration": "约数小时",
+        "sequence_relation": "与S004并行",
+        "confidence": 0.75
+      },
+      "location": {
+        "primary_location": "西之亚斯蓝帝国·雷恩海域岛屿",
+        "sub_location": "岛屿各处战场",
+        "location_change_from_previous_scene": false
+      },
+      "participants": [
+        "幽冥",
+        "神音",
+        "霓虹",
+        "漆拉",
+        "银尘"
+      ],
+      "scene_goal": "众人各自抵御魂兽大军",
+      "opening_state": "幽冥神音居最前方迎击",
+      "factual_summary": "幽冥神音居最前，皆为侵蚀者——幽冥摧毁魂兽爵印吸收魂力提升自身，神音将伤害维持在不致重创又大幅提升魂力的平衡点。霓虹（特蕾娅已追莲泉入洞）独面数万魂兽，速度迅捷如橙色短促闪电、撕魂兽成尸块、沐血如恶魔却面容纯真。漆拉在脚下展阵，冲进阵范围的魂兽变如慢镜头梦游怪物，漆拉游刃有余。银尘随手抛出各种魂器打得魂兽无对抗之力，特别甩出一把通体晶莹透明细身剑，剑射出后分裂成一大群银鱼般迅捷剑阵、鲜血横飞、回游时两两合一被收回。麒零惊呼银尘不愧大天使。幽花暗惊银尘这些年行踪诡异、疑一直在收集远古遗落魂器，其实力可怕、且无人知魂器内是否寄居魂兽。零星重伤魂兽闯至二人前，幽花以冰弓三箭射落，后发现魂兽触女神裙摆丝绸即化白雾消散。幽花提醒远处密密麻麻是第二批更强魂兽。",
+      "closing_state": "众人抵御第一波魂兽，第二批更强大魂兽逼近",
+      "transition_reason": "切至洞穴内莲泉见西流尔",
+      "source_span": {
+        "start_marker": "最先被攻击的当然是站在最前方的幽冥和神音两人",
+        "end_marker": "脸色依然苍白难看。"
+      }
+    },
+    {
+      "scene_id": "S006",
+      "sequence_index": 6,
+      "scene_title_generated": "莲泉入洞遇西流尔，特蕾娅破阵追近",
+      "reality_layer": "present_reality",
+      "viewpoint_character": "鬼山莲泉",
+      "time": {
+        "absolute_time": "unknown",
+        "relative_time": "紧接S003",
+        "time_of_day": "unknown",
+        "duration": "约半小时",
+        "sequence_relation": "接续S003",
+        "confidence": 0.85
+      },
+      "location": {
+        "primary_location": "雷恩海域岛屿内部（西流尔躯体内）",
+        "sub_location": "黑暗通道→巨大空旷洞穴",
+        "location_change_from_previous_scene": true
+      },
+      "participants": [
+        "鬼山莲泉",
+        "西流尔",
+        "特蕾娅"
+      ],
+      "scene_goal": "莲泉找到西流尔并传话",
+      "opening_state": "黑暗洞穴滴水声，莲泉以回生锁链照明",
+      "factual_summary": "莲泉以魂力注入回生锁链照明，发现头顶滴水为血红色。越往深处走西流尔魂力若即若离、时强时弱。特蕾娅在黑暗中发声，称西流尔能在这么大范围随意改动爵印位置、把岛屿内部变成迷宫之阵。西流尔改变地形令通道合拢挤压封闭，称能拖延特蕾娅但早晚被找到。莲泉沿震动链条飞掠至巨大空旷洞穴，中心圆形巨石两人高、发熔岩般血红光按呼吸节奏明灭。莲泉呼唤西流尔。西流尔柔和男声响起，称莲泉招惹来的‘怪物’指外面与缝魂对阵之人与尾随入洞的特蕾娅。莲泉求西流尔救其兄。西流尔自述十几年消耗大量魂力体能同化岛屿，在洞穴岛屿内他们杀不死自己，但出洞对阵任何一人都无胜算。特蕾娅以金黄色纹路侵蚀一整面岩壁、爆炸坍塌石壁、血腥气蔓延，娇笑问‘痛不痛’。莲泉问特蕾娅如何操纵山体岩石。西流尔称整座岛屿为自己身体、岩石为骨骼肌肉、血液经脉游走全岛、移动岩石如动脚趾般简单。莲泉求其救兄，西流尔称外面之人皆怪物、亚斯蓝王爵魂力天赋进化超其想象、自己无胜算。莲泉冷静表示自己进来为替兄传话、说完请送其出去。",
+      "closing_state": "莲泉传话在即，西流尔无胜算，特蕾娅破阵逼近",
+      "transition_reason": "切至缝魂与霓虹同归于尽",
+      "source_span": {
+        "start_marker": "黑暗的洞穴里，时不时地从头顶传来滴水声",
+        "end_marker": "请你送我出去。”"
+      }
+    },
+    {
+      "scene_id": "S007",
+      "sequence_index": 7,
+      "scene_title_generated": "缝魂与霓虹同归于尽，岛屿爆炸莲泉成双王爵",
+      "reality_layer": "present_reality",
+      "viewpoint_character": "鬼山莲泉",
+      "time": {
+        "absolute_time": "unknown",
+        "relative_time": "紧接S006（莲泉在洞穴内、外部激战数小时后）",
+        "time_of_day": "昏暗",
+        "duration": "数分钟",
+        "sequence_relation": "外部数小时恶战后转折",
+        "confidence": 0.8
+      },
+      "location": {
+        "primary_location": "雷恩海域岛屿及上空→海面（岛屿中心爆炸后）",
+        "sub_location": "海银头上",
+        "location_change_from_previous_scene": true
+      },
+      "participants": [
+        "鬼山缝魂",
+        "霓虹",
+        "鬼山莲泉",
+        "西流尔",
+        "海银"
+      ],
+      "scene_goal": "缝魂牺牲、莲泉继承双王爵",
+      "opening_state": "缝魂单膝跪闇翅背、魂力难以挽回地消耗、催动逆鳞渊龙",
+      "factual_summary": "缝魂单膝跪闇翅背、魂力如雨水流走、某处黑洞吞噬一切魂力，仍不肯认输、催动爵印令三条深海逆鳞渊龙破海而出。漆拉凌空喝止缝魂、警告魂兽失控将致亚斯蓝浩劫。缝魂以生命与家族荣誉起誓未背叛白银祭司、只求漆拉收拾残局保雷恩百姓，漆拉被震慑低头沉思后重回岛屿。岛屿成人间炼狱。漆拉欲对银尘说话时岛屿以摧毁性速度分崩离析、巨大海风弥漫前所未有庞大魂力、风吹开无数刀口。巨大爆炸声后岛屿从中心爆炸、巨石激射坠落。漆拉看见从地底翻涌而出的海银头上立着鬼山莲泉。一黑裙身影从地底弹射出来——特蕾娅狼狈、嘴角血迹、大腿三道深刀口喷血。霓虹与幽冥接过特蕾娅降落山崖。特蕾娅口涌鲜血令幽冥速杀莲泉、否则其新回路组建完毕便永远杀不了。幽冥问新回路。特蕾娅揭示：西流尔临死前赐印莲泉（使其为使徒），六度回路压倒性愈合能力使五度六度两套回路安全共存、西流尔死亡瞬间莲泉继承六度王爵、回路复制一倍，莲泉此刻拥有三套灵魂回路、魂力凌驾众人之上、是最新六度王爵、新海神。天束幽花冲出盾范围怒称自己才是六度使徒、被巨大魂力掀飞摔向岩石昏迷。特蕾娅以天格身份令幽冥漆拉银尘霓虹神音联手绞杀莲泉。缝魂着魔般冲向霓虹、二人魂力燃烧极限同归于尽拼死一击。特蕾娅对霓虹撕心裂肺吼‘别杀他、他就是想死’。巨大爆炸穿空洞、乌云现空洞，幽冥漆拉银尘神音被气浪掀飞、霓虹重伤昏迷如陨石坠落、缝魂尸体坠落（身躯冰冷、双眼未闭、额头深可见骨伤口流血泪）。",
+      "closing_state": "缝魂死、霓虹重伤昏迷、特蕾娅见证四套回路怪物诞生",
+      "transition_reason": "莲泉爆发继承双王爵",
+      "source_span": {
+        "start_marker": "漫天呼啸的海风将海面卷碎",
+        "end_marker": "诞生了……"
+      }
+    },
+    {
+      "scene_id": "S008",
+      "sequence_index": 8,
+      "scene_title_generated": "莲泉成双王爵，银尘护其离去",
+      "reality_layer": "present_reality",
+      "viewpoint_character": "鬼山莲泉",
+      "time": {
+        "absolute_time": "unknown",
+        "relative_time": "紧接S007",
+        "time_of_day": "unknown",
+        "duration": "数分钟",
+        "sequence_relation": "接续S007",
+        "confidence": 0.85
+      },
+      "location": {
+        "primary_location": "雷恩海域（岛屿仅剩零星礁石）",
+        "sub_location": "海银头上",
+        "location_change_from_previous_scene": false
+      },
+      "participants": [
+        "鬼山莲泉",
+        "漆拉",
+        "特蕾娅",
+        "幽冥",
+        "银尘"
+      ],
+      "scene_goal": "莲泉宣告复仇、银尘护其离去",
+      "opening_state": "远处‘哥哥’撕心裂肺声传来、天地两三秒失去声响",
+      "factual_summary": "远处‘哥哥’声传来后消失，天地两三秒失去声响、雨水血滴如悬浮、石块缓慢飘荡。寂静过后海银身上震耳欲聋爆炸、光线令众人失视觉。白光消失后岛屿仅剩零星礁石，大海中央海银咆哮展身、其头上面无表情目光无穷杀戮的莲泉，冷声宣告众人杀了她哥哥、她要所有人陪葬，并称她也会去陪他。特蕾娅称莲泉已是五度也是六度王爵、亚斯蓝第一个身兼双王爵之人。漆拉从背后走出称若幽冥一人不够则所有人一起、但杀完要特蕾娅给解释。莲泉突然倒在闇翅背上、忘记陪葬之言、驾驭海银朝远处游去。特蕾娅称莲泉魂力出问题、两套回路出现排斥、趁现在可杀死。众人飞掠追莲泉，但银尘突然冲天而起、调转回头向漆拉幽冥神音释放三四件魂器（含无限分裂细身冰箭），众人纷纷躲避，之后天地间失去莲泉银尘踪影。漆拉问怎么回事。特蕾娅揭示：莲泉五度回路复制诞生新五度王爵的几秒寂静瞬间、莲泉靠近银尘说了句话、银尘遂心甘情愿跟她走。那句话是‘你跟我走，我带你去找吉尔伽美什’。",
+      "closing_state": "银尘带莲泉离去，众人失其踪影，特蕾娅目光翻涌怨毒与恐惧",
+      "transition_reason": "章节结束",
+      "source_span": {
+        "start_marker": "“哥哥！！！”远处撕心裂肺的声音刚刚传来",
+        "end_marker": "我带你去找吉尔伽美什。’”"
+      }
+    }
+  ],
+  "events": [
+    {
+      "event_id": "E001",
+      "scene_id": "S001",
+      "sequence_index": 1,
+      "event_type": "decision",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "落日",
+      "location": "雷恩海域岛屿上空闇翅背",
+      "participants": [
+        "鬼山缝魂",
+        "鬼山莲泉"
+      ],
+      "initiator": "鬼山缝魂",
+      "target": "鬼山莲泉",
+      "trigger": "缝魂知漆拉加入则无生还机会",
+      "action": "缝魂决定驱动所有魂兽冲击王爵，令莲泉趁混乱冲进地壳唤醒西流尔、转告其话，并将精纯魂力源源输送莲泉",
+      "result": "莲泉获缝魂魂力补充、明了缝魂放弃生存",
+      "immediate_consequence": "莲泉将入洞寻西流尔",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [],
+      "causes_event_ids": [
+        "E003"
+      ],
+      "importance": "critical",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "等一下，我会驱动所有的魂兽冲向下面几个王爵……你一定要趁着混乱，冲进地壳深处，去寻找永生王爵",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        },
+        {
+          "scene_id": "S001",
+          "quote": "源源不断地涌出精纯的魂力渗透补充到自己的体内",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E002",
+      "scene_id": "S002",
+      "sequence_index": 2,
+      "event_type": "secret_reveal",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "落日",
+      "location": "雷恩海域岛屿盾内",
+      "participants": [
+        "银尘",
+        "麒零",
+        "天束幽花"
+      ],
+      "initiator": "银尘",
+      "target": "麒零、天束幽花",
+      "trigger": "需说明战局并保护",
+      "action": "银尘告知战局（杀戮王爵使徒追杀五度王爵使徒、疑与深渊回廊苍白男孩有关、除一度外所有王爵使徒到齐、其他王爵观望中立），令二人待盾内，并将白色棋子状物射入麒零脚下、唤出纯白海草状物隔绝一切袭来魂力",
+      "result": "麒零幽花被纯白丝绸保护、银尘远去迎战",
+      "immediate_consequence": "银尘远去迎战魂兽",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [],
+      "causes_event_ids": [],
+      "importance": "critical",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "目前的情况是杀戮王爵和杀戮使徒正在追杀五度王爵和五度使徒",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        },
+        {
+          "scene_id": "S002",
+          "quote": "无数纯白色仿佛柔软海草一样的东西，从麒零脚下的地面上破土而出",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E003",
+      "scene_id": "S003",
+      "sequence_index": 3,
+      "event_type": "movement",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "落日",
+      "location": "雷恩海域岛屿上空→洞穴入口",
+      "participants": [
+        "鬼山莲泉",
+        "鬼山缝魂",
+        "海蝶"
+      ],
+      "initiator": "鬼山缝魂",
+      "target": "鬼山莲泉",
+      "trigger": "缝魂推莲泉离去",
+      "action": "缝魂将最后残余魂力注入莲泉爵印后怒吼推其背，莲泉飞掠至小型海蝶背上催眠之，朝洞穴入口飞去并钻入",
+      "result": "莲泉入洞寻西流尔，特蕾娅追入",
+      "immediate_consequence": "莲泉进入西流尔躯体内",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E001"
+      ],
+      "causes_event_ids": [
+        "E006"
+      ],
+      "importance": "critical",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "鬼山缝魂用力地在莲泉背后一推，莲泉的身影从闇翅的背上轻轻地高飞出去",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        },
+        {
+          "scene_id": "S003",
+          "quote": "钻进了洞穴的入口",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E004",
+      "scene_id": "S004",
+      "sequence_index": 4,
+      "event_type": "secret_reveal",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "character_claim",
+      "time": "落日",
+      "location": "雷恩海域岛屿（女神裙摆范围内）",
+      "participants": [
+        "天束幽花",
+        "麒零"
+      ],
+      "initiator": "天束幽花",
+      "target": "麒零",
+      "trigger": "麒零问白水草为何物",
+      "action": "幽花揭示包裹他们的丝绸即魂器女神的裙摆，领域内一切间接攻击（远程、元素类、液态水、魂兽）无效，是亚斯蓝最顶级防御盾牌之一、排名超越死灵镜面，唯直接攻击可伤其主",
+      "result": "麒零得知女神裙摆属性",
+      "immediate_consequence": "第一批魂兽撞击被抵御",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E002"
+      ],
+      "causes_event_ids": [],
+      "importance": "critical",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "这些丝绸缠绕交错，无风自动，在这些绸缎包围的领域里，任何间接攻击都是无效的",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        },
+        {
+          "scene_id": "S004",
+          "quote": "防御类魂器中最顶级的盾牌之一，排名甚至超越幽冥的那块……死灵镜面",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E005",
+      "scene_id": "S004",
+      "sequence_index": 5,
+      "event_type": "secret_reveal",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "character_claim",
+      "time": "落日",
+      "location": "雷恩海域岛屿",
+      "participants": [
+        "天束幽花",
+        "麒零"
+      ],
+      "initiator": "天束幽花",
+      "target": "麒零",
+      "trigger": "解释皇族地位",
+      "action": "幽花讲述皇室血统辅佐帝王、母亲负责亚斯蓝资料与历史记录；皇族体系与王爵魂术体系如国家与军队；冰帝艾欧斯传说能力与一度王爵修川地藏并驾齐驱、回路异于王爵、皇族中唯冰帝具王爵级魂力；白银祭司为宗教体系",
+      "result": "麒零得知皇室与王爵体系关系及冰帝地位",
+      "immediate_consequence": "unknown",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E004"
+      ],
+      "causes_event_ids": [],
+      "importance": "normal",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "皇族代表的皇室体系和王爵们代表的魂术体系，就像是国家和军队的关系",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        },
+        {
+          "scene_id": "S004",
+          "quote": "现在统治亚斯蓝的皇帝【冰帝】艾欧斯，传说中他的能力和一度王爵修川地藏是并驾齐驱的",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E006",
+      "scene_id": "S006",
+      "sequence_index": 6,
+      "event_type": "secret_reveal",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "character_claim",
+      "time": "unknown",
+      "location": "雷恩海域岛屿内部洞穴",
+      "participants": [
+        "鬼山莲泉",
+        "西流尔",
+        "特蕾娅"
+      ],
+      "initiator": "西流尔",
+      "target": "鬼山莲泉",
+      "trigger": "莲泉深入洞穴寻找",
+      "action": "西流尔以迷宫之阵与移动山体拖延特蕾娅，借链条震动指引莲泉至巨大洞穴中心血红光巨石（其心脏所在），以柔和男声与莲泉对话",
+      "result": "莲泉找到西流尔心脏所在并对话",
+      "immediate_consequence": "莲泉求救缝魂、西流尔称无胜算",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E003"
+      ],
+      "causes_event_ids": [],
+      "importance": "critical",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S006",
+          "quote": "你已经找到我了，只是，你为什么要招惹来这些怪物呢",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        },
+        {
+          "scene_id": "S006",
+          "quote": "这整个岛屿都是我的身体，这些岩石，早就变成了我的骨骼和肌肉",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E007",
+      "scene_id": "S006",
+      "sequence_index": 7,
+      "event_type": "plan_execution",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "unknown",
+      "location": "雷恩海域岛屿内部洞穴",
+      "participants": [
+        "特蕾娅",
+        "西流尔"
+      ],
+      "initiator": "特蕾娅",
+      "target": "西流尔（岛屿岩壁）",
+      "trigger": "追杀莲泉受阻",
+      "action": "特蕾娅以金黄色纹路侵蚀一整面洞穴岩壁、掌心爆炸令石壁坍塌成细小石块、血腥气蔓延",
+      "result": "特蕾娅破阵逼近西流尔心脏",
+      "immediate_consequence": "西流尔受创出血",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E006"
+      ],
+      "causes_event_ids": [],
+      "importance": "normal",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S006",
+          "quote": "一整面石壁瞬间“哗啦啦”地坍塌下来",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        },
+        {
+          "scene_id": "S006",
+          "quote": "不知道，痛不痛啊",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E008",
+      "scene_id": "S007",
+      "sequence_index": 8,
+      "event_type": "death",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "昏暗",
+      "location": "雷恩海域岛屿上空",
+      "participants": [
+        "鬼山缝魂",
+        "霓虹"
+      ],
+      "initiator": "鬼山缝魂",
+      "target": "霓虹",
+      "trigger": "缝魂着魔般冲向霓虹同归于尽",
+      "action": "缝魂全身金色刻纹暴涨极限冲向霓虹，霓虹调全身魂力高举双手迎击，二人魂力燃烧至极限拼死一击引发巨大爆炸、穿破乌云现空洞",
+      "result": "缝魂死亡（尸体坠海、身躯冰冷、双眼未闭、额头深可见骨伤口流血泪），霓虹重伤昏迷如陨石坠落",
+      "immediate_consequence": "幽冥漆拉银尘神音被气浪掀飞，缝魂死、霓虹重伤",
+      "long_term_consequence_explicit": "莲泉爆发继承双王爵",
+      "caused_by_event_ids": [],
+      "causes_event_ids": [
+        "E010"
+      ],
+      "importance": "critical",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S007",
+          "quote": "两个人的魂力都燃烧到了极限，仿佛都是同归于尽般的拼死一击",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        },
+        {
+          "scene_id": "S007",
+          "quote": "是浑身千万道伤口、鲜血喷洒不止的霓虹……仿佛一颗陨石一样，朝大地坠落",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        },
+        {
+          "scene_id": "S007",
+          "quote": "也如同一颗陨石般坠落的，是鬼山缝魂的尸体",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E009",
+      "scene_id": "S007",
+      "sequence_index": 9,
+      "event_type": "recovery",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "character_claim",
+      "time": "昏暗",
+      "location": "雷恩海域岛屿内部→海银头上",
+      "participants": [
+        "西流尔",
+        "鬼山莲泉"
+      ],
+      "initiator": "西流尔",
+      "target": "鬼山莲泉",
+      "trigger": "缝魂将死、西流尔临死前赐印",
+      "action": "西流尔临死前将灵魂回路赐印莲泉使其为使徒，六度回路压倒性愈合能力使五度六度两套回路安全共存，西流尔死亡瞬间莲泉继承六度王爵、回路复制一倍，莲泉拥有三套灵魂回路、魂力凌驾众人之上",
+      "result": "莲泉成最新六度王爵、新海神，亚斯蓝第一个身兼双王爵之人",
+      "immediate_consequence": "莲泉立于海银头上目光无穷杀戮",
+      "long_term_consequence_explicit": "莲泉拥有四套灵魂回路成为怪物",
+      "caused_by_event_ids": [
+        "E008"
+      ],
+      "causes_event_ids": [
+        "E011"
+      ],
+      "importance": "critical",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S007",
+          "quote": "西流尔临死前把他的灵魂回路赐印给了鬼山莲泉",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        },
+        {
+          "scene_id": "S007",
+          "quote": "她现在是五度王爵，也是六度王爵……她是亚斯蓝历史上，第一个身兼双王爵的人",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E010",
+      "scene_id": "S007",
+      "sequence_index": 10,
+      "event_type": "death",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "character_claim",
+      "time": "昏暗",
+      "location": "雷恩海域岛屿内部（西流尔躯体）",
+      "participants": [
+        "西流尔"
+      ],
+      "initiator": "西流尔",
+      "target": "西流尔",
+      "trigger": "赐印莲泉后",
+      "action": "西流尔赐印莲泉后死亡（据特蕾娅揭示）",
+      "result": "西流尔死亡，莲泉继承六度王爵",
+      "immediate_consequence": "莲泉继承六度王爵身份与魂力",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [],
+      "causes_event_ids": [
+        "E009"
+      ],
+      "importance": "critical",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S007",
+          "quote": "西流尔死亡的瞬间，鬼山莲泉就继承了六度王爵的身份和魂力",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E011",
+      "scene_id": "S007",
+      "sequence_index": 11,
+      "event_type": "injury",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "昏暗",
+      "location": "雷恩海域岛屿",
+      "participants": [
+        "天束幽花"
+      ],
+      "initiator": "环境魂力",
+      "target": "天束幽花",
+      "trigger": "幽花怒称自己才是六度使徒、冲出盾范围",
+      "action": "天束幽花冲出女神裙摆范围被巨大魂力掀起摔向岩石昏迷",
+      "result": "天束幽花昏迷",
+      "immediate_consequence": "幽花退出战场",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E009"
+      ],
+      "causes_event_ids": [],
+      "importance": "normal",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S007",
+          "quote": "她忘记了，周围正在地裂天崩，漫天呼啸翻滚的巨大魂力，瞬间将她掀起，重重地摔向身后的岩石。她在如此巨大而突如其来的魂力压迫下，昏迷了过去",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E012",
+      "scene_id": "S008",
+      "sequence_index": 12,
+      "event_type": "decision",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "unknown",
+      "location": "雷恩海域海银头上",
+      "participants": [
+        "漆拉",
+        "特蕾娅"
+      ],
+      "initiator": "漆拉",
+      "target": "众王爵使徒",
+      "trigger": "莲泉成双王爵、威胁极大",
+      "action": "漆拉宣布若幽冥一人不够则所有人一起杀莲泉，但要求杀完特蕾娅给解释",
+      "result": "众人准备联手绞杀莲泉",
+      "immediate_consequence": "众人飞掠追莲泉",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E009"
+      ],
+      "causes_event_ids": [
+        "E013"
+      ],
+      "importance": "normal",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S008",
+          "quote": "如果幽冥一个人不够杀死她的话，那就我们所有的人",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E013",
+      "scene_id": "S008",
+      "sequence_index": 13,
+      "event_type": "movement",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "unknown",
+      "location": "雷恩海域",
+      "participants": [
+        "鬼山莲泉",
+        "银尘",
+        "漆拉",
+        "幽冥",
+        "神音"
+      ],
+      "initiator": "银尘",
+      "target": "漆拉、幽冥、神音等",
+      "trigger": "莲泉对银尘说了一句话",
+      "action": "银尘突然冲天而起调转回头，向漆拉幽冥神音释放三四件魂器（含无限分裂细身冰箭），众人纷纷躲避；之后天地间失去莲泉银尘踪影",
+      "result": "银尘阻众人、带莲泉离去",
+      "immediate_consequence": "众人失莲泉银尘踪影",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E012"
+      ],
+      "causes_event_ids": [],
+      "importance": "critical",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S008",
+          "quote": "银尘突然冲天而起，然后调转回头，冲着漆拉、幽冥、神音等人，释放了三四件魂器",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        },
+        {
+          "scene_id": "S008",
+          "quote": "空茫的天地间，已经失去了鬼山莲泉和银尘的踪影",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E014",
+      "scene_id": "S008",
+      "sequence_index": 14,
+      "event_type": "secret_reveal",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "character_claim",
+      "time": "unknown",
+      "location": "雷恩海域",
+      "participants": [
+        "特蕾娅",
+        "银尘",
+        "鬼山莲泉"
+      ],
+      "initiator": "特蕾娅",
+      "target": "漆拉等众人",
+      "trigger": "漆拉问怎么回事",
+      "action": "特蕾娅揭示莲泉五度回路复制诞生新五度王爵的几秒寂静瞬间，莲泉靠近银尘说‘你跟我走，我带你去找吉尔伽美什’，银尘遂心甘情愿跟她走",
+      "result": "众人得知银尘因吉尔伽美什之名随莲泉离去",
+      "immediate_consequence": "特蕾娅目光翻涌怨毒与恐惧",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E013"
+      ],
+      "causes_event_ids": [],
+      "importance": "critical",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S008",
+          "quote": "那句话是：‘你跟我走，我带你去找吉尔伽美什。’",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E015",
+      "scene_id": "S008",
+      "sequence_index": 15,
+      "event_type": "movement",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "unknown",
+      "location": "雷恩海域",
+      "participants": [
+        "鬼山莲泉",
+        "海银",
+        "闇翅"
+      ],
+      "initiator": "鬼山莲泉",
+      "target": "远处",
+      "trigger": "魂力出现回路排斥",
+      "action": "莲泉突然倒在闇翅背上、忘记陪葬之言、驾驭海银朝远处游去",
+      "result": "莲泉借两套回路排斥之机离开",
+      "immediate_consequence": "众人追击",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E009"
+      ],
+      "causes_event_ids": [
+        "E013"
+      ],
+      "importance": "normal",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S008",
+          "quote": "她好像魂力出了问题……可能是两套灵魂回路出现了排斥",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "C001",
+      "canonical_name": "鬼山莲泉",
+      "mentions": [
+        "鬼山莲泉",
+        "莲泉"
+      ],
+      "aliases_in_chapter": [
+        "五度使徒",
+        "六度王爵",
+        "新海神",
+        "双身王爵"
+      ],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        {
+          "fact": "原五度使徒，本章继承六度王爵成亚斯蓝第一个身兼双王爵之人（据特蕾娅揭示）",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "appearance_facts": [
+        {
+          "fact": "立于海银头上、面无表情、目光无穷杀戮",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "ability_facts": [
+        {
+          "fact": "西流尔赐印后体内共存五度+六度两套回路、回路复制一倍共三套，魂力凌驾众人之上（据特蕾娅揭示）",
+          "epistemic_status": "character_claim"
+        },
+        {
+          "fact": "可催眠驾驭小型海蝶",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "behavior_facts": [
+        {
+          "fact": "接受缝魂魂力输送与诀别",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "骑海蝶钻入洞穴寻西流尔",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "在洞穴以回生锁链照明、借链条震动指引找到西流尔心脏",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "求西流尔救缝魂、冷静表示替兄传话",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "继承双王爵后立于海银头宣告众人杀其兄、要众人陪葬",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "在寂静瞬间对银尘说‘你跟我走我带你去找吉尔伽美什’（据特蕾娅揭示）",
+          "epistemic_status": "character_claim"
+        },
+        {
+          "fact": "魂力出现回路排斥、驾驭海银朝远处游去",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [
+        {
+          "fact": "得知缝魂放弃生存时悲怆流泪",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "缝魂推其走时眼泪如断线珠子",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "goal_facts": [
+        {
+          "fact": "唤醒西流尔、转告缝魂的话、活着离开",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "宣告要众人为兄陪葬",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "psychological_facts": [
+        {
+          "fact": "悲怆意识到缝魂正放弃生存希望、将生命可能留给自己",
+          "epistemic_status": "internal_confirmed"
+        }
+      ],
+      "knowledge_facts": [
+        {
+          "fact": "得知西流尔可移动山体岩石如动脚趾、无胜算出洞救人",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "possession_facts": [
+        {
+          "fact": "持有回生锁链",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "relationship_facts": [
+        {
+          "fact": "鬼山缝魂之妹",
+          "epistemic_status": "narrator_confirmed"
+        },
+        {
+          "fact": "西流尔临死前赐印使其为使徒（据特蕾娅言）",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "physical_state_at_end": "继承双王爵（三套回路）、魂力出问题（回路排斥）、驾驭海银离去",
+      "location_at_end": "雷恩海域（与银尘一同离去、踪影消失）",
+      "availability_state_at_end": "可行动（魂力不稳）",
+      "current_task_at_end": "随银尘离去（疑往寻吉尔伽美什）",
+      "identity_resolution_confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S007",
+          "quote": "她现在是五度王爵，也是六度王爵",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C002",
+      "canonical_name": "鬼山缝魂",
+      "mentions": [
+        "鬼山缝魂",
+        "缝魂"
+      ],
+      "aliases_in_chapter": [
+        "五度王爵"
+      ],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        {
+          "fact": "五度王爵，鬼山莲泉之兄",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "appearance_facts": [
+        {
+          "fact": "白银战甲破损残缺、露战甲外肌肤金黄色刻纹起伏蠕动",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "ability_facts": [
+        {
+          "fact": "可催动爵印令深海逆鳞渊龙破海而出",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "behavior_facts": [
+        {
+          "fact": "决定驱动所有魂兽冲击王爵、为莲泉创造唤醒西流尔机会",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "将精纯与最后残余魂力输送莲泉",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "怒吼推莲泉离去",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "以生命与家族荣誉向漆拉起誓未背叛白银祭司、只求收拾残局保雷恩百姓",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "着魔般冲向霓虹与之同归于尽拼死一击",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [
+        {
+          "fact": "面对莲泉目光里沉重与疼爱",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "诀别时脸上是幸福表情",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "goal_facts": [
+        {
+          "fact": "牺牲自己为莲泉创造生存与唤醒西流尔的机会",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "psychological_facts": [
+        {
+          "fact": "心里已明白将死、将所有生命可能留给莲泉",
+          "epistemic_status": "internal_confirmed"
+        }
+      ],
+      "knowledge_facts": [],
+      "possession_facts": [
+        {
+          "fact": "持月牙色巨剑",
+          "epistemic_status": "narrator_confirmed"
+        },
+        {
+          "fact": "第一魂兽海银",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "relationship_facts": [
+        {
+          "fact": "鬼山莲泉之兄",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "physical_state_at_end": "死亡（尸体坠海、身躯冰冷、双眼未闭、额头深可见骨伤口流血泪）",
+      "location_at_end": "雷恩海域（坠海）",
+      "availability_state_at_end": "死亡",
+      "current_task_at_end": "无（已死）",
+      "identity_resolution_confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S007",
+          "quote": "也如同一颗陨石般坠落的，是鬼山缝魂的尸体",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C003",
+      "canonical_name": "西流尔",
+      "mentions": [
+        "西流尔",
+        "永生王爵",
+        "六度王爵"
+      ],
+      "aliases_in_chapter": [
+        "永生王爵",
+        "六度王爵"
+      ],
+      "appearance_type": "voice_only",
+      "identity_facts": [
+        {
+          "fact": "六度王爵/永生王爵，整座岛屿为其躯体",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "appearance_facts": [
+        {
+          "fact": "心脏所在为洞穴中心两人高圆形巨石、发熔岩般血红光按呼吸节奏明灭",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "ability_facts": [
+        {
+          "fact": "能在大范围内随意改动爵印位置、把岛屿内部变成迷宫之阵",
+          "epistemic_status": "character_claim"
+        },
+        {
+          "fact": "能移动山体岩石如动脚趾（据其自述）",
+          "epistemic_status": "character_claim"
+        },
+        {
+          "fact": "临死前可赐印他人使之为使徒",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "behavior_facts": [
+        {
+          "fact": "以迷宫之阵与移动山体拖延特蕾娅",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "借链条震动指引莲泉至心脏所在并与对话",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "自述十几年消耗大量魂力体能同化岛屿、无胜算出洞救人",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "临死前赐印莲泉（据特蕾娅揭示）",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "emotion_facts": [
+        {
+          "fact": "声音透出空虚疲惫与沙哑",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [
+        {
+          "fact": "临死前赐印莲泉使其为使徒",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "physical_state_at_end": "死亡（赐印莲泉后）",
+      "location_at_end": "雷恩海域岛屿深处（心脏巨石）",
+      "availability_state_at_end": "死亡",
+      "current_task_at_end": "无（已死）",
+      "identity_resolution_confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S006",
+          "quote": "这整个岛屿都是我的身体，这些岩石，早就变成了我的骨骼和肌肉",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C004",
+      "canonical_name": "特蕾娅",
+      "mentions": [
+        "特蕾娅"
+      ],
+      "aliases_in_chapter": [
+        "四度王爵"
+      ],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        {
+          "fact": "四度王爵，执掌天格",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "appearance_facts": [
+        {
+          "fact": "从地底弹射出来、头发被狂风吹散、嘴角残留血迹、大腿三道深深刀口喷血",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "ability_facts": [
+        {
+          "fact": "能以金黄色纹路侵蚀整面岩壁、掌心爆炸令石壁坍塌",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "behavior_facts": [
+        {
+          "fact": "追莲泉入洞、破西流尔迷宫之阵",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "娇笑问西流尔痛不痛",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "口涌鲜血令幽冥速杀莲泉",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "揭示莲泉继承双王爵与三套回路真相",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "以天格身份令众人联手绞杀莲泉",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "揭示银尘因吉尔伽美什之名随莲泉离去",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [
+        {
+          "fact": "见霓虹欲与缝魂同归于尽时撕心裂肺吼‘别杀他、他就是想死’",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "揭示银尘离去原因时目光翻涌无尽怨毒与恐惧",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "goal_facts": [
+        {
+          "fact": "令众人联手绞杀莲泉",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "psychological_facts": [],
+      "knowledge_facts": [
+        {
+          "fact": "知道莲泉继承双王爵与三套回路真相",
+          "epistemic_status": "character_claim"
+        },
+        {
+          "fact": "知道莲泉对银尘说的那句话",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "possession_facts": [],
+      "relationship_facts": [
+        {
+          "fact": "霓虹为其使徒",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "physical_state_at_end": "重伤（大腿三道刀口喷血、口涌鲜血、虚弱）",
+      "location_at_end": "雷恩海域山崖（被幽冥霓虹接过）",
+      "availability_state_at_end": "重伤",
+      "current_task_at_end": "令众人追杀莲泉",
+      "identity_resolution_confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S007",
+          "quote": "她雪白的大腿上是三道深深的刀口，正在往外喷洒着血珠",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C005",
+      "canonical_name": "霓虹",
+      "mentions": [
+        "霓虹"
+      ],
+      "aliases_in_chapter": [],
+      "appearance_type": "on_stage",
+      "identity_facts": [],
+      "appearance_facts": [
+        {
+          "fact": "小麦色健壮躯体、天使般纯美面容",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "ability_facts": [
+        {
+          "fact": "速度迅捷如橙色短促闪电、徒手撕魂兽成尸块",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "behavior_facts": [
+        {
+          "fact": "独面数万魂兽以暴风姿态毁灭之、沐血如恶魔却面容纯真",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "本能调全身魂力迎击缝魂的同归于尽一击",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [],
+      "physical_state_at_end": "重伤昏迷（浑身千万道伤口、鲜血喷洒不止、如陨石坠落）",
+      "location_at_end": "雷恩海域（坠落）",
+      "availability_state_at_end": "重伤昏迷",
+      "current_task_at_end": "无（昏迷）",
+      "identity_resolution_confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S007",
+          "quote": "是浑身千万道伤口、鲜血喷洒不止的霓虹，他已经昏迷不醒",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C006",
+      "canonical_name": "银尘",
+      "mentions": [
+        "银尘"
+      ],
+      "aliases_in_chapter": [
+        "大天使"
+      ],
+      "appearance_type": "on_stage",
+      "identity_facts": [],
+      "appearance_facts": [
+        {
+          "fact": "一身白衣如雪立于黑色岩石、双眼绽放金色光芒",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "ability_facts": [
+        {
+          "fact": "能升起巨大纯银盾牌护人",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "能将白色棋子状物射入地面唤出纯白丝绸（女神的裙摆）",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "可抛出多件魂器迎敌，含一把通体晶莹透明细身剑可无限分裂成剑阵、回游时两两合一",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "可冲天而起调转回头向众人释放三四件魂器阻敌",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "behavior_facts": [
+        {
+          "fact": "回护麒零幽花、部署女神裙摆保护",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "抛出多件魂器抵御魂兽",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "因莲泉说‘带你去找吉尔伽美什’而心甘情愿随其离去（据特蕾娅揭示）",
+          "epistemic_status": "character_claim"
+        },
+        {
+          "fact": "释放三四件魂器阻众人、带莲泉消失",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [],
+      "goal_facts": [
+        {
+          "fact": "保护麒零幽花",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "因吉尔伽美什之名随莲泉离去",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [
+        {
+          "fact": "持有多件魂器（纯银盾牌、女神的裙摆、可分裂细身剑等）",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "relationship_facts": [],
+      "physical_state_at_end": "完好",
+      "location_at_end": "与莲泉一同离去、踪影消失",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "随莲泉寻吉尔伽美什",
+      "identity_resolution_confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S008",
+          "quote": "银尘就心甘情愿地跟她走了",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C007",
+      "canonical_name": "幽冥",
+      "mentions": [
+        "幽冥"
+      ],
+      "aliases_in_chapter": [
+        "二度王爵",
+        "杀戮王爵"
+      ],
+      "appearance_type": "on_stage",
+      "identity_facts": [],
+      "appearance_facts": [
+        {
+          "fact": "邪恶脸上绷青色血管、面容因大肆杀戮扭曲骇人",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "ability_facts": [
+        {
+          "fact": "侵蚀者，可摧毁魂兽爵印吸收魂力提升自身",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "behavior_facts": [
+        {
+          "fact": "居最前方迎击魂兽、双手虚空捕捉摧毁爵印吸纳魂力",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "接过特蕾娅降落山崖",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "被缝魂霓虹爆炸气浪掀飞",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [
+        {
+          "fact": "见特蕾娅狼狈惊呆",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "goal_facts": [
+        {
+          "fact": "猎杀莲泉",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [],
+      "physical_state_at_end": "完好（被气浪掀飞）",
+      "location_at_end": "雷恩海域",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "追杀莲泉（已失其踪影）",
+      "identity_resolution_confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "幽冥那张英俊而邪恶的脸上，此刻泛滥着难以抑制的迷幻的快感",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C008",
+      "canonical_name": "神音",
+      "mentions": [
+        "神音"
+      ],
+      "aliases_in_chapter": [
+        "杀戮使徒"
+      ],
+      "appearance_type": "on_stage",
+      "identity_facts": [],
+      "appearance_facts": [],
+      "ability_facts": [
+        {
+          "fact": "侵蚀者，可将伤害维持在不致重创又大幅提升魂力的平衡点",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "behavior_facts": [
+        {
+          "fact": "居最前方迎击魂兽、束龙分裂四股龙筋游动包裹",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "因第二批魂兽魂力庞大不敢再肆无忌惮承受攻击",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "被缝魂霓虹爆炸气浪掀飞",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [
+        {
+          "fact": "持束龙（四条翻滚咆哮对抗魂兽）",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "relationship_facts": [],
+      "physical_state_at_end": "完好（被气浪掀飞）",
+      "location_at_end": "雷恩海域",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "追杀莲泉（已失其踪影）",
+      "identity_resolution_confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "她已经不敢再肆无忌惮地承受攻击了",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C009",
+      "canonical_name": "漆拉",
+      "mentions": [
+        "漆拉"
+      ],
+      "aliases_in_chapter": [],
+      "appearance_type": "on_stage",
+      "identity_facts": [],
+      "appearance_facts": [
+        {
+          "fact": "面无表情冷漠淡然、秀美如女性五官",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "ability_facts": [
+        {
+          "fact": "脚下展阵、冲进阵范围的魂兽变如慢镜头梦游怪物",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "可随时将脚下大地做成棋子离开劣势战局",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "behavior_facts": [
+        {
+          "fact": "凌空喝止缝魂、警告魂兽失控将致亚斯蓝浩劫",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "被缝魂以生命起誓震慑、低头沉思后重回岛屿",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "欲降银尘旁说话时感剧烈地裂天崩",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "宣布若幽冥不够则所有人杀莲泉、要求特蕾娅给解释",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "被银尘魂器阻拦需躲避",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [],
+      "goal_facts": [
+        {
+          "fact": "阻止魂兽失控保雷恩百姓、杀莲泉后要特蕾娅解释",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [],
+      "physical_state_at_end": "完好（被气浪掀飞、躲避银尘魂器）",
+      "location_at_end": "雷恩海域",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "追杀莲泉（已失其踪影）、向特蕾娅要解释",
+      "identity_resolution_confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "任何时候，他只需要将脚下的大地做成一枚【棋子】，他就可以轻松而潇洒地离开任何劣势的战局",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C010",
+      "canonical_name": "麒零",
+      "mentions": [
+        "麒零"
+      ],
+      "aliases_in_chapter": [],
+      "appearance_type": "on_stage",
+      "identity_facts": [],
+      "appearance_facts": [],
+      "ability_facts": [],
+      "behavior_facts": [
+        {
+          "fact": "被银尘部署于女神裙摆保护范围内",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "向银尘大喊问藏了多少好东西、抱怨自己只有破剑",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "听幽花讲解女神裙摆与皇室体系",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "见银尘抛魂器迎敌嗷嗷直呼银尘不愧大天使",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [
+        {
+          "fact": "见银尘魂器迎敌兴奋手舞足蹈",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "自叹半刃巨剑如小孩玩具而沮丧",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [
+        {
+          "fact": "得知女神裙摆属性与皇室王爵体系关系",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "possession_facts": [
+        {
+          "fact": "持半刃巨剑（断剑）",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "relationship_facts": [],
+      "physical_state_at_end": "完好（受女神裙摆保护）",
+      "location_at_end": "雷恩海域岛屿（女神裙摆范围内）",
+      "availability_state_at_end": "受保护",
+      "current_task_at_end": "待在保护范围",
+      "identity_resolution_confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "我就一把破剑，太不公平了",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C011",
+      "canonical_name": "天束幽花",
+      "mentions": [
+        "天束幽花",
+        "幽花"
+      ],
+      "aliases_in_chapter": [],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        {
+          "fact": "自称六度使徒",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "appearance_facts": [],
+      "ability_facts": [
+        {
+          "fact": "持冰弓可凝三枚锋利冰箭射落魂兽",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "behavior_facts": [
+        {
+          "fact": "向麒零揭示女神裙摆属性与皇室体系",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "提醒远处是第二批更强魂兽",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "冲出女神裙摆范围怒称自己才是六度使徒、被魂力掀飞摔向岩石昏迷",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [
+        {
+          "fact": "目光掩饰不住忌妒（对女神裙摆）",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "怒称自己才是六度使徒时脸上是两行泪水",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [
+        {
+          "fact": "知道女神裙摆属性",
+          "epistemic_status": "character_claim"
+        },
+        {
+          "fact": "知道皇室与王爵体系关系、冰帝艾欧斯能力",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "possession_facts": [
+        {
+          "fact": "持冰弓",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "relationship_facts": [],
+      "physical_state_at_end": "昏迷（被魂力掀飞摔向岩石）",
+      "location_at_end": "雷恩海域岛屿",
+      "availability_state_at_end": "昏迷",
+      "current_task_at_end": "无（昏迷）",
+      "identity_resolution_confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S007",
+          "quote": "天束幽花突然冲出女神的裙摆的范围……昏迷了过去",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C012",
+      "canonical_name": "海银",
+      "mentions": [
+        "海银"
+      ],
+      "aliases_in_chapter": [],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        {
+          "fact": "鬼山缝魂的第一魂兽，海里最具毁灭性的魂兽（据漆拉言）",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "appearance_facts": [
+        {
+          "fact": "九枚眼睛的巨大龙头、岛屿般庞大身躯",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "ability_facts": [],
+      "behavior_facts": [
+        {
+          "fact": "从地底翻涌而出、在大海中央咆哮展庞大身躯",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "莲泉立于其头",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [],
+      "physical_state_at_end": "存活（载莲泉游走）",
+      "location_at_end": "雷恩海域",
+      "availability_state_at_end": "受莲泉驾驭",
+      "current_task_at_end": "载莲泉离去",
+      "identity_resolution_confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S007",
+          "quote": "号称海里最具毁灭性的魂兽海银",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C013",
+      "canonical_name": "艾欧斯",
+      "mentions": [
+        "艾欧斯",
+        "冰帝"
+      ],
+      "aliases_in_chapter": [
+        "冰帝"
+      ],
+      "appearance_type": "mentioned",
+      "identity_facts": [
+        {
+          "fact": "亚斯蓝皇帝，传说能力与一度王爵修川地藏并驾齐驱、灵魂回路异于王爵、皇族中唯其具王爵级魂力（据天束幽花言）",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "appearance_facts": [],
+      "ability_facts": [],
+      "behavior_facts": [],
+      "emotion_facts": [],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [],
+      "physical_state_at_end": "unknown",
+      "location_at_end": "unknown",
+      "availability_state_at_end": "unknown",
+      "current_task_at_end": "unknown",
+      "identity_resolution_confidence": 0.6,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "现在统治亚斯蓝的皇帝【冰帝】艾欧斯",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C014",
+      "canonical_name": "吉尔伽美什",
+      "mentions": [
+        "吉尔伽美什"
+      ],
+      "aliases_in_chapter": [],
+      "appearance_type": "mentioned",
+      "identity_facts": [],
+      "appearance_facts": [],
+      "ability_facts": [],
+      "behavior_facts": [],
+      "emotion_facts": [],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [],
+      "physical_state_at_end": "unknown",
+      "location_at_end": "unknown（莲泉称可带银尘去找他）",
+      "availability_state_at_end": "unknown",
+      "current_task_at_end": "unknown",
+      "identity_resolution_confidence": 0.5,
+      "evidence": [
+        {
+          "scene_id": "S008",
+          "quote": "你跟我走，我带你去找吉尔伽美什",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    }
+  ],
+  "character_state_changes": [
+    {
+      "change_id": "CS001",
+      "character_id": "C002",
+      "scene_id": "S007",
+      "dimension": "physical_state",
+      "before": "存活（受伤、魂力大耗）",
+      "change": "与霓虹同归于尽拼死一击引发巨大爆炸",
+      "after": "死亡（尸体坠海）",
+      "change_status": "confirmed",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S007",
+          "quote": "也如同一颗陨石般坠落的，是鬼山缝魂的尸体",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "change_id": "CS002",
+      "character_id": "C001",
+      "scene_id": "S007",
+      "dimension": "identity",
+      "before": "五度使徒",
+      "change": "西流尔赐印、西流尔死后继承六度王爵，成亚斯蓝第一个身兼双王爵之人",
+      "after": "五度+六度双王爵（据特蕾娅言，拥有三套灵魂回路）",
+      "change_status": "confirmed",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S007",
+          "quote": "她现在是五度王爵，也是六度王爵",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "change_id": "CS003",
+      "character_id": "C003",
+      "scene_id": "S007",
+      "dimension": "physical_state",
+      "before": "存活（魂力体能大量消耗、与岛屿同化）",
+      "change": "赐印莲泉后死亡",
+      "after": "死亡",
+      "change_status": "confirmed",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S007",
+          "quote": "西流尔死亡的瞬间，鬼山莲泉就继承了六度王爵的身份和魂力",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "change_id": "CS004",
+      "character_id": "C005",
+      "scene_id": "S007",
+      "dimension": "physical_state",
+      "before": "完好",
+      "change": "与缝魂同归于尽一击中受重创",
+      "after": "重伤昏迷（浑身千万道伤口、如陨石坠落）",
+      "change_status": "confirmed",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S007",
+          "quote": "浑身千万道伤口、鲜血喷洒不止的霓虹，他已经昏迷不醒",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "change_id": "CS005",
+      "character_id": "C004",
+      "scene_id": "S007",
+      "dimension": "physical_state",
+      "before": "完好",
+      "change": "在西流尔躯体洞穴内受重创",
+      "after": "重伤（大腿三道刀口喷血、口涌鲜血、虚弱）",
+      "change_status": "confirmed",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S007",
+          "quote": "她雪白的大腿上是三道深深的刀口，正在往外喷洒着血珠",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "change_id": "CS006",
+      "character_id": "C011",
+      "scene_id": "S007",
+      "dimension": "physical_state",
+      "before": "完好（受女神裙摆保护）",
+      "change": "冲出盾范围被巨大魂力掀飞摔向岩石",
+      "after": "昏迷",
+      "change_status": "confirmed",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S007",
+          "quote": "她在如此巨大而突如其来的魂力压迫下，昏迷了过去",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "change_id": "CS007",
+      "character_id": "C006",
+      "scene_id": "S008",
+      "dimension": "location",
+      "before": "雷恩海域战场",
+      "change": "因莲泉称可带其找吉尔伽美什，释放魂器阻众人、带莲泉离去",
+      "after": "与莲泉一同消失（去向疑为寻吉尔伽美什）",
+      "change_status": "confirmed",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S008",
+          "quote": "空茫的天地间，已经失去了鬼山莲泉和银尘的踪影",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    }
+  ],
+  "knowledge_states": [
+    {
+      "knowledge_id": "K001",
+      "subject": "麒零",
+      "information": "女神的裙摆为亚斯蓝最顶级防御盾牌之一、领域内一切间接攻击无效、唯直接攻击可伤其主",
+      "knowledge_status": "knows",
+      "acquired_in_scene": "S004",
+      "source_of_information": "天束幽花讲解",
+      "reliability": "character_claim",
+      "concealed_from": [],
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "防御类魂器中最顶级的盾牌之一",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "knowledge_id": "K002",
+      "subject": "鬼山莲泉",
+      "information": "西流尔可在大范围内随意改动爵印位置、把岛屿内部变成迷宫之阵、移动山体岩石如动脚趾",
+      "knowledge_status": "knows",
+      "acquired_in_scene": "S006",
+      "source_of_information": "特蕾娅与西流尔之言",
+      "reliability": "character_claim",
+      "concealed_from": [],
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S006",
+          "quote": "这整个岛屿都是我的身体，这些岩石，早就变成了我的骨骼和肌肉",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "knowledge_id": "K003",
+      "subject": "特蕾娅",
+      "information": "莲泉已继承双王爵（五度+六度）、拥有三套灵魂回路、是亚斯蓝第一个身兼双王爵之人",
+      "knowledge_status": "knows",
+      "acquired_in_scene": "S007",
+      "source_of_information": "特蕾娅感知与推理",
+      "reliability": "character_claim",
+      "concealed_from": [],
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S007",
+          "quote": "她现在是五度王爵，也是六度王爵",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "knowledge_id": "K004",
+      "subject": "特蕾娅",
+      "information": "莲泉对银尘说‘你跟我走，我带你去找吉尔伽美什’，故银尘随其离去",
+      "knowledge_status": "knows",
+      "acquired_in_scene": "S008",
+      "source_of_information": "特蕾娅感知",
+      "reliability": "character_claim",
+      "concealed_from": [],
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S008",
+          "quote": "那句话是：‘你跟我走，我带你去找吉尔伽美什。’",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "knowledge_id": "K005",
+      "subject": "漆拉",
+      "information": "缝魂以生命与家族荣誉起誓未背叛白银祭司、只求收拾魂兽残局保雷恩百姓",
+      "knowledge_status": "knows",
+      "acquired_in_scene": "S007",
+      "source_of_information": "缝魂当面起誓",
+      "reliability": "character_claim",
+      "concealed_from": [],
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S007",
+          "quote": "我用我的生命和我家族所有的荣誉向你起誓！我没有背叛白银祭司",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "L001",
+      "canonical_name": "雷恩海域岛屿（永生岛）",
+      "aliases": [
+        "这个岛屿",
+        "岛屿"
+      ],
+      "parent_location": "西之亚斯蓝帝国·雷恩海域",
+      "location_type": "海上岛屿（西流尔躯体，本章大部被摧毁）",
+      "observable_features": [
+        "岛屿中心爆炸、巨石激射坠落、分崩离析",
+        "岛屿仅剩零星礁石",
+        "内部有西流尔心脏所在巨大空旷洞穴",
+        "成人间炼狱：魂兽尸块骸骨散落、红色血雨瓢泼"
+      ],
+      "entry_conditions": [],
+      "hazards": [
+        "几十万魂兽暴动",
+        "诸王爵使徒大战",
+        "岛屿崩塌"
+      ],
+      "rules": [],
+      "state_changes": [
+        "本章岛屿被摧毁至仅剩零星礁石、西流尔死亡"
+      ],
+      "events_in_chapter": [
+        "E002",
+        "E003",
+        "E006",
+        "E008",
+        "E010"
+      ],
+      "evidence": [
+        {
+          "scene_id": "S007",
+          "quote": "岛屿已经被摧毁得只剩下零星的礁石",
+          "evidence_type": "environmental_observation",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "location_id": "L002",
+      "canonical_name": "雷恩海域岛屿内部洞穴（西流尔心脏所在）",
+      "aliases": [],
+      "parent_location": "雷恩海域岛屿",
+      "location_type": "西流尔躯体内巨大空旷洞穴",
+      "observable_features": [
+        "黑暗、滴水声、滴水为血红色",
+        "巨大空旷洞穴几乎望不到顶",
+        "中心两人高圆形巨石发熔岩般血红光按呼吸节奏明灭",
+        "西流尔可制造迷宫之阵、移动合拢山体"
+      ],
+      "entry_conditions": [
+        "经莲泉炸开的洞口进入"
+      ],
+      "hazards": [
+        "特蕾娅破阵追杀"
+      ],
+      "rules": [
+        "西流尔可随意改动爵印位置与移动山体岩石"
+      ],
+      "state_changes": [],
+      "events_in_chapter": [
+        "E006",
+        "E007"
+      ],
+      "evidence": [
+        {
+          "scene_id": "S006",
+          "quote": "光源来自洞穴中心一块圆形的巨石，看上去有两个人那么高，红色的光就来自这块巨石的内部",
+          "evidence_type": "environmental_observation",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "item_id": "I001",
+      "canonical_name": "女神的裙摆",
+      "aliases": [
+        "白色丝绸",
+        "纯白海草状物"
+      ],
+      "item_type": "魂器（顶级变形盾）",
+      "holder_at_start": "银尘",
+      "holder_at_end": "银尘",
+      "location_at_end": "银尘处（部署于麒零脚下保护麒零幽花）",
+      "explicit_functions": [
+        "绸缎缠绕交错无风自动",
+        "领域内任何间接攻击无效（远程、元素类、液态水操纵、魂兽攻击）",
+        "强行将除魂术师本人魂力进攻外的一切攻击定义为间接攻击",
+        "丝绸触碰魂兽即令其化白雾消散"
+      ],
+      "explicit_costs": [],
+      "explicit_limitations": [
+        "唯刀砍剑刺牙齿咬脚踢等直接攻击可伤其主"
+      ],
+      "state_at_end": "使用中（保护麒零幽花）",
+      "related_event_ids": [
+        "E002",
+        "E004"
+      ],
+      "possible_hook": true,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "防御类魂器中最顶级的盾牌之一，排名甚至超越幽冥的那块……死灵镜面",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "item_id": "I002",
+      "canonical_name": "银尘的可分裂细身剑",
+      "aliases": [
+        "细身剑"
+      ],
+      "item_type": "魂器",
+      "holder_at_start": "银尘",
+      "holder_at_end": "银尘",
+      "location_at_end": "银尘处（收回）",
+      "explicit_functions": [
+        "通体晶莹透明、射出后分裂成一大群银鱼般剑阵、回游时两两合一被收回"
+      ],
+      "explicit_costs": [],
+      "explicit_limitations": [],
+      "state_at_end": "收回",
+      "related_event_ids": [
+        "E005"
+      ],
+      "possible_hook": false,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "一把通体晶莹透明的细身剑……迅速地分裂，一分二、二分四",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "item_id": "I003",
+      "canonical_name": "回生锁链",
+      "aliases": [
+        "锁链"
+      ],
+      "item_type": "魂器",
+      "holder_at_start": "鬼山莲泉",
+      "holder_at_end": "鬼山莲泉",
+      "location_at_end": "鬼山莲泉处",
+      "explicit_functions": [
+        "注入魂力可发白光照明",
+        "锋利如刃、可无限延展分裂"
+      ],
+      "explicit_costs": [],
+      "explicit_limitations": [],
+      "state_at_end": "使用中",
+      "related_event_ids": [
+        "E006"
+      ],
+      "possible_hook": false,
+      "evidence": [
+        {
+          "scene_id": "S006",
+          "quote": "她将魂力注入到回生锁链上，锁链锐利的头部发出柔和的白光",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "item_id": "I004",
+      "canonical_name": "天束幽花的冰弓",
+      "aliases": [
+        "冰弓"
+      ],
+      "item_type": "魂器",
+      "holder_at_start": "天束幽花",
+      "holder_at_end": "天束幽花",
+      "location_at_end": "天束幽花处",
+      "explicit_functions": [
+        "可凝聚锋利冰箭射杀魂兽"
+      ],
+      "explicit_costs": [],
+      "explicit_limitations": [],
+      "state_at_end": "使用中",
+      "related_event_ids": [],
+      "possible_hook": false,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "她的手上立刻凝聚了三枚锋利的冰箭",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    }
+  ],
+  "factions": [],
+  "world_rules": [
+    {
+      "rule_id": "R001",
+      "rule_name": "女神的裙摆属性",
+      "rule_category": "魂器规则",
+      "rule_statement": "女神的裙摆以强大到不合理的武器天性，将任何除来自魂术师本人魂力进攻之外的任何攻击（远程、元素类、液态水操纵、魂兽攻击）强行定义为间接攻击，使领域内任何间接攻击无效；唯直接攻击（刀砍剑刺牙齿咬脚踢）可伤其主",
+      "scope": "女神的裙摆持有者",
+      "trigger": "敌方间接攻击",
+      "effect": "间接攻击被无效化",
+      "cost": "unknown",
+      "limitations": [
+        "直接攻击可伤其主"
+      ],
+      "exceptions": [],
+      "violation_consequence": "unknown",
+      "epistemic_status": "character_claim",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "用它强大到不合理的武器天性，将任何除了来自魂术师本人的魂力进攻之外的任何攻击，都强行地定义为间接攻击",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R002",
+      "rule_name": "皇室与王爵魂术体系关系",
+      "rule_category": "社会制度",
+      "rule_statement": "皇族代表的皇室体系与王爵代表的魂术体系如国家与军队关系，王爵统治魂术师充当保卫国家军队，皇族统治魂术世界之外平民；皇族中唯冰帝具王爵级魂力、其余仅魂术师级别；白银祭司为宗教体系、是所有魂术师心中天神",
+      "scope": "亚斯蓝帝国",
+      "trigger": "体系分工",
+      "effect": "三权并存",
+      "cost": "unknown",
+      "limitations": [],
+      "exceptions": [],
+      "violation_consequence": "unknown",
+      "epistemic_status": "character_claim",
+      "confidence": 0.7,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "皇族代表的皇室体系和王爵们代表的魂术体系，就像是国家和军队的关系",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R003",
+      "rule_name": "西流尔赐印与双王爵继承",
+      "rule_category": "王爵继承机制",
+      "rule_statement": "西流尔临死前将灵魂回路赐印莲泉使其为使徒，六度回路压倒性愈合能力使五度六度两套回路安全共存（互相排斥摧毁的脉络被瞬间复原），西流尔死亡瞬间莲泉继承六度王爵、回路复制一倍，使其拥有三套灵魂回路",
+      "scope": "鬼山莲泉",
+      "trigger": "西流尔赐印并死亡",
+      "effect": "莲泉继承六度王爵、成双王爵",
+      "cost": "西流尔死亡",
+      "limitations": [
+        "两套回路可能出现排斥导致魂力不稳"
+      ],
+      "exceptions": [],
+      "violation_consequence": "unknown",
+      "epistemic_status": "character_claim",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S007",
+          "quote": "六度王爵的灵魂回路实在是太过特别了，它压倒性的愈合能力……让两套回路安全地共存在了一个身体内",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    }
+  ],
+  "hooks_and_clues": [
+    {
+      "hook_id": "H001",
+      "scene_id": "S008",
+      "hook_type": "explicit_setup",
+      "content": "莲泉称可带银尘去找吉尔伽美什，银尘随其离去",
+      "related_entities": [
+        "鬼山莲泉",
+        "银尘",
+        "吉尔伽美什"
+      ],
+      "introduced_or_updated": "introduced",
+      "current_status": "unresolved",
+      "known_by": [
+        "特蕾娅",
+        "银尘",
+        "鬼山莲泉"
+      ],
+      "unknown_to": [
+        "漆拉",
+        "幽冥",
+        "神音"
+      ],
+      "urgency": "high",
+      "canon_eligible": true,
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S008",
+          "quote": "那句话是：‘你跟我走，我带你去找吉尔伽美什。’",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "hook_id": "H002",
+      "scene_id": "S008",
+      "hook_type": "explicit_question",
+      "content": "莲泉身为双王爵却魂力出问题（两套回路排斥），其去向与命运如何",
+      "related_entities": [
+        "鬼山莲泉"
+      ],
+      "introduced_or_updated": "introduced",
+      "current_status": "unresolved",
+      "known_by": [
+        "特蕾娅"
+      ],
+      "unknown_to": [],
+      "urgency": "medium",
+      "canon_eligible": true,
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S008",
+          "quote": "她好像魂力出了问题……可能是两套灵魂回路出现了排斥",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "hook_id": "H003",
+      "scene_id": "S007",
+      "hook_type": "explicit_question",
+      "content": "漆拉要求杀完莲泉后特蕾娅给解释，特蕾娅究竟有何图谋与隐瞒",
+      "related_entities": [
+        "漆拉",
+        "特蕾娅"
+      ],
+      "introduced_or_updated": "introduced",
+      "current_status": "unresolved",
+      "known_by": [
+        "特蕾娅"
+      ],
+      "unknown_to": [
+        "漆拉"
+      ],
+      "urgency": "medium",
+      "canon_eligible": true,
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S008",
+          "quote": "杀完之后，特蕾娅，你最好给我们一个解释",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    },
+    {
+      "hook_id": "H004",
+      "scene_id": "S004",
+      "hook_type": "explicit_setup",
+      "content": "银尘持有女神的裙摆等多件魂器，其行踪诡异疑一直在收集远古遗落魂器，且无人知魂器内是否寄居魂兽",
+      "related_entities": [
+        "银尘",
+        "女神的裙摆"
+      ],
+      "introduced_or_updated": "introduced",
+      "current_status": "unresolved",
+      "known_by": [
+        "银尘",
+        "天束幽花"
+      ],
+      "unknown_to": [],
+      "urgency": "low",
+      "canon_eligible": true,
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "难道这些年里，他就一直在这片大陆上收集着各种从远古时代起就遗落在世间的各种魂器么？",
+          "evidence_type": "internal_monologue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    }
+  ],
+  "timelines": [
+    {
+      "timeline_entry_id": "T001",
+      "timeline_type": "main",
+      "sequence_index": 1,
+      "absolute_time": "unknown",
+      "relative_time": "紧接第十三章末·落日至昏暗",
+      "duration": "约数小时",
+      "location": "雷恩海域岛屿及内部洞穴",
+      "participants": [
+        "鬼山莲泉",
+        "鬼山缝魂",
+        "西流尔",
+        "特蕾娅",
+        "霓虹",
+        "幽冥",
+        "神音",
+        "漆拉",
+        "银尘",
+        "麒零",
+        "天束幽花",
+        "海银"
+      ],
+      "current_task": "各方势力在永生岛大战、缝魂牺牲、莲泉唤醒西流尔继承双王爵",
+      "event_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E004",
+        "E005",
+        "E006",
+        "E007",
+        "E008",
+        "E009",
+        "E010",
+        "E011",
+        "E012",
+        "E013",
+        "E014",
+        "E015"
+      ],
+      "plot_description": "缝魂授魂力予莲泉令其入洞唤醒西流尔、自己断后；银尘部署女神裙摆保护麒零幽花并迎战；天束幽花向麒零揭示女神裙摆与皇室体系；众人抵御魂兽；莲泉入洞遇西流尔、特蕾娅破阵追近；缝魂与霓虹同归于尽；西流尔赐印莲泉后死亡、莲泉继承双王爵（三套回路）；天束幽花冲出盾范围昏迷；众人追杀莲泉，银尘因吉尔伽美什之名随莲泉离去。",
+      "result": "缝魂死、霓虹重伤昏迷、西流尔死、莲泉成双王爵、银尘随莲泉离去、岛屿被摧毁",
+      "relation_to_other_entries": [],
+      "confidence": 0.85
+    }
+  ],
+  "cliffhanger_analysis": {
+    "enabled": false,
+    "last_scene_ids": [],
+    "immediate_conflicts": [],
+    "unfinished_actions": [],
+    "characters_in_danger": [],
+    "active_time_pressure": [],
+    "urgency": "unknown",
+    "must_continue_states": [],
+    "resolved_at_chapter_end": false
+  },
+  "style_profile": {
+    "narrative_person": "第三人称",
+    "viewpoint_pattern": "限知多视角，随场景在鬼山莲泉、麒零、天束幽花间切换",
+    "sentence_length_tendency": "high",
+    "paragraph_length_tendency": "high",
+    "dialogue_ratio": "medium",
+    "action_description_ratio": "very_high",
+    "environment_description_ratio": "high",
+    "psychological_description_ratio": "medium",
+    "dominant_sensory_channels": [
+      "视觉",
+      "听觉",
+      "触觉",
+      "温度"
+    ],
+    "common_rhetorical_devices": [
+      "比喻",
+      "夸张意象",
+      "感官叠加",
+      "对比（悲壮诀别与残酷杀戮）"
+    ],
+    "dominant_emotional_tones": [
+      "悲壮",
+      "惨烈",
+      "末日",
+      "复仇"
+    ],
+    "pace": "极快，高潮密集",
+    "pace_changes": [
+      "诀别段落悲怆舒缓",
+      "战斗段落急促高压",
+      "继承双王爵段落震撼高潮"
+    ],
+    "transition_patterns": [
+      "地点标记【】切换场景",
+      "视角切换",
+      "并行线索交织"
+    ],
+    "distinctive_expression_patterns": [
+      "长句堆叠史诗级末日意象",
+      "以血泪与血红光烘托悲壮",
+      "悬念收束于关键一句话"
+    ],
+    "evidence_examples": [
+      "岛屿已经被摧毁得只剩下零星的礁石",
+      "他的身躯已经冰冷，他的双眼却没有闭上",
+      "那句话是：‘你跟我走，我带你去找吉尔伽美什。’"
+    ]
+  },
+  "entity_resolution_issues": [],
+  "continuity_issues": [
+    {
+      "issue_id": "CI001",
+      "issue_type": "identity_conflict",
+      "severity": "warning",
+      "current_chapter_value": "特蕾娅揭示莲泉此刻拥有三套灵魂回路（五度+六度+复制一套），后文特蕾娅又心称‘一个拥有四套灵魂回路的怪物诞生了’",
+      "previous_context_value": "previous_context载鬼山莲泉体内四套灵魂回路",
+      "related_entities": [
+        "鬼山莲泉"
+      ],
+      "description": "本章特蕾娅口述为三套回路（五度+六度+复制），但结尾旁白心称为‘四套灵魂回路’，存在数量表述前后不一；与previous_context‘四套灵魂回路’吻合旁白数字。需Canon Merger核对正典计数口径。",
+      "recommended_action": "send_to_canon_merger",
+      "evidence": [
+        {
+          "scene_id": "S007",
+          "quote": "她此刻等于拥有三套灵魂回路",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        },
+        {
+          "scene_id": "S007",
+          "quote": "一个拥有四套灵魂回路的怪物，诞生了",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-014.md"
+        }
+      ]
+    }
+  ],
+  "interpretation_candidates": [
+    {
+      "candidate_id": "IC001",
+      "interpretation_type": "motivation",
+      "content": "鬼山缝魂与霓虹同归于尽是缝魂主动求死、以命换命为莲泉创造机会",
+      "supporting_observations": [
+        "缝魂已将残余魂力全输莲泉",
+        "特蕾娅吼‘他就是想死’",
+        "缝魂着魔般冲向霓虹"
+      ],
+      "alternative_explanations": [
+        "缝魂不敌霓虹被动战死"
+      ],
+      "confidence": 0.8,
+      "canon_eligible": false
+    },
+    {
+      "candidate_id": "IC002",
+      "interpretation_type": "identity",
+      "content": "银尘因对上代一度王爵吉尔伽美什的忠诚（曾为其天之使徒）而随莲泉离去",
+      "supporting_observations": [
+        "莲泉仅以吉尔伽美什之名便令银尘心甘情愿随行",
+        "银尘释放魂器阻众人护莲泉"
+      ],
+      "alternative_explanations": [
+        "银尘另有图谋"
+      ],
+      "confidence": 0.6,
+      "canon_eligible": false
+    },
+    {
+      "candidate_id": "IC003",
+      "interpretation_type": "motivation",
+      "content": "特蕾娅布局全岛大战另有深层目的，或为引出/检验某种力量（如爵印内沉睡之物）",
+      "supporting_observations": [
+        "特蕾娅全程旁观操控",
+        "上章揭示其爵印内毁灭性力量正醒来",
+        "本章揭示真相后令众人绞杀莲泉"
+      ],
+      "alternative_explanations": [
+        "特蕾娅确为执行白银祭司猎杀令"
+      ],
+      "confidence": 0.5,
+      "canon_eligible": false
+    }
+  ],
+  "chapter_end_state": {
+    "current_time": "主线当前·昏暗（大战后）",
+    "active_locations": [
+      "雷恩海域（岛屿仅剩零星礁石）"
+    ],
+    "active_characters": [
+      "鬼山莲泉",
+      "银尘",
+      "特蕾娅",
+      "幽冥",
+      "神音",
+      "漆拉",
+      "麒零",
+      "天束幽花",
+      "霓虹"
+    ],
+    "ongoing_events": [
+      "众人失莲泉银尘踪影",
+      "天束幽花昏迷",
+      "霓虹重伤昏迷"
+    ],
+    "unfinished_tasks": [
+      "追杀莲泉（已失其踪）",
+      "漆拉要特蕾娅给解释",
+      "银尘随莲泉寻吉尔伽美什"
+    ],
+    "unresolved_hooks": [
+      "H001",
+      "H002",
+      "H003",
+      "H004"
+    ],
+    "critical_character_states": [
+      "鬼山缝魂死亡",
+      "西流尔死亡",
+      "霓虹重伤昏迷",
+      "特蕾娅重伤",
+      "天束幽花昏迷",
+      "莲泉成双王爵但魂力排斥不稳、与银尘离去",
+      "银尘随莲泉消失"
+    ],
+    "critical_item_states": [
+      "女神的裙摆保护麒零（银尘已离去）",
+      "回生锁链随莲泉",
+      "海银载莲泉游走"
+    ],
+    "next_chapter_continuity_constraints": [
+      "莲泉成双王爵但回路排斥魂力不稳、与银尘一同消失去向不明（疑寻吉尔伽美什）",
+      "缝魂西流尔俱死、霓虹重伤昏迷、特蕾娅重伤、天束幽花昏迷",
+      "漆拉等众人要求特蕾娅给解释、众人对银尘立场生疑"
+    ]
+  },
+  "validation_issues": [],
+  "quality_checks": {
+    "all_scenes_have_source_spans": true,
+    "all_critical_events_have_evidence": true,
+    "all_state_changes_have_evidence": true,
+    "dreams_and_memories_separated": true,
+    "character_claims_not_treated_as_confirmed_fact": true,
+    "planned_events_not_treated_as_occurred": true,
+    "unknown_values_not_fabricated": true,
+    "timeline_order_checked": true,
+    "entity_aliases_checked": true,
+    "latest_chapter_cliffhanger_checked": true
+  }
+}

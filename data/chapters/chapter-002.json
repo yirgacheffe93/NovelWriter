@@ -1,0 +1,2080 @@
+{
+  "schema_version": "chapter-canon-extraction-v1.0",
+  "parse_status": "success",
+  "source": {
+    "source_path": "data/raw/chapters_src/chapter-002.md",
+    "source_hash": "c97a1f9b75969e775a35862ecd79134d566e492d19d46968980c7fff0ccbf596",
+    "canon_level": "official",
+    "chapter_id_hint": "002"
+  },
+  "chapter_metadata": {
+    "chapter_id": "第二章",
+    "chapter_title": "赐印",
+    "volume_title": "unknown",
+    "chapter_number": 2,
+    "detected_heading": "第二章 赐印",
+    "narrative_person": "第三人称",
+    "viewpoint_type": "第三人称限知，多线切换（麒零/神音→莲泉→银尘/麒零→莲泉）",
+    "primary_viewpoint_character": "麒零",
+    "viewpoint_stability": "在福泽镇森林线与雷恩莲泉线之间交叉切换",
+    "primary_reality_layer": "present_reality",
+    "factual_abstract": "苍雪之牙追杀神音与麒零至绝路，神音布网反击仍被五爪击穿砸入山崖洞穴，麒零被冰刺捆绑重伤将死。场景切至雷恩市，第五使徒鬼山莲泉为魂塚而来，杀死自称雷恩第一魂术世家的贵族。麒零次日醒来伤势全无、神音与冰晶皆消失，被银尘找到。银尘为保麒零性命提前在森林中为其赐印，麒零体内蕴含汪洋般魂力并曾逆向反噬银尘。银尘讲解赐印、爵印、魂兽、七度王爵、杀戮王爵等常识，并解开衣袍向麒零展示与其相同的‘爵印’，呈现出令麒零惊叹的神迹般身体景象。"
+  },
+  "chapter_boundaries": {
+    "single_chapter_confirmed": true,
+    "detected_chapter_count": 1,
+    "detected_boundaries": []
+  },
+  "scenes": [
+    {
+      "scene_id": "S001",
+      "sequence_index": 1,
+      "scene_title_generated": "森林逃亡：神音与麒零被苍雪之牙追杀",
+      "reality_layer": "present_reality",
+      "viewpoint_character": "麒零",
+      "time": {
+        "absolute_time": "unknown",
+        "relative_time": "紧接第一章深夜",
+        "time_of_day": "深夜",
+        "duration": "极短（逃亡片刻）",
+        "sequence_relation": "after_previous_chapter",
+        "confidence": 0.85
+      },
+      "location": {
+        "primary_location": "福泽镇外森林",
+        "sub_location": "森林尽头山体（绝路）",
+        "location_change_from_previous_scene": false
+      },
+      "participants": ["麒零", "神音"],
+      "scene_goal": "神音背着麒零逃离苍雪之牙追杀",
+      "opening_state": "神音用银白丝刃卷裹麒零从驿站逃出",
+      "factual_summary": "神音背着麒零以银白丝线拉动在森林中飞掠逃命，身后苍雪之牙如海潮般逼近。逃至森林尽头山体绝路，神音布下遍布森林的白丝之网反击，仍被苍雪之牙五爪闪电般穿刺身体、砸入山崖洞穴。麒零被冰刺捆绑重伤，失去意识前看见怪兽巨爪高举。",
+      "closing_state": "麒零失去意识；神音被冰雪藤蔓掩埋于洞穴",
+      "transition_reason": "location_change",
+      "source_span": {
+        "start_marker": "月光像是水银般流淌在福泽镇的地表上",
+        "end_marker": "阴影里，闪电般的光亮飞速地划下"
+      }
+    },
+    {
+      "scene_id": "S002",
+      "sequence_index": 2,
+      "scene_title_generated": "雷恩城：莲泉杀死第一魂术世家贵族",
+      "reality_layer": "present_reality",
+      "viewpoint_character": "莲泉",
+      "time": {
+        "absolute_time": "unknown",
+        "relative_time": "与S001大致同时或略后",
+        "time_of_day": "正午",
+        "duration": "unknown",
+        "sequence_relation": "parallel_or_after_S001",
+        "confidence": 0.6
+      },
+      "location": {
+        "primary_location": "港口城市雷恩",
+        "sub_location": "城门内白色大理石街道",
+        "location_change_from_previous_scene": true
+      },
+      "participants": ["莲泉", "雷恩第一魂术世家贵族", "贵族武士", "被撞老妇"],
+      "scene_goal": "莲泉为魂塚来到雷恩",
+      "opening_state": "莲泉正午走进雷恩市",
+      "factual_summary": "莲泉走进雷恩城，目睹一贵族车队撞死一名老妇后扬长而去。莲泉闪身拦在车队前，被贵族武士用狼牙棒重击飞出。贵族自称雷恩第一魂术世家并踩住莲泉的脸，莲泉起身后以水珠射穿贵族身体无数窟窿，摘下面纱露出第五爵印，自报为鬼山莲泉、第五使徒。",
+      "closing_state": "贵族濒死；莲泉自报第五使徒身份",
+      "transition_reason": "location_change",
+      "source_span": {
+        "start_marker": "【西之亚斯蓝帝国·港口城市雷恩】",
+        "end_marker": "我就是鬼山莲泉，第五‘使徒’"
+      }
+    },
+    {
+      "scene_id": "S003",
+      "sequence_index": 3,
+      "scene_title_generated": "次日清晨：麒零遇银尘",
+      "reality_layer": "present_reality",
+      "viewpoint_character": "麒零",
+      "time": {
+        "absolute_time": "unknown",
+        "relative_time": "次日清晨/白天",
+        "time_of_day": "白天",
+        "duration": "unknown",
+        "sequence_relation": "after_S001",
+        "confidence": 0.85
+      },
+      "location": {
+        "primary_location": "福泽镇外森林",
+        "sub_location": "山崖洞穴附近",
+        "location_change_from_previous_scene": true
+      },
+      "participants": ["麒零", "银尘"],
+      "scene_goal": "银尘找到并带走麒零",
+      "opening_state": "麒零醒来，伤势全无",
+      "factual_summary": "麒零醒来发现昨夜伤痕全无，攀上山崖发现洞穴空空、神音与冰晶消失。发现银尘坐在古木根系上读羊皮古书。银尘让麒零跟他走，称去雷恩坐船往格兰尔特；麒零问起神音，银尘答没看见。银尘施寒气令麒零噤声，称‘从你成为使徒起以前人生都不具意义’，并追问麒零身份。",
+      "closing_state": "银尘决定带麒零去格兰尔特问白银祭司",
+      "transition_reason": "location_change",
+      "source_span": {
+        "start_marker": "【西之亚斯蓝帝国·福泽镇外】",
+        "end_marker": "我会保护你"
+      }
+    },
+    {
+      "scene_id": "S004",
+      "sequence_index": 4,
+      "scene_title_generated": "雷恩深夜：莲泉感应强敌召唤闇翅",
+      "reality_layer": "present_reality",
+      "viewpoint_character": "莲泉",
+      "time": {
+        "absolute_time": "unknown",
+        "relative_time": "S002之后的夜晚",
+        "time_of_day": "深夜",
+        "duration": "unknown",
+        "sequence_relation": "after_S002",
+        "confidence": 0.6
+      },
+      "location": {
+        "primary_location": "港口城市雷恩",
+        "sub_location": "旅店房间/夜空",
+        "location_change_from_previous_scene": true
+      },
+      "participants": ["莲泉"],
+      "scene_goal": "感应并追击来袭的强敌",
+      "opening_state": "莲泉住进旅店闭眼沉默",
+      "factual_summary": "莲泉在旅店黑暗中感应到一股透明涟漪，身体爆炸出幽绿烟雾扩散消失。她自语‘来了个不得了的怪物’。随后她跃出窗口升空追击一个白影，召唤魂兽闇翅显形，朝白影飞掠而去。",
+      "closing_state": "莲泉骑闇翅追击白影",
+      "transition_reason": "location_change",
+      "source_span": {
+        "start_marker": "莲泉找了家旅店住下",
+        "end_marker": "朝前方那个白色的影子无声无息地飞掠而去"
+      }
+    },
+    {
+      "scene_id": "S005",
+      "sequence_index": 5,
+      "scene_title_generated": "森林中：银尘为麒零赐印",
+      "reality_layer": "present_reality",
+      "viewpoint_character": "麒零",
+      "time": {
+        "absolute_time": "unknown",
+        "relative_time": "紧接S003",
+        "time_of_day": "白天转夜晚",
+        "duration": "unknown",
+        "sequence_relation": "after_S003",
+        "confidence": 0.7
+      },
+      "location": {
+        "primary_location": "福泽镇外森林",
+        "sub_location": "unknown",
+        "location_change_from_previous_scene": true
+      },
+      "participants": ["银尘", "麒零"],
+      "scene_goal": "银尘探查麒零体内魂力并为其赐印",
+      "opening_state": "银尘决定不经福泽镇，直接去雷恩",
+      "factual_summary": "银尘对麒零耳后刺探魂力，发现麒零体内魂力如汪洋且吞噬其探查魂力。银尘确认麒零即白银祭司所命使徒。进一步按胸口注入魂力时遭五股魂力逆向反噬，被震退百米坠落。为救麒零性命，银尘在森林中提前赐印，麒零在金色光河幻觉中醒来。银尘讲解爵印、赐印、魂兽栖居、苍雪之牙已成麒零魂兽等。",
+      "closing_state": "赐印完成，麒零苍雪之牙入爵印",
+      "transition_reason": "action_chain_break",
+      "source_span": {
+        "start_marker": "我们也不用去福泽镇了",
+        "end_marker": "我是‘七度王爵’"
+      }
+    },
+    {
+      "scene_id": "S006",
+      "sequence_index": 6,
+      "scene_title_generated": "夜谈：王爵常识与爵印展示",
+      "reality_layer": "present_reality",
+      "viewpoint_character": "麒零",
+      "time": {
+        "absolute_time": "unknown",
+        "relative_time": "紧接S005",
+        "time_of_day": "夜晚",
+        "duration": "unknown",
+        "sequence_relation": "after_S005",
+        "confidence": 0.7
+      },
+      "location": {
+        "primary_location": "福泽镇外森林",
+        "sub_location": "unknown",
+        "location_change_from_previous_scene": false
+      },
+      "participants": ["银尘", "麒零"],
+      "scene_goal": "银尘讲解王爵体系并向麒零展示爵印",
+      "opening_state": "银尘休息，麒零寻找自己爵印",
+      "factual_summary": "麒零寻找爵印误以为在臀部，银尘纠正爵印在尾椎最后一节。银尘讲解二度王爵为杀戮王爵、一度王爵从未离开心脏最深处。银尘解衣向麒零展示与自己位置形状相同的爵印，麒零见到‘神迹般’的景象。",
+      "closing_state": "麒零见到银尘身体呈现的神迹般景象",
+      "transition_reason": "chapter_end",
+      "source_span": {
+        "start_marker": "‘王爵’大人，那你会教我魂术么？",
+        "end_marker": "“这……这是……”"
+      }
+    }
+  ],
+  "events": [
+    {
+      "event_id": "E001",
+      "scene_id": "S001",
+      "sequence_index": 1,
+      "event_type": "movement",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "深夜",
+      "location": "福泽镇外森林",
+      "participants": ["神音", "麒零"],
+      "initiator": "神音",
+      "target": "麒零",
+      "trigger": "苍雪之牙屠杀驿站",
+      "action": "神音用银白丝刃卷裹麒零从驿站拉出，背其逃跑",
+      "result": "二人逃入森林",
+      "immediate_consequence": "引发E002",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [],
+      "causes_event_ids": ["E002"],
+      "importance": "critical",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "神音用银白的丝刃把自己卷裹着从驿站里拉扯出来逃命",
+          "evidence_type": "internal_monologue",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E002",
+      "scene_id": "S001",
+      "sequence_index": 2,
+      "event_type": "combat",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "深夜",
+      "location": "福泽镇外森林尽头山体",
+      "participants": ["神音", "苍雪之牙"],
+      "initiator": "神音",
+      "target": "苍雪之牙",
+      "trigger": "逃至绝路，转身迎战",
+      "action": "神音将魂力沿白丝布满整个森林成死亡之网，闭眼感应对方攻击",
+      "result": "神音提前感应到攻击但来不及躲避",
+      "immediate_consequence": "引发E003",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": ["E001"],
+      "causes_event_ids": ["E003"],
+      "importance": "critical",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "她把魂力从身体里释放出来……均匀地依附在每一寸交错分割的网上",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E003",
+      "scene_id": "S001",
+      "sequence_index": 3,
+      "event_type": "injury",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "深夜",
+      "location": "森林尽头山崖",
+      "participants": ["神音", "苍雪之牙"],
+      "initiator": "苍雪之牙",
+      "target": "神音",
+      "trigger": "神音布网迎战",
+      "action": "苍雪之牙五根锋利巨大尖爪如闪电穿刺神音身体，将其撞向山崖砸出洞穴",
+      "result": "神音被砸入山崖洞穴",
+      "immediate_consequence": "神音被冰雪藤蔓掩埋",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": ["E002"],
+      "causes_event_ids": ["E004"],
+      "importance": "critical",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "五根锋利的巨大尖爪……笔直地射穿了她的身体。她整个人被巨大的冲击力穿刺着，朝身后的山崖撞去",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E004",
+      "scene_id": "S001",
+      "sequence_index": 4,
+      "event_type": "other",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "深夜",
+      "location": "山崖洞穴",
+      "participants": [],
+      "initiator": "苍雪之牙力量",
+      "target": "洞穴",
+      "trigger": "神音被砸入洞穴",
+      "action": "无数尖刀般锋利的冰雪藤蔓缓慢扭曲地生长填满洞穴，掩埋神音",
+      "result": "洞穴被冰凌交错填满",
+      "immediate_consequence": "麒零目睹神音被掩埋",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": ["E003"],
+      "causes_event_ids": [],
+      "importance": "critical",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "无数尖刀般锋利的冰雪藤蔓，缓慢而又扭曲地生长出来，填满了那个洞穴",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E005",
+      "scene_id": "S001",
+      "sequence_index": 5,
+      "event_type": "injury",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "深夜",
+      "location": "森林尽头",
+      "participants": ["麒零"],
+      "initiator": "苍雪之牙力量",
+      "target": "麒零",
+      "trigger": "麒零倒地",
+      "action": "无数尖利冰刺从麒零身体周围破土而出，刺穿捆绑其脚踝、大腿、手臂、胸膛、小腹",
+      "result": "麒零重伤濒死，失去意识",
+      "immediate_consequence": "麒零濒死",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": ["E003"],
+      "causes_event_ids": [],
+      "importance": "critical",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "无数尖利的冰刺从他身体周围的地面破土而出……密密麻麻地撕扯开他的肌肉",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E006",
+      "scene_id": "S002",
+      "sequence_index": 6,
+      "event_type": "movement",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "正午",
+      "location": "雷恩城白色大理石街道",
+      "participants": ["莲泉"],
+      "initiator": "贵族车队",
+      "target": "老妇",
+      "trigger": "老妇弯腰捡篮子",
+      "action": "贵族车队马车飞驰撞飞老妇，老妇撞墙而死",
+      "result": "老妇死亡",
+      "immediate_consequence": "莲泉皱眉，旧记忆闪动",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [],
+      "causes_event_ids": ["E007"],
+      "importance": "normal",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "老妇人的身体……轻飘飘地抛离出去，撞在道路边的城墙上",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E007",
+      "scene_id": "S002",
+      "sequence_index": 7,
+      "event_type": "other",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "正午",
+      "location": "雷恩城街道",
+      "participants": ["莲泉"],
+      "initiator": "莲泉",
+      "target": "贵族车队",
+      "trigger": "目睹撞死老妇",
+      "action": "莲泉闪身站到车队前拦路",
+      "result": "贵族下车与莲泉对峙",
+      "immediate_consequence": "引发E008",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": ["E006"],
+      "causes_event_ids": ["E008"],
+      "importance": "normal",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "身影在烈日下晃动了几下，再一闪，就站在了车队的面前",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E008",
+      "scene_id": "S002",
+      "sequence_index": 8,
+      "event_type": "injury",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "正午",
+      "location": "雷恩城街道",
+      "participants": ["贵族武士", "莲泉"],
+      "initiator": "贵族武士",
+      "target": "莲泉",
+      "trigger": "贵族令‘滚开’",
+      "action": "壮硕武士用黑铁狼牙棒朝莲泉脖颈死命打下去，莲泉被击飞坠落十几米",
+      "result": "莲泉身体被打得变形",
+      "immediate_consequence": "引发E009",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": ["E007"],
+      "causes_event_ids": ["E009"],
+      "importance": "normal",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "莲泉的身体‘砰’的一声飞出去，坠落在十几米远的地面",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E009",
+      "scene_id": "S002",
+      "sequence_index": 9,
+      "event_type": "combat",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "正午",
+      "location": "雷恩城街道",
+      "participants": ["莲泉", "贵族"],
+      "initiator": "莲泉",
+      "target": "贵族",
+      "trigger": "贵族踩脸并自称雷恩第一魂术世家",
+      "action": "莲泉将贵族抛向天空，从路边水池抓起无数水珠以雷电速度射穿其身体，将其射出无数窟窿",
+      "result": "贵族全身千疮百孔濒死坠落",
+      "immediate_consequence": "贵族濒死",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": ["E008"],
+      "causes_event_ids": ["E010"],
+      "importance": "critical",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "那些珍珠般大小的水珠，以一种雷电般的速度朝那个男人射过去……将他的身体射出了无数的窟窿",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E010",
+      "scene_id": "S002",
+      "sequence_index": 10,
+      "event_type": "secret_reveal",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "正午",
+      "location": "雷恩城街道",
+      "participants": ["莲泉", "贵族"],
+      "initiator": "莲泉",
+      "target": "贵族",
+      "trigger": "濒死贵族认出其第五爵印",
+      "action": "莲泉点头自报为鬼山莲泉、第五使徒",
+      "result": "莲泉身份揭示",
+      "immediate_consequence": "unknown",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": ["E009"],
+      "causes_event_ids": [],
+      "importance": "critical",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "对，我就是鬼山莲泉，第五‘使徒’",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E011",
+      "scene_id": "S003",
+      "sequence_index": 11,
+      "event_type": "recovery",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "次日白天",
+      "location": "福泽镇外森林",
+      "participants": ["麒零"],
+      "initiator": "unknown",
+      "target": "麒零",
+      "trigger": "次日醒来",
+      "action": "麒零醒来，胸膛、手脚均无任何伤痕，身体有用不完的力气",
+      "result": "麒零伤势全无",
+      "immediate_consequence": "麒零寻找神音",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": ["E005"],
+      "causes_event_ids": [],
+      "importance": "normal",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "昨天晚上被那些锋利的冰刃刺穿的胸膛完全没有任何的痛觉……没有任何的伤痕",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E012",
+      "scene_id": "S003",
+      "sequence_index": 12,
+      "event_type": "other",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "次日白天",
+      "location": "山崖洞穴",
+      "participants": ["麒零"],
+      "initiator": "麒零",
+      "target": "洞穴",
+      "trigger": "寻找神音",
+      "action": "麒零爬上山崖发现洞穴空空，冰晶全部消失，仅留有崭新划痕",
+      "result": "神音与冰晶皆消失",
+      "immediate_consequence": "麒零失望",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": ["E011"],
+      "causes_event_ids": [],
+      "importance": "normal",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "发现洞穴里空空的，没有任何东西",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E013",
+      "scene_id": "S003",
+      "sequence_index": 13,
+      "event_type": "movement",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "次日白天",
+      "location": "福泽镇外森林",
+      "participants": ["银尘", "麒零"],
+      "initiator": "银尘",
+      "target": "麒零",
+      "trigger": "奉命寻找使徒",
+      "action": "银尘坐在古木根系上读羊皮古书，被麒零发现",
+      "result": "二人相遇",
+      "immediate_consequence": "引发E014",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [],
+      "causes_event_ids": ["E014"],
+      "importance": "critical",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "抬起头发现了一直坐在离自己不远处的银尘",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E014",
+      "scene_id": "S003",
+      "sequence_index": 14,
+      "event_type": "other",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "次日白天",
+      "location": "福泽镇外森林",
+      "participants": ["银尘", "麒零"],
+      "initiator": "银尘",
+      "target": "麒零",
+      "trigger": "相遇",
+      "action": "银尘让麒零跟他走、去雷恩坐船往格兰尔特，称一时说不清",
+      "result": "麒零被要求同行",
+      "immediate_consequence": "引发E015",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": ["E013"],
+      "causes_event_ids": ["E015"],
+      "importance": "normal",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "跟我走吧，去格兰尔特",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E015",
+      "scene_id": "S003",
+      "sequence_index": 15,
+      "event_type": "other",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "次日白天",
+      "location": "福泽镇外森林",
+      "participants": ["银尘", "麒零"],
+      "initiator": "银尘",
+      "target": "麒零",
+      "trigger": "麒零啰嗦",
+      "action": "银尘施寒气令麒零满口冰碴以噤声，称‘从你成为使徒起以前人生都不具意义’，并追问麒零身份",
+      "result": "银尘确认麒零不懂魂术、未听过使徒",
+      "immediate_consequence": "银尘决定带麒零回格兰尔特问白银祭司",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": ["E014"],
+      "causes_event_ids": [],
+      "importance": "normal",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "从你成为‘使徒’的这一天起，你以前的人生，都不具有任何意义了",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E016",
+      "scene_id": "S004",
+      "sequence_index": 16,
+      "event_type": "other",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "深夜",
+      "location": "雷恩旅店",
+      "participants": ["莲泉"],
+      "initiator": "unknown（来袭怪物）",
+      "target": "莲泉",
+      "trigger": "感应到涟漪",
+      "action": "莲泉感应到一股透明涟漪，身体爆炸出幽绿烟雾扩散消失，自语‘来了个不得了的怪物’",
+      "result": "莲泉察觉强敌来袭",
+      "immediate_consequence": "引发E017",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [],
+      "causes_event_ids": ["E017"],
+      "importance": "normal",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "看起来这一次……来了个不得了的怪物呢",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E017",
+      "scene_id": "S004",
+      "sequence_index": 17,
+      "event_type": "combat",
+      "event_status": "ongoing",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "深夜",
+      "location": "雷恩夜空",
+      "participants": ["莲泉"],
+      "initiator": "莲泉",
+      "target": "白影",
+      "trigger": "白影掠过",
+      "action": "莲泉跃出窗口升空，召唤魂兽闇翅显形，朝白影追击",
+      "result": "莲泉骑闇翅追击白影（结果未明）",
+      "immediate_consequence": "战斗进行中",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": ["E016"],
+      "causes_event_ids": [],
+      "importance": "critical",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "鬼山莲泉站在羽翼丰满的双翅之间的背上……朝前方那个白色的影子无声无息地飞掠而去",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E018",
+      "scene_id": "S005",
+      "sequence_index": 18,
+      "event_type": "other",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "白天",
+      "location": "福泽镇外森林",
+      "participants": ["银尘", "麒零"],
+      "initiator": "银尘",
+      "target": "麒零",
+      "trigger": "确认身份",
+      "action": "银尘对麒零耳后刺探魂力，发现麒零体内魂力如汪洋且吞噬其探查魂力",
+      "result": "银尘确认麒零是白银祭司所命使徒",
+      "immediate_consequence": "引发E019",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [],
+      "causes_event_ids": ["E019"],
+      "importance": "critical",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "麒零身体内部蕴含着的魂力，却像是一望无际的汪洋，肆意翻滚着滔天的巨浪",
+          "evidence_type": "internal_monologue",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E019",
+      "scene_id": "S005",
+      "sequence_index": 19,
+      "event_type": "other",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "白天",
+      "location": "福泽镇外森林",
+      "participants": ["银尘", "麒零"],
+      "initiator": "银尘",
+      "target": "麒零",
+      "trigger": "进一步探查",
+      "action": "银尘按麒零胸口注入更多魂力，遭五股魂力如蛇缠绕逆向反噬，被震退百米单脚跪地",
+      "result": "银尘被反噬震退，麒零倒地",
+      "immediate_consequence": "引发E020",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": ["E018"],
+      "causes_event_ids": ["E020"],
+      "importance": "critical",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "五道快如闪电的魂力……从麒零身体深处，突然疯狂地朝自己逆向反噬而来",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E020",
+      "scene_id": "S005",
+      "sequence_index": 20,
+      "event_type": "recovery",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "白天",
+      "location": "福泽镇外森林",
+      "participants": ["银尘", "麒零"],
+      "initiator": "银尘",
+      "target": "麒零",
+      "trigger": "麒零濒死",
+      "action": "银尘为保麒零性命，提前在森林中为其赐印",
+      "result": "麒零在金色光河幻觉中醒来，苍雪之牙入其爵印",
+      "immediate_consequence": "赐印完成",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": ["E019"],
+      "causes_event_ids": ["E021"],
+      "importance": "critical",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "本来应该带你回到格兰尔特再进行‘赐印’的，但是刚才如果不这样，你就没命了",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E021",
+      "scene_id": "S005",
+      "sequence_index": 21,
+      "event_type": "acquisition",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "character_claim",
+      "time": "夜晚",
+      "location": "福泽镇外森林",
+      "participants": ["银尘", "麒零"],
+      "initiator": "银尘",
+      "target": "麒零",
+      "trigger": "赐印完成",
+      "action": "银尘告知麒零其爵印里栖居着苍雪之牙，它现只听麒零命令",
+      "result": "麒零获得魂兽苍雪之牙",
+      "immediate_consequence": "麒零得知自己成银尘使徒、获苍雪之牙",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": ["E020"],
+      "causes_event_ids": ["E022"],
+      "importance": "critical",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "它现在只听你一个人的命令",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E022",
+      "scene_id": "S005",
+      "sequence_index": 22,
+      "event_type": "secret_reveal",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "夜晚",
+      "location": "福泽镇外森林",
+      "participants": ["银尘", "麒零"],
+      "initiator": "银尘",
+      "target": "麒零",
+      "trigger": "麒零追问",
+      "action": "银尘承认自己是七度王爵",
+      "result": "麒零得知银尘身份",
+      "immediate_consequence": "麒零失望（七度最弱）",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": ["E021"],
+      "causes_event_ids": [],
+      "importance": "critical",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "我是‘七度王爵’",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E023",
+      "scene_id": "S006",
+      "sequence_index": 23,
+      "event_type": "other",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "夜晚",
+      "location": "福泽镇外森林",
+      "participants": ["银尘", "麒零"],
+      "initiator": "银尘",
+      "target": "麒零",
+      "trigger": "麒零寻爵印",
+      "action": "银尘纠正爵印在尾椎最后一节，讲解二度王爵为杀戮王爵、一度王爵从未离开心脏最深处",
+      "result": "麒零了解王爵体系",
+      "immediate_consequence": "unknown",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [],
+      "causes_event_ids": [],
+      "importance": "normal",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S006",
+          "quote": "我们‘爵印’所在的地方是尾椎的最后一节位置",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E024",
+      "scene_id": "S006",
+      "sequence_index": 24,
+      "event_type": "secret_reveal",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "夜晚",
+      "location": "福泽镇外森林",
+      "participants": ["银尘", "麒零"],
+      "initiator": "银尘",
+      "target": "麒零",
+      "trigger": "展示爵印",
+      "action": "银尘解开衣袍向麒零展示与其位置形状相同的爵印，呈现出令麒零惊叹的神迹般身体景象",
+      "result": "麒零见到神迹般景象",
+      "immediate_consequence": "章节结束",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": ["E023"],
+      "causes_event_ids": [],
+      "importance": "critical",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S006",
+          "quote": "眼前的银尘赤裸的身体，呈现着一副他从未见过的，神迹般的样子",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "C001",
+      "canonical_name": "麒零",
+      "mentions": ["麒零"],
+      "aliases_in_chapter": [],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        "被银尘确认为白银祭司所命的新使徒"
+      ],
+      "appearance_facts": [
+        "英气逼人但未完全脱去稚气的少年",
+        "漂亮发际线"
+      ],
+      "ability_facts": [
+        "体内蕴含如一望无际汪洋般肆意翻滚滔天巨浪的魂力",
+        "体内魂力曾逆向反噬银尘注入的魂力",
+        "不会魂术"
+      ],
+      "behavior_facts": [
+        "被神音背在身上逃命",
+        "被冰刺捆绑重伤濒死",
+        "次日醒来伤势全无、攀上山崖发现洞穴空空",
+        "遇银尘并询问神音下落",
+        "被银尘刺探魂力、赐印",
+        "寻找爵印误以为在臀部",
+        "见到银尘身体神迹般景象"
+      ],
+      "emotion_facts": [
+        "次日醒来回忆神音时脸红",
+        "得知银尘是七度王爵时明显失望",
+        "因爵印位置误会而大喊‘我喜欢女孩子的’"
+      ],
+      "goal_facts": [
+        "想回驿站、担心老板娘责骂"
+      ],
+      "psychological_facts": [
+        "对银尘产生‘迷人’感后自问‘我不是有病吧’",
+        "想起逃出驿站的血腥场景时浮现悲伤"
+      ],
+      "knowledge_facts": [
+        "经银尘讲解后了解赐印、爵印、魂兽栖居、苍雪之牙已成其魂兽、七度王爵、杀戮王爵、一度王爵等"
+      ],
+      "possession_facts": [
+        "被赐印后爵印（尾椎最后一节）内栖居魂兽苍雪之牙"
+      ],
+      "relationship_facts": [
+        "成为银尘的使徒"
+      ],
+      "physical_state_at_end": "安然，已获赐印（位于福泽镇外森林）",
+      "location_at_end": "福泽镇外森林",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "随银尘前往雷恩坐船往格兰尔特",
+      "identity_resolution_confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "你身体里面……到底有什么……怪物",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C002",
+      "canonical_name": "神音",
+      "mentions": ["神音"],
+      "aliases_in_chapter": [],
+      "appearance_type": "on_stage",
+      "identity_facts": [],
+      "appearance_facts": [
+        "精致美好的脸笼罩在恐惧阴影里",
+        "嘴唇苍白，瞳孔锁紧成线",
+        "丝绸般的黑色头发"
+      ],
+      "ability_facts": [
+        "能用银白丝线拉动在森林中飞掠",
+        "能将魂力均匀依附于遍布森林的白丝网，感应细微变化",
+        "银白丝线可卷裹人与物"
+      ],
+      "behavior_facts": [
+        "背麒零逃命",
+        "布白丝之网转身迎战苍雪之牙",
+        "被五爪击穿砸入山崖洞穴"
+      ],
+      "emotion_facts": [
+        "恐惧而僵硬",
+        "内心独白‘不想死……不要死’"
+      ],
+      "goal_facts": [
+        "逃命（自述‘再快一点儿，我不想死啊’）"
+      ],
+      "psychological_facts": [
+        "内心独白：每一根丝线都能精准捕捉对方魂力流动，可以提前预知攻击"
+      ],
+      "knowledge_facts": [
+        "感应到身后苍雪之牙的庞大魂力、知道自己不可能会赢"
+      ],
+      "possession_facts": [],
+      "relationship_facts": [
+        "曾背麒零逃命"
+      ],
+      "physical_state_at_end": "被冰雪藤蔓掩埋于山崖洞穴（状态未明）",
+      "location_at_end": "福泽镇外森林山崖洞穴（次日空空）",
+      "availability_state_at_end": "unknown（次日洞穴空空，下落不明）",
+      "current_task_at_end": "unknown",
+      "identity_resolution_confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "五根锋利的巨大尖爪……笔直地射穿了她的身体",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C003",
+      "canonical_name": "莲泉",
+      "mentions": ["莲泉", "鬼山莲泉"],
+      "aliases_in_chapter": ["鬼山莲泉", "第五使徒"],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        "自报为鬼山莲泉、第五使徒",
+        "耳下脖子上有第五爵印",
+        "从小到大几乎无笑容，所有人都觉得她太严肃"
+      ],
+      "appearance_facts": [
+        "蒙面纱遮半张脸",
+        "纯黑色长袍在月光下反射鬼魅般光泽"
+      ],
+      "ability_facts": [
+        "能闪身瞬移至车队前",
+        "能被狼牙棒重击后扭动骨骼关节重组身体",
+        "能将人抛向天空，从水池抓起无数水珠以雷电速度射穿人身体",
+        "能召唤魂兽闇翅（银白羽毛巨翼，覆盖城市上空）"
+      ],
+      "behavior_facts": [
+        "为魂塚来到雷恩",
+        "闪身拦贵族车队",
+        "被狼牙棒击飞后重组身体杀死贵族",
+        "在旅店感应到强敌，跃出窗口召唤闇翅追击白影"
+      ],
+      "emotion_facts": [
+        "脸上几乎无表情",
+        "眼睛里淡然的光‘像是满足了的样子’"
+      ],
+      "goal_facts": [
+        "为魂塚而来雷恩",
+        "曾发誓绝对不杀不会魂术的人"
+      ],
+      "psychological_facts": [
+        "目睹老妇被撞时‘一些旧的记忆画面在脑海深处闪动起来’"
+      ],
+      "knowledge_facts": [
+        "知道雷恩是魂塚入口（魂术师间共知的秘密）",
+        "感应到‘来了个不得了的怪物’"
+      ],
+      "possession_facts": [
+        "持有魂兽闇翅"
+      ],
+      "relationship_facts": [],
+      "physical_state_at_end": "可行动，骑闇翅追击白影",
+      "location_at_end": "雷恩夜空",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "追击来袭白影",
+      "identity_resolution_confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "对，我就是鬼山莲泉，第五‘使徒’",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C004",
+      "canonical_name": "银尘",
+      "mentions": ["银尘"],
+      "aliases_in_chapter": [],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        "自承七度王爵",
+        "奉白银祭司之命寻找使徒麒零",
+        "三年前曾走进心脏"
+      ],
+      "appearance_facts": [
+        "面容如冰雪雕刻般精致且森然冷漠",
+        "长袍以云一般神奇方式浮动",
+        "苍白的脸在月光下如薄玉般完美无瑕",
+        "小麦色肌肉，修长结实躯体，开阔胸膛结实小腹",
+        "尾椎最后一节有爵印",
+        "身体呈现令麒零惊叹的神迹般样子"
+      ],
+      "ability_facts": [
+        "能施寒气令他人口满冰碴、从地下刺出冰刺",
+        "能将魂力刺探入他人身体感知",
+        "能凝树叶露珠为拳头大水团吞饮",
+        "被麒零体内魂力反噬震退百米单脚跪地"
+      ],
+      "behavior_facts": [
+        "在福泽镇感应残留魂力轨迹一路追到森林，找到熟睡的麒零",
+        "令麒零噤声并追问其身份",
+        "对麒零耳后刺探魂力",
+        "按麒零胸口注入魂力遭反噬震退",
+        "为保麒零性命提前赐印",
+        "讲解赐印、爵印、魂兽、七度王爵、杀戮王爵、一度王爵",
+        "解衣向麒零展示爵印"
+      ],
+      "emotion_facts": [
+        "对麒零露出温柔笑容后‘连自己都吓了一跳’",
+        "面对麒零啰嗦揉眉毛，表情有点儿怒"
+      ],
+      "goal_facts": [
+        "带麒零去雷恩坐船往格兰尔特，亲问白银祭司"
+      ],
+      "psychological_facts": [
+        "对麒零感到‘泉水般温柔而清澈’的遥远熟悉感",
+        "不知白银祭司为何让他找一个不懂魂术的人当使徒，感觉被开了玩笑"
+      ],
+      "knowledge_facts": [
+        "确认麒零是白银祭司所命使徒",
+        "认为麒零体内魂力如无法估计体积的巨大怪兽吞噬其探查魂力",
+        "预言之源三个红点如今只剩麒零一人，原因不明",
+        "知道一度王爵从未离开心脏最深处"
+      ],
+      "possession_facts": [],
+      "relationship_facts": [
+        "成为麒零的王爵、赐印者"
+      ],
+      "physical_state_at_end": "虚弱（赐印消耗），气色恢复正常",
+      "location_at_end": "福泽镇外森林",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "带麒零去雷恩坐船往格兰尔特",
+      "identity_resolution_confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "我是‘七度王爵’",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C005",
+      "canonical_name": "雷恩贵族",
+      "mentions": ["男人", "车里下来的男人"],
+      "aliases_in_chapter": ["雷恩第一魂术世家贵族"],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        "自称雷恩第一魂术世家",
+        "乘华贵马车，有侍女护卫与壮硕武士",
+        "华丽长袍点缀白银滚边与肩头襟花"
+      ],
+      "appearance_facts": [],
+      "ability_facts": [
+        "会魂术（自称第一魂术世家）"
+      ],
+      "behavior_facts": [
+        "车队撞死老妇不停",
+        "对莲泉说‘滚开’",
+        "踩住莲泉的脸问‘有没有人告诉过你我们是雷恩第一魂术世家’"
+      ],
+      "emotion_facts": [
+        "眼神冷漠轻蔑",
+        "瞳孔瞬间收紧，杀气鼓舞长袍"
+      ],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [
+        "认出第五爵印"
+      ],
+      "possession_facts": [],
+      "relationship_facts": [],
+      "physical_state_at_end": "濒死/死亡（全身无数窟窿）",
+      "location_at_end": "雷恩城街道（尸体）",
+      "availability_state_at_end": "濒死或死亡",
+      "current_task_at_end": "unknown",
+      "identity_resolution_confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "有没有人告诉过你，我们是雷恩的第一魂术世家？",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    }
+  ],
+  "character_state_changes": [
+    {
+      "change_id": "CS001",
+      "character_id": "C002",
+      "scene_id": "S001",
+      "dimension": "physical_state",
+      "before": "可行动",
+      "change": "被苍雪之牙五爪击穿身体砸入山崖洞穴，被冰雪藤蔓掩埋",
+      "after": "被掩埋于洞穴（次日洞穴空空，下落不明）",
+      "change_status": "confirmed",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "五根锋利的巨大尖爪……笔直地射穿了她的身体",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "change_id": "CS002",
+      "character_id": "C001",
+      "scene_id": "S001",
+      "dimension": "physical_state",
+      "before": "可行动",
+      "change": "被无数冰刺刺穿捆绑，重伤濒死失去意识",
+      "after": "次日醒来伤势全无",
+      "change_status": "confirmed",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "昨天晚上被那些锋利的冰刃刺穿的胸膛完全没有任何的痛觉……没有任何的伤痕",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "change_id": "CS003",
+      "character_id": "C005",
+      "scene_id": "S002",
+      "dimension": "physical_state",
+      "before": "活着",
+      "change": "被莲泉以水珠射穿全身无数窟窿",
+      "after": "濒死或死亡",
+      "change_status": "confirmed",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "将他的身体射出了无数的窟窿",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "change_id": "CS004",
+      "character_id": "C001",
+      "scene_id": "S005",
+      "dimension": "identity",
+      "before": "福泽镇店小二",
+      "change": "被银尘赐印，成为七度王爵银尘的使徒",
+      "after": "七度使徒",
+      "change_status": "confirmed",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "本来应该带你回到格兰尔特再进行‘赐印’的，但是刚才如果不这样，你就没命了",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "change_id": "CS005",
+      "character_id": "C001",
+      "scene_id": "S005",
+      "dimension": "possession",
+      "before": "未持有魂兽",
+      "change": "苍雪之牙入其爵印成为其魂兽",
+      "after": "持有魂兽苍雪之牙",
+      "change_status": "confirmed",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "它再也不会追杀你了，它现在只听你一个人的命令",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "change_id": "CS006",
+      "character_id": "C001",
+      "scene_id": "S005",
+      "dimension": "relationship",
+      "before": "不认识银尘",
+      "change": "成为银尘的使徒",
+      "after": "银尘是其王爵",
+      "change_status": "confirmed",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "刚刚你说我是你的‘使徒’",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "change_id": "CS007",
+      "character_id": "C004",
+      "scene_id": "S005",
+      "dimension": "physical_state",
+      "before": "正常",
+      "change": "被麒零体内魂力反噬震退百米单脚跪地，又为赐印消耗而虚弱",
+      "after": "虚弱后气色恢复正常",
+      "change_status": "confirmed",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "银尘大口地喘着气，看上去快要虚脱的样子",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    }
+  ],
+  "knowledge_states": [
+    {
+      "knowledge_id": "K001",
+      "subject": "麒零",
+      "information": "自己已获赐印、成为银尘的使徒、爵印里栖居着苍雪之牙",
+      "knowledge_status": "knows",
+      "acquired_in_scene": "S005",
+      "source_of_information": "银尘告知",
+      "reliability": "confirmed",
+      "concealed_from": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "它现在只听你一个人的命令",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "knowledge_id": "K002",
+      "subject": "麒零",
+      "information": "银尘是七度王爵（七人中最弱）",
+      "knowledge_status": "knows",
+      "acquired_in_scene": "S005",
+      "source_of_information": "银尘自承",
+      "reliability": "confirmed",
+      "concealed_from": [],
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "我是‘七度王爵’",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "knowledge_id": "K003",
+      "subject": "麒零",
+      "information": "二度王爵为杀戮王爵，专杀背叛的王爵；一度王爵从未离开心脏最深处",
+      "knowledge_status": "knows",
+      "acquired_in_scene": "S006",
+      "source_of_information": "银尘讲解",
+      "reliability": "character_claim",
+      "concealed_from": [],
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S006",
+          "quote": "‘二度王爵’专门负责清理背叛了国家或者‘白银祭司’的‘王爵’……他又被称为‘杀戮王爵’",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "knowledge_id": "K004",
+      "subject": "银尘",
+      "information": "麒零体内蕴含如汪洋般的庞大魂力，会吞噬他人探查魂力",
+      "knowledge_status": "knows",
+      "acquired_in_scene": "S005",
+      "source_of_information": "亲身刺探",
+      "reliability": "confirmed",
+      "concealed_from": ["麒零"],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "你身体里面……到底有什么……怪物",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "knowledge_id": "K005",
+      "subject": "银尘",
+      "information": "预言之源看到的三个红点如今只剩麒零一人，原因不明",
+      "knowledge_status": "knows",
+      "acquired_in_scene": "S005",
+      "source_of_information": "亲身感应",
+      "reliability": "confirmed",
+      "concealed_from": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "之前在‘预言之源’看见的三个红点，为什么只剩下了麒零一个人，他也不清楚",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "knowledge_id": "K006",
+      "subject": "莲泉",
+      "information": "雷恩是魂塚入口（魂术师间共知秘密）",
+      "knowledge_status": "knows",
+      "acquired_in_scene": "S002",
+      "source_of_information": "魂术师共知",
+      "reliability": "confirmed",
+      "concealed_from": [],
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "它是‘魂塚’的入口",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "L001",
+      "canonical_name": "福泽镇外森林",
+      "aliases": [],
+      "parent_location": "福泽镇外",
+      "location_type": "森林",
+      "observable_features": [
+        "参天大树密布",
+        "森林尽头是拔地而起的山体绝路",
+        "山崖上有被神音身体砸出的洞穴"
+      ],
+      "entry_conditions": [],
+      "hazards": ["苍雪之牙追杀（前半夜）"],
+      "rules": [],
+      "state_changes": ["前半夜被苍雪之牙逼近，地面飞速结冰"],
+      "events_in_chapter": ["E001", "E002", "E003", "E013", "E018"],
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "她看见了森林尽头拔地而起的山体",
+          "evidence_type": "environmental_observation",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "location_id": "L002",
+      "canonical_name": "港口城市雷恩",
+      "aliases": ["雷恩"],
+      "parent_location": "西之亚斯蓝帝国西南面",
+      "location_type": "港口都市",
+      "observable_features": [
+        "亚斯蓝第四大都市，帝国出口咽喉港口",
+        "空气有海洋咸味，阳光灿烂，似春日温暖",
+        "白色大理石街道，路边石柱雕刻神兽、白色大理石花坛、喷泉",
+        "居民安居乐业生活富足，支柱为渔业与运输业",
+        "居民脸上绽放开朗笑容"
+      ],
+      "entry_conditions": [],
+      "hazards": [],
+      "rules": [],
+      "state_changes": [],
+      "events_in_chapter": ["E006", "E007", "E009", "E016", "E017"],
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "作为亚斯蓝帝国的第四大都市，雷恩一直扮演着帝国出口咽喉港口的角色",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "location_id": "L003",
+      "canonical_name": "魂塚",
+      "aliases": [],
+      "parent_location": "雷恩（雷恩是其入口）",
+      "location_type": "魂力秘境",
+      "observable_features": [],
+      "entry_conditions": [],
+      "hazards": [],
+      "rules": [],
+      "state_changes": [],
+      "events_in_chapter": [],
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "它是‘魂塚’的入口",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "item_id": "I001",
+      "canonical_name": "苍雪之牙",
+      "aliases": [],
+      "item_type": "魂兽",
+      "holder_at_start": "unknown（野魂兽）",
+      "holder_at_end": "麒零（入其爵印）",
+      "location_at_end": "麒零爵印（尾椎最后一节）内",
+      "explicit_functions": ["栖居于爵印内，只听宿主命令"],
+      "explicit_costs": [],
+      "explicit_limitations": ["不能命令魂兽攻击自己的魂术师、不能命令魂兽自杀"],
+      "state_at_end": "成为麒零魂兽",
+      "related_event_ids": ["E003", "E020", "E021"],
+      "possible_hook": false,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "它现在只听你一个人的命令",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "item_id": "I002",
+      "canonical_name": "闇翅",
+      "aliases": [],
+      "item_type": "魂兽",
+      "holder_at_start": "莲泉",
+      "holder_at_end": "莲泉",
+      "location_at_end": "雷恩夜空",
+      "explicit_functions": ["可乘骑飞行，双翅如山脉庞大"],
+      "explicit_costs": [],
+      "explicit_limitations": [],
+      "state_at_end": "被莲泉召唤显形",
+      "related_event_ids": ["E017"],
+      "possible_hook": false,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "她的魂兽‘闇翅’载着她",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "item_id": "I003",
+      "canonical_name": "银尘的羊皮古书",
+      "aliases": [],
+      "item_type": "书籍",
+      "holder_at_start": "银尘",
+      "holder_at_end": "银尘",
+      "location_at_end": "银尘处",
+      "explicit_functions": [],
+      "explicit_costs": [],
+      "explicit_limitations": [],
+      "state_at_end": "被银尘收起",
+      "related_event_ids": [],
+      "possible_hook": false,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "他把手中的一卷羊皮古书收起来",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "item_id": "I004",
+      "canonical_name": "狼牙棒",
+      "aliases": [],
+      "item_type": "武器",
+      "holder_at_start": "贵族武士",
+      "holder_at_end": "贵族武士",
+      "location_at_end": "unknown",
+      "explicit_functions": ["黑铁打造的重型武器"],
+      "explicit_costs": [],
+      "explicit_limitations": [],
+      "state_at_end": "unknown",
+      "related_event_ids": ["E008"],
+      "possible_hook": false,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "拿着沉重狼牙棒的壮硕武士",
+          "evidence_type": "environmental_observation",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    }
+  ],
+  "factions": [
+    {
+      "faction_id": "F001",
+      "canonical_name": "雷恩第一魂术世家",
+      "aliases": [],
+      "members_mentioned": ["雷恩贵族", "贵族武士"],
+      "leader_explicit": "雷恩贵族",
+      "goal_explicit": [],
+      "controlled_locations": ["雷恩"],
+      "relations": [],
+      "actions_in_chapter": ["车队撞死老妇", "被莲泉反杀"],
+      "state_changes": ["代表人物被莲泉杀死"],
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "我们是雷恩的第一魂术世家",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    }
+  ],
+  "world_rules": [
+    {
+      "rule_id": "R001",
+      "rule_name": "赐印仪式",
+      "rule_category": "魂术体系",
+      "rule_statement": "王爵将使徒带回帝都格兰尔特，赐予使徒与自己相同的灵魂回路，使其拥有相同爵印的仪式叫赐印；赐印后使徒与王爵爵印一模一样且在同一位置",
+      "scope": "王爵与使徒",
+      "trigger": "王爵对使徒赐予灵魂回路",
+      "effect": "使徒获得与王爵相同的灵魂回路与爵印",
+      "cost": "消耗王爵魂力（银尘因此虚弱）",
+      "limitations": [],
+      "exceptions": [],
+      "violation_consequence": "unknown",
+      "epistemic_status": "character_claim",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "‘王爵’把‘使徒’寻找到之后，带回帝都格兰尔特，赐予‘使徒’与自己相同的灵魂回路……叫做‘赐印’",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R002",
+      "rule_name": "爵印",
+      "rule_category": "魂术体系",
+      "rule_statement": "爵印是魂力最中心、最脆弱处、运用魂力的出发点，也是魂兽平时栖居之所；王爵与使徒爵印形状位置完全相同",
+      "scope": "王爵与使徒",
+      "trigger": "unknown",
+      "effect": "魂兽栖居、魂力运作中心",
+      "cost": "unknown",
+      "limitations": [],
+      "exceptions": [],
+      "violation_consequence": "若未赐印则魂兽找不到居所，魂力无法共存，结果‘不是你死就是它死’",
+      "epistemic_status": "character_claim",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "它是我们的‘魂兽’平时栖居的地方",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R003",
+      "rule_name": "魂兽指令禁忌",
+      "rule_category": "魂术体系",
+      "rule_statement": "对魂兽只有两种指令不能下达：让它攻击自己的魂术师，让它自杀",
+      "scope": "魂术师与其魂兽",
+      "trigger": "下达指令",
+      "effect": "魂兽服从除两禁忌外的一切命令",
+      "cost": "unknown",
+      "limitations": ["不可命令攻击自己魂术师", "不可命令自杀"],
+      "exceptions": [],
+      "violation_consequence": "unknown",
+      "epistemic_status": "character_claim",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "第一就是让它攻击自己的魂术师，第二就是让它自杀",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R004",
+      "rule_name": "杀戮王爵",
+      "rule_category": "社会制度",
+      "rule_statement": "二度王爵专门负责清理背叛国家或白银祭司的王爵，又称杀戮王爵，专门杀王爵的王爵；其使徒称杀戮使徒",
+      "scope": "二度王爵",
+      "trigger": "王爵背叛",
+      "effect": "清理背叛的王爵",
+      "cost": "unknown",
+      "limitations": [],
+      "exceptions": [],
+      "violation_consequence": "unknown",
+      "epistemic_status": "character_claim",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S006",
+          "quote": "专门杀‘王爵’的‘王爵’",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R005",
+      "rule_name": "王爵等级",
+      "rule_category": "社会制度",
+      "rule_statement": "王爵分七等级，从第七度到第一度，数字越小越厉害",
+      "scope": "王爵体系",
+      "trigger": "unknown",
+      "effect": "区分王爵强弱",
+      "cost": "unknown",
+      "limitations": [],
+      "exceptions": [],
+      "violation_consequence": "unknown",
+      "epistemic_status": "character_claim",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "‘王爵’分为七个等级，从第七度到第一度，数字越小越厉害",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    }
+  ],
+  "hooks_and_clues": [
+    {
+      "hook_id": "H001",
+      "scene_id": "S003",
+      "hook_type": "explicit_question",
+      "content": "神音下落不明——次日洞穴空空、冰晶消失、神音不见",
+      "related_entities": ["神音"],
+      "introduced_or_updated": "reinforced",
+      "current_status": "unresolved",
+      "known_by": ["麒零"],
+      "unknown_to": [],
+      "urgency": "medium",
+      "canon_eligible": true,
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "发现洞穴里空空的，没有任何东西",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "hook_id": "H002",
+      "scene_id": "S005",
+      "hook_type": "explicit_question",
+      "content": "麒零体内为何蕴含如汪洋般庞大的魂力、会吞噬他人魂力，银尘惊问‘你身体里到底有什么怪物’",
+      "related_entities": ["麒零"],
+      "introduced_or_updated": "introduced",
+      "current_status": "unresolved",
+      "known_by": ["银尘"],
+      "unknown_to": ["麒零"],
+      "urgency": "high",
+      "canon_eligible": true,
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "你身体里面……到底有什么……怪物",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "hook_id": "H003",
+      "scene_id": "S005",
+      "hook_type": "explicit_question",
+      "content": "预言之源三个红点如今为何只剩麒零一人",
+      "related_entities": ["银尘", "麒零", "白银祭司"],
+      "introduced_or_updated": "reinforced",
+      "current_status": "unresolved",
+      "known_by": ["银尘"],
+      "unknown_to": ["麒零"],
+      "urgency": "medium",
+      "canon_eligible": true,
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "之前在‘预言之源’看见的三个红点，为什么只剩下了麒零一个人，他也不清楚",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "hook_id": "H004",
+      "scene_id": "S004",
+      "hook_type": "explicit_question",
+      "content": "莲泉感应到的‘不得了的怪物’与天空中白影是什么",
+      "related_entities": ["莲泉"],
+      "introduced_or_updated": "introduced",
+      "current_status": "unresolved",
+      "known_by": ["莲泉"],
+      "unknown_to": [],
+      "urgency": "high",
+      "canon_eligible": true,
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "来了个不得了的怪物呢",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "hook_id": "H005",
+      "scene_id": "S006",
+      "hook_type": "implicit_clue_candidate",
+      "content": "银尘解衣展示爵印时身体呈现‘神迹般’的景象，令麒零惊叹，暗示银尘身体有特殊之处",
+      "related_entities": ["银尘"],
+      "introduced_or_updated": "introduced",
+      "current_status": "unresolved",
+      "known_by": ["银尘"],
+      "unknown_to": ["麒零"],
+      "urgency": "low",
+      "canon_eligible": false,
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "scene_id": "S006",
+          "quote": "眼前的银尘赤裸的身体，呈现着一副他从未见过的，神迹般的样子",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    },
+    {
+      "hook_id": "H006",
+      "scene_id": "S005",
+      "hook_type": "explicit_setup",
+      "content": "银尘打算带麒零去格兰尔特亲问白银祭司（为何让不懂魂术者当使徒）",
+      "related_entities": ["银尘", "麒零", "白银祭司"],
+      "introduced_or_updated": "introduced",
+      "current_status": "unresolved",
+      "known_by": ["银尘"],
+      "unknown_to": ["麒零"],
+      "urgency": "medium",
+      "canon_eligible": true,
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "也只能把他带回格兰尔特，亲自问‘白银祭司’了",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-002.md"
+        }
+      ]
+    }
+  ],
+  "timelines": [
+    {
+      "timeline_entry_id": "T001",
+      "timeline_type": "main",
+      "sequence_index": 1,
+      "absolute_time": "unknown",
+      "relative_time": "紧接第一章深夜至次日夜晚",
+      "duration": "约一天",
+      "location": "福泽镇外森林",
+      "participants": ["麒零", "神音", "银尘"],
+      "current_task": "麒零逃离苍雪之牙追杀/银尘寻找并赐印使徒",
+      "event_ids": ["E001", "E002", "E003", "E004", "E005", "E011", "E012", "E013", "E014", "E015", "E018", "E019", "E020", "E021", "E022", "E023", "E024"],
+      "plot_description": "苍雪之牙追杀神音麒零至绝路，神音反击失败被砸入山崖，麒零重伤濒死。次日麒零醒来伤势全无、神音消失，被银尘找到。银尘探查发现麒零体内汪洋魂力，赐印救其性命，麒零成为其使徒、获苍雪之牙。银尘讲解王爵常识并展示爵印。",
+      "result": "麒零成七度使徒，获苍雪之牙，将随银尘赴雷恩往格兰尔特",
+      "relation_to_other_entries": [],
+      "confidence": 0.85
+    },
+    {
+      "timeline_entry_id": "T002",
+      "timeline_type": "parallel",
+      "sequence_index": 2,
+      "absolute_time": "unknown",
+      "relative_time": "与T001大致同时",
+      "duration": "半日至一夜",
+      "location": "港口城市雷恩",
+      "participants": ["莲泉"],
+      "current_task": "为魂塚而来/感应并追击强敌",
+      "event_ids": ["E006", "E007", "E008", "E009", "E010", "E016", "E017"],
+      "plot_description": "莲泉正午进入雷恩，杀雷恩第一魂术世家贵族，自报第五使徒。当夜在旅店感应到‘不得了的怪物’来袭，召唤闇翅追击天空中的白影。",
+      "result": "莲泉骑闇翅追击白影（结果未明）",
+      "relation_to_other_entries": [
+        {
+          "relation_type": "simultaneous_with",
+          "target_timeline_entry": "T001"
+        }
+      ],
+      "confidence": 0.6
+    }
+  ],
+  "cliffhanger_analysis": {
+    "enabled": false,
+    "last_scene_ids": [],
+    "immediate_conflicts": [],
+    "unfinished_actions": [],
+    "characters_in_danger": [],
+    "active_time_pressure": [],
+    "urgency": "unknown",
+    "must_continue_states": [],
+    "resolved_at_chapter_end": false
+  },
+  "style_profile": {
+    "narrative_person": "第三人称",
+    "viewpoint_pattern": "第三人称限知，在福泽镇森林线与雷恩莲泉线之间交叉切换",
+    "sentence_length_tendency": "long",
+    "paragraph_length_tendency": "medium",
+    "dialogue_ratio": "medium",
+    "action_description_ratio": "very_high",
+    "environment_description_ratio": "high",
+    "psychological_description_ratio": "medium",
+    "dominant_sensory_channels": ["视觉", "触觉/温度", "听觉", "嗅觉"],
+    "common_rhetorical_devices": ["比喻（汪洋、薄玉、苍鹭、冰雪岛屿）", "通感", "排比"],
+    "dominant_emotional_tones": ["恐惧", "肃杀", "幽默（后段麒零误会）", "神秘"],
+    "pace": "fast_to_medium",
+    "pace_changes": ["前段紧张追逐转后段科普幽默"],
+    "transition_patterns": ["以地点标签【】切场", "在两地点间交叉剪辑"],
+    "distinctive_expression_patterns": ["‘咔嚓咔嚓’冰裂拟声", "金色光河幻觉描写", "麒零冷吐槽制造幽默"],
+    "evidence_examples": [
+      "沸腾不休的寒冷",
+      "仿佛一碰就要碎的薄玉般完美无瑕"
+    ]
+  },
+  "entity_resolution_issues": [
+    {
+      "issue_id": "ER001",
+      "references": ["鬼山莲泉", "第五使徒"],
+      "possible_resolution": "同一人物：自报‘我就是鬼山莲泉，第五使徒’",
+      "resolution_status": "resolved",
+      "confidence": 0.95,
+      "reason": "莲泉当面自报姓名与使徒身份，且展示第五爵印"
+    }
+  ],
+  "continuity_issues": [],
+  "interpretation_candidates": [
+    {
+      "candidate_id": "IC001",
+      "interpretation_type": "character_identity",
+      "content": "麒零体内庞大且吞噬他人魂力的魂力，暗示其并非普通少年，可能是某种特殊容器或存在",
+      "supporting_observations": [
+        "银尘刺探的魂力进入麒零身体瞬间消失无踪",
+        "麒零体内魂力如一望无际汪洋翻滚滔天巨浪",
+        "五股魂力如蛇逆向反噬银尘，差点吞噬其大半魂力",
+        "白银祭司命银尘寻找他为使徒"
+      ],
+      "alternative_explanations": ["可能是赐印前魂力不稳定的正常现象"],
+      "confidence": 0.6,
+      "canon_eligible": false
+    },
+    {
+      "candidate_id": "IC002",
+      "interpretation_type": "character_motivation",
+      "content": "银尘对麒零感到的‘泉水般温柔而清澈’的遥远熟悉感，暗示二人过去可能有未明联系",
+      "supporting_observations": [
+        "银尘‘仿佛非常遥远却又熟悉的感觉’",
+        "银尘罕见地笑并承诺保护麒零"
+      ],
+      "alternative_explanations": ["仅是银尘对新使徒的天然亲近"],
+      "confidence": 0.4,
+      "canon_eligible": false
+    }
+  ],
+  "chapter_end_state": {
+    "current_time": "夜晚（福泽镇外森林）",
+    "active_locations": ["福泽镇外森林", "雷恩夜空"],
+    "active_characters": ["麒零", "银尘", "莲泉"],
+    "ongoing_events": ["莲泉骑闇翅追击白影（结果未明）"],
+    "unfinished_tasks": ["银尘带麒零去雷恩坐船往格兰尔特"],
+    "unresolved_hooks": [
+      "神音下落不明",
+      "麒零体内汪洋魂力的秘密",
+      "预言之源三红点为何只剩麒零",
+      "莲泉感应到的怪物与白影",
+      "银尘身体神迹般景象"
+    ],
+    "critical_character_states": ["麒零已获赐印成七度使徒", "银尘虚弱后恢复"],
+    "critical_item_states": ["苍雪之牙已入麒零爵印"],
+    "next_chapter_continuity_constraints": ["银尘将带麒零经雷恩赴格兰尔特", "莲泉正与白影交战"]
+  },
+  "validation_issues": [],
+  "quality_checks": {
+    "all_scenes_have_source_spans": true,
+    "all_critical_events_have_evidence": true,
+    "all_state_changes_have_evidence": true,
+    "dreams_and_memories_separated": true,
+    "character_claims_not_treated_as_confirmed_fact": true,
+    "planned_events_not_treated_as_occurred": true,
+    "unknown_values_not_fabricated": true,
+    "timeline_order_checked": true,
+    "entity_aliases_checked": true,
+    "latest_chapter_cliffhanger_checked": true
+  }
+}

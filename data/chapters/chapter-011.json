@@ -1,0 +1,2431 @@
+{
+  "schema_version": "chapter-canon-extraction-v1.0",
+  "parse_status": "success",
+  "source": {
+    "source_path": "data/raw/chapters_src/chapter-011.md",
+    "source_hash": "ee26687b119350514a34bd6a1eaa903a2fbdcbd698b2617aeb35f8c690323d6b",
+    "canon_level": "official",
+    "chapter_id_hint": "011"
+  },
+  "chapter_metadata": {
+    "chapter_id": "第十一章",
+    "chapter_title": "亡灵使",
+    "volume_title": "unknown",
+    "chapter_number": 11,
+    "detected_heading": "第十一章 亡灵使",
+    "narrative_person": "第三人称",
+    "viewpoint_type": "限知多视角",
+    "primary_viewpoint_character": "神音 / 银尘",
+    "viewpoint_stability": "不稳定（随场景切换）",
+    "primary_reality_layer": "present_reality",
+    "factual_abstract": "本章并行多线。天格中特蕾娅告知幽冥：其使徒神音已前往雷恩海域寻永生王爵西流尔、危险将至，特蕾娅称将把秘密都告诉神音，并暗示岛上还有‘他’。神音登永生岛，感受到召唤她揭密的强烈暗示，途中低级魂兽被其结界杀尽。帝都格兰尔特，麒零与银尘嬉闹后决定回心脏复命见白银祭司；楼下遇漆拉与天束幽花。漆拉称莲泉一行已先行经其棋子前往雷恩海域，银尘决定与漆拉同往尤图尔遗迹验证格兰仕未死、且疑心新亡灵由谁收集。神音在岛上遭山鬼与褐色幽灵（霓虹）夹击重伤，褐影徒手撕碎山鬼，神音发现特蕾娅在山崖观战并称神音是主动承受攻击、是更变态的侵蚀者。"
+  },
+  "chapter_boundaries": {
+    "single_chapter_confirmed": true,
+    "detected_chapter_count": 1,
+    "detected_boundaries": []
+  },
+  "scenes": [
+    {
+      "scene_id": "S001",
+      "sequence_index": 1,
+      "scene_title_generated": "天格：特蕾娅幽冥议神音",
+      "reality_layer": "present_reality",
+      "viewpoint_character": "特蕾娅",
+      "time": {
+        "absolute_time": "unknown",
+        "relative_time": "主线当前",
+        "time_of_day": "unknown",
+        "duration": "数分钟",
+        "sequence_relation": "章节起始",
+        "confidence": 0.5
+      },
+      "location": {
+        "primary_location": "西之亚斯蓝帝国·天格",
+        "sub_location": "黑色地面大殿",
+        "location_change_from_previous_scene": false
+      },
+      "participants": [
+        "特蕾娅",
+        "幽冥"
+      ],
+      "scene_goal": "商议神音动向与即将发生之事",
+      "opening_state": "幽冥观地面，特蕾娅放出丝线钻入地面感知",
+      "factual_summary": "特蕾娅称神音去找永生王爵西流尔，好奇心太重不知死活。幽冥问及神音之事，特蕾娅称神音之事交给她，并暗示岛上‘他’也在，将把秘密都告诉神音。幽冥提及红讯，特蕾娅称红讯非她所下但天格讯息皆来自她。",
+      "closing_state": "幽冥先行离开，神音之事交特蕾娅处理",
+      "transition_reason": "地点切换至雷恩海域岛屿",
+      "source_span": {
+        "start_marker": "【西之亚斯蓝帝国·天格】",
+        "end_marker": "那我就都告诉她。”"
+      }
+    },
+    {
+      "scene_id": "S002",
+      "sequence_index": 2,
+      "scene_title_generated": "神音登岛，向岛屿中心进发",
+      "reality_layer": "present_reality",
+      "viewpoint_character": "神音",
+      "time": {
+        "absolute_time": "unknown",
+        "relative_time": "已入寒冬",
+        "time_of_day": "白天",
+        "duration": "约半日",
+        "sequence_relation": "接续S001，地点切换",
+        "confidence": 0.6
+      },
+      "location": {
+        "primary_location": "西之亚斯蓝帝国·雷恩海域岛屿（永生岛）",
+        "sub_location": "岛屿冰雪岸边→向中心行进",
+        "location_change_from_previous_scene": true
+      },
+      "participants": [
+        "神音"
+      ],
+      "scene_goal": "寻找岛屿所埋藏的关键秘密",
+      "opening_state": "寒冬，神音从船踏岛，脚下冰雪与冻土",
+      "factual_summary": "神音裹狐裘登岛，感知岛屿魂力后向风雪弥漫的岛屿中心走去，感受到越来越强烈的暗示召唤她揭开秘密。其背影消失于风雪。身后一块巨大山岩仿佛呼吸般蠕动一下又归于沉寂。",
+      "closing_state": "神音向岛屿中心深入，山岩有异动",
+      "transition_reason": "地点切换至帝都格兰尔特",
+      "source_span": {
+        "start_marker": "【西之亚斯蓝帝国·雷恩海域】",
+        "end_marker": "又归于沉寂了。"
+      }
+    },
+    {
+      "scene_id": "S003",
+      "sequence_index": 3,
+      "scene_title_generated": "帝都：麒零银尘日常与启程决定",
+      "reality_layer": "present_reality",
+      "viewpoint_character": "麒零",
+      "time": {
+        "absolute_time": "unknown",
+        "relative_time": "清晨",
+        "time_of_day": "清晨",
+        "duration": "约一小时",
+        "sequence_relation": "地点切换",
+        "confidence": 0.7
+      },
+      "location": {
+        "primary_location": "西之亚斯蓝帝国·帝都格兰尔特",
+        "sub_location": "客栈（已住三天）",
+        "location_change_from_previous_scene": true
+      },
+      "participants": [
+        "麒零",
+        "银尘"
+      ],
+      "scene_goal": "决定下一步行程",
+      "opening_state": "麒零清晨醒来",
+      "factual_summary": "麒零醒后问银尘住三天后去哪儿，银尘称回帝都‘心脏’复命、带麒零见白银祭司。麒零炫耀研究出把对方魂力反弹的方法，反被银尘冻成冰块。收拾行李下楼遇漆拉与天束幽花。漆拉称莲泉一行有要事先行经其棋子前往雷恩海域。银尘目光锐利。天束幽花讥讽麒零。银尘问漆拉去向，漆拉称可能回尤图尔遗迹，似有所感。银尘决定同去，称想证实与尤图尔遗迹有关的事，并怀疑格兰仕未死、一直在遗迹内。",
+      "closing_state": "银尘决定随漆拉赴尤图尔遗迹验证格兰仕是否未死",
+      "transition_reason": "切回雷恩海域神音视角",
+      "source_span": {
+        "start_marker": "【西之亚斯蓝帝国·帝都格兰尔特】",
+        "end_marker": "他一直都在‘尤图尔遗迹’里。”"
+      }
+    },
+    {
+      "scene_id": "S004",
+      "sequence_index": 4,
+      "scene_title_generated": "神音岛上遇袭前夜与次日推进",
+      "reality_layer": "present_reality",
+      "viewpoint_character": "神音",
+      "time": {
+        "absolute_time": "unknown",
+        "relative_time": "S002之后（清晨醒来）",
+        "time_of_day": "清晨",
+        "duration": "约半小时",
+        "sequence_relation": "接续S002",
+        "confidence": 0.7
+      },
+      "location": {
+        "primary_location": "西之亚斯蓝帝国·雷恩海域岛屿",
+        "sub_location": "岛屿内部黑色岩石地带",
+        "location_change_from_previous_scene": true
+      },
+      "participants": [
+        "神音"
+      ],
+      "scene_goal": "继续向岛屿中心探查",
+      "opening_state": "清晨光线照神音眼睑，神音醒来",
+      "factual_summary": "神音醒来发现昨夜闯入其领域的低级魂兽已成尸块冻在地。她撤销魂力结界继续前行。途中遇几头低级魂兽腾空袭来，她以金色魂力瞬间将其撕碎成血雨冻成红冰。随后她感到恐惧，从颈后抽出银白色鞭子，金黄刻纹爬上脖子，在脚下织出巨大白色发光蛛网，蹲伏以待来敌。一个褐色影子以极快速度闪动逼近，汹涌魂力经蛛网传来，神音颤抖断言此魂力足以媲美王爵。",
+      "closing_state": "褐色幽灵逼近，神音确认其魂力足以媲美王爵",
+      "transition_reason": "地点切换至尤图尔遗迹",
+      "source_span": {
+        "start_marker": "清晨的光线轻轻地照在神音的眼睑上",
+        "end_marker": "仿佛一整面巨大的海洋朝自己扑打而来。"
+      }
+    },
+    {
+      "scene_id": "S005",
+      "sequence_index": 5,
+      "scene_title_generated": "尤图尔遗迹：发现亡灵尽数消失",
+      "reality_layer": "present_reality",
+      "viewpoint_character": "银尘",
+      "time": {
+        "absolute_time": "unknown",
+        "relative_time": "紧接S003银尘决定后",
+        "time_of_day": "unknown",
+        "duration": "约半小时",
+        "sequence_relation": "接续S003",
+        "confidence": 0.7
+      },
+      "location": {
+        "primary_location": "西之亚斯蓝帝国·尤图尔遗迹",
+        "sub_location": "遗迹大门外→大门开启",
+        "location_change_from_previous_scene": true
+      },
+      "participants": [
+        "银尘",
+        "漆拉",
+        "麒零",
+        "天束幽花"
+      ],
+      "scene_goal": "赴遗迹验证格兰仕是否在内",
+      "opening_state": "漆拉与银尘身影化为光线消失，四人将传送",
+      "factual_summary": "漆拉与银尘先行传送。麒零告知天束幽花漆拉说棋子十分钟后失效。天束幽花冷称那种活死人待的地方不想去第二次。麒零道别后握铜柱传送。天束幽花犹豫后也握铜柱跟去。遗迹内，银尘抛出铜镜引路，漆拉问及格兰仕。银尘陈述尤图尔遗迹历来收纳亡灵守护秘密，并说明‘地之使徒’实为‘地狱之使徒’，历代负责收集高级魂术师亡灵至遗迹，格兰仕即为此类亡灵收集者。银尘推论：这代一度王爵修川地藏与三使徒从未离开心脏，若这代地使不曾离开心脏，那么这些年新增加的亡灵由谁收集？由此推测格兰仕未死、一直在遗迹。",
+      "closing_state": "银尘完成推理，四人立于遗迹大门",
+      "transition_reason": "切回雷恩海域神音战斗",
+      "source_span": {
+        "start_marker": "漆拉和银尘的身影，砰然化成空气里扭曲的光线",
+        "end_marker": "你难道就不想知道，这些年，新增加的亡灵，是谁负责收集的吗？”"
+      }
+    },
+    {
+      "scene_id": "S006",
+      "sequence_index": 6,
+      "scene_title_generated": "神音遭山鬼与褐影夹击重伤",
+      "reality_layer": "present_reality",
+      "viewpoint_character": "神音",
+      "time": {
+        "absolute_time": "unknown",
+        "relative_time": "紧接S004",
+        "time_of_day": "白天",
+        "duration": "数分钟",
+        "sequence_relation": "接续S004",
+        "confidence": 0.8
+      },
+      "location": {
+        "primary_location": "西之亚斯蓝帝国·雷恩海域岛屿",
+        "sub_location": "黑色岩石地带",
+        "location_change_from_previous_scene": true
+      },
+      "participants": [
+        "神音",
+        "霓虹",
+        "山鬼"
+      ],
+      "scene_goal": "抵御前后夹击",
+      "opening_state": "神音以白色蛛网迎敌褐色影子",
+      "factual_summary": "地面迸射粗壮蛛丝被褐影轻松避开。神音专注前方时，背后升起小山般巨大黑色鸦雀形魂兽（山鬼），红瞳暴射杀戮光芒，其鸣叫如匕首刺脑，巨大魂力如刀刃在神音后背切开成千上万刀口，鲜血喷洒。神音认出是高等级魂兽‘山鬼’，曾靠幽冥的‘死灵镜面’才击败过。神音将白色魂力收成茧包裹自身，山鬼巨爪砸落。同时褐影从神音头顶飞跃而过，在山鬼体内高速穿透撕裂，将其撕成碎片、鲜血如雨。神音看清褐影是一个几乎赤裸、红发如火的男子，正徒手撕碎山鬼，并将山鬼甩到海边。山鬼以鸟喙激射带倒刺的舌头攻击，褐影徒手粉碎并挡在神音前，一条舌头洞穿其手臂。褐影划开胳膊捏碎舌头。神音冷淡称不需他救，随即被第二轮舌头击中腹部洞穿，被冲击摔地瞳孔涣散。褐影拔出舌头捏碎，全身金光笼罩，引发海底水柱凝结成冰柱轰击山鬼，山鬼被冰爆炸碎。远处山崖特蕾娅观战，称神音是主动承受攻击、是更变态的侵蚀者，随即消失。",
+      "closing_state": "山鬼被毁，神音重伤，褐影（霓虹）在场，特蕾娅离崖",
+      "transition_reason": "章节结束",
+      "source_span": {
+        "start_marker": "从地面迸射而出的一股一股粗壮的蛛丝",
+        "end_marker": "就从高高的黑色山崖上消失了"
+      }
+    }
+  ],
+  "events": [
+    {
+      "event_id": "E001",
+      "scene_id": "S001",
+      "sequence_index": 1,
+      "event_type": "secret_reveal",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "character_claim",
+      "time": "主线当前",
+      "location": "天格大殿",
+      "participants": [
+        "特蕾娅",
+        "幽冥"
+      ],
+      "initiator": "特蕾娅",
+      "target": "幽冥",
+      "trigger": "幽冥问神音之事",
+      "action": "特蕾娅告知神音已去雷恩海域找西流尔、处境危险，并称岛上‘他’也在，将把秘密都告诉神音",
+      "result": "幽冥先行离开，神音之事交特蕾娅",
+      "immediate_consequence": "特蕾娅将介入神音在岛上的局面",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [],
+      "causes_event_ids": [],
+      "importance": "normal",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "找‘永生王爵’西流尔去了",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        },
+        {
+          "scene_id": "S001",
+          "quote": "‘他’也在那个岛上",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E002",
+      "scene_id": "S002",
+      "sequence_index": 2,
+      "event_type": "movement",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "寒冬",
+      "location": "雷恩海域岛屿",
+      "participants": [
+        "神音"
+      ],
+      "initiator": "神音",
+      "target": "岛屿中心",
+      "trigger": "感受到召唤揭密的强烈暗示",
+      "action": "神音登岛后将船以铁链拴于礁石，小范围感知岛屿魂力后向风雪弥漫的岛屿中心进发",
+      "result": "神音深入岛屿",
+      "immediate_consequence": "身后山岩呼吸般蠕动",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [],
+      "causes_event_ids": [],
+      "importance": "normal",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "她知道，这里埋藏着她所需要的那个“关键的秘密”",
+          "evidence_type": "internal_monologue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        },
+        {
+          "scene_id": "S002",
+          "quote": "她身后一块巨大的山岩，仿佛呼吸般地蠕动了一下",
+          "evidence_type": "environmental_observation",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E003",
+      "scene_id": "S003",
+      "sequence_index": 3,
+      "event_type": "decision",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "清晨",
+      "location": "帝都格兰尔特客栈",
+      "participants": [
+        "银尘",
+        "麒零"
+      ],
+      "initiator": "银尘",
+      "target": "麒零",
+      "trigger": "在帝都已住三天",
+      "action": "银尘决定回心脏复命、带麒零正式见白银祭司",
+      "result": "确定下一步行程",
+      "immediate_consequence": "下楼遇漆拉与天束幽花",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [],
+      "causes_event_ids": [],
+      "importance": "normal",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "回帝都的‘心脏’去吧，我‘赐印’给你之后，还没正式带你见过‘白银祭司’呢",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E004",
+      "scene_id": "S003",
+      "sequence_index": 4,
+      "event_type": "movement",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "清晨",
+      "location": "帝都格兰尔特→雷恩海域岛屿",
+      "participants": [
+        "鬼山莲泉",
+        "鬼山缝魂"
+      ],
+      "initiator": "鬼山莲泉一行",
+      "target": "雷恩海域岛屿",
+      "trigger": "有重要的事要去那个地方",
+      "action": "莲泉一行经漆拉制造的棋子先行前往雷恩海域岛屿",
+      "result": "莲泉一行已离帝都赴岛",
+      "immediate_consequence": "银尘决意同漆拉赴尤图尔遗迹",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [],
+      "causes_event_ids": [],
+      "importance": "normal",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "他们说有重要的事情，要去一个地方……我做了一枚‘棋子’，让他们先过去了",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E005",
+      "scene_id": "S003",
+      "sequence_index": 5,
+      "event_type": "decision",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "清晨",
+      "location": "帝都格兰尔特客栈门口",
+      "participants": [
+        "银尘",
+        "漆拉"
+      ],
+      "initiator": "银尘",
+      "target": "漆拉",
+      "trigger": "漆拉称或回尤图尔遗迹",
+      "action": "银尘决定随漆拉赴尤图尔遗迹，称想证实与遗迹有关之事，并怀疑格兰仕未死、一直在遗迹内",
+      "result": "确定赴尤图尔遗迹",
+      "immediate_consequence": "四人将传送至遗迹",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E004"
+      ],
+      "causes_event_ids": [],
+      "importance": "critical",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "我想要证实一些东西，而且这些东西，和‘尤图尔遗迹’也有关系",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        },
+        {
+          "scene_id": "S003",
+          "quote": "我怀疑他并没有死……他一直都在‘尤图尔遗迹’里",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E006",
+      "scene_id": "S004",
+      "sequence_index": 6,
+      "event_type": "combat",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "清晨",
+      "location": "雷恩海域岛屿",
+      "participants": [
+        "神音"
+      ],
+      "initiator": "低级魂兽",
+      "target": "神音",
+      "trigger": "魂兽腾空袭击",
+      "action": "神音以金色魂力瞬间将几头低级魂兽撕成碎片",
+      "result": "魂兽成血雨冻成红冰",
+      "immediate_consequence": "神音察觉更强威胁逼近",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [],
+      "causes_event_ids": [],
+      "importance": "minor",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "瞳孔里闪动的金黄色魂力，瞬间将她身后腾空而起的几头魂兽撕成了碎片",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E007",
+      "scene_id": "S004",
+      "sequence_index": 7,
+      "event_type": "combat",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "清晨",
+      "location": "雷恩海域岛屿",
+      "participants": [
+        "神音",
+        "霓虹"
+      ],
+      "initiator": "霓虹",
+      "target": "神音",
+      "trigger": "褐色影子高速逼近",
+      "action": "神音在脚下织出巨大白色蛛网布阵，褐影逼近，魂力经网传来",
+      "result": "神音判定对方魂力足以媲美王爵",
+      "immediate_consequence": "神音进入备战",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E006"
+      ],
+      "causes_event_ids": [
+        "E009"
+      ],
+      "importance": "normal",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "这样的魂力，足以媲美‘王爵’了",
+          "evidence_type": "internal_monologue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E008",
+      "scene_id": "S005",
+      "sequence_index": 8,
+      "event_type": "movement",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "unknown",
+      "location": "帝都→尤图尔遗迹",
+      "participants": [
+        "银尘",
+        "漆拉",
+        "麒零",
+        "天束幽花"
+      ],
+      "initiator": "四人",
+      "target": "尤图尔遗迹",
+      "trigger": "验证格兰仕下落",
+      "action": "四人经漆拉设定于铜柱的棋子传送至尤图尔遗迹",
+      "result": "天束幽花最终也跟随前往",
+      "immediate_consequence": "四人抵达遗迹",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E005"
+      ],
+      "causes_event_ids": [],
+      "importance": "normal",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "麒零抬手握住铜柱，身影倏地一下消失在空气里",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        },
+        {
+          "scene_id": "S005",
+          "quote": "转身抬起手握住了铜柱",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E009",
+      "scene_id": "S006",
+      "sequence_index": 9,
+      "event_type": "injury",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "白天",
+      "location": "雷恩海域岛屿",
+      "participants": [
+        "神音",
+        "山鬼"
+      ],
+      "initiator": "山鬼",
+      "target": "神音",
+      "trigger": "神音专注前方时山鬼从背后袭击",
+      "action": "山鬼鸣叫与巨大魂力在神音后背切开成千上万刀口，鲜血如雾喷洒",
+      "result": "神音重伤出血",
+      "immediate_consequence": "神音认出山鬼、回忆曾靠死灵镜面才击败",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E007"
+      ],
+      "causes_event_ids": [
+        "E010"
+      ],
+      "importance": "critical",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S006",
+          "quote": "仿佛瞬间被千斤重锤砸在胸口",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        },
+        {
+          "scene_id": "S006",
+          "quote": "鲜血仿佛红色的雾气一般砰然从她的后背喷洒出来",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E010",
+      "scene_id": "S006",
+      "sequence_index": 10,
+      "event_type": "combat",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "白天",
+      "location": "雷恩海域岛屿",
+      "participants": [
+        "霓虹",
+        "山鬼"
+      ],
+      "initiator": "霓虹",
+      "target": "山鬼",
+      "trigger": "褐影跃过神音头顶",
+      "action": "褐影高速穿透山鬼体内将其徒手撕成碎片，并将山鬼甩至海边",
+      "result": "山鬼身躯被撕碎",
+      "immediate_consequence": "山鬼以带倒刺舌头反击",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E009"
+      ],
+      "causes_event_ids": [
+        "E011"
+      ],
+      "importance": "critical",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S006",
+          "quote": "他没有用任何的武器，他正在徒手，将巨大的‘山鬼’一块一块地撕成碎片",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E011",
+      "scene_id": "S006",
+      "sequence_index": 11,
+      "event_type": "injury",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "白天",
+      "location": "雷恩海域岛屿",
+      "participants": [
+        "霓虹",
+        "山鬼"
+      ],
+      "initiator": "山鬼",
+      "target": "霓虹",
+      "trigger": "山鬼以鸟喙激射带倒刺舌头",
+      "action": "一条带倒刺舌头洞穿霓虹挡在神音前的手臂",
+      "result": "霓虹手臂被洞穿",
+      "immediate_consequence": "霓虹划开胳膊捏碎舌头",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E010"
+      ],
+      "causes_event_ids": [],
+      "importance": "normal",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S006",
+          "quote": "拳头大小的石块状的物体将那个男人的手臂洞穿",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E012",
+      "scene_id": "S006",
+      "sequence_index": 12,
+      "event_type": "injury",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "白天",
+      "location": "雷恩海域岛屿",
+      "participants": [
+        "神音",
+        "山鬼"
+      ],
+      "initiator": "山鬼",
+      "target": "神音",
+      "trigger": "山鬼第二轮舌头暴雨激射",
+      "action": "神音挥鞭抽碎多数舌头，仍被两条舌头洞穿腹部，被冲击摔地、瞳孔涣散",
+      "result": "神音腹部被洞穿、重伤",
+      "immediate_consequence": "霓虹拔出舌头并最终摧毁山鬼",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E010"
+      ],
+      "causes_event_ids": [
+        "E013"
+      ],
+      "importance": "critical",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S006",
+          "quote": "被其中的两条舌头洞穿了腹部",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        },
+        {
+          "scene_id": "S006",
+          "quote": "瞳孔因为剧痛而光芒涣散",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E013",
+      "scene_id": "S006",
+      "sequence_index": 13,
+      "event_type": "combat",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "directly_observed",
+      "time": "白天",
+      "location": "雷恩海域岛屿",
+      "participants": [
+        "霓虹",
+        "山鬼"
+      ],
+      "initiator": "霓虹",
+      "target": "山鬼",
+      "trigger": "霓虹全身回路金光爆发",
+      "action": "霓虹引发海底水柱凝结成几十根冰柱轰击山鬼，冰块四散爆炸",
+      "result": "山鬼凄厉鸣叫消散于海潮声",
+      "immediate_consequence": "山鬼被摧毁",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E012"
+      ],
+      "causes_event_ids": [],
+      "importance": "critical",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S006",
+          "quote": "突然全部“咔嚓咔嚓”地凝结成了锋利的冰柱，以雷霆万钧的速度朝‘山鬼’轰然刺去",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        },
+        {
+          "scene_id": "S006",
+          "quote": "‘山鬼’凄厉的鸣叫仿佛雾气般消散在海潮声里",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E014",
+      "scene_id": "S006",
+      "sequence_index": 14,
+      "event_type": "secret_reveal",
+      "event_status": "occurred",
+      "reality_layer": "present_reality",
+      "epistemic_status": "character_claim",
+      "time": "白天",
+      "location": "雷恩海域岛屿山崖",
+      "participants": [
+        "特蕾娅"
+      ],
+      "initiator": "特蕾娅",
+      "target": "神音（实为旁观独白）",
+      "trigger": "观战发现神音战斗本质",
+      "action": "特蕾娅在山崖观战，判定神音是主动承受攻击以转化魂力，称神音是更变态的侵蚀者",
+      "result": "特蕾娅掌握神音天赋真相",
+      "immediate_consequence": "特蕾娅消失离崖",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E012"
+      ],
+      "causes_event_ids": [],
+      "importance": "normal",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S006",
+          "quote": "原来她是自己去主动承受攻击的",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        },
+        {
+          "scene_id": "S006",
+          "quote": "诞生了更加变态的‘侵蚀者’呀",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "C001",
+      "canonical_name": "特蕾娅",
+      "mentions": [
+        "特蕾娅"
+      ],
+      "aliases_in_chapter": [
+        "四度王爵"
+      ],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        {
+          "fact": "四度王爵，执掌天格，天格所有讯息皆来自她",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "appearance_facts": [
+        {
+          "fact": "瞳孔翻涌白色风暴，孩童起便有的茫然恐惧表情",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "山崖观战时衣料极少，大片雪白肌肤暴露于寒气中",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "ability_facts": [
+        {
+          "fact": "指尖放出细长发光丝线钻入黑宝石般地面感知",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "对魂力感知精准洞察一切",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "behavior_facts": [
+        {
+          "fact": "告知幽冥神音去找西流尔",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "在山崖观战并断言神音为更变态的侵蚀者",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "身影一闪从山崖消失",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [],
+      "goal_facts": [
+        {
+          "fact": "称要把秘密都告诉神音",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "psychological_facts": [],
+      "knowledge_facts": [
+        {
+          "fact": "知道红讯非自己所下，但天格讯息皆来自她",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "possession_facts": [],
+      "relationship_facts": [
+        {
+          "fact": "与幽冥为前代侵蚀者同伴",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "physical_state_at_end": "完好",
+      "location_at_end": "雷恩海域岛屿（离崖）",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "介入神音在岛上的局面",
+      "identity_resolution_confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "正好，‘他’也在那个岛上",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C002",
+      "canonical_name": "幽冥",
+      "mentions": [
+        "幽冥"
+      ],
+      "aliases_in_chapter": [
+        "二度王爵"
+      ],
+      "appearance_type": "on_stage",
+      "identity_facts": [],
+      "appearance_facts": [
+        {
+          "fact": "黑色长袍裹身",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "ability_facts": [],
+      "behavior_facts": [
+        {
+          "fact": "观黑水晶般地面若有所思微笑",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "关心神音动向，问及神音之事",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "称最近能接触白银祭司的只有特蕾娅，先行离开",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [
+        {
+          "fact": "神音被提及时目光渐锋利",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "goal_facts": [],
+      "psychological_facts": [
+        {
+          "fact": "心里冷笑称特蕾娅为怪物",
+          "epistemic_status": "internal_confirmed"
+        }
+      ],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [
+        {
+          "fact": "神音之主君（王爵）",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "physical_state_at_end": "完好",
+      "location_at_end": "天格（先行离开）",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "处理红讯相关事宜",
+      "identity_resolution_confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "我先走了，神音的事情",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C003",
+      "canonical_name": "神音",
+      "mentions": [
+        "神音"
+      ],
+      "aliases_in_chapter": [],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        {
+          "fact": "幽冥的使徒",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "appearance_facts": [
+        {
+          "fact": "裹银白狐裘长袍",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "动人脸庞",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "ability_facts": [
+        {
+          "fact": "能以魂力织出如蛛网的结界（与魂兽织梦者相似）",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "颈后可抽出银白色长鞭",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "伤口可缓慢愈合、魂力可加速再生",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "behavior_facts": [
+        {
+          "fact": "登岛后将船以铁链拴于礁石，小范围感知魂力后向中心进发",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "昨夜结界杀尽闯入领域的低级魂兽",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "以金色魂力瞬间撕碎袭来的低级魂兽",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "在脚下织白色蛛网布阵迎敌褐影",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "遭山鬼背后袭击重伤，被霓虹两次救助",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "被第二轮舌头洞穿腹部摔地瞳孔涣散",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [
+        {
+          "fact": "感到恐惧一点点弥漫",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "对霓虹的救助冷淡称不需",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "goal_facts": [
+        {
+          "fact": "寻找岛屿所埋藏的关键秘密",
+          "epistemic_status": "internal_confirmed"
+        }
+      ],
+      "psychological_facts": [
+        {
+          "fact": "心跳剧烈、秘密将揭开的刺激感充盈脑海",
+          "epistemic_status": "internal_confirmed"
+        }
+      ],
+      "knowledge_facts": [
+        {
+          "fact": "认出袭击者山鬼是黄金湖泊附近见过的高等级魂兽",
+          "epistemic_status": "internal_confirmed"
+        },
+        {
+          "fact": "记得当初是靠幽冥的死灵镜面才击败过山鬼",
+          "epistemic_status": "internal_confirmed"
+        }
+      ],
+      "possession_facts": [
+        {
+          "fact": "持有银白色长鞭（颈后抽出）",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "relationship_facts": [
+        {
+          "fact": "幽冥的使徒",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "physical_state_at_end": "重伤（后背万千刀口、腹部洞穿，缓慢愈合中）",
+      "location_at_end": "雷恩海域岛屿",
+      "availability_state_at_end": "重伤，行动能力受损",
+      "current_task_at_end": "寻找岛屿秘密（途中重伤）",
+      "identity_resolution_confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S006",
+          "quote": "喉咙里发出痛苦的嘶哑声",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C004",
+      "canonical_name": "霓虹",
+      "mentions": [
+        "褐色的影子",
+        "褐色的幽灵",
+        "赤身裸体的男人"
+      ],
+      "aliases_in_chapter": [],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        {
+          "fact": "红发如火的男子，几乎赤裸、徒手撕碎山鬼",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "appearance_facts": [
+        {
+          "fact": "几乎赤身裸体、红发如火焰般往上竖立",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "ability_facts": [
+        {
+          "fact": "高速闪动如褐色闪电，可洞穿撕裂巨大魂兽躯体",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "可引发海底水柱凝结成冰柱轰击",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "全身回路金光笼罩",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "behavior_facts": [
+        {
+          "fact": "徒手撕碎山鬼并将其甩至海边",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "挡在神音前被舌头洞穿手臂",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "划开胳膊捏碎钻入的舌头",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [],
+      "physical_state_at_end": "手臂被洞穿（已自处理）",
+      "location_at_end": "雷恩海域岛屿",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "unknown（本章未自报身份）",
+      "identity_resolution_confidence": 0.7,
+      "evidence": [
+        {
+          "scene_id": "S006",
+          "quote": "红色的头发如同火焰般往上竖立着",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C005",
+      "canonical_name": "银尘",
+      "mentions": [
+        "银尘"
+      ],
+      "aliases_in_chapter": [],
+      "appearance_type": "on_stage",
+      "identity_facts": [],
+      "appearance_facts": [
+        {
+          "fact": "冰雪雕刻的完美侧脸",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "ability_facts": [
+        {
+          "fact": "可将麒零冻入一大块冰中",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "behavior_facts": [
+        {
+          "fact": "决定回心脏带麒零见白银祭司",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "以冰冻反制麒零的反弹",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "目光锐利听漆拉说莲泉赴岛",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "决定随漆拉赴尤图尔遗迹验证格兰仕未死",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "陈述尤图尔遗迹收纳亡灵守护秘密、地之使徒实为地狱之使徒",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "抛出铜镜引路",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [
+        {
+          "fact": "面对麒零玩笑露出温柔微笑",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "goal_facts": [
+        {
+          "fact": "证实与尤图尔遗迹有关之事、验证格兰仕是否未死",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "psychological_facts": [],
+      "knowledge_facts": [
+        {
+          "fact": "推测格兰仕未死、一直在尤图尔遗迹",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "possession_facts": [
+        {
+          "fact": "持有发光铜镜（魂器之一）",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "relationship_facts": [
+        {
+          "fact": "麒零之主君（王爵）",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "physical_state_at_end": "完好",
+      "location_at_end": "尤图尔遗迹（大门处）",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "赴遗迹验证格兰仕下落",
+      "identity_resolution_confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "我怀疑他并没有死",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C006",
+      "canonical_name": "麒零",
+      "mentions": [
+        "麒零"
+      ],
+      "aliases_in_chapter": [],
+      "appearance_type": "on_stage",
+      "identity_facts": [],
+      "appearance_facts": [
+        {
+          "fact": "少年，朝阳般气息，白牙齿阳光笑容",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "ability_facts": [
+        {
+          "fact": "研究出把对方魂力反弹回去的方法",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "behavior_facts": [
+        {
+          "fact": "清晨醒来问银尘行程",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "炫耀反弹方法反被冻成冰",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "下楼遇漆拉与天束幽花",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "问莲泉去向、邀天束幽花同行",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "经漆拉铜柱棋子传送至尤图尔遗迹",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [
+        {
+          "fact": "见天束幽花高兴",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [
+        {
+          "fact": "银尘的使徒",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "physical_state_at_end": "完好",
+      "location_at_end": "尤图尔遗迹",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "随银尘赴遗迹",
+      "identity_resolution_confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "我感觉你已经没比我高多少了",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C007",
+      "canonical_name": "漆拉",
+      "mentions": [
+        "漆拉"
+      ],
+      "aliases_in_chapter": [],
+      "appearance_type": "on_stage",
+      "identity_facts": [],
+      "appearance_facts": [
+        {
+          "fact": "精致失性别面容、裹黑魔法袍如暗夜精灵",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "ability_facts": [],
+      "behavior_facts": [
+        {
+          "fact": "在客栈门口等候",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "告知莲泉一行有要事先行经其棋子赴雷恩海域",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "称或回尤图尔遗迹、似有所感又摇头",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "与银尘先行传送至遗迹",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [],
+      "goal_facts": [
+        {
+          "fact": "可能回尤图尔遗迹查看",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [],
+      "physical_state_at_end": "完好",
+      "location_at_end": "尤图尔遗迹",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "随银尘赴遗迹",
+      "identity_resolution_confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "我可能要回‘尤图尔遗迹’看一下",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C008",
+      "canonical_name": "天束幽花",
+      "mentions": [
+        "天束幽花",
+        "幽花"
+      ],
+      "aliases_in_chapter": [],
+      "appearance_type": "on_stage",
+      "identity_facts": [],
+      "appearance_facts": [],
+      "ability_facts": [],
+      "behavior_facts": [
+        {
+          "fact": "见麒零下楼脸上表情突然高兴",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "讥讽麒零关心莲泉去向",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "称不愿去活死人待的地方第二次",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "犹豫后仍握铜柱跟随传送至遗迹",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [
+        {
+          "fact": "见麒零道别眼神后呆立、一跺脚决定跟随",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [],
+      "physical_state_at_end": "完好",
+      "location_at_end": "尤图尔遗迹",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "随队至遗迹",
+      "identity_resolution_confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "那种活死人待的地方，谁想去第二次啊？",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C009",
+      "canonical_name": "鬼山莲泉",
+      "mentions": [
+        "莲泉",
+        "鬼山莲泉"
+      ],
+      "aliases_in_chapter": [],
+      "appearance_type": "mentioned",
+      "identity_facts": [],
+      "appearance_facts": [],
+      "ability_facts": [],
+      "behavior_facts": [
+        {
+          "fact": "称有重要的事先行经漆拉棋子赴雷恩海域岛屿（据漆拉之言）",
+          "epistemic_status": "reported_event"
+        }
+      ],
+      "emotion_facts": [],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [],
+      "physical_state_at_end": "unknown",
+      "location_at_end": "雷恩海域岛屿（据漆拉之言）",
+      "availability_state_at_end": "unknown",
+      "current_task_at_end": "赴雷恩海域岛屿办要事（据漆拉之言）",
+      "identity_resolution_confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "他们说有重要的事情，要去一个地方",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C010",
+      "canonical_name": "格兰仕",
+      "mentions": [
+        "格兰仕"
+      ],
+      "aliases_in_chapter": [
+        "地之使徒",
+        "地狱之使徒"
+      ],
+      "appearance_type": "mentioned",
+      "identity_facts": [
+        {
+          "fact": "银尘并列的‘一度使徒’中的‘地之使徒’，实为‘地狱之使徒’，负责收集亡灵至尤图尔遗迹（据银尘言）",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "appearance_facts": [],
+      "ability_facts": [],
+      "behavior_facts": [],
+      "emotion_facts": [],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [],
+      "physical_state_at_end": "unknown（银尘推测其未死、一直在遗迹）",
+      "location_at_end": "尤图尔遗迹（据银尘推测）",
+      "availability_state_at_end": "unknown",
+      "current_task_at_end": "unknown",
+      "identity_resolution_confidence": 0.7,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "和你并列‘一度使徒’的‘地之使徒’格兰仕？",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C011",
+      "canonical_name": "山鬼",
+      "mentions": [
+        "山鬼"
+      ],
+      "aliases_in_chapter": [],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        {
+          "fact": "高等级魂兽，黄金湖泊附近曾见过（据神音记忆）",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "appearance_facts": [
+        {
+          "fact": "小山般巨大的黑色鸦雀形躯体，血红色瞳孔",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "鸟喙可激射带倒刺的舌头",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "ability_facts": [
+        {
+          "fact": "鸣叫如匕首刺脑，可释放巨大魂力切开后背成千刀口",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "behavior_facts": [
+        {
+          "fact": "从神音背后袭击",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "被霓虹徒手撕碎、最终被冰柱轰碎",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [],
+      "physical_state_at_end": "被摧毁（尸体碎片四散）",
+      "location_at_end": "雷恩海域岛屿海岸",
+      "availability_state_at_end": "死亡",
+      "current_task_at_end": "无（已死）",
+      "identity_resolution_confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S006",
+          "quote": "一座小山般巨大的黑色鸦雀",
+          "evidence_type": "environmental_observation",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C012",
+      "canonical_name": "修川地藏",
+      "mentions": [
+        "修川地藏"
+      ],
+      "aliases_in_chapter": [
+        "一度王爵"
+      ],
+      "appearance_type": "mentioned",
+      "identity_facts": [
+        {
+          "fact": "这一代一度王爵，与三个使徒一直如谜般活在心脏未知处、从未离开心脏一步（据银尘言）",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "appearance_facts": [],
+      "ability_facts": [],
+      "behavior_facts": [],
+      "emotion_facts": [],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [],
+      "physical_state_at_end": "unknown",
+      "location_at_end": "心脏（据银尘言）",
+      "availability_state_at_end": "unknown",
+      "current_task_at_end": "unknown",
+      "identity_resolution_confidence": 0.6,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "他们从来没有离开过‘心脏’一步",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    }
+  ],
+  "character_state_changes": [
+    {
+      "change_id": "CS001",
+      "character_id": "C003",
+      "scene_id": "S006",
+      "dimension": "physical_state",
+      "before": "完好",
+      "change": "被山鬼魂力切开后背万千刀口、被舌头洞穿腹部",
+      "after": "重伤（缓慢愈合中）",
+      "change_status": "confirmed",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S006",
+          "quote": "鲜血仿佛红色的雾气一般砰然从她的后背喷洒出来",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        },
+        {
+          "scene_id": "S006",
+          "quote": "被其中的两条舌头洞穿了腹部",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "change_id": "CS002",
+      "character_id": "C011",
+      "scene_id": "S006",
+      "dimension": "physical_state",
+      "before": "存活",
+      "change": "被霓虹徒手撕碎并最终被冰柱轰碎",
+      "after": "死亡（摧毁）",
+      "change_status": "confirmed",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S006",
+          "quote": "‘山鬼’凄厉的鸣叫仿佛雾气般消散在海潮声里",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "change_id": "CS003",
+      "character_id": "C004",
+      "scene_id": "S006",
+      "dimension": "physical_state",
+      "before": "完好",
+      "change": "挡在神音前被带倒刺舌头洞穿手臂",
+      "after": "手臂被洞穿（已自处理）",
+      "change_status": "confirmed",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S006",
+          "quote": "将那个男人的手臂洞穿",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "change_id": "CS004",
+      "character_id": "C006",
+      "scene_id": "S003",
+      "dimension": "location",
+      "before": "帝都格兰尔特客栈",
+      "change": "决定随银尘赴尤图尔遗迹",
+      "after": "前往尤图尔遗迹",
+      "change_status": "confirmed",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "身影倏地一下消失在空气里",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "change_id": "CS005",
+      "character_id": "C008",
+      "scene_id": "S005",
+      "dimension": "goal",
+      "before": "声称不愿再去活死人之地的遗迹",
+      "change": "犹豫后仍决定跟随麒零前往遗迹",
+      "after": "前往尤图尔遗迹",
+      "change_status": "confirmed",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "一跺脚，转身抬起手握住了铜柱",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    }
+  ],
+  "knowledge_states": [
+    {
+      "knowledge_id": "K001",
+      "subject": "特蕾娅",
+      "information": "神音已去雷恩海域找永生王爵西流尔，处境危险",
+      "knowledge_status": "knows",
+      "acquired_in_scene": "S001",
+      "source_of_information": "天格感知",
+      "reliability": "character_claim",
+      "concealed_from": [],
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "找‘永生王爵’西流尔去了",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "knowledge_id": "K002",
+      "subject": "银尘",
+      "information": "推测格兰仕未死、一直在尤图尔遗迹；新增加的亡灵疑由格兰仕收集",
+      "knowledge_status": "suspects",
+      "acquired_in_scene": "S005",
+      "source_of_information": "银尘自身推理（结合麒零曾见莉吉尔亡灵、修川地藏一派从未离心脏）",
+      "reliability": "speculation",
+      "concealed_from": [],
+      "confidence": 0.7,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "我怀疑他并没有死",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        },
+        {
+          "scene_id": "S005",
+          "quote": "这些年，新增加的亡灵，是谁负责收集的吗？",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "knowledge_id": "K003",
+      "subject": "神音",
+      "information": "认出袭击者山鬼是黄金湖泊附近见过的高等级魂兽，当初靠幽冥死灵镜面才击败",
+      "knowledge_status": "knows",
+      "acquired_in_scene": "S006",
+      "source_of_information": "神音记忆",
+      "reliability": "character_claim",
+      "concealed_from": [],
+      "confidence": 0.75,
+      "evidence": [
+        {
+          "scene_id": "S006",
+          "quote": "当初自己是靠幽冥那件顶级的‘魂器’‘死灵镜面’才能将它击败",
+          "evidence_type": "internal_monologue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "knowledge_id": "K004",
+      "subject": "特蕾娅",
+      "information": "神音是主动承受攻击以转化魂力的侵蚀者",
+      "knowledge_status": "knows",
+      "acquired_in_scene": "S006",
+      "source_of_information": "山崖观战感知",
+      "reliability": "character_claim",
+      "concealed_from": [
+        "神音"
+      ],
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S006",
+          "quote": "原来她是自己去主动承受攻击的",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "L001",
+      "canonical_name": "天格",
+      "aliases": [],
+      "parent_location": "西之亚斯蓝帝国",
+      "location_type": "情报机构大殿",
+      "observable_features": [
+        "光滑如镜黑色地面",
+        "地面下游动深海闪光鱼般的光缕",
+        "半透明深不见底黑宝石地面"
+      ],
+      "entry_conditions": [],
+      "hazards": [],
+      "rules": [],
+      "state_changes": [],
+      "events_in_chapter": [
+        "E001"
+      ],
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "光滑如镜般的黑色地面之下，不时游动而过几丝仿佛深海闪光鱼类般的光缕",
+          "evidence_type": "environmental_observation",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "location_id": "L002",
+      "canonical_name": "雷恩海域岛屿（永生岛）",
+      "aliases": [
+        "这个岛屿",
+        "这片土地"
+      ],
+      "parent_location": "西之亚斯蓝帝国·雷恩海域",
+      "location_type": "海上岛屿",
+      "observable_features": [
+        "已入寒冬，白色混沌苍茫",
+        "银白冰雪与发硬冻土层",
+        "黑色岩石缝隙凝冰将岩石撑裂",
+        "遍积雪与冰层如极北荒原",
+        "山岩会呼吸般蠕动",
+        "埋藏关键秘密、召唤神音"
+      ],
+      "entry_conditions": [
+        "需乘船抵达"
+      ],
+      "hazards": [
+        "高等级魂兽山鬼出没",
+        "褐色影（霓虹）活动",
+        "埋藏危险秘密"
+      ],
+      "rules": [],
+      "state_changes": [
+        "本章成为神音遇袭与特蕾娅观战之地"
+      ],
+      "events_in_chapter": [
+        "E002",
+        "E006",
+        "E007",
+        "E009",
+        "E010",
+        "E011",
+        "E012",
+        "E013",
+        "E014"
+      ],
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "转眼已经进入了寒冬",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "location_id": "L003",
+      "canonical_name": "帝都格兰尔特",
+      "aliases": [
+        "帝都"
+      ],
+      "parent_location": "西之亚斯蓝帝国",
+      "location_type": "都城",
+      "observable_features": [
+        "有客栈（银尘一行住三天）",
+        "门外大街人来人往"
+      ],
+      "entry_conditions": [],
+      "hazards": [],
+      "rules": [],
+      "state_changes": [],
+      "events_in_chapter": [
+        "E003",
+        "E004",
+        "E005"
+      ],
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "我们在这里住了三天了",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "location_id": "L004",
+      "canonical_name": "尤图尔遗迹",
+      "aliases": [
+        "遗迹",
+        "古城"
+      ],
+      "parent_location": "西之亚斯蓝帝国",
+      "location_type": "收纳亡灵的古城遗迹",
+      "observable_features": [
+        "复古沧桑的雕刻纹路",
+        "几十米高紧闭巨大石门",
+        "古老尘埃味道",
+        "巨大空洞内部",
+        "银尘抛铜镜可引路照明"
+      ],
+      "entry_conditions": [
+        "经漆拉棋子传送可达"
+      ],
+      "hazards": [],
+      "rules": [
+        "收纳亡灵、守护秘密（据银尘言）"
+      ],
+      "state_changes": [],
+      "events_in_chapter": [
+        "E008"
+      ],
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "‘尤图尔遗迹’历来就是一个收纳亡灵的古城",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "item_id": "I001",
+      "canonical_name": "银尘的铜镜",
+      "aliases": [
+        "发光的铜镜"
+      ],
+      "item_type": "魂器（银尘魂器之一）",
+      "holder_at_start": "银尘",
+      "holder_at_end": "银尘",
+      "location_at_end": "尤图尔遗迹（银尘手中悬空）",
+      "explicit_functions": [
+        "发光照亮前方如引路灯",
+        "随银尘注入魂力扩大光照范围"
+      ],
+      "explicit_costs": [],
+      "explicit_limitations": [],
+      "state_at_end": "悬浮引路中",
+      "related_event_ids": [
+        "E008"
+      ],
+      "possible_hook": true,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "一面发光的铜镜就仿佛游动的鱼一样，在前面的空气里带路",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        },
+        {
+          "scene_id": "S005",
+          "quote": "“这面镜子是你的‘魂器’？”……“之一。”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "item_id": "I002",
+      "canonical_name": "神音的银白色长鞭",
+      "aliases": [
+        "白色长鞭"
+      ],
+      "item_type": "魂器",
+      "holder_at_start": "神音（藏于体内）",
+      "holder_at_end": "神音",
+      "location_at_end": "神音手中（抽出使用）",
+      "explicit_functions": [
+        "可从颈后脊椎抽出",
+        "挥动抽打攻击"
+      ],
+      "explicit_costs": [
+        "抽出时颈后血肉瞬间愈合"
+      ],
+      "explicit_limitations": [],
+      "state_at_end": "使用中",
+      "related_event_ids": [
+        "E012"
+      ],
+      "possible_hook": false,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "从自己脖子的脊椎后面，将那条银白色的鞭子哗啦啦地抽了出来",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "item_id": "I003",
+      "canonical_name": "尤图尔遗迹大门铜柱棋子",
+      "aliases": [
+        "棋子",
+        "铜柱"
+      ],
+      "item_type": "传送之阵",
+      "holder_at_start": "漆拉（设定）",
+      "holder_at_end": "无（使用后失效）",
+      "location_at_end": "尤图尔遗迹门口",
+      "explicit_functions": [
+        "将四人传送至尤图尔遗迹"
+      ],
+      "explicit_costs": [],
+      "explicit_limitations": [
+        "漆拉设定十分钟后失效"
+      ],
+      "state_at_end": "已使用",
+      "related_event_ids": [
+        "E008"
+      ],
+      "possible_hook": false,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "这枚‘棋子’在十分钟之后失效",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    }
+  ],
+  "factions": [],
+  "world_rules": [
+    {
+      "rule_id": "R001",
+      "rule_name": "尤图尔遗迹亡灵收容机制",
+      "rule_category": "特殊地点规则",
+      "rule_statement": "尤图尔遗迹历来收纳亡灵，使死后拥有高级魂力的魂术师亡灵在其中持续存活不消散，以守护某个秘密，维持力量来源白银祭司从未告知",
+      "scope": "尤图尔遗迹内亡灵",
+      "trigger": "高级魂术师死亡",
+      "effect": "其亡灵被收集至遗迹存活",
+      "cost": "unknown",
+      "limitations": [],
+      "exceptions": [],
+      "violation_consequence": "unknown",
+      "epistemic_status": "character_claim",
+      "confidence": 0.7,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "‘尤图尔遗迹’历来就是一个收纳亡灵的古城",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        },
+        {
+          "scene_id": "S005",
+          "quote": "是为了守护一个秘密",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R002",
+      "rule_name": "地之使徒真相",
+      "rule_category": "王爵使徒制度",
+      "rule_statement": "‘地之使徒’实为‘地狱之使徒’的简称，历代担负收集高级魂术师亡灵至尤图尔遗迹的使命，仅一度王爵与一度使徒知晓",
+      "scope": "一度王爵及其地之使徒",
+      "trigger": "使徒任命",
+      "effect": "地使承担亡灵收集职责",
+      "cost": "unknown",
+      "limitations": [],
+      "exceptions": [],
+      "violation_consequence": "unknown",
+      "epistemic_status": "character_claim",
+      "confidence": 0.75,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "‘地之使徒’其实就是‘地狱之使徒’的简称罢了",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    }
+  ],
+  "hooks_and_clues": [
+    {
+      "hook_id": "H001",
+      "scene_id": "S001",
+      "hook_type": "explicit_question",
+      "content": "岛上特蕾娅所称的‘他’是谁",
+      "related_entities": [
+        "特蕾娅",
+        "神音",
+        "西流尔"
+      ],
+      "introduced_or_updated": "introduced",
+      "current_status": "unresolved",
+      "known_by": [
+        "特蕾娅"
+      ],
+      "unknown_to": [
+        "幽冥",
+        "神音"
+      ],
+      "urgency": "medium",
+      "canon_eligible": true,
+      "confidence": 0.7,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "‘他’也在那个岛上",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "hook_id": "H002",
+      "scene_id": "S002",
+      "hook_type": "explicit_question",
+      "content": "岛屿所埋藏、召唤神音揭开的‘关键秘密’是什么",
+      "related_entities": [
+        "神音",
+        "永生岛",
+        "西流尔"
+      ],
+      "introduced_or_updated": "introduced",
+      "current_status": "unresolved",
+      "known_by": [
+        "神音"
+      ],
+      "unknown_to": [],
+      "urgency": "medium",
+      "canon_eligible": true,
+      "confidence": 0.75,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "这里埋藏着她所需要的那个“关键的秘密”",
+          "evidence_type": "internal_monologue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "hook_id": "H003",
+      "scene_id": "S003",
+      "hook_type": "explicit_setup",
+      "content": "银尘推测格兰仕未死、一直在尤图尔遗迹，将赴遗迹验证",
+      "related_entities": [
+        "银尘",
+        "格兰仕",
+        "尤图尔遗迹"
+      ],
+      "introduced_or_updated": "introduced",
+      "current_status": "unresolved",
+      "known_by": [
+        "银尘",
+        "漆拉"
+      ],
+      "unknown_to": [],
+      "urgency": "medium",
+      "canon_eligible": true,
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "他一直都在‘尤图尔遗迹’里",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    },
+    {
+      "hook_id": "H004",
+      "scene_id": "S006",
+      "hook_type": "implicit_clue_candidate",
+      "content": "褐影（红发男子）身份与来意未明；其力量足以媲美王爵却未自报身份",
+      "related_entities": [
+        "霓虹",
+        "神音",
+        "特蕾娅"
+      ],
+      "introduced_or_updated": "introduced",
+      "current_status": "unresolved",
+      "known_by": [
+        "特蕾娅"
+      ],
+      "unknown_to": [
+        "神音"
+      ],
+      "urgency": "medium",
+      "canon_eligible": false,
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "scene_id": "S006",
+          "quote": "他究竟是什么东西",
+          "evidence_type": "internal_monologue",
+          "source_path": "data/raw/chapters_src/chapter-011.md"
+        }
+      ]
+    }
+  ],
+  "timelines": [
+    {
+      "timeline_entry_id": "T001",
+      "timeline_type": "parallel",
+      "sequence_index": 1,
+      "absolute_time": "unknown",
+      "relative_time": "主线当前",
+      "duration": "约一日",
+      "location": "天格 / 雷恩海域岛屿",
+      "participants": [
+        "特蕾娅",
+        "幽冥",
+        "神音",
+        "霓虹",
+        "山鬼"
+      ],
+      "current_task": "特蕾娅介入神音寻西流尔之事；神音在岛遇袭",
+      "event_ids": [
+        "E001",
+        "E002",
+        "E006",
+        "E007",
+        "E009",
+        "E010",
+        "E011",
+        "E012",
+        "E013",
+        "E014"
+      ],
+      "plot_description": "天格中特蕾娅告知幽冥神音寻西流尔之危并称将介入；神音登永生岛遭山鬼与褐影夹击重伤，褐影摧毁山鬼；特蕾娅崖上观战并断言神音为更变态侵蚀者。",
+      "result": "神音重伤、山鬼被毁、特蕾娅掌握神音天赋真相",
+      "relation_to_other_entries": [
+        {
+          "relation_type": "simultaneous_with",
+          "target_timeline_entry": "T002"
+        }
+      ],
+      "confidence": 0.7
+    },
+    {
+      "timeline_entry_id": "T002",
+      "timeline_type": "main",
+      "sequence_index": 2,
+      "absolute_time": "unknown",
+      "relative_time": "与T001大致同时（清晨起）",
+      "duration": "约半日",
+      "location": "帝都格兰尔特 / 尤图尔遗迹",
+      "participants": [
+        "银尘",
+        "麒零",
+        "漆拉",
+        "天束幽花"
+      ],
+      "current_task": "银尘决定回心脏复命并随漆拉赴尤图尔遗迹验证格兰仕下落",
+      "event_ids": [
+        "E003",
+        "E004",
+        "E005",
+        "E008"
+      ],
+      "plot_description": "帝都清晨银尘决定带麒零回心脏复命；得知莲泉一行已先行赴岛后，银尘决定随漆拉赴尤图尔遗迹验证格兰仕未死之推测，四人传送抵达遗迹大门。",
+      "result": "四人抵达尤图尔遗迹，将验证格兰仕下落",
+      "relation_to_other_entries": [
+        {
+          "relation_type": "simultaneous_with",
+          "target_timeline_entry": "T001"
+        }
+      ],
+      "confidence": 0.6
+    }
+  ],
+  "cliffhanger_analysis": {
+    "enabled": false,
+    "last_scene_ids": [],
+    "immediate_conflicts": [],
+    "unfinished_actions": [],
+    "characters_in_danger": [],
+    "active_time_pressure": [],
+    "urgency": "unknown",
+    "must_continue_states": [],
+    "resolved_at_chapter_end": false
+  },
+  "style_profile": {
+    "narrative_person": "第三人称",
+    "viewpoint_pattern": "限知多视角，随场景在特蕾娅、神音、麒零、银尘间切换",
+    "sentence_length_tendency": "high",
+    "paragraph_length_tendency": "high",
+    "dialogue_ratio": "medium",
+    "action_description_ratio": "very_high",
+    "environment_description_ratio": "high",
+    "psychological_description_ratio": "medium",
+    "dominant_sensory_channels": [
+      "视觉",
+      "触觉",
+      "温度",
+      "听觉"
+    ],
+    "common_rhetorical_devices": [
+      "比喻",
+      "感官叠加",
+      "夸张意象",
+      "拟人"
+    ],
+    "dominant_emotional_tones": [
+      "阴森",
+      "危险",
+      "压抑",
+      "少年温情"
+    ],
+    "pace": "多线并行，战斗段落极快",
+    "pace_changes": [
+      "日常段落轻松",
+      "遇袭段落急促高压",
+      "推理段落沉稳"
+    ],
+    "transition_patterns": [
+      "地点标记【】切换场景",
+      "地点间硬切",
+      "对话推进"
+    ],
+    "distinctive_expression_patterns": [
+      "长句堆叠华丽血腥意象",
+      "战斗中以自然元素（冰、雪、海）烘托",
+      "日常段落用少年气息缓冲阴森"
+    ],
+    "evidence_examples": [
+      "辽阔的岛屿上是一片白色混沌的苍茫",
+      "猩红而滚烫的血雨在她身后“哗啦啦”地降落一地，片刻之后，就在凛冽的寒风里冻成了红色的冰",
+      "他温柔地笑着，用低沉的声音对麒零说"
+    ]
+  },
+  "entity_resolution_issues": [
+    {
+      "issue_id": "ER001",
+      "references": [
+        "褐色的影子",
+        "褐色的幽灵",
+        "赤身裸体的男人",
+        "红发男子"
+      ],
+      "possible_resolution": "霓虹（特蕾娅的使徒、新一代侵蚀者）",
+      "resolution_status": "unresolved",
+      "confidence": 0.7,
+      "reason": "本章未自报身份，仅描写红发徒手撕碎山鬼；依据previous_context红发、天使面容、徒手战斗特征高度吻合霓虹，但本章无明示证据，暂不合并。"
+    }
+  ],
+  "continuity_issues": [],
+  "interpretation_candidates": [
+    {
+      "candidate_id": "IC001",
+      "interpretation_type": "identity",
+      "content": "褐色影子/红发男子即为霓虹（特蕾娅的使徒）",
+      "supporting_observations": [
+        "红发如火焰",
+        "徒手撕碎巨型魂兽",
+        "力量足以媲美王爵",
+        "特蕾娅在崖上观战关心"
+      ],
+      "alternative_explanations": [
+        "岛上另有未明示的强者"
+      ],
+      "confidence": 0.7,
+      "canon_eligible": false
+    },
+    {
+      "candidate_id": "IC002",
+      "interpretation_type": "motivation",
+      "content": "山鬼的出现并非偶然，或与岛屿秘密/特蕾娅布局有关",
+      "supporting_observations": [
+        "神音专注前方时山鬼从背后出现",
+        "特蕾娅恰在崖上观战",
+        "特蕾娅称要把秘密告诉神音"
+      ],
+      "alternative_explanations": [
+        "山鬼为岛屿野生魂兽自然袭击"
+      ],
+      "confidence": 0.4,
+      "canon_eligible": false
+    }
+  ],
+  "chapter_end_state": {
+    "current_time": "主线当前·白天",
+    "active_locations": [
+      "雷恩海域岛屿",
+      "尤图尔遗迹",
+      "帝都格兰尔特"
+    ],
+    "active_characters": [
+      "神音",
+      "霓虹",
+      "特蕾娅",
+      "银尘",
+      "麒零",
+      "漆拉",
+      "天束幽花"
+    ],
+    "ongoing_events": [
+      "神音重伤待续",
+      "银尘一行验证遗迹格兰仕下落"
+    ],
+    "unfinished_tasks": [
+      "神音寻找岛屿关键秘密",
+      "银尘验证格兰仕未死",
+      "特蕾娅介入神音局面"
+    ],
+    "unresolved_hooks": [
+      "H001",
+      "H002",
+      "H003",
+      "H004"
+    ],
+    "critical_character_states": [
+      "神音重伤（后背万千刀口、腹部洞穿，愈合中）",
+      "霓虹手臂洞穿已处理",
+      "山鬼被摧毁"
+    ],
+    "critical_item_states": [
+      "银尘铜镜引路中",
+      "神音长鞭已抽出",
+      "遗迹棋子已用"
+    ],
+    "next_chapter_continuity_constraints": [
+      "神音重伤仍在岛屿、褐影（霓虹）在场、特蕾娅离崖",
+      "银尘一行四人已抵尤图尔遗迹大门、即将验证格兰仕下落"
+    ]
+  },
+  "validation_issues": [],
+  "quality_checks": {
+    "all_scenes_have_source_spans": true,
+    "all_critical_events_have_evidence": true,
+    "all_state_changes_have_evidence": true,
+    "dreams_and_memories_separated": true,
+    "character_claims_not_treated_as_confirmed_fact": true,
+    "planned_events_not_treated_as_occurred": true,
+    "unknown_values_not_fabricated": true,
+    "timeline_order_checked": true,
+    "entity_aliases_checked": true,
+    "latest_chapter_cliffhanger_checked": true
+  }
+}

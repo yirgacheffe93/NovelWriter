@@ -1,0 +1,1993 @@
+{
+  "schema_version": "chapter-canon-extraction-v1.0",
+  "parse_status": "success",
+  "source": {
+    "source_path": "data/raw/chapters_src/chapter-009.md",
+    "source_hash": "034bf66b588477fca8c3969b08d95afb243165f76ab5397310a84831d086d2cc",
+    "canon_level": "official",
+    "chapter_id_hint": "009"
+  },
+  "chapter_metadata": {
+    "chapter_id": "第九章",
+    "chapter_title": "侵蚀者",
+    "volume_title": "unknown",
+    "chapter_number": 9,
+    "detected_heading": "第九章 侵蚀者",
+    "narrative_person": "第三人称",
+    "viewpoint_type": "限知多视角",
+    "primary_viewpoint_character": "鹿觉",
+    "viewpoint_stability": "不稳定（鹿觉、漆拉、少年少女、旁观之间切换）",
+    "primary_reality_layer": "flashback",
+    "factual_abstract": "本章为十二年前回溯。深渊回廊夜空下，漆拉指导使徒鹿觉捕捉群居魂兽'电狐'作第一魂兽，鹿觉自负释放魂魄吞噬时遭反噬濒死，被漆拉救下；漆拉解释电狐与鹿觉时空天赋契合。随后二人在北之森寻找第二魂兽'铜雀'，却遇两名约十来岁的少年少女。少女以惊人魂力感知在数万米外察觉漆拉隐匿魂力，少年以吞噬魂印方式瞬间杀死已被困的铜雀。少女自称二人是'侵蚀者'，漆拉以时间之阵制住二人后，少女使用从体内穿刺刀刃的禁忌魂术逃脱。漆拉带鹿觉离开，心中恐惧二人的天赋与魂力。随后少年为濒死少女输送魂力救活她。另交代束海藏河兄弟已出发去雷恩海域寻找失踪的六度王爵西流尔。"
+  },
+  "chapter_boundaries": {
+    "single_chapter_confirmed": true,
+    "detected_chapter_count": 1,
+    "detected_boundaries": []
+  },
+  "scenes": [
+    {
+      "scene_id": "S001",
+      "sequence_index": 1,
+      "scene_title_generated": "十二年前·深渊回廊：鹿觉捕电狐遭反噬，漆拉相救",
+      "reality_layer": "flashback",
+      "viewpoint_character": "鹿觉",
+      "time": {
+        "absolute_time": "十二年前",
+        "relative_time": "十二年前某个秋夜至凌晨",
+        "time_of_day": "夜晚至凌晨",
+        "duration": "一夜",
+        "sequence_relation": "回溯起点",
+        "confidence": 0.95
+      },
+      "location": {
+        "primary_location": "深渊回廊",
+        "sub_location": "荆棘丛地带",
+        "location_change_from_previous_scene": false
+      },
+      "participants": [
+        "鹿觉",
+        "漆拉",
+        "电狐群"
+      ],
+      "scene_goal": "漆拉指导鹿觉捕捉第一魂兽电狐",
+      "opening_state": "十二年前秋夜，星辰满月笼罩深渊回廊",
+      "factual_summary": "鹿觉蹲伏黑夜中布阵放慢电狐速度，释放魂魄吞噬时遭地面阵断裂反噬，数百电狐恢复速度穿刺鹿觉撕碎知觉；漆拉以时间之阵凝固时空救下鹿觉；凌晨鹿觉苏醒披漆拉长袍，漆拉训诫其自负释放魂魄；鹿觉问为何捕电狐，漆拉解释电狐速度契合鹿觉时空天赋、以群为单位、再生力强；提及束海藏河兄弟已去雷恩海域寻找失踪的六度王爵西流尔；漆拉称要鹿觉捕第二魂兽铜雀并制成棋子出发。",
+      "closing_state": "漆拉制成棋子准备带鹿觉出发捕铜雀",
+      "transition_reason": "location_change",
+      "source_span": {
+        "start_marker": "漆黑的夜空里，漫天白色宝石般的星辰",
+        "end_marker": "我们出发吧"
+      }
+    },
+    {
+      "scene_id": "S002",
+      "sequence_index": 2,
+      "scene_title_generated": "北之森：少年少女杀戮魂兽，少女感知远方来客",
+      "reality_layer": "flashback",
+      "viewpoint_character": "unknown（旁观视角）",
+      "time": {
+        "absolute_time": "十二年前",
+        "relative_time": "与S001之后捕捉铜雀期间并行",
+        "time_of_day": "白天（风雪中）",
+        "duration": "一段",
+        "sequence_relation": "并行剧情线",
+        "confidence": 0.6
+      },
+      "location": {
+        "primary_location": "深渊回廊北之森",
+        "sub_location": "积雪森林",
+        "location_change_from_previous_scene": true
+      },
+      "participants": [
+        "少女（侵蚀者）",
+        "少年（侵蚀者）"
+      ],
+      "scene_goal": "少年少女在北之森杀戮魂兽等待铜雀",
+      "opening_state": "巨大森林笼罩沉甸甸积雪，北之森长年大雪",
+      "factual_summary": "约十一二岁少女以冰擦洗手上血浆，比她小一两岁的少年踩巨大魂兽头颅、六眼珠被挖；少女瞳孔变混沌白色感知到地底魂兽，闪身后从地里扯出蜘蛛蝎子怪，指其魂印位置；少年以五指按魂印用金色刻纹之网吞噬怪物化为冰块；少女称周围干净了等铜雀；少女瞳孔再变混沌白色感知到数万米外来了一个不得了的人与一个不可思议般强大的怪物，少年称两三钟头才到、少女在这么远外能感应是可怕的怪物。",
+      "closing_state": "少年少女等待远方来客（漆拉鹿觉）",
+      "transition_reason": "viewpoint_change",
+      "source_span": {
+        "start_marker": "放眼望去，巨大的森林笼罩在沉甸甸的积雪里",
+        "end_marker": "你才是个可怕的怪物吧"
+      }
+    },
+    {
+      "scene_id": "S003",
+      "sequence_index": 3,
+      "scene_title_generated": "北之森：漆拉带鹿觉前往铜雀所在，讲解铜雀能力",
+      "reality_layer": "flashback",
+      "viewpoint_character": "鹿觉",
+      "time": {
+        "absolute_time": "十二年前",
+        "relative_time": "紧接S001之后",
+        "time_of_day": "白天（风雪中）",
+        "duration": "一段",
+        "sequence_relation": "紧接S001之后",
+        "confidence": 0.8
+      },
+      "location": {
+        "primary_location": "深渊回廊北之森",
+        "sub_location": "积雪森林入口",
+        "location_change_from_previous_scene": true
+      },
+      "participants": [
+        "漆拉",
+        "鹿觉"
+      ],
+      "scene_goal": "漆拉带鹿觉前往捕铜雀并讲解其意义",
+      "opening_state": "鹿觉与漆拉快步朝风雪森林走去",
+      "factual_summary": "鹿觉问铜雀为何在北之森边缘，漆拉解释北之森是深渊回廊最北、长年大雪正因铜雀居住地，铜雀能大范围制造风雪，对水属性魂术师是改变环境属性阻止风爵地爵制阵的利器；漆拉又称铜雀鸣叫称'战神的号角'，可激荡魂力冲击爵印使魂兽与魂术师魂力瞬间飞跃；鹿觉看漆拉出神撞其身上脸红；漆拉说铜雀来了要鹿觉跟上速度，笑称会等他；鹿觉全魂力追去。",
+      "closing_state": "漆拉与鹿觉全速冲向铜雀",
+      "transition_reason": "viewpoint_change",
+      "source_span": {
+        "start_marker": "漆拉'王爵'，这里已经快要接近'深渊回廊'的北边边境了",
+        "end_marker": "消失在风雪里"
+      }
+    },
+    {
+      "scene_id": "S004",
+      "sequence_index": 4,
+      "scene_title_generated": "北之森：三方遭遇铜雀，少年杀铜雀，少女自称侵蚀者",
+      "reality_layer": "flashback",
+      "viewpoint_character": "unknown（多视角）",
+      "time": {
+        "absolute_time": "十二年前",
+        "relative_time": "紧接S002与S003之后",
+        "time_of_day": "白天（风雪中）",
+        "duration": "一段",
+        "sequence_relation": "S002与S003汇合",
+        "confidence": 0.85
+      },
+      "location": {
+        "primary_location": "深渊回廊北之森",
+        "sub_location": "参天树冠上空",
+        "location_change_from_previous_scene": true
+      },
+      "participants": [
+        "少女（侵蚀者）",
+        "少年（侵蚀者）",
+        "铜雀",
+        "漆拉",
+        "鹿觉"
+      ],
+      "scene_goal": "三方争夺铜雀",
+      "opening_state": "铜雀鸣叫震痛少年少女耳膜胸口",
+      "factual_summary": "少年少女顶痛苦速度不减闪动树间，头顶小山般铜雀扇翅搅乱天地；少女持续镇定报铜雀攻击方向时机与魂印位置；少年按提醒将铜雀困于树冠冰雪鸟巢；少年欲按铜雀魂印时，鹿觉迎风现身挥手将其震飞；少女接住少年惊问二人怎能数万米外这么快到达；漆拉从少女背后暴风雪走出质问其感应距离；少女称二人是王爵使徒并警告无红讯不能动手；漆拉称既少年少女先到理应由其捕捉；少年飞向铜雀按其魂印以金色刻纹吞噬，铜雀尸体粉碎成冰雪碎块坠落，少年呈现迷幻快感；漆拉恐惧，鹿觉汗毛倒立。",
+      "closing_state": "少年杀死铜雀而非捕获，漆拉鹿觉震惊恐惧",
+      "transition_reason": "viewpoint_change",
+      "source_span": {
+        "start_marker": "一声一声仿佛金属般的鸣叫把少年和少女的耳膜刺得发痛",
+        "end_marker": "仿佛面前的少年少女，是两个来自地狱的鬼魅"
+      }
+    },
+    {
+      "scene_id": "S005",
+      "sequence_index": 5,
+      "scene_title_generated": "北之森：少女自称侵蚀者，漆拉时间之阵制住二人",
+      "reality_layer": "flashback",
+      "viewpoint_character": "unknown（旁观）",
+      "time": {
+        "absolute_time": "十二年前",
+        "relative_time": "紧接S004之后",
+        "time_of_day": "白天（风雪中）",
+        "duration": "一段",
+        "sequence_relation": "紧接S004之后",
+        "confidence": 0.85
+      },
+      "location": {
+        "primary_location": "深渊回廊北之森",
+        "sub_location": "树冠上空",
+        "location_change_from_previous_scene": false
+      },
+      "participants": [
+        "少女（侵蚀者）",
+        "少年（侵蚀者）",
+        "漆拉",
+        "鹿觉"
+      ],
+      "scene_goal": "少女揭示侵蚀者身份，漆拉欲制住二人",
+      "opening_state": "鹿觉质问少年少女是谁的使徒",
+      "factual_summary": "少女称二人不叫使徒而叫'侵蚀者'，又装吐舌说不小心说出秘密；少年称杀了漆拉鹿觉呗；漆拉面寒脚下旋出巨大发光阵，凝固风雪与少年少女动作；少女脸上浮地狱幽灵笑容，脸被割裂，无数长巨大闪光刀刃从体内刺破皮囊撑起她身体成蜘蛛螳螂般巨大昆虫，刀刃砸地切割倒无数参天树木；漆拉知是少女制造的迷局假象扰乱视线，不知其逃走方向；鹿觉吹散风雪后见周围废墟般空旷。",
+      "closing_state": "少年少女借禁忌魂术逃脱，漆拉鹿觉未抓住",
+      "transition_reason": "location_change",
+      "source_span": {
+        "start_marker": "你们是谁的'使徒'？",
+        "end_marker": "亚斯蓝到底出现了什么样的怪物"
+      }
+    },
+    {
+      "scene_id": "S006",
+      "sequence_index": 6,
+      "scene_title_generated": "深渊回廊：漆拉带鹿觉离开，决定先捕电狐",
+      "reality_layer": "flashback",
+      "viewpoint_character": "鹿觉",
+      "time": {
+        "absolute_time": "十二年前",
+        "relative_time": "紧接S005之后",
+        "time_of_day": "白天",
+        "duration": "一段",
+        "sequence_relation": "紧接S005之后",
+        "confidence": 0.85
+      },
+      "location": {
+        "primary_location": "深渊回廊",
+        "sub_location": "已离开北之森",
+        "location_change_from_previous_scene": true
+      },
+      "participants": [
+        "漆拉",
+        "鹿觉"
+      ],
+      "scene_goal": "漆拉带鹿觉离开并调整计划",
+      "opening_state": "风雪渐弱，二人离开北之森",
+      "factual_summary": "鹿觉问两个小孩是什么，漆拉称也不知道，是第一次面露凝重；漆拉内心恐惧：明明时间之阵全开，少女不可能有顺畅速度引发禁忌魂术，除非其释放魂力最初就提前感应，过程短得几乎可忽略，少女如何做到太可怕，其年纪对魂力运用精纯得令人叹为观止；漆拉称二人魂力是两种陌生灵魂回路不似继承现有王爵；建议先去东边灌木湖区捕最大群电狐提升战斗力；鹿觉明白漆拉对自己失望，眼眶泛红加快脚步。",
+      "closing_state": "二人前往灌木湖区捕电狐",
+      "transition_reason": "location_change",
+      "source_span": {
+        "start_marker": "刚刚那两个小孩子，到底是",
+        "end_marker": "加快脚步跟上了漆拉"
+      }
+    },
+    {
+      "scene_id": "S007",
+      "sequence_index": 7,
+      "scene_title_generated": "北之森：少年为濒死少女输送魂力救活她",
+      "reality_layer": "flashback",
+      "viewpoint_character": "unknown（旁观）",
+      "time": {
+        "absolute_time": "十二年前",
+        "relative_time": "与S005末尾少女逃脱后同时",
+        "time_of_day": "白天（风雪中）",
+        "duration": "一段",
+        "sequence_relation": "并行剧情线",
+        "confidence": 0.7
+      },
+      "location": {
+        "primary_location": "深渊回廊北之森",
+        "sub_location": "雪地",
+        "location_change_from_previous_scene": true
+      },
+      "participants": [
+        "少女（侵蚀者）",
+        "少年（侵蚀者）"
+      ],
+      "scene_goal": "少年救活使用禁忌魂术后濒死的少女",
+      "opening_state": "风雪模糊视线，金属刀刃摩擦声刺耳",
+      "factual_summary": "少年惊恐看少女双眼混沌神志涣散，体内刀刃恢复大小却未收回仍狂暴摆动，少女被刀刃带动挣扎惨叫如被火焚的蜘蛛；少女嘶哑求救称魂力不够控制不了，要少年给魂力，其爵印在左大腿内侧；少年无法接近被刀刃刺进血肉，咬牙走过去任刀刃刺身，掀少女裙摆探其大腿内侧输海洋般巨大魂力；刀刃停止垂下；少年拔出小腹刀刃丢弃，自身伤口愈合，摇少女呼喊；少女突然挺起剧烈吸气如溺水者呼吸；少年露微笑。随后少女解释漆拉速度太快、其阵内时间变慢，若非她提前感应其魂力流动知其进攻方式也会被困；称自己天赋对魂力感知和精准使用有把握，只要魂力充足能控制禁忌魂术的度；二人判断漆拉至少是前三度上位王爵，绝对不要与之成为敌人；少女撩裙摆要少年再给魂力恢复更快。",
+      "closing_state": "少女恢复，二人认定漆拉不可为敌",
+      "transition_reason": "chapter_end",
+      "source_span": {
+        "start_marker": "空气里都是雪花，视线一片模糊",
+        "end_marker": "我能恢复得更快"
+      }
+    }
+  ],
+  "events": [
+    {
+      "event_id": "E001",
+      "scene_id": "S001",
+      "sequence_index": 1,
+      "event_type": "other",
+      "event_status": "attempted",
+      "reality_layer": "flashback",
+      "epistemic_status": "directly_observed",
+      "time": "十二年前秋夜",
+      "location": "深渊回廊荆棘丛",
+      "participants": [
+        "鹿觉",
+        "电狐群"
+      ],
+      "initiator": "鹿觉",
+      "target": "电狐群",
+      "trigger": "漆拉让鹿觉捕电狐作第一魂兽",
+      "action": "鹿觉布阵放慢电狐速度后释放魂魄企图吞噬",
+      "result": "地面阵断裂，电狐恢复速度反噬穿刺鹿觉撕碎知觉",
+      "immediate_consequence": "鹿觉濒死",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [],
+      "causes_event_ids": [
+        "E002"
+      ],
+      "importance": "normal",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "鹿觉低下头，看见脚下的'阵'不知道什么时候已经有很多处断裂开来……数百只黑暗里潜伏的'电狐'挣扎开白色气流的包裹……朝着已经僵硬而不能动弹的鹿觉疯狂地穿刺过来",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E002",
+      "scene_id": "S001",
+      "sequence_index": 2,
+      "event_type": "recovery",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "directly_observed",
+      "time": "十二年前秋夜",
+      "location": "深渊回廊荆棘丛",
+      "participants": [
+        "漆拉",
+        "鹿觉"
+      ],
+      "initiator": "漆拉",
+      "target": "鹿觉",
+      "trigger": "鹿觉遭电狐反噬濒死",
+      "action": "漆拉以时间之阵凝固时空救下鹿觉，将数百电狐悬停凝固",
+      "result": "鹿觉存活，伤口缓慢愈合",
+      "immediate_consequence": "鹿觉凌晨苏醒",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E001"
+      ],
+      "causes_event_ids": [
+        "E003"
+      ],
+      "importance": "critical",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "地面上是一个巨大的缓慢旋转着的金黄色矩阵……空气里凝固悬浮着数百只纯白皮毛的'电狐'",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E003",
+      "scene_id": "S001",
+      "sequence_index": 3,
+      "event_type": "rule_triggered",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "character_claim",
+      "time": "十二年前凌晨",
+      "location": "深渊回廊",
+      "participants": [
+        "漆拉",
+        "鹿觉"
+      ],
+      "initiator": "漆拉",
+      "target": "鹿觉",
+      "trigger": "鹿觉问为何捕电狐",
+      "action": "漆拉讲解电狐速度契合鹿觉时空天赋、以群为单位、再生力强，故选作第一魂兽",
+      "result": "鹿觉理解捕电狐原因",
+      "immediate_consequence": "漆拉决定带鹿觉捕第二魂兽铜雀",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E002"
+      ],
+      "causes_event_ids": [
+        "E005"
+      ],
+      "importance": "normal",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "'电狐'是我目前发现过的，速度最快的魂兽。这和你的'天赋'以及你的'阵'的特性，是最为吻合的",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E004",
+      "scene_id": "S002",
+      "sequence_index": 4,
+      "event_type": "combat",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "directly_observed",
+      "time": "十二年前白天",
+      "location": "深渊回廊北之森",
+      "participants": [
+        "少女（侵蚀者）",
+        "少年（侵蚀者）",
+        "蜘蛛蝎子怪"
+      ],
+      "initiator": "少女（侵蚀者）",
+      "target": "蜘蛛蝎子怪",
+      "trigger": "少女感知地底魂兽袭来",
+      "action": "少女从地里扯出蜘蛛蝎子怪砸向树干，少年按其魂印以金色刻纹之网吞噬化为冰块",
+      "result": "怪物被杀",
+      "immediate_consequence": "少女称周围干净了",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [],
+      "causes_event_ids": [],
+      "importance": "normal",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "她仿佛鬼魅般地转过身，伸手朝地上一抓……一阵'哗啦啦'的碎裂声，怪物变成一堆冰块",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E005",
+      "scene_id": "S001",
+      "sequence_index": 5,
+      "event_type": "movement",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "character_claim",
+      "time": "十二年前",
+      "location": "雷恩海域",
+      "participants": [
+        "束海",
+        "藏河"
+      ],
+      "initiator": "束海",
+      "target": "藏河",
+      "trigger": "天格传讯称六度王爵西流尔在雷恩海域失踪",
+      "action": "束海藏河兄弟出发去雷恩海域寻找西流尔（据漆拉转述）",
+      "result": "二兄弟离开前往雷恩海域",
+      "immediate_consequence": "鹿觉近期未见二兄弟",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [],
+      "causes_event_ids": [],
+      "importance": "normal",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "'天格'传递来的消息，说是'六度王爵'西流尔在雷恩海域失踪了，所以，束海与藏河两兄弟，出发去雷恩海域寻找西流尔",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E006",
+      "scene_id": "S003",
+      "sequence_index": 6,
+      "event_type": "rule_triggered",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "character_claim",
+      "time": "十二年前白天",
+      "location": "深渊回廊北之森",
+      "participants": [
+        "漆拉",
+        "鹿觉"
+      ],
+      "initiator": "漆拉",
+      "target": "鹿觉",
+      "trigger": "鹿觉问铜雀意义",
+      "action": "漆拉讲解铜雀能大范围制造风雪，可改变环境属性阻止风爵地爵制阵，水属性占优；其鸣叫称战神号角可激荡魂力冲击爵印使魂力瞬间飞跃",
+      "result": "鹿觉理解铜雀价值",
+      "immediate_consequence": "二人冲向铜雀",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [],
+      "causes_event_ids": [
+        "E007"
+      ],
+      "importance": "normal",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "'铜雀'是亚斯蓝非常稀有的魂兽，它能够在大面积范围内制造风雪……它嘹亮的鸣叫又被称为'战神的号角'",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E007",
+      "scene_id": "S004",
+      "sequence_index": 7,
+      "event_type": "death",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "directly_observed",
+      "time": "十二年前白天",
+      "location": "深渊回廊北之森树冠",
+      "participants": [
+        "少年（侵蚀者）",
+        "铜雀"
+      ],
+      "initiator": "少年（侵蚀者）",
+      "target": "铜雀",
+      "trigger": "少女困铜雀于冰雪鸟巢，少年飞向其魂印",
+      "action": "少年按铜雀翅膀下魂印以金色刻纹之网吞噬，铜雀尸体粉碎成冰雪碎块坠落",
+      "result": "铜雀被杀而非捕获",
+      "immediate_consequence": "漆拉鹿觉震惊恐惧",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E006"
+      ],
+      "causes_event_ids": [
+        "E009"
+      ],
+      "importance": "critical",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "巨大的'铜雀'尸体突然粉碎成无数冰雪的碎块，从树冠上'哗啦啦'坠落一地",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E008",
+      "scene_id": "S005",
+      "sequence_index": 8,
+      "event_type": "secret_reveal",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "directly_observed",
+      "time": "十二年前白天",
+      "location": "深渊回廊北之森",
+      "participants": [
+        "少女（侵蚀者）",
+        "漆拉",
+        "鹿觉"
+      ],
+      "initiator": "少女（侵蚀者）",
+      "target": "漆拉",
+      "trigger": "鹿觉质问二人是谁的使徒",
+      "action": "少女自称二人是'侵蚀者'，并装吐舌说不小心说出秘密",
+      "result": "漆拉鹿觉首次听闻侵蚀者称呼",
+      "immediate_consequence": "少年称杀了二人",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E007"
+      ],
+      "causes_event_ids": [
+        "E009"
+      ],
+      "importance": "critical",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "我们可是有一个统一的称呼，叫'侵蚀者'呢",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E009",
+      "scene_id": "S005",
+      "sequence_index": 9,
+      "event_type": "combat",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "directly_observed",
+      "time": "十二年前白天",
+      "location": "深渊回廊北之森",
+      "participants": [
+        "漆拉",
+        "少女（侵蚀者）",
+        "少年（侵蚀者）",
+        "鹿觉"
+      ],
+      "initiator": "漆拉",
+      "target": "少年少女",
+      "trigger": "少女自称侵蚀者并威胁",
+      "action": "漆拉以时间之阵凝固风雪与少年少女动作，欲制住二人",
+      "result": "少女使用禁忌魂术逃脱，漆拉未能抓住",
+      "immediate_consequence": "鹿觉吹散风雪见周围废墟空旷",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E008"
+      ],
+      "causes_event_ids": [
+        "E010",
+        "E011"
+      ],
+      "importance": "critical",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "漆拉面容一寒……脚下却瞬间疯狂地旋转出了一个巨大的发光'阵'来。空气里的风雪碎片一瞬间全部凝固",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E010",
+      "scene_id": "S005",
+      "sequence_index": 10,
+      "event_type": "other",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "directly_observed",
+      "time": "十二年前白天",
+      "location": "深渊回廊北之森",
+      "participants": [
+        "少女（侵蚀者）"
+      ],
+      "initiator": "少女（侵蚀者）",
+      "target": "少女自身",
+      "trigger": "被漆拉时间之阵制住",
+      "action": "少女使用禁忌魂术，无数长巨大闪光刀刃从体内穿刺皮囊撑起身体成蜘蛛螳螂般昆虫，切割倒无数树木制造迷局逃走",
+      "result": "少女借迷局逃脱，漆拉不知其逃走方向",
+      "immediate_consequence": "鹿觉吹散风雪见废墟",
+      "long_term_consequence_explicit": "少女因禁忌魂术濒死",
+      "caused_by_event_ids": [
+        "E009"
+      ],
+      "causes_event_ids": [
+        "E012"
+      ],
+      "importance": "critical",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "无数长长的巨大闪光的刀刃从她身体里刺破她的皮囊……她瞬间变成了一个又像是蜘蛛又像是螳螂一样的巨大昆虫",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E011",
+      "scene_id": "S006",
+      "sequence_index": 11,
+      "event_type": "decision",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "directly_observed",
+      "time": "十二年前白天",
+      "location": "深渊回廊",
+      "participants": [
+        "漆拉",
+        "鹿觉"
+      ],
+      "initiator": "漆拉",
+      "target": "鹿觉",
+      "trigger": "未抓住侵蚀者",
+      "action": "漆拉带鹿觉离开北之森，建议先去东边灌木湖区捕最大群电狐提升战斗力",
+      "result": "二人前往灌木湖区",
+      "immediate_consequence": "鹿觉明白漆拉失望，眼眶泛红",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E009"
+      ],
+      "causes_event_ids": [],
+      "importance": "normal",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S006",
+          "quote": "我们还是先去'深渊回廊'东边的灌木湖区吧，无论如何，先把'第一魂兽'捕捉了",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E012",
+      "scene_id": "S007",
+      "sequence_index": 12,
+      "event_type": "recovery",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "directly_observed",
+      "time": "十二年前白天",
+      "location": "深渊回廊北之森雪地",
+      "participants": [
+        "少年（侵蚀者）",
+        "少女（侵蚀者）"
+      ],
+      "initiator": "少年（侵蚀者）",
+      "target": "少女（侵蚀者）",
+      "trigger": "少女使用禁忌魂术后濒死",
+      "action": "少年任刀刃刺身接近少女，掀其裙摆按其左大腿内侧爵印输送海洋般巨大魂力",
+      "result": "刀刃停止，少女恢复呼吸苏醒",
+      "immediate_consequence": "少女解释漆拉之阵原理与自己天赋",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E010"
+      ],
+      "causes_event_ids": [],
+      "importance": "critical",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S007",
+          "quote": "海洋般巨大的魂力从少年的掌心爆炸而出……少女整个人挺了起来，一声剧烈的吸气声从少女的喉咙里发出来",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "C001",
+      "canonical_name": "鹿觉",
+      "mentions": [
+        "鹿觉"
+      ],
+      "aliases_in_chapter": [
+        "天使"
+      ],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        {
+          "fact": "漆拉的使徒，天地海三使徒中地位最高的天之使徒",
+          "epistemic_status": "character_claim"
+        },
+        {
+          "fact": "十二岁那年在荒漠被漆拉寻找到收为使徒（据鹿觉回忆）",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "appearance_facts": [
+        {
+          "fact": "浓密柔软睫毛覆盖蓝色海洋般瞳孔，高大健硕，宽阔结实身体，星辰般五官具帝王般侵略性雄性之美，被称亚斯蓝最英俊使徒",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "ability_facts": [
+        {
+          "fact": "天赋是对时间和空间的控制，继承自漆拉（据漆拉所述）",
+          "epistemic_status": "character_claim"
+        },
+        {
+          "fact": "能布阵放慢魂兽速度",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "魂力控制不及地使藏河与海使束海",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "behavior_facts": [
+        {
+          "fact": "捕电狐时自负释放魂魄遭反噬濒死",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "被漆拉救下后恭敬跪地认错",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "追铜雀时撞漆拉身上脸红",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "震惊于侵蚀者实力，明白漆拉对自己失望，眼眶泛红",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [
+        {
+          "fact": "见侵蚀者实力后羞愧眼眶泛红",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "撞漆拉身上后脸红局促",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "goal_facts": [
+        {
+          "fact": "希望有一天成为超越漆拉的一度王爵、亚斯蓝新的魂术巅峰",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "psychological_facts": [
+        {
+          "fact": "对漆拉如神般崇拜，自惭实力不及两个小孩",
+          "epistemic_status": "internal_confirmed"
+        }
+      ],
+      "knowledge_facts": [
+        {
+          "fact": "本章得知侵蚀者的存在与恐怖",
+          "epistemic_status": "internal_confirmed"
+        }
+      ],
+      "possession_facts": [],
+      "relationship_facts": [
+        {
+          "fact": "是漆拉的使徒，恭敬崇拜漆拉",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "physical_state_at_end": "未受伤（电狐反噬伤已愈合）",
+      "location_at_end": "深渊回廊（随漆拉前往灌木湖区）",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "随漆拉去灌木湖区捕电狐",
+      "identity_resolution_confidence": 1.0,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "从那以后，鹿觉成为了漆拉的'使徒'",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C002",
+      "canonical_name": "漆拉",
+      "mentions": [
+        "漆拉"
+      ],
+      "aliases_in_chapter": [
+        "漆拉'王爵'",
+        "三度王爵"
+      ],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        {
+          "fact": "鹿觉的王爵，曾为一度王爵（据上下文与称一度王爵时与吉尔伽美什打斗）",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "appearance_facts": [
+        {
+          "fact": "冰雪般容颜，俊美飘逸如海市蜃楼，从不老去，唇如粉红柔软花瓣",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "ability_facts": [
+        {
+          "fact": "能以时间之阵凝固时空救人与制敌",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "能随意制造棋子",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "速度极快，可在极短时间穿越数万米",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "behavior_facts": [
+        {
+          "fact": "指导鹿觉捕电狐并救其于反噬",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "讲解电狐与铜雀的价值",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "以时间之阵制住侵蚀者但被少女禁忌魂术逃脱",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "带鹿觉离开北之森，决定先捕电狐",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [],
+      "goal_facts": [
+        {
+          "fact": "培养鹿觉成为超越自己的一度王爵",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "psychological_facts": [
+        {
+          "fact": "对侵蚀者的天赋与魂力深感恐惧，第一次面露如此凝重神色",
+          "epistemic_status": "internal_confirmed"
+        },
+        {
+          "fact": "恐惧少女如何在时间之阵全开下提前感应并使用禁忌魂术",
+          "epistemic_status": "internal_confirmed"
+        }
+      ],
+      "knowledge_facts": [
+        {
+          "fact": "判断侵蚀者魂力是两种陌生灵魂回路不似继承现有王爵",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "possession_facts": [],
+      "relationship_facts": [
+        {
+          "fact": "是鹿觉的王爵，对鹿觉寄予厚望",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "physical_state_at_end": "未受伤",
+      "location_at_end": "深渊回廊（前往灌木湖区）",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "带鹿觉去灌木湖区捕电狐",
+      "identity_resolution_confidence": 1.0,
+      "evidence": [
+        {
+          "scene_id": "S006",
+          "quote": "漆拉的脸上看不出表情，鹿觉还是第一次在漆拉脸上，看到如此凝重的神色",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C003",
+      "canonical_name": "少女（侵蚀者）",
+      "mentions": [
+        "少女"
+      ],
+      "aliases_in_chapter": [
+        "侵蚀者",
+        "怪物"
+      ],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        {
+          "fact": "约十一二岁，自称是侵蚀者而非使徒",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "appearance_facts": [
+        {
+          "fact": "十一二岁身体纤细修长，小巧胸脯刚隆起，脸上呈现成熟女子风韵，瞳孔顾盼生姿，白皙皮肤",
+          "epistemic_status": "narrator_confirmed"
+        },
+        {
+          "fact": "感应时瞳孔变混沌白色如涌动风雪",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "ability_facts": [
+        {
+          "fact": "可在数万米外感知魂力流动，且能感知到漆拉几乎隐藏到极限的微弱魂力",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "可从体内穿刺无数巨大刀刃成蜘蛛螳螂状，制造迷局逃脱（禁忌魂术）",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "可提前感应敌人魂力流动与进攻方式，把握禁忌魂术的度",
+          "epistemic_status": "character_claim"
+        },
+        {
+          "fact": "爵印在左大腿内侧",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "behavior_facts": [
+        {
+          "fact": "杀戮魂兽时悠闲甜美如逛花园",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "感知铜雀攻击并镇定报方向时机魂印位置指导少年",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "与少年困铜雀于冰雪鸟巢",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "自称侵蚀者后用禁忌魂术逃脱漆拉时间之阵",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "使用禁忌魂术后濒死，被少年输送魂力救活",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [
+        {
+          "fact": "面对强大漆拉压抑内心恐惧",
+          "epistemic_status": "internal_confirmed"
+        }
+      ],
+      "goal_facts": [
+        {
+          "fact": "杀魂兽取乐并等待铜雀",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "psychological_facts": [
+        {
+          "fact": "天真外表下成熟媚态与杀意并存",
+          "epistemic_status": "internal_confirmed"
+        }
+      ],
+      "knowledge_facts": [
+        {
+          "fact": "知道漆拉之阵原理与自身天赋对魂力感知的把握",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "possession_facts": [],
+      "relationship_facts": [
+        {
+          "fact": "与少年同为侵蚀者，少年为其输送魂力救命",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "physical_state_at_end": "被少年输送魂力救活后恢复中",
+      "location_at_end": "深渊回廊北之森",
+      "availability_state_at_end": "虚弱恢复中",
+      "current_task_at_end": "要少年再给魂力以更快恢复",
+      "identity_resolution_confidence": 0.3,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "我们可是有一个统一的称呼，叫'侵蚀者'呢",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C004",
+      "canonical_name": "少年（侵蚀者）",
+      "mentions": [
+        "少年"
+      ],
+      "aliases_in_chapter": [
+        "侵蚀者",
+        "怪物"
+      ],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        {
+          "fact": "比少女小一两岁，自称是侵蚀者而非使徒",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "appearance_facts": [
+        {
+          "fact": "天真可爱脸上现不羁邪气笑容，衣服下年少肉体饱满肌肉充满力量",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "ability_facts": [
+        {
+          "fact": "可五指按魂印以金色刻纹之网吞噬魂兽化为冰块，呈现迷幻快感",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "可输送海洋般巨大魂力救人",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "自身伤口可愈合",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "behavior_facts": [
+        {
+          "fact": "踩魂兽头颅挖六眼珠，按少女提醒杀魂兽",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "杀铜雀而非捕获，呈现迷幻快感",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "称杀了漆拉鹿觉呗",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "任刀刃刺身接近濒死少女，掀裙摆按其大腿爵印输魂力救活她",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [
+        {
+          "fact": "见少女垂死时眼眶滚泪嘶吼",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "见少女苏醒露微笑",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [
+        {
+          "fact": "与少女同为侵蚀者，深情守护少女",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "physical_state_at_end": "刀刃刺伤已愈合，未受伤",
+      "location_at_end": "深渊回廊北之森",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "为少女输送魂力",
+      "identity_resolution_confidence": 0.3,
+      "evidence": [
+        {
+          "scene_id": "S007",
+          "quote": "少年为濒死少女输送魂力救活她",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C005",
+      "canonical_name": "电狐",
+      "mentions": [
+        "电狐"
+      ],
+      "aliases_in_chapter": [],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        {
+          "fact": "深渊回廊群居魂兽",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "appearance_facts": [
+        {
+          "fact": "圆润琥珀色眼睛，顺滑白色柔软皮毛，小锋利爪子，一尺长蓬松尾巴，浑身包裹噼啪作响金色闪电",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "ability_facts": [
+        {
+          "fact": "速度极快如闪电，是除上古四大魂兽外最快魂兽",
+          "epistemic_status": "character_claim"
+        },
+        {
+          "fact": "以群为单位，繁衍再生力惊人，剩一只即可迅速繁殖复刻恢复",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "behavior_facts": [
+        {
+          "fact": "鹿觉阵断裂后反噬穿刺鹿觉",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [],
+      "physical_state_at_end": "被漆拉时间之阵凝固悬停",
+      "location_at_end": "深渊回廊（凝固于阵中）",
+      "availability_state_at_end": "被困于阵",
+      "current_task_at_end": "unknown",
+      "identity_resolution_confidence": 1.0,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "它们圆润的琥珀色眼睛、顺滑的白色柔软皮毛……浑身包裹着的噼啪作响的金色闪电",
+          "evidence_type": "environmental_observation",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C006",
+      "canonical_name": "铜雀",
+      "mentions": [
+        "铜雀"
+      ],
+      "aliases_in_chapter": [],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        {
+          "fact": "亚斯蓝稀有魂兽，居住于北之森",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "appearance_facts": [
+        {
+          "fact": "小山般巨大白色影子，扇动巨大坚硬翅膀，翎羽如巨剑",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "ability_facts": [
+        {
+          "fact": "可在大面积范围内制造风雪",
+          "epistemic_status": "character_claim"
+        },
+        {
+          "fact": "鸣叫称战神号角，可激荡魂术师魂力冲击爵印使魂兽与魂术师魂力瞬间飞跃",
+          "epistemic_status": "character_claim"
+        },
+        {
+          "fact": "身体铜墙铁壁般坚硬",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "behavior_facts": [
+        {
+          "fact": "被少女少年困于冰雪鸟巢",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "被少年按魂印吞噬化为冰雪碎块",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [],
+      "physical_state_at_end": "被少年杀死化为冰雪碎块",
+      "location_at_end": "深渊回廊北之森（尸体碎块坠落）",
+      "availability_state_at_end": "死亡",
+      "current_task_at_end": "unknown",
+      "identity_resolution_confidence": 1.0,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "巨大的'铜雀'尸体突然粉碎成无数冰雪的碎块",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C007",
+      "canonical_name": "束海",
+      "mentions": [
+        "束海",
+        "海使"
+      ],
+      "aliases_in_chapter": [
+        "海使"
+      ],
+      "appearance_type": "mentioned",
+      "identity_facts": [
+        {
+          "fact": "天地海三使徒之海之使徒（据鹿觉称）",
+          "epistemic_status": "character_claim"
+        },
+        {
+          "fact": "藏河的兄弟",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "appearance_facts": [],
+      "ability_facts": [
+        {
+          "fact": "魂力控制比鹿觉好（据漆拉称）",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "behavior_facts": [
+        {
+          "fact": "与藏河出发去雷恩海域寻找失踪的六度王爵西流尔",
+          "epistemic_status": "reported_event"
+        }
+      ],
+      "emotion_facts": [],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [],
+      "physical_state_at_end": "unknown",
+      "location_at_end": "雷恩海域（据漆拉转述）",
+      "availability_state_at_end": "unknown",
+      "current_task_at_end": "寻找西流尔",
+      "identity_resolution_confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "束海与藏河两兄弟，出发去雷恩海域寻找西流尔",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C008",
+      "canonical_name": "藏河",
+      "mentions": [
+        "藏河",
+        "地使"
+      ],
+      "aliases_in_chapter": [
+        "地使"
+      ],
+      "appearance_type": "mentioned",
+      "identity_facts": [
+        {
+          "fact": "天地海三使徒之地之使徒（据鹿觉称）",
+          "epistemic_status": "character_claim"
+        },
+        {
+          "fact": "束海的兄弟",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "appearance_facts": [],
+      "ability_facts": [
+        {
+          "fact": "魂力控制比鹿觉好（据漆拉称）",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "behavior_facts": [
+        {
+          "fact": "与束海出发去雷恩海域寻找失踪的六度王爵西流尔",
+          "epistemic_status": "reported_event"
+        }
+      ],
+      "emotion_facts": [],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [],
+      "physical_state_at_end": "unknown",
+      "location_at_end": "雷恩海域（据漆拉转述）",
+      "availability_state_at_end": "unknown",
+      "current_task_at_end": "寻找西流尔",
+      "identity_resolution_confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "束海与藏河两兄弟，出发去雷恩海域寻找西流尔",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C009",
+      "canonical_name": "西流尔",
+      "mentions": [
+        "西流尔",
+        "六度王爵",
+        "永生王爵"
+      ],
+      "aliases_in_chapter": [
+        "六度王爵",
+        "永生王爵"
+      ],
+      "appearance_type": "mentioned",
+      "identity_facts": [
+        {
+          "fact": "六度王爵，号称永生王爵（据漆拉与鹿觉称）",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "appearance_facts": [],
+      "ability_facts": [],
+      "behavior_facts": [],
+      "emotion_facts": [],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [],
+      "physical_state_at_end": "失踪（据天格传讯）",
+      "location_at_end": "雷恩海域（据传讯）",
+      "availability_state_at_end": "失踪",
+      "current_task_at_end": "unknown",
+      "identity_resolution_confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "'六度王爵'西流尔在雷恩海域失踪了",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    }
+  ],
+  "character_state_changes": [
+    {
+      "change_id": "CS001",
+      "character_id": "C001",
+      "scene_id": "S001",
+      "dimension": "physical_state",
+      "before": "未受伤",
+      "change": "捕电狐时自负释放魂魄遭反噬濒死，被漆拉救下",
+      "after": "苏醒后伤口缓慢愈合",
+      "change_status": "confirmed",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "从骨髓里爆炸而出的尖锐刺痛，一瞬间撕碎了鹿觉的所有知觉",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    },
+    {
+      "change_id": "CS002",
+      "character_id": "C006",
+      "scene_id": "S004",
+      "dimension": "physical_state",
+      "before": "存活于北之森",
+      "change": "被少年按魂印吞噬化为冰雪碎块",
+      "after": "死亡",
+      "change_status": "confirmed",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "巨大的'铜雀'尸体突然粉碎成无数冰雪的碎块",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    },
+    {
+      "change_id": "CS003",
+      "character_id": "C003",
+      "scene_id": "S005",
+      "dimension": "physical_state",
+      "before": "未受伤",
+      "change": "使用禁忌魂术从体内穿刺刀刃逃脱后濒死",
+      "after": "被少年输送魂力救活恢复中",
+      "change_status": "confirmed",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S007",
+          "quote": "少女整个人挺了起来，一声剧烈的吸气声从少女的喉咙里发出来",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    }
+  ],
+  "knowledge_states": [
+    {
+      "knowledge_id": "K001",
+      "subject": "鹿觉",
+      "information": "世上存在自称侵蚀者的神秘少年少女，魂力与天赋恐怖，连漆拉都感恐惧",
+      "knowledge_status": "knows",
+      "acquired_in_scene": "S004",
+      "source_of_information": "亲眼遭遇",
+      "reliability": "confirmed",
+      "concealed_from": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "我们可是有一个统一的称呼，叫'侵蚀者'呢",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    },
+    {
+      "knowledge_id": "K002",
+      "subject": "漆拉",
+      "information": "侵蚀者魂力是两种陌生灵魂回路，不似继承现有王爵",
+      "knowledge_status": "suspects",
+      "acquired_in_scene": "S006",
+      "source_of_information": "自身感应判断",
+      "reliability": "likely",
+      "concealed_from": [],
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "scene_id": "S006",
+          "quote": "以他们两个的魂力来判断，是非常陌生的两种灵魂回路，不像是继承了哪个现有的'王爵'的",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "L001",
+      "canonical_name": "深渊回廊",
+      "aliases": [],
+      "parent_location": "西之亚斯蓝帝国",
+      "location_type": "巨大峡谷森林",
+      "observable_features": [
+        "夜空星辰满月笼罩迷幻气息",
+        "巨大茂密荆棘丛",
+        "浓雾阴冷潮湿"
+      ],
+      "entry_conditions": [],
+      "hazards": [
+        "高等级魂兽密集，含电狐群"
+      ],
+      "rules": [],
+      "state_changes": [],
+      "events_in_chapter": [
+        "E001",
+        "E002",
+        "E003",
+        "E011"
+      ],
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "面前一片巨大而茂密的荆棘丛里，潜伏着无数伺机而动的'电狐'",
+          "evidence_type": "environmental_observation",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ],
+      "first_appearance_in_current_corpus": "unknown"
+    },
+    {
+      "location_id": "L002",
+      "canonical_name": "北之森",
+      "aliases": [],
+      "parent_location": "深渊回廊最北边",
+      "location_type": "长年大雪森林",
+      "observable_features": [
+        "巨大森林笼罩沉甸甸积雪",
+        "针叶林每根叶被冰雪包成刺",
+        "参天雪柱古木，鹅毛大雪时下时停无规律",
+        "接近亚斯蓝北之边境，再北为风源因德"
+      ],
+      "entry_conditions": [],
+      "hazards": [
+        "暴烈大雪天气",
+        "铜雀居住地",
+        "神秘魂兽出没"
+      ],
+      "rules": [
+        "铜雀居住致长年大雪"
+      ],
+      "state_changes": [],
+      "events_in_chapter": [
+        "E004",
+        "E006",
+        "E007",
+        "E009",
+        "E010",
+        "E012"
+      ],
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "这里是北之森，是'深渊回廊'的最北边，也是整个亚斯蓝的领域里，最北方的土地",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ],
+      "first_appearance_in_current_corpus": "unknown"
+    }
+  ],
+  "items": [],
+  "factions": [],
+  "world_rules": [
+    {
+      "rule_id": "R001",
+      "rule_name": "魂兽吞噬规则",
+      "rule_category": "魂兽体系",
+      "rule_statement": "魂术师捕魂兽须等其濒死重创魂力最低时才释放魂魄吞噬；吞噬过程极危险，历史上被反噬者不计其数",
+      "scope": "全体魂术师",
+      "trigger": "捕捉吞噬魂兽",
+      "effect": "获得魂兽",
+      "cost": "吞噬失败遭反噬可能致死",
+      "limitations": [
+        "须等魂兽濒死重创魂力最低"
+      ],
+      "exceptions": [],
+      "violation_consequence": "被反噬",
+      "epistemic_status": "character_claim",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "每一个魂术师在捕捉魂兽的时候，秉承的原则都是必须等到魂兽已经濒临死亡、身受重创、它们的魂力处于最低水平的时候",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R002",
+      "rule_name": "电狐特性",
+      "rule_category": "魂兽体系",
+      "rule_statement": "电狐是除上古四大魂兽外速度最快的魂兽，以群为单位，繁衍再生力惊人，剩一只即可迅速繁殖复刻恢复",
+      "scope": "电狐",
+      "trigger": "unknown",
+      "effect": "速度极快，群居再生",
+      "cost": "unknown",
+      "limitations": [],
+      "exceptions": [],
+      "violation_consequence": "unknown",
+      "epistemic_status": "character_claim",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "'电狐'是我目前发现过的，速度最快的魂兽……只要还剩下最后一只没有被摧毁，那么，它们都能迅速繁殖复刻",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R003",
+      "rule_name": "铜雀能力",
+      "rule_category": "魂兽体系",
+      "rule_statement": "铜雀可在大面积范围制造风雪，对水属性魂术师是改变环境属性阻止风爵地爵制阵的利器；其鸣叫称战神号角，可激荡魂术师魂力冲击爵印使魂兽与魂术师魂力瞬间飞跃",
+      "scope": "铜雀与其持有者",
+      "trigger": "持有铜雀",
+      "effect": "制造风雪改变环境、鸣叫短暂提升魂力",
+      "cost": "unknown",
+      "limitations": [],
+      "exceptions": [],
+      "violation_consequence": "unknown",
+      "epistemic_status": "character_claim",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "'铜雀'是亚斯蓝非常稀有的魂兽，它能够在大面积范围内制造风雪……它嘹亮的鸣叫又被称为'战神的号角'",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R004",
+      "rule_name": "侵蚀者吞噬魂印",
+      "rule_category": "魂术体系",
+      "rule_statement": "侵蚀者可用五指按魂兽魂印，以金色刻纹之网吞噬魂兽化为冰块，过程呈现迷幻快感，是杀戮而非捕获",
+      "scope": "侵蚀者",
+      "trigger": "按魂兽魂印",
+      "effect": "杀死吞噬魂兽",
+      "cost": "unknown",
+      "limitations": [],
+      "exceptions": [],
+      "violation_consequence": "unknown",
+      "epistemic_status": "directly_observed",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "密密麻麻的金黄色刻纹从'铜雀'的身上浮现出来……巨大的'铜雀'尸体突然粉碎成无数冰雪的碎块",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R005",
+      "rule_name": "侵蚀者禁忌魂术",
+      "rule_category": "禁忌魂术",
+      "rule_statement": "侵蚀者少女可从体内穿刺无数巨大刀刃成蜘蛛螳螂状，制造迷局假象扰乱视线逃脱；但使用后若魂力不足会失控濒死，需他人向其爵印输送魂力挽救",
+      "scope": "侵蚀者少女",
+      "trigger": "使用禁忌魂术",
+      "effect": "刀刃出体制造迷局逃脱",
+      "cost": "魂力消耗巨大，失控濒死",
+      "limitations": [
+        "需魂力充足控制度",
+        "爵印在左大腿内侧"
+      ],
+      "exceptions": [],
+      "violation_consequence": "失控濒死",
+      "epistemic_status": "directly_observed",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "无数长长的巨大闪光的刀刃从她身体里刺破她的皮囊……她瞬间变成了一个又像是蜘蛛又像是螳螂一样的巨大昆虫",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    }
+  ],
+  "hooks_and_clues": [
+    {
+      "hook_id": "H001",
+      "scene_id": "S005",
+      "hook_type": "explicit_question",
+      "content": "侵蚀者是什么？从何而来？为何有如此恐怖的天赋与魂力？",
+      "related_entities": [
+        "少女（侵蚀者）",
+        "少年（侵蚀者）"
+      ],
+      "introduced_or_updated": "introduced",
+      "current_status": "unresolved",
+      "known_by": [
+        "少女（侵蚀者）",
+        "少年（侵蚀者）"
+      ],
+      "unknown_to": [
+        "漆拉",
+        "鹿觉"
+      ],
+      "urgency": "medium",
+      "canon_eligible": true,
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S005",
+          "quote": "我们可是有一个统一的称呼，叫'侵蚀者'呢……好像一不小心说出了不应该说的秘密呢",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    },
+    {
+      "hook_id": "H002",
+      "scene_id": "S001",
+      "hook_type": "explicit_setup",
+      "content": "六度王爵西流尔在雷恩海域失踪，束海藏河兄弟前去寻找，暗示后续永生岛事件伏笔",
+      "related_entities": [
+        "西流尔",
+        "束海",
+        "藏河",
+        "雷恩海域"
+      ],
+      "introduced_or_updated": "introduced",
+      "current_status": "unresolved",
+      "known_by": [
+        "漆拉",
+        "鹿觉"
+      ],
+      "unknown_to": [],
+      "urgency": "low",
+      "canon_eligible": true,
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "'六度王爵'西流尔在雷恩海域失踪了……束海与藏河两兄弟，出发去雷恩海域寻找西流尔",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    },
+    {
+      "hook_id": "H003",
+      "scene_id": "S004",
+      "hook_type": "implicit_clue_candidate",
+      "content": "侵蚀者少年以按魂印吞噬魂兽的方式与漆拉时代捕获魂兽的方式迥异，且呈现迷幻快感，暗示侵蚀者非正常魂术师而是某种试验或异类存在",
+      "related_entities": [
+        "侵蚀者"
+      ],
+      "introduced_or_updated": "introduced",
+      "current_status": "unresolved",
+      "known_by": [],
+      "unknown_to": [
+        "漆拉",
+        "鹿觉"
+      ],
+      "urgency": "low",
+      "canon_eligible": false,
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "他仰起头，身体扭曲着，全身的骨骼发出奇异的脆响，他年少的脸上呈现着难以抑制的迷幻般的快感",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-009.md"
+        }
+      ]
+    }
+  ],
+  "timelines": [
+    {
+      "timeline_entry_id": "T001",
+      "timeline_type": "flashback",
+      "sequence_index": 1,
+      "absolute_time": "十二年前",
+      "relative_time": "十二年前秋夜至白天",
+      "duration": "约一日夜",
+      "location": "深渊回廊→北之森",
+      "participants": [
+        "漆拉",
+        "鹿觉"
+      ],
+      "current_task": "鹿觉捕第一魂兽电狐与第二魂兽铜雀",
+      "event_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E005",
+        "E006",
+        "E007",
+        "E008",
+        "E009",
+        "E011"
+      ],
+      "plot_description": "漆拉指导鹿觉捕电狐遭反噬被救；二人赴北之森捕铜雀，遇侵蚀者少年少女，少年杀铜雀，少女自称侵蚀者并以禁忌魂术逃脱；漆拉带鹿觉离开决定先捕电狐",
+      "result": "铜雀被杀，侵蚀者逃脱，漆拉鹿觉前往灌木湖区",
+      "relation_to_other_entries": [
+        {
+          "relation_type": "simultaneous_with",
+          "target_timeline_entry": "T002"
+        }
+      ],
+      "confidence": 0.85
+    },
+    {
+      "timeline_entry_id": "T002",
+      "timeline_type": "flashback",
+      "sequence_index": 2,
+      "absolute_time": "十二年前",
+      "relative_time": "与T001铜雀遭遇同时及之后",
+      "duration": "一段",
+      "location": "深渊回廊北之森",
+      "participants": [
+        "少女（侵蚀者）",
+        "少年（侵蚀者）"
+      ],
+      "current_task": "杀戮魂兽等待铜雀并应对漆拉",
+      "event_ids": [
+        "E004",
+        "E010",
+        "E012"
+      ],
+      "plot_description": "少年少女在北之森杀戮魂兽等待铜雀；遭遇漆拉鹿觉后少年杀铜雀，少女以禁忌魂术逃脱后濒死，被少年输送魂力救活；二人认定漆拉不可为敌",
+      "result": "少女恢复，二人避开漆拉",
+      "relation_to_other_entries": [
+        {
+          "relation_type": "simultaneous_with",
+          "target_timeline_entry": "T001"
+        }
+      ],
+      "confidence": 0.8
+    }
+  ],
+  "cliffhanger_analysis": {
+    "enabled": false,
+    "last_scene_ids": [],
+    "immediate_conflicts": [],
+    "unfinished_actions": [],
+    "characters_in_danger": [],
+    "active_time_pressure": [],
+    "urgency": "unknown",
+    "must_continue_states": [],
+    "resolved_at_chapter_end": false
+  },
+  "style_profile": {
+    "narrative_person": "第三人称",
+    "viewpoint_pattern": "第三人称限知，多视角切换（鹿觉、漆拉、旁观、侵蚀者）",
+    "sentence_length_tendency": "中长句为主，战斗段落密集",
+    "paragraph_length_tendency": "较长",
+    "dialogue_ratio": "medium",
+    "action_description_ratio": "very_high",
+    "environment_description_ratio": "very_high",
+    "psychological_description_ratio": "high",
+    "dominant_sensory_channels": [
+      "视觉",
+      "触觉",
+      "听觉"
+    ],
+    "common_rhetorical_devices": [
+      "比喻",
+      "通感",
+      "恐怖意象"
+    ],
+    "dominant_emotional_tones": [
+      "迷幻惊悚",
+      "崇拜温情",
+      "恐惧震撼"
+    ],
+    "pace": "中等，战斗段落急促",
+    "pace_changes": [
+      "回忆段落舒缓",
+      "战斗段落极急促",
+      "苏醒段落沉缓"
+    ],
+    "transition_patterns": [
+      "地点标签切换",
+      "并行剧情线交叉（漆拉鹿觉线与侵蚀者线）"
+    ],
+    "distinctive_expression_patterns": [
+      "以冰雪/神祇/宝石喻人物",
+      "战斗以血腥恐怖与迷幻快感意象强化",
+      "回忆用低沉庄严口吻"
+    ],
+    "evidence_examples": [
+      "一尘不染俊美飘逸的漆拉，仿佛海市蜃楼般瑰丽",
+      "无数长长的巨大闪光的刀刃从她身体里刺破她的皮囊",
+      "他年少的脸上呈现着难以抑制的迷幻般的快感"
+    ]
+  },
+  "entity_resolution_issues": [
+    {
+      "issue_id": "ER001",
+      "references": [
+        "少女（侵蚀者）",
+        "（候选）特蕾娅"
+      ],
+      "possible_resolution": "unknown",
+      "resolution_status": "unresolved",
+      "confidence": 0.2,
+      "reason": "原文未点明少女身份，仅称侵蚀者；结合previous_context侵蚀者体系前代有特蕾娅幽冥，但本章无原文证据确认，不强行合并"
+    },
+    {
+      "issue_id": "ER002",
+      "references": [
+        "少年（侵蚀者）",
+        "（候选）幽冥"
+      ],
+      "possible_resolution": "unknown",
+      "resolution_status": "unresolved",
+      "confidence": 0.2,
+      "reason": "原文未点明少年身份，仅称侵蚀者；结合previous_context侵蚀者前代有幽冥，但本章无原文证据确认，不强行合并"
+    }
+  ],
+  "continuity_issues": [],
+  "interpretation_candidates": [
+    {
+      "candidate_id": "IC001",
+      "interpretation_type": "人物身份推测",
+      "content": "侵蚀者少年少女可能是前代的特蕾娅与幽冥，十二年前约十一二岁符合前代侵蚀者设定",
+      "supporting_observations": [
+        "少女感应魂力天赋与特蕾娅精准魂力感知吻合",
+        "少年杀戮天赋与幽冥杀戮王爵吻合",
+        "previous_context称前代侵蚀者有记忆"
+      ],
+      "alternative_explanations": [
+        "也可能是其他侵蚀者或新一代试验品"
+      ],
+      "confidence": 0.4,
+      "canon_eligible": false
+    }
+  ],
+  "chapter_end_state": {
+    "current_time": "十二年前",
+    "active_locations": [
+      "深渊回廊（漆拉鹿觉前往灌木湖区）",
+      "深渊回廊北之森（侵蚀者恢复中）"
+    ],
+    "active_characters": [
+      "漆拉",
+      "鹿觉",
+      "少女（侵蚀者）",
+      "少年（侵蚀者）"
+    ],
+    "ongoing_events": [
+      "漆拉带鹿觉去灌木湖区捕电狐",
+      "侵蚀者少女恢复中"
+    ],
+    "unfinished_tasks": [
+      "鹿觉需捕第一魂兽电狐提升战斗力",
+      "侵蚀者需恢复并避开漆拉"
+    ],
+    "unresolved_hooks": [
+      "H001",
+      "H002",
+      "H003"
+    ],
+    "critical_character_states": [
+      "鹿觉捕电狐失败，自尊受挫",
+      "漆拉对侵蚀者深感恐惧",
+      "侵蚀者少女恢复中，二人认定漆拉不可为敌",
+      "西流尔在雷恩海域失踪，束海藏河前去寻找"
+    ],
+    "critical_item_states": [],
+    "next_chapter_continuity_constraints": [
+      "本章为十二年前回溯，不直接承接第八章时间线",
+      "侵蚀者身份与来历未明，为后续主线埋下重要伏笔",
+      "西流尔失踪事件为永生岛事件伏笔"
+    ]
+  },
+  "validation_issues": [],
+  "quality_checks": {
+    "all_scenes_have_source_spans": true,
+    "all_critical_events_have_evidence": true,
+    "all_state_changes_have_evidence": true,
+    "dreams_and_memories_separated": true,
+    "character_claims_not_treated_as_confirmed_fact": true,
+    "planned_events_not_treated_as_occurred": true,
+    "unknown_values_not_fabricated": true,
+    "timeline_order_checked": true,
+    "entity_aliases_checked": true,
+    "latest_chapter_cliffhanger_checked": true
+  }
+}

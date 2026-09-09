@@ -1,0 +1,2620 @@
+{
+  "schema_version": "chapter-canon-extraction-v1.0",
+  "parse_status": "success",
+  "source": {
+    "source_path": "data/raw/chapters_src/chapter-017.md",
+    "source_hash": "4ff158fc37df4b728188176fd7da2fbd5ae458fb2616be7db3e32a0d8acd4f0e",
+    "canon_level": "official",
+    "chapter_id_hint": "017"
+  },
+  "chapter_metadata": {
+    "chapter_id": "第十七章",
+    "chapter_title": "因",
+    "volume_title": "unknown",
+    "chapter_number": 17,
+    "detected_heading": "第十七章 因",
+    "narrative_person": "第三人称",
+    "viewpoint_type": "限知多视角（特蕾娅、幽冥、银尘交替）",
+    "primary_viewpoint_character": "特蕾娅",
+    "viewpoint_stability": "分场景稳定",
+    "primary_reality_layer": "flashback",
+    "factual_abstract": "本章为回溯。六年前凝腥洞穴外雪原，特蕾娅被橙色身影追杀，以黑暗状态反制未果、锁骨被扯下重创，最终封住对方魂印并使其（红发男子霓虹）臣服，认其为使徒；幽冥被连体双生少女的精神污染逼至神志错乱，特蕾娅与霓虹赶到，用女神的裙摆将怪物冰封。回心脏后，女祭司告知连体少女须选其一存活，幽冥选择留下‘伤害转化魂力’天赋者、撕杀‘精神浸染’者，并将存活者寄养神氏家族（记忆被改）；霓虹被揭示具【无感】天赋。四年前雾隐绿岛，银尘与格兰仕嬉闹、吉尔伽美什旁观；漆拉到访，告知北之森自由、宽恕两头上古魂兽同时暴动，吉尔伽美什神色凝重。"
+  },
+  "chapter_boundaries": {
+    "single_chapter_confirmed": true,
+    "detected_chapter_count": 1,
+    "detected_boundaries": [
+      {
+        "marker": "第十七章 因",
+        "position": "chapter_start"
+      },
+      {
+        "marker": "吉尔伽美什看着面前的漆拉……出现了一丝沉重的神色",
+        "position": "chapter_end"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "scene_id": "S001",
+      "sequence_index": 1,
+      "scene_title_generated": "六年前·雪原特蕾娅反制霓虹",
+      "reality_layer": "flashback",
+      "viewpoint_character": "特蕾娅",
+      "time": {
+        "absolute_time": "六年前",
+        "relative_time": "紧接上章雪原战斗之后",
+        "time_of_day": "白天",
+        "duration": "未知（含一段昏迷恢复时间）",
+        "sequence_relation": "紧接第十六章S004",
+        "confidence": 0.9
+      },
+      "location": {
+        "primary_location": "凝腥洞穴外雪原",
+        "sub_location": "unknown",
+        "location_change_from_previous_scene": false
+      },
+      "participants": [
+        "特蕾娅",
+        "霓虹"
+      ],
+      "scene_goal": "特蕾娅在被追杀中求生并制服追杀者",
+      "opening_state": "橙色闪电身影紧追特蕾娅",
+      "factual_summary": "特蕾娅以黑暗状态爆发触角反刺对方，对方无视刀刃逼近、手插其胸口撕下锁骨；特蕾娅感知到对方魂印在左小腹，以最后魂力封其魂印使其倒下。特蕾娅虚脱后恢复，告知对方不会伤害他并解封，对方抱住她安静；自称‘霓虹’，不会说话。二人感 应幽冥危急，特蕾娅带霓虹赶去。",
+      "closing_state": "特蕾娅与霓虹赶往幽冥处",
+      "transition_reason": "地点移动至幽冥处（同一雪原）",
+      "source_span": {
+        "start_marker": "【六年前】（凝腥洞穴）",
+        "end_marker": "“跟我走，幽冥遇到大麻烦了。”"
+      }
+    },
+    {
+      "scene_id": "S002",
+      "sequence_index": 2,
+      "scene_title_generated": "六年前·雪原救幽冥并冰封怪物",
+      "reality_layer": "flashback",
+      "viewpoint_character": "特蕾娅",
+      "time": {
+        "absolute_time": "六年前",
+        "relative_time": "紧接S001之后",
+        "time_of_day": "白天",
+        "duration": "unknown",
+        "sequence_relation": "紧接S001",
+        "confidence": 0.9
+      },
+      "location": {
+        "primary_location": "凝腥洞穴外雪原（幽冥处）",
+        "sub_location": "unknown",
+        "location_change_from_previous_scene": true
+      },
+      "participants": [
+        "幽冥",
+        "特蕾娅",
+        "霓虹",
+        "连体双生少女（怪物形态）"
+      ],
+      "scene_goal": "制止幽冥、制服怪物",
+      "opening_state": "幽冥跪地神志错乱挥舞冰刃，前方一团四手四脚的畸形肉块尖叫挣扎",
+      "factual_summary": "特蕾娅让霓虹冲过冰刃阵扛走幽冥，自己以女神的裙摆丝绸裹住肉块并将其冻结成巨大冰块；远处幽冥理智已被击垮，霓虹身上插着的冰刃被体温融化、面带纯洁笑容。",
+      "closing_state": "特蕾娅决定带霓虹和冰封怪物回格兰尔特",
+      "transition_reason": "地点切换（回心脏石室）",
+      "source_span": {
+        "start_marker": "特蕾娅和霓虹两个人，在雪地上风驰电掣地往幽冥的方向掠去",
+        "end_marker": "先把霓虹和“这个玩意儿”带回格兰尔特再说吧"
+      }
+    },
+    {
+      "scene_id": "S003",
+      "sequence_index": 3,
+      "scene_title_generated": "六年前·心脏石室幽冥选使徒",
+      "reality_layer": "flashback",
+      "viewpoint_character": "幽冥",
+      "time": {
+        "absolute_time": "六年前",
+        "relative_time": "回到心脏之后",
+        "time_of_day": "unknown",
+        "duration": "unknown",
+        "sequence_relation": "紧接S002之后",
+        "confidence": 0.85
+      },
+      "location": {
+        "primary_location": "格兰尔特心脏石室",
+        "sub_location": "第三个房间",
+        "location_change_from_previous_scene": true
+      },
+      "participants": [
+        "幽冥",
+        "白银祭司（女）",
+        "连体双生少女",
+        "霓虹",
+        "特蕾娅",
+        "吉尔伽美什",
+        "格兰仕",
+        "东赫"
+      ],
+      "scene_goal": "幽冥在两姐妹中选一存活作使徒",
+      "opening_state": "三房间分立：吉尔伽美什携三使徒先离；特蕾娅携霓虹离开；幽冥独留对冰封肉块",
+      "factual_summary": "女祭司揭示连体少女共享一脊一魂印、具两种不同天赋（精神浸染/伤害转化魂力），须选一存活；幽冥选择留下伤害转化者、撕杀精神浸染者。祭司命其将存活女孩寄养神氏家族（族人记忆被改），其凝腥洞穴记忆将被抹去，但可能记得姐姐被杀。",
+      "closing_state": "幽冥按祭司之命处理存活女孩，霓虹无感天赋被祭司点明",
+      "transition_reason": "时间跳跃（六年前→四年前）",
+      "source_span": {
+        "start_marker": "【六年前】（格兰尔特心脏）",
+        "end_marker": "是否能将这一段，从她记忆里抹去"
+      }
+    },
+    {
+      "scene_id": "S004",
+      "sequence_index": 4,
+      "scene_title_generated": "四年前·雾隐绿岛漆拉报讯",
+      "reality_layer": "flashback",
+      "viewpoint_character": "银尘",
+      "time": {
+        "absolute_time": "四年前",
+        "relative_time": "距上一闪回约两年后",
+        "time_of_day": "白天",
+        "duration": "unknown",
+        "sequence_relation": "时间跳跃至四年前",
+        "confidence": 0.85
+      },
+      "location": {
+        "primary_location": "雾隐绿岛（雾隐湖群岛）",
+        "sub_location": "银尘所在小岛及湖心最大岛行宫前庭",
+        "location_change_from_previous_scene": true
+      },
+      "participants": [
+        "银尘",
+        "格兰仕",
+        "吉尔伽美什",
+        "漆拉",
+        "东赫"
+      ],
+      "scene_goal": "四使徒在绿岛日常，漆拉带来魂兽暴动消息",
+      "opening_state": "银尘采浆果归来被格兰仕恶作剧惊吓",
+      "factual_summary": "银尘与格兰仕斗嘴，格兰仕造冰桥失败落水；吉尔伽美什在行宫前庭阅卷并调侃格兰仕。漆拉黑色光芒降临，银尘回忆漆拉曾挑战吉尔伽美什失败、后成朋友并教使徒速度技巧。吉尔伽美什遣走银尘格兰仕，漆拉告知北之森自由、宽恕两头上古魂兽同时暴动，吉尔伽美什神色沉重。",
+      "closing_state": "吉尔伽美什面对漆拉沉默、神色凝重",
+      "transition_reason": "chapter_end",
+      "source_span": {
+        "start_marker": "【四年前】（雾隐绿岛）",
+        "end_marker": "吉尔伽美什看着面前的漆拉，没有说话，他帝王般孤高的脸上，出现了一丝沉重的神色"
+      }
+    }
+  ],
+  "events": [
+    {
+      "event_id": "E001",
+      "scene_id": "S001",
+      "sequence_index": 1,
+      "event_type": "combat",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "directly_observed",
+      "time": "六年前",
+      "location": "凝腥洞穴外雪原",
+      "participants": [
+        "特蕾娅",
+        "霓虹"
+      ],
+      "initiator": "特蕾娅",
+      "target": "霓虹",
+      "trigger": "逃不掉决定回头反制",
+      "action": "特蕾娅以黑暗状态令无数触角刀刃从体内穿刺而出刺向对方",
+      "result": "刀刃刺满对方身体",
+      "immediate_consequence": "对方未死、顶刀逼近",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [],
+      "causes_event_ids": [
+        "E002"
+      ],
+      "importance": "critical",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "无数锋利的触角，从特蕾娅的身体里一边尖叫一边刷刷地穿刺出来",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E002",
+      "scene_id": "S001",
+      "sequence_index": 2,
+      "event_type": "injury",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "directly_observed",
+      "time": "六年前",
+      "location": "凝腥洞穴外雪原",
+      "participants": [
+        "特蕾娅"
+      ],
+      "initiator": "霓虹",
+      "target": "特蕾娅",
+      "trigger": "顶刀逼近特蕾娅",
+      "action": "霓虹手如薄刀插入特蕾娅右胸，手指穿梭后抓住并扯下其锁骨",
+      "result": "特蕾娅右胸撕裂、锁骨与筋肉被撕下、被抛出十几米",
+      "immediate_consequence": "特蕾娅重摔岩石、视线黑暗、刀刃缩回体内",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E001"
+      ],
+      "causes_event_ids": [
+        "E003"
+      ],
+      "importance": "critical",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "那男子的手仿佛一扇薄薄的刀片一样……终于，这双手抓紧了自己的锁骨，然后用力地一扯",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E003",
+      "scene_id": "S001",
+      "sequence_index": 3,
+      "event_type": "combat",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "directly_observed",
+      "time": "六年前",
+      "location": "凝腥洞穴外雪原",
+      "participants": [
+        "特蕾娅",
+        "霓虹"
+      ],
+      "initiator": "特蕾娅",
+      "target": "霓虹",
+      "trigger": "感知到对方魂印位置",
+      "action": "特蕾娅以最后魂力将尖锐魂力刺入对方左小腹魂印、封住其魂力",
+      "result": "霓虹倒下",
+      "immediate_consequence": "霓虹被制服",
+      "long_term_consequence_explicit": "霓虹成为特蕾娅使徒",
+      "caused_by_event_ids": [
+        "E002"
+      ],
+      "causes_event_ids": [
+        "E004"
+      ],
+      "importance": "critical",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "她五根手指末端，迅速地释放出尖锐的魂力……然后就重重地倒下来",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E004",
+      "scene_id": "S001",
+      "sequence_index": 4,
+      "event_type": "relationship_change",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "directly_observed",
+      "time": "六年前",
+      "location": "凝腥洞穴外雪原",
+      "participants": [
+        "特蕾娅",
+        "霓虹"
+      ],
+      "initiator": "特蕾娅",
+      "target": "霓虹",
+      "trigger": "霓虹倒下后特蕾娅解封",
+      "action": "特蕾娅告知不会伤害他并解封其魂印；霓虹抱住特蕾娅安静下来，自报名为霓虹、不会说话",
+      "result": "霓虹臣服、被特蕾娅收为使徒",
+      "immediate_consequence": "二人结为使徒关系",
+      "long_term_consequence_explicit": "霓虹成为特蕾娅四度使徒",
+      "caused_by_event_ids": [
+        "E003"
+      ],
+      "causes_event_ids": [
+        "E005"
+      ],
+      "importance": "critical",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "“霓……霓虹？”……他立刻高兴得直点头",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E005",
+      "scene_id": "S002",
+      "sequence_index": 5,
+      "event_type": "movement",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "directly_observed",
+      "time": "六年前",
+      "location": "凝腥洞穴外雪原",
+      "participants": [
+        "特蕾娅",
+        "霓虹"
+      ],
+      "initiator": "特蕾娅",
+      "target": "幽冥处",
+      "trigger": "感应到幽冥魂力异常",
+      "action": "特蕾娅带霓虹高速赶往幽冥处",
+      "result": "霓虹全程保持巅峰状态令特蕾娅震惊",
+      "immediate_consequence": "抵达发现幽冥神志错乱",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E004"
+      ],
+      "causes_event_ids": [
+        "E006"
+      ],
+      "importance": "normal",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "“跟我走，幽冥遇到大麻烦了。”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E006",
+      "scene_id": "S002",
+      "sequence_index": 6,
+      "event_type": "task_assigned",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "directly_observed",
+      "time": "六年前",
+      "location": "凝腥洞穴外雪原",
+      "participants": [
+        "特蕾娅",
+        "霓虹"
+      ],
+      "initiator": "特蕾娅",
+      "target": "霓虹",
+      "trigger": "幽冥进攻无效、肉块魂力不断上涨",
+      "action": "特蕾娅命霓虹制止并带走幽冥",
+      "result": "霓虹冲过冰刃扛走幽冥飞掠而去",
+      "immediate_consequence": "幽冥被救离",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E005"
+      ],
+      "causes_event_ids": [
+        "E007"
+      ],
+      "importance": "critical",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "“你去制止幽冥，带他离开！”……冲过去抓住幽冥的双手，然后把他扛起来",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E007",
+      "scene_id": "S002",
+      "sequence_index": 7,
+      "event_type": "combat",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "directly_observed",
+      "time": "六年前",
+      "location": "凝腥洞穴外雪原",
+      "participants": [
+        "特蕾娅",
+        "连体双生少女（怪物形态）"
+      ],
+      "initiator": "特蕾娅",
+      "target": "连体双生少女（怪物形态）",
+      "trigger": "霓虹带走幽冥后",
+      "action": "特蕾娅以女神的裙摆丝绸裹住肉块、传递魂力使其静止，凝结成巨大冰块",
+      "result": "怪物被冰封于巨大冰晶中",
+      "immediate_consequence": "怪物被制服",
+      "long_term_consequence_explicit": "被带回心脏供幽冥选择",
+      "caused_by_event_ids": [
+        "E006"
+      ],
+      "causes_event_ids": [
+        "E009"
+      ],
+      "importance": "critical",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "那团巨大的血肉就静止了下来……那团“怪物”，慢慢地变成了一个巨大的冰块",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E008",
+      "scene_id": "S003",
+      "sequence_index": 8,
+      "event_type": "movement",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "directly_observed",
+      "time": "六年前",
+      "location": "格兰尔特心脏",
+      "participants": [
+        "吉尔伽美什",
+        "银尘",
+        "格兰仕",
+        "东赫",
+        "特蕾娅",
+        "霓虹",
+        "幽冥"
+      ],
+      "initiator": "众人",
+      "target": "心脏外",
+      "trigger": "受命完成",
+      "action": "三批人先后离开心脏房间（吉尔伽美什携三使徒、特蕾娅携霓虹、幽冥独留）",
+      "result": "幽冥独自面对冰封怪物等待祭司",
+      "immediate_consequence": "幽冥留下处理使徒选择",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [],
+      "causes_event_ids": [
+        "E009"
+      ],
+      "importance": "normal",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "第一个房间，吉尔伽美什带着他刚刚组建完整的天、地、海三使徒，第一个离开了",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E009",
+      "scene_id": "S003",
+      "sequence_index": 9,
+      "event_type": "secret_reveal",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "character_claim",
+      "time": "六年前",
+      "location": "格兰尔特心脏石室",
+      "participants": [
+        "白银祭司（女）",
+        "幽冥"
+      ],
+      "initiator": "白银祭司（女）",
+      "target": "幽冥",
+      "trigger": "幽冥带连体少女回心脏",
+      "action": "女祭司揭示连体少女共享一脊一魂印、具两种不同天赋（精神浸染/伤害转化魂力），须选一存活",
+      "result": "幽冥面临选择",
+      "immediate_consequence": "幽冥须作选择",
+      "long_term_consequence_explicit": "决定使徒与神音命运",
+      "caused_by_event_ids": [
+        "E007",
+        "E008"
+      ],
+      "causes_event_ids": [
+        "E010"
+      ],
+      "importance": "critical",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "她们却肉体相连……她们却具有不同的灵魂回路，这也产生了两种截然不同的天赋……两个里面，只有一个可以存活",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E010",
+      "scene_id": "S003",
+      "sequence_index": 10,
+      "event_type": "death",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "directly_observed",
+      "time": "六年前",
+      "location": "格兰尔特心脏石室",
+      "participants": [
+        "幽冥",
+        "连体双生少女"
+      ],
+      "initiator": "幽冥",
+      "target": "连体双生少女（精神浸染天赋者）",
+      "trigger": "祭司命其选择",
+      "action": "幽冥挥手将两姐妹从中间撕裂，保留带脊椎的伤害转化者，杀死无脊椎者",
+      "result": "精神浸染天赋者侧躺抽搐死去，存活者后背愈合",
+      "immediate_consequence": "存活者成为幽冥使徒",
+      "long_term_consequence_explicit": "存活者即神音，寄养神氏家族",
+      "caused_by_event_ids": [
+        "E009"
+      ],
+      "causes_event_ids": [
+        "E011"
+      ],
+      "importance": "critical",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "两个女孩从中间撕裂开来……另外一个……她抽搐着，然后渐渐一动不动了",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E011",
+      "scene_id": "S003",
+      "sequence_index": 11,
+      "event_type": "task_assigned",
+      "event_status": "ordered",
+      "reality_layer": "flashback",
+      "epistemic_status": "character_claim",
+      "time": "六年前",
+      "location": "格兰尔特心脏石室",
+      "participants": [
+        "白银祭司（女）",
+        "幽冥"
+      ],
+      "initiator": "白银祭司（女）",
+      "target": "幽冥",
+      "trigger": "选择完成",
+      "action": "祭司命幽冥将存活女孩寄养神氏家族（白银使者已改族人记忆认其为小女儿），待其成长后告知侵蚀者身份",
+      "result": "存活女孩被寄养、凝腥洞穴记忆将被抹去，但可能记得姐姐被杀",
+      "immediate_consequence": "存活女孩进入神氏家族",
+      "long_term_consequence_explicit": "为神音日后身份埋伏笔",
+      "caused_by_event_ids": [
+        "E010"
+      ],
+      "causes_event_ids": [],
+      "importance": "critical",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "你先带她，放到格兰尔特神氏家族寄养……他们会认为这个小女孩儿，本来就是他们家族最小的女儿",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E012",
+      "scene_id": "S003",
+      "sequence_index": 12,
+      "event_type": "secret_reveal",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "character_claim",
+      "time": "六年前",
+      "location": "格兰尔特心脏",
+      "participants": [
+        "白银祭司（女）",
+        "特蕾娅"
+      ],
+      "initiator": "白银祭司（女）",
+      "target": "特蕾娅",
+      "trigger": "特蕾娅携霓虹离心脏",
+      "action": "祭司告诉特蕾娅霓虹拥有与生俱来的【无感】天赋（无痛无惧无疲惫无死亡感），时刻保持巅峰战斗状态",
+      "result": "特蕾娅知悉霓虹天赋",
+      "immediate_consequence": "特蕾娅为霓虹感到悲哀",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [],
+      "causes_event_ids": [],
+      "importance": "critical",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "他拥有与生俱来的【无感】天赋，对痛觉无感，对恐惧无感，对疲惫无感，对死亡无感",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E013",
+      "scene_id": "S004",
+      "sequence_index": 13,
+      "event_type": "other",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "directly_observed",
+      "time": "四年前",
+      "location": "雾隐绿岛",
+      "participants": [
+        "银尘",
+        "格兰仕"
+      ],
+      "initiator": "格兰仕",
+      "target": "银尘",
+      "trigger": "银尘采浆果归来",
+      "action": "格兰仕恶作剧吓银尘、二人斗嘴",
+      "result": "银尘冷冰冰回嘴后径直往回走",
+      "immediate_consequence": "格兰仕爽朗大笑",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [],
+      "causes_event_ids": [
+        "E014"
+      ],
+      "importance": "minor",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "银尘从树上跳下来的时候，被突然出现在自己面前的格兰仕吓了一跳",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E014",
+      "scene_id": "S004",
+      "sequence_index": 14,
+      "event_type": "other",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "directly_observed",
+      "time": "四年前",
+      "location": "雾隐湖（两岛之间）",
+      "participants": [
+        "格兰仕"
+      ],
+      "initiator": "格兰仕",
+      "target": "雾隐湖面",
+      "trigger": "向银尘炫耀魂术",
+      "action": "格兰仕挥手在湖面凝结一道冰桥走至一半",
+      "result": "冰桥碎裂、格兰仕落水",
+      "immediate_consequence": "格兰仕湿身上岸被吉尔伽美什调侃",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E013"
+      ],
+      "causes_event_ids": [],
+      "importance": "minor",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "走到一半，冰桥哗啦啦地碎裂开了，格兰仕脚下一空，扑通一声摔进湖里去了",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E015",
+      "scene_id": "S004",
+      "sequence_index": 15,
+      "event_type": "movement",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "directly_observed",
+      "time": "四年前",
+      "location": "雾隐绿岛行宫前庭",
+      "participants": [
+        "漆拉"
+      ],
+      "initiator": "漆拉",
+      "target": "雾隐绿岛",
+      "trigger": "有要事相告",
+      "action": "漆拉乘黑色光芒降临行宫前庭草坪",
+      "result": "漆拉出现在吉尔伽美什与使徒前",
+      "immediate_consequence": "冰冻惩罚格兰仕",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [],
+      "causes_event_ids": [
+        "E016"
+      ],
+      "importance": "normal",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "一阵从天而降的黑色光芒，从他身边呼啸着掠过……漆拉长袍蹁跹地站立着，如同一朵黑色的莲花",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E016",
+      "scene_id": "S004",
+      "sequence_index": 16,
+      "event_type": "secret_reveal",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "directly_observed",
+      "time": "四年前",
+      "location": "雾隐绿岛行宫前庭",
+      "participants": [
+        "漆拉",
+        "吉尔伽美什",
+        "银尘",
+        "格兰仕"
+      ],
+      "initiator": "吉尔伽美什",
+      "target": "银尘、格兰仕",
+      "trigger": "漆拉到访、欲密谈",
+      "action": "吉尔伽美什遣银尘格兰仕去找东赫",
+      "result": "二使徒退下，留吉尔伽美什与漆拉密谈",
+      "immediate_consequence": "漆拉得以报讯",
+      "long_term_consequence_explicit": "unknown",
+      "caused_by_event_ids": [
+        "E015"
+      ],
+      "causes_event_ids": [
+        "E017"
+      ],
+      "importance": "normal",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "他把笑容收起来，对银尘和格兰仕说：“你们两个先去找东赫吧。”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "event_id": "E017",
+      "scene_id": "S004",
+      "sequence_index": 17,
+      "event_type": "hook_introduced",
+      "event_status": "occurred",
+      "reality_layer": "flashback",
+      "epistemic_status": "directly_observed",
+      "time": "四年前",
+      "location": "雾隐绿岛行宫前庭",
+      "participants": [
+        "漆拉",
+        "吉尔伽美什"
+      ],
+      "initiator": "漆拉",
+      "target": "吉尔伽美什",
+      "trigger": "密谈",
+      "action": "漆拉告知北之森深处自由、宽恕两头上古魂兽同时暴动",
+      "result": "吉尔伽美什神色沉重、未语",
+      "immediate_consequence": "引出‘浩劫’前兆",
+      "long_term_consequence_explicit": "为四年前浩劫埋因",
+      "caused_by_event_ids": [
+        "E016"
+      ],
+      "causes_event_ids": [],
+      "importance": "critical",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "“这次暴动发生在北之森深处，自由和宽恕两头上古魂兽，同时暴动了。”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "C001",
+      "canonical_name": "特蕾娅",
+      "mentions": [
+        "特蕾娅"
+      ],
+      "aliases_in_chapter": [],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        {
+          "fact": "四度王爵，侵蚀者出身",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "appearance_facts": [
+        {
+          "fact": "女神的裙摆可卷动如莲花",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "ability_facts": [
+        {
+          "fact": "黑暗状态：无数锋利触角刀刃可从体内穿刺而出",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "大范围精准魂力感知（瞳孔翻涌暴雪）",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "behavior_facts": [
+        {
+          "fact": "以黑暗状态反刺霓虹、被扯锁骨后封其魂印",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "以女神的裙摆冰封连体怪物",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "命霓虹带走幽冥、自己制服怪物",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "收霓虹为使徒",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [
+        {
+          "fact": "对霓虹产生怜悯与悲哀",
+          "epistemic_status": "internal_confirmed"
+        },
+        {
+          "fact": "想到与怪物同源而绝望疲惫",
+          "epistemic_status": "internal_confirmed"
+        }
+      ],
+      "goal_facts": [
+        {
+          "fact": "带回霓虹与冰封怪物至格兰尔特",
+          "epistemic_status": "decision"
+        }
+      ],
+      "psychological_facts": [
+        {
+          "fact": "难以相信自己会对刚要杀自己的人产生怜悯",
+          "epistemic_status": "internal_confirmed"
+        }
+      ],
+      "knowledge_facts": [
+        {
+          "fact": "知悉霓虹具【无感】天赋（祭司告知）",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "possession_facts": [
+        {
+          "fact": "持有女神的裙摆",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "relationship_facts": [
+        {
+          "fact": "收霓虹为使徒",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "physical_state_at_end": "重伤初愈（肩伤未全复）、精神疲惫",
+      "location_at_end": "凝腥洞穴外雪原（S002末）→离开心脏",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "携霓虹与冰封怪物回格兰尔特",
+      "identity_resolution_confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "她当然有理由得意，她如今对黑暗状态的驾驭，早就不是当年那个小女孩儿时的生疏了",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C002",
+      "canonical_name": "霓虹",
+      "mentions": [
+        "霓虹",
+        "橙色的闪电",
+        "橙色的身影",
+        "红发男子"
+      ],
+      "aliases_in_chapter": [
+        "橙色的闪电",
+        "红发男子"
+      ],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        {
+          "fact": "新一代侵蚀者，特蕾娅的使徒",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "appearance_facts": [
+        {
+          "fact": "几乎全身赤裸、红色头发如火竖立、暗红宝石瞳孔、浓密柔软眉毛、挺拔鼻梁、饱满嘴唇",
+          "epistemic_status": "narrator_confirmed"
+        },
+        {
+          "fact": "腰部与私密处有白银防护铠甲、全身布满神秘刺青",
+          "epistemic_status": "narrator_confirmed"
+        },
+        {
+          "fact": "身躯高大肌肉发达如包裹闪电的肉体",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "ability_facts": [
+        {
+          "fact": "速度极快如闪电、正常战斗状态即巅峰",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "【无感】天赋：无痛无惧无疲惫无死亡感，时刻巅峰战斗",
+          "epistemic_status": "character_claim"
+        },
+        {
+          "fact": "魂印在左小腹",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "behavior_facts": [
+        {
+          "fact": "追杀特蕾娅、扯其锁骨",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "被特蕾娅封魂印后倒下；解封后抱住特蕾娅安静",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "自报名霓虹、表示不会说话",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "冲过冰刃阵扛走幽冥",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "护在特蕾娅前严阵以待",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [
+        {
+          "fact": "眼里翻涌最原始炽烈的男女之欲",
+          "epistemic_status": "internal_confirmed"
+        },
+        {
+          "fact": "被问不会说话时面容沉下、目光浅浅悲伤",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "脸带纯洁天使般干净笑容、目光温柔坚定",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [
+        {
+          "fact": "成为特蕾娅的使徒",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "physical_state_at_end": "魂印曾被冰封、身上冰刃被体温融化",
+      "location_at_end": "凝腥洞穴外雪原→随特蕾娅离开",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "随特蕾娅回格兰尔特",
+      "identity_resolution_confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "“霓……霓虹？”……他立刻高兴得直点头",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C003",
+      "canonical_name": "幽冥",
+      "mentions": [
+        "幽冥"
+      ],
+      "aliases_in_chapter": [],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        {
+          "fact": "二度王爵，侵蚀者出身",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "appearance_facts": [],
+      "ability_facts": [
+        {
+          "fact": "右手臂金黄色刻纹浮现时可催发冰柱",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "可制造冰雪匕首、无数冰刃",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "behavior_facts": [
+        {
+          "fact": "对连体少女发冰刃、冰柱攻击无效后神志错乱挥舞冰刃",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "按祭司命选择保留伤害转化者、撕杀精神浸染者",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [
+        {
+          "fact": "面对连体少女产生无法抵抗的阴冷恶心、干呕",
+          "epistemic_status": "internal_confirmed"
+        },
+        {
+          "fact": "理智被击垮、跪地披发挡脸一动不动",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "额冒细密冷汗",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "goal_facts": [
+        {
+          "fact": "原命将新侵蚀者带回格兰尔特",
+          "epistemic_status": "ordered"
+        }
+      ],
+      "psychological_facts": [
+        {
+          "fact": "因无法承受精神浸染天赋的恐怖而选择杀死具此天赋者",
+          "epistemic_status": "internal_confirmed"
+        }
+      ],
+      "knowledge_facts": [
+        {
+          "fact": "知悉连体少女两姐妹的天赋（祭司告知）",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "possession_facts": [],
+      "relationship_facts": [
+        {
+          "fact": "收伤害转化魂力天赋者为使徒（即神音前身）",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "physical_state_at_end": "理智崩溃后初定、按命行事",
+      "location_at_end": "格兰尔特心脏石室",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "将存活女孩送神氏家族寄养",
+      "identity_resolution_confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "他实在是无法抵抗那个死去的侵蚀者所具有的天赋",
+          "evidence_type": "internal_monologue",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C004",
+      "canonical_name": "连体双生少女（神音原型）",
+      "mentions": [
+        "小女孩儿",
+        "连体少女",
+        "肉块",
+        "怪物"
+      ],
+      "aliases_in_chapter": [
+        "两个森然的小女孩儿",
+        "畸形肉块"
+      ],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        {
+          "fact": "新一代侵蚀者，原为双胞胎、子宫内发育不良肉体相连共享一根脊髓与一个魂印",
+          "epistemic_status": "character_claim"
+        },
+        {
+          "fact": "具两种不同天赋，须选一存活",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "appearance_facts": [
+        {
+          "fact": "可背靠背对视、脸可完好如初地转向对方",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "被幽冥攻击后纠缠成四只手四只脚的巨大畸形肉块",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "ability_facts": [
+        {
+          "fact": "其一具【精神浸染】天赋：发无声之音打破平衡理智，令人极度恐怖恶心、精神错乱暴乱发狂",
+          "epistemic_status": "character_claim"
+        },
+        {
+          "fact": "另一具【伤害转化魂力】天赋：受攻击伤害转化为魂力完善灵魂回路，敌越强她越强",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "behavior_facts": [
+        {
+          "fact": "凝视幽冥令其无法移开视线；被冰柱穿透后仍能转动完好脸面对幽冥",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [
+        {
+          "fact": "目光混浊黏稠、无焦距",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [],
+      "physical_state_at_end": "精神浸染天赋者被撕杀；伤害转化天赋者存活、后背愈合",
+      "location_at_end": "心脏石室（存活者将送神氏家族）",
+      "availability_state_at_end": "一死一存",
+      "current_task_at_end": "存活者被寄养神氏家族",
+      "identity_resolution_confidence": 0.5,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "其中一个的天赋，是【精神浸染】……而另外一个，则拥有将自身受到的伤害，转化为魂力的天赋",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C005",
+      "canonical_name": "银尘",
+      "mentions": [
+        "银尘"
+      ],
+      "aliases_in_chapter": [],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        {
+          "fact": "吉尔伽美什的天之使徒，十七岁时被带回绿岛已三年",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "appearance_facts": [
+        {
+          "fact": "白衣如雪、冰雪般冷峻面容、扎小辫、曾被调侃像女孩",
+          "epistemic_status": "narrator_confirmed"
+        },
+        {
+          "fact": "从小被民间旅行马戏团收养",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "ability_facts": [
+        {
+          "fact": "与生俱来的对魂术感应天赋，能以水为道具表演魔术（悬浮水龙、水珠环绕）",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "behavior_facts": [
+        {
+          "fact": "与格兰仕斗嘴、冷嘲其缺深度",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "被吉尔伽美什遣退时恭敬低头",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [
+        {
+          "fact": "见王爵纯真笑容忍不住微笑",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [
+        {
+          "fact": "与格兰仕同岁同时成为使徒、感情最好",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "physical_state_at_end": "可行动",
+      "location_at_end": "雾隐绿岛（被遣去找东赫）",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "去找东赫",
+      "identity_resolution_confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "三个使徒里面，银尘和他同岁，而且是几乎同一个时间成为使徒的，因此他们两个感情最好",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C006",
+      "canonical_name": "格兰仕",
+      "mentions": [
+        "格兰仕"
+      ],
+      "aliases_in_chapter": [
+        "地之使徒"
+      ],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        {
+          "fact": "吉尔伽美什的地之使徒",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "appearance_facts": [
+        {
+          "fact": "黑袍、凌乱束发、眼神明亮锋利、浓密狭长眉毛、英气野性、结实小麦色肌肤",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "ability_facts": [
+        {
+          "fact": "能于湖面凝结冰桥（地/水元素魂术）、用冰冻干燥衣服",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "behavior_facts": [
+        {
+          "fact": "恶作剧吓银尘、调侃其像女孩",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "造冰桥炫耀失败落水",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "调侃漆拉像女的、被漆拉冰冻腰部以下",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [
+        {
+          "fact": "玩世不恭、风流不羁、爱恶作剧",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [
+        {
+          "fact": "与银尘同岁同时成为使徒、感情最好",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "physical_state_at_end": "被漆拉冰冻下半身（后被银尘融化）",
+      "location_at_end": "雾隐绿岛（被遣去找东赫）",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "去找东赫",
+      "identity_resolution_confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "“你是男孩儿女孩儿？”……自得其乐地哈哈大笑而去",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C007",
+      "canonical_name": "吉尔伽美什",
+      "mentions": [
+        "吉尔伽美什"
+      ],
+      "aliases_in_chapter": [
+        "一度王爵",
+        "王爵"
+      ],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        {
+          "fact": "亚斯蓝最高王爵（一度）",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "appearance_facts": [
+        {
+          "fact": "金光灿烂长发、天生帝王气息、天神般容貌",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "ability_facts": [
+        {
+          "fact": "魂力精准恐怖：曾眯眼将费雷尔全身铠甲粉碎并爆出千道一寸伤口",
+          "epistemic_status": "narrator_confirmed"
+        },
+        {
+          "fact": "曾轻松化解漆拉千万吨湖水冰龙进攻、站其身后手指放其颈",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "behavior_facts": [
+        {
+          "fact": "行宫前庭阅羊皮卷轴、调侃格兰仕落水",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "遣走银尘格兰仕、与漆拉密谈",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [
+        {
+          "fact": "对三使徒露出柔软纯真开朗的一面",
+          "epistemic_status": "narrator_confirmed"
+        },
+        {
+          "fact": "听闻双魂兽暴动后帝王般孤高脸上出现沉重神色",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [
+        {
+          "fact": "与漆拉由挑战者变为互相欣赏的朋友",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "physical_state_at_end": "可行动、神色凝重",
+      "location_at_end": "雾隐绿岛行宫前庭",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "应对魂兽暴动消息",
+      "identity_resolution_confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "他帝王般孤高的脸上，出现了一丝沉重的神色",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C008",
+      "canonical_name": "漆拉",
+      "mentions": [
+        "漆拉"
+      ],
+      "aliases_in_chapter": [
+        "三度王爵"
+      ],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        {
+          "fact": "三度王爵，曾挑战吉尔伽美什失败后成朋友",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "appearance_facts": [
+        {
+          "fact": "容貌精致俊秀近女性、被格兰仕调侃像女的",
+          "epistemic_status": "narrator_confirmed"
+        },
+        {
+          "fact": "黑色长袍、降临如黑色莲花",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "ability_facts": [
+        {
+          "fact": "时空控制登峰造极：可释放多种阵法、速度极快留残影、曾将雾隐湖全部湖水挑上天空化为冰龙",
+          "epistemic_status": "narrator_confirmed"
+        },
+        {
+          "fact": "可不动手指冰冻格兰仕腰部以下",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "behavior_facts": [
+        {
+          "fact": "黑色光芒降临绿岛、向吉尔伽美什报魂兽暴动讯",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "emotion_facts": [
+        {
+          "fact": "眉宇间织满愁云、目光隐藏沉痛",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "goal_facts": [
+        {
+          "fact": "向吉尔伽美什禀报北之森魂兽暴动",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "psychological_facts": [],
+      "knowledge_facts": [
+        {
+          "fact": "知道北之森自由、宽恕同时暴动",
+          "epistemic_status": "directly_observed"
+        }
+      ],
+      "possession_facts": [],
+      "relationship_facts": [
+        {
+          "fact": "吉尔伽美什的朋友、雾隐绿岛唯一访客",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "physical_state_at_end": "可行动",
+      "location_at_end": "雾隐绿岛行宫前庭",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "与吉尔伽美什密谈魂兽暴动",
+      "identity_resolution_confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "“这次暴动发生在北之森深处，自由和宽恕两头上古魂兽，同时暴动了。”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C009",
+      "canonical_name": "白银祭司（女）",
+      "mentions": [
+        "白银祭司",
+        "女性白银祭司"
+      ],
+      "aliases_in_chapter": [
+        "那位女性白银祭司"
+      ],
+      "appearance_type": "on_stage",
+      "identity_facts": [
+        {
+          "fact": "三位白银祭司中的女祭司",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "appearance_facts": [
+        {
+          "fact": "面容冰雕玉琢精致、双唇紧闭",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "ability_facts": [],
+      "behavior_facts": [
+        {
+          "fact": "向幽冥揭示连体少女天赋、命其选一存活、寄养神氏家族",
+          "epistemic_status": "directly_observed"
+        },
+        {
+          "fact": "向特蕾娅点明霓虹【无感】天赋",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "emotion_facts": [],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [],
+      "physical_state_at_end": "沉睡于水晶",
+      "location_at_end": "心脏石室水晶墙",
+      "availability_state_at_end": "unknown",
+      "current_task_at_end": "unknown",
+      "identity_resolution_confidence": 0.6,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "那位女性白银祭司的身影，出现在水晶的深处",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C010",
+      "canonical_name": "东赫",
+      "mentions": [
+        "东赫"
+      ],
+      "aliases_in_chapter": [
+        "海之使徒"
+      ],
+      "appearance_type": "mentioned",
+      "identity_facts": [
+        {
+          "fact": "吉尔伽美什的海之使徒，比银尘格兰仕年长、跟随王爵最久",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "appearance_facts": [],
+      "ability_facts": [],
+      "behavior_facts": [
+        {
+          "fact": "以长兄姿态教训银尘格兰仕",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "emotion_facts": [],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [
+        {
+          "fact": "吉尔伽美什使徒",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "physical_state_at_end": "unknown",
+      "location_at_end": "雾隐绿岛",
+      "availability_state_at_end": "可行动",
+      "current_task_at_end": "unknown",
+      "identity_resolution_confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "海之使徒东赫，比他们两个年纪都大，而且跟随吉尔伽美什的时间最久",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C011",
+      "canonical_name": "费雷尔",
+      "mentions": [
+        "费雷尔"
+      ],
+      "aliases_in_chapter": [
+        "七度王爵"
+      ],
+      "appearance_type": "mentioned",
+      "identity_facts": [
+        {
+          "fact": "曾为七度王爵",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "appearance_facts": [],
+      "ability_facts": [],
+      "behavior_facts": [
+        {
+          "fact": "曾未通报急闯雾隐绿岛传达白银祭司命令",
+          "epistemic_status": "narrator_confirmed"
+        }
+      ],
+      "emotion_facts": [],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [],
+      "physical_state_at_end": "全身千道伤口（前事回溯）",
+      "location_at_end": "unknown",
+      "availability_state_at_end": "unknown",
+      "current_task_at_end": "unknown",
+      "identity_resolution_confidence": 0.7,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "七度王爵费雷尔因为急着要传达白银祭司的一个命令……他全身上下，顷刻间爆炸出一千道密密麻麻的伤口",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "character_id": "C012",
+      "canonical_name": "莲伊娜",
+      "mentions": [
+        "莲伊娜"
+      ],
+      "aliases_in_chapter": [],
+      "appearance_type": "mentioned",
+      "identity_facts": [
+        {
+          "fact": "吉尔伽美什提及可镇压魂兽者，天赋令凶猛魂兽如婴儿",
+          "epistemic_status": "character_claim"
+        }
+      ],
+      "appearance_facts": [],
+      "ability_facts": [],
+      "behavior_facts": [],
+      "emotion_facts": [],
+      "goal_facts": [],
+      "psychological_facts": [],
+      "knowledge_facts": [],
+      "possession_facts": [],
+      "relationship_facts": [],
+      "physical_state_at_end": "unknown",
+      "location_at_end": "unknown",
+      "availability_state_at_end": "unknown",
+      "current_task_at_end": "unknown",
+      "identity_resolution_confidence": 0.3,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "镇压魂兽的事情，怎么不去找莲伊娜？以她的天赋来说，再凶猛的魂兽在她面前，不也就像是个婴儿一样么",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    }
+  ],
+  "character_state_changes": [
+    {
+      "change_id": "CS001",
+      "character_id": "C001",
+      "scene_id": "S001",
+      "dimension": "physical_state",
+      "before": "无重伤",
+      "change": "右胸被手插入、锁骨与筋肉被扯下",
+      "after": "锁骨缺失、肩部重创、虚脱",
+      "change_status": "confirmed",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "这双手抓紧了自己的锁骨，然后用力地一扯",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "change_id": "CS002",
+      "character_id": "C001",
+      "scene_id": "S001",
+      "dimension": "relationship",
+      "before": "与霓虹敌对（被追杀）",
+      "change": "收霓虹为使徒",
+      "after": "霓虹成为特蕾娅使徒",
+      "change_status": "confirmed",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "刚刚成为自己使徒的霓虹",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "change_id": "CS003",
+      "character_id": "C002",
+      "scene_id": "S001",
+      "dimension": "identity",
+      "before": "出洞即追杀特蕾娅的新一代侵蚀者",
+      "change": "自报姓名霓虹、成为特蕾娅使徒",
+      "after": "特蕾娅的四度使徒",
+      "change_status": "confirmed",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "“霓……霓虹？”……他立刻高兴得直点头",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "change_id": "CS004",
+      "character_id": "C003",
+      "scene_id": "S002",
+      "dimension": "physical_state",
+      "before": "与连体少女对峙",
+      "change": "被精神污染至理智崩溃、跪地披发",
+      "after": "理智被击垮、由霓虹扛走",
+      "change_status": "confirmed",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S002",
+          "quote": "幽冥跪在地上，他全身止不住地颤抖着，他已经失去了控制……他仿佛已经神志不清了",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "change_id": "CS005",
+      "character_id": "C003",
+      "scene_id": "S003",
+      "dimension": "relationship",
+      "before": "无使徒",
+      "change": "选择保留伤害转化者、撕杀精神浸染者，存活者成其使徒",
+      "after": "收伤害转化天赋者为使徒",
+      "change_status": "confirmed",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "两个女孩从中间撕裂开来……另外一个……她抽搐着，然后渐渐一动不动了",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "change_id": "CS006",
+      "character_id": "C004",
+      "scene_id": "S003",
+      "dimension": "physical_state",
+      "before": "连体共存",
+      "change": "被幽冥从中间撕裂，精神浸染者死、伤害转化者存活",
+      "after": "一死一存（存活者后背愈合）",
+      "change_status": "confirmed",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "她后背连着的那根脊椎骨，仿佛一条活动的骨蛇一样……她后背的那些血肉纷纷愈合",
+          "evidence_type": "direct_action",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "change_id": "CS007",
+      "character_id": "C004",
+      "scene_id": "S003",
+      "dimension": "location",
+      "before": "凝腥洞穴→心脏石室",
+      "change": "被寄养神氏家族（族人记忆被改）",
+      "after": "进入神氏家族作小女儿",
+      "change_status": "confirmed",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "放到格兰尔特神氏家族寄养……他们会认为这个小女孩儿，本来就是他们家族最小的女儿",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    }
+  ],
+  "knowledge_states": [
+    {
+      "knowledge_id": "K001",
+      "subject": "特蕾娅",
+      "information": "霓虹拥有与生俱来的【无感】天赋，时刻保持巅峰战斗",
+      "knowledge_status": "knows",
+      "acquired_in_scene": "S003",
+      "source_of_information": "白银祭司告知",
+      "reliability": "character_claim",
+      "concealed_from": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "他拥有与生俱来的【无感】天赋，对痛觉无感，对恐惧无感，对疲惫无感，对死亡无感",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "knowledge_id": "K002",
+      "subject": "幽冥",
+      "information": "连体少女共享一脊一魂印、具两种不同天赋，须选一存活",
+      "knowledge_status": "knows",
+      "acquired_in_scene": "S003",
+      "source_of_information": "白银祭司告知",
+      "reliability": "character_claim",
+      "concealed_from": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "她们同享一个魂印……两个里面，只有一个可以存活",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "knowledge_id": "K003",
+      "subject": "霓虹",
+      "information": "自己的名字是‘霓虹’",
+      "knowledge_status": "knows",
+      "acquired_in_scene": "S001",
+      "source_of_information": "自身",
+      "reliability": "directly_observed",
+      "concealed_from": [],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "“霓……霓虹？”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "knowledge_id": "K004",
+      "subject": "吉尔伽美什",
+      "information": "北之森自由、宽恕两头上古魂兽同时暴动",
+      "knowledge_status": "knows",
+      "acquired_in_scene": "S004",
+      "source_of_information": "漆拉告知",
+      "reliability": "character_claim",
+      "concealed_from": [
+        "银尘",
+        "格兰仕"
+      ],
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "“这次暴动发生在北之森深处，自由和宽恕两头上古魂兽，同时暴动了。”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "L001",
+      "canonical_name": "凝腥洞穴外雪原",
+      "aliases": [],
+      "parent_location": "西之亚斯蓝帝国极北之地",
+      "location_type": "雪原",
+      "observable_features": [
+        "空旷广阔雪原",
+        "黑色岩石",
+        "凝腥洞穴黑色峡谷"
+      ],
+      "entry_conditions": [],
+      "hazards": [
+        "新一代侵蚀者出没"
+      ],
+      "rules": [],
+      "state_changes": [],
+      "events_in_chapter": [
+        "E001",
+        "E002",
+        "E003",
+        "E004",
+        "E005",
+        "E006",
+        "E007"
+      ],
+      "first_appearance_in_current_corpus": "unknown",
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "宁静的雪域上空",
+          "evidence_type": "environmental_observation",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "location_id": "L002",
+      "canonical_name": "格兰尔特心脏石室",
+      "aliases": [
+        "第三个房间"
+      ],
+      "parent_location": "格兰尔特心脏",
+      "location_type": "地下石室",
+      "observable_features": [
+        "空荡无装饰",
+        "对面石壁可幻化为水晶"
+      ],
+      "entry_conditions": [],
+      "hazards": [],
+      "rules": [],
+      "state_changes": [],
+      "events_in_chapter": [
+        "E008",
+        "E009",
+        "E010",
+        "E011",
+        "E012"
+      ],
+      "first_appearance_in_current_corpus": "unknown",
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "第三个房间里，幽冥安静地等待着",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "location_id": "L003",
+      "canonical_name": "雾隐绿岛",
+      "aliases": [
+        "雾隐湖群岛"
+      ],
+      "parent_location": "亚斯蓝帝国中心（南北两极正中间）",
+      "location_type": "湖上群岛/吉尔伽美什领地",
+      "observable_features": [
+        "一年四季温暖如春",
+        "星罗棋布岛屿长满参天大树",
+        "白色大理石宫殿",
+        "湖心最大岛有最大行宫",
+        "产红瑚木浆果"
+      ],
+      "entry_conditions": [
+        "非请勿入，擅闯者被吉尔伽美什以魂力惩戒（仅漆拉可自由到访）"
+      ],
+      "hazards": [
+        "擅闯会被吉尔伽美什魂力惩戒"
+      ],
+      "rules": [],
+      "state_changes": [],
+      "events_in_chapter": [
+        "E013",
+        "E014",
+        "E015",
+        "E016",
+        "E017"
+      ],
+      "first_appearance_in_current_corpus": "unknown",
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "整个雾隐湖的范围，都是吉尔伽美什的领地",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "location_id": "L004",
+      "canonical_name": "北之森",
+      "aliases": [],
+      "parent_location": "亚斯蓝帝国",
+      "location_type": "森林",
+      "observable_features": [],
+      "entry_conditions": [],
+      "hazards": [
+        "自由、宽恕两头上古魂兽栖息且同时暴动"
+      ],
+      "rules": [],
+      "state_changes": [
+        "自由、宽恕同时暴动"
+      ],
+      "events_in_chapter": [],
+      "first_appearance_in_current_corpus": "unknown",
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "这次暴动发生在北之森深处，自由和宽恕两头上古魂兽，同时暴动了",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "location_id": "L005",
+      "canonical_name": "神氏家族",
+      "aliases": [],
+      "parent_location": "格兰尔特",
+      "location_type": "家族",
+      "observable_features": [],
+      "entry_conditions": [],
+      "hazards": [],
+      "rules": [],
+      "state_changes": [
+        "族人记忆被白银使者修改，认存活女孩为小女儿"
+      ],
+      "events_in_chapter": [],
+      "first_appearance_in_current_corpus": "unknown",
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "放到格兰尔特神氏家族寄养",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "item_id": "I001",
+      "canonical_name": "女神的裙摆",
+      "aliases": [],
+      "item_type": "上古魂器（盾）",
+      "holder_at_start": "特蕾娅",
+      "holder_at_end": "特蕾娅",
+      "location_at_end": "特蕾娅身上",
+      "explicit_functions": [
+        "可抵挡一切间接攻击",
+        "可卷动丝绸裹物并传递魂力冰封"
+      ],
+      "explicit_costs": [],
+      "explicit_limitations": [
+        "对直接肉搏攻击无效"
+      ],
+      "state_at_end": "完好",
+      "related_event_ids": [
+        "E001",
+        "E007"
+      ],
+      "possible_hook": false,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "能够抵挡一切间接攻击的盾牌女神的裙摆此刻毫无用武之地",
+          "evidence_type": "internal_monologue",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "item_id": "I002",
+      "canonical_name": "红瑚木浆果",
+      "aliases": [],
+      "item_type": "特产果实",
+      "holder_at_start": "unknown",
+      "holder_at_end": "吉尔伽美什（银尘采送）",
+      "location_at_end": "吉尔伽美什旁",
+      "explicit_functions": [
+        "雾隐绿岛特产，汁水浓郁果香"
+      ],
+      "explicit_costs": [],
+      "explicit_limitations": [
+        "仅雾隐绿岛产出"
+      ],
+      "state_at_end": "被食用",
+      "related_event_ids": [],
+      "possible_hook": false,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "红瑚木浆果是雾隐绿岛上的特产，亚斯蓝大陆上，只有这个群岛上才会有",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    }
+  ],
+  "factions": [],
+  "world_rules": [
+    {
+      "rule_id": "R001",
+      "rule_name": "黑暗状态",
+      "rule_category": "禁忌魂术",
+      "rule_statement": "黑暗状态可将魂兽/力量释放入体内融合，爆发触角刀刃等攻击；驾驭熟练度影响威力",
+      "scope": "侵蚀者/魂术师",
+      "trigger": "发动黑暗状态",
+      "effect": "从体内穿刺出锋利触角刀刃攻击",
+      "cost": "unknown",
+      "limitations": [],
+      "exceptions": [],
+      "violation_consequence": "unknown",
+      "epistemic_status": "directly_observed",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "她如今对黑暗状态的驾驭，早就不是当年那个小女孩儿时的生疏了",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R002",
+      "rule_name": "魂印与魂路唯一性",
+      "rule_category": "魂术体系",
+      "rule_statement": "一个魂印只能匹配一种魂路；两名共享一魂印的侵蚀者具不同回路时，魂印最终只选其一，否则两败俱伤、魂印破碎肉体同毁",
+      "scope": "使徒/侵蚀者",
+      "trigger": "共享魂印的二人回路冲突",
+      "effect": "须主动选一存活",
+      "cost": "未选则两败俱伤",
+      "limitations": [],
+      "exceptions": [],
+      "violation_consequence": "魂印破碎、肉体同毁",
+      "epistemic_status": "character_claim",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "一个魂印只能匹配一种魂路，但是她们两人，却具有不同的灵魂回路……最终的结果就是两败俱伤",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R003",
+      "rule_name": "伤害转化魂力天赋",
+      "rule_category": "天赋",
+      "rule_statement": "受敌人攻击伤害可转化为魂力、不断完善灵魂回路，敌越强恢复后魂力越深厚，只要不被当场击毙",
+      "scope": "具此天赋者（神音原型）",
+      "trigger": "受到攻击伤害",
+      "effect": "魂力攀升、回路完善",
+      "cost": "须承受伤害",
+      "limitations": [
+        "若被当场击毙则无效"
+      ],
+      "exceptions": [],
+      "violation_consequence": "unknown",
+      "epistemic_status": "character_claim",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "拥有将自身受到的伤害，转化为魂力的天赋……只要她不被当场击毙，那么当她恢复之后，她的魂力都会比之前深厚",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R004",
+      "rule_name": "精神浸染天赋",
+      "rule_category": "天赋",
+      "rule_statement": "可发出无法听见的声音，打破他人脑海平衡与理智，令人感受极大恐怖与恶心，最终精神错乱、暴乱发狂",
+      "scope": "具此天赋者（死去的姐姐）",
+      "trigger": "发动天赋",
+      "effect": "污染他人精神、致其失控",
+      "cost": "unknown",
+      "limitations": [],
+      "exceptions": [],
+      "violation_consequence": "unknown",
+      "epistemic_status": "character_claim",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "其中一个的天赋，是【精神浸染】……能让人感受到她营造出的极大的恐怖和恶心感，最终将人引导至精神错乱",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "rule_id": "R005",
+      "rule_name": "无感天赋",
+      "rule_category": "天赋",
+      "rule_statement": "与生俱来对痛觉、恐惧、疲惫、死亡无感，时刻保持最巅峰战斗状态",
+      "scope": "霓虹",
+      "trigger": "战斗",
+      "effect": "恒定巅峰战斗",
+      "cost": "unknown",
+      "limitations": [],
+      "exceptions": [],
+      "violation_consequence": "unknown",
+      "epistemic_status": "character_claim",
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "他拥有与生俱来的【无感】天赋，对痛觉无感，对恐惧无感，对疲惫无感，对死亡无感",
+          "evidence_type": "narration",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    }
+  ],
+  "hooks_and_clues": [
+    {
+      "hook_id": "H001",
+      "scene_id": "S003",
+      "hook_type": "explicit_setup",
+      "content": "存活的女孩（神音原型）被寄养神氏家族，记忆被改；可能记得姐姐被幽冥杀死",
+      "related_entities": [
+        "连体双生少女",
+        "幽冥",
+        "神氏家族"
+      ],
+      "introduced_or_updated": "introduced",
+      "current_status": "unresolved",
+      "known_by": [
+        "白银祭司（女）",
+        "幽冥"
+      ],
+      "unknown_to": [
+        "存活女孩（记忆被改）"
+      ],
+      "urgency": "low",
+      "canon_eligible": true,
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "scene_id": "S003",
+          "quote": "有可能她会记得，刚刚你‘杀死’了她的姐姐",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "hook_id": "H002",
+      "scene_id": "S004",
+      "hook_type": "explicit_question",
+      "content": "北之森自由、宽恕两头上古魂兽为何同时暴动、将如何处置",
+      "related_entities": [
+        "自由",
+        "宽恕",
+        "吉尔伽美什",
+        "漆拉"
+      ],
+      "introduced_or_updated": "introduced",
+      "current_status": "unresolved",
+      "known_by": [
+        "吉尔伽美什",
+        "漆拉"
+      ],
+      "unknown_to": [
+        "银尘",
+        "格兰仕"
+      ],
+      "urgency": "high",
+      "canon_eligible": true,
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "scene_id": "S004",
+          "quote": "“这次暴动发生在北之森深处，自由和宽恕两头上古魂兽，同时暴动了。”",
+          "evidence_type": "dialogue",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    },
+    {
+      "hook_id": "H003",
+      "scene_id": "S001",
+      "hook_type": "implicit_clue_candidate",
+      "content": "霓虹出洞即对特蕾娅产生强烈男女之欲，或与其本性/守护本能有关",
+      "related_entities": [
+        "霓虹",
+        "特蕾娅"
+      ],
+      "introduced_or_updated": "introduced",
+      "current_status": "unresolved",
+      "known_by": [],
+      "unknown_to": [],
+      "urgency": "low",
+      "canon_eligible": false,
+      "confidence": 0.4,
+      "evidence": [
+        {
+          "scene_id": "S001",
+          "quote": "那种最原始，也最炽烈的欲望——男女之间最浓烈的性欲",
+          "evidence_type": "internal_monologue",
+          "source_path": "data/raw/chapters_src/chapter-017.md"
+        }
+      ]
+    }
+  ],
+  "timelines": [
+    {
+      "timeline_entry_id": "T001",
+      "timeline_type": "flashback",
+      "sequence_index": 1,
+      "absolute_time": "六年前",
+      "relative_time": "回溯（六年前凝腥洞穴外）",
+      "duration": "战斗及恢复",
+      "location": "凝腥洞穴外雪原",
+      "participants": [
+        "特蕾娅",
+        "霓虹",
+        "幽冥",
+        "连体双生少女（怪物形态）"
+      ],
+      "current_task": "制服新一代侵蚀者、彼此结为使徒",
+      "event_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E004",
+        "E005",
+        "E006",
+        "E007"
+      ],
+      "plot_description": "特蕾娅封霓虹魂印收其为使徒，与霓虹救幽冥、冰封连体怪物",
+      "result": "霓虹臣服、怪物被冰封、幽冥被救",
+      "relation_to_other_entries": [
+        {
+          "relation_type": "before",
+          "target_timeline_entry": "T002"
+        }
+      ],
+      "confidence": 0.85
+    },
+    {
+      "timeline_entry_id": "T002",
+      "timeline_type": "flashback",
+      "sequence_index": 2,
+      "absolute_time": "六年前（紧接T001）",
+      "relative_time": "回心脏后",
+      "duration": "unknown",
+      "location": "格兰尔特心脏石室",
+      "participants": [
+        "幽冥",
+        "白银祭司（女）",
+        "连体双生少女",
+        "特蕾娅",
+        "霓虹",
+        "吉尔伽美什",
+        "银尘",
+        "格兰仕",
+        "东赫"
+      ],
+      "current_task": "幽冥选使徒、处理存活女孩",
+      "event_ids": [
+        "E008",
+        "E009",
+        "E010",
+        "E011",
+        "E012"
+      ],
+      "plot_description": "三批人离心脏；幽冥撕杀精神浸染者、保留伤害转化者，将其寄养神氏家族；霓虹无感天赋被点明",
+      "result": "神音原型进入神氏家族、霓虹成使徒",
+      "relation_to_other_entries": [
+        {
+          "relation_type": "after",
+          "target_timeline_entry": "T001"
+        },
+        {
+          "relation_type": "before",
+          "target_timeline_entry": "T003"
+        }
+      ],
+      "confidence": 0.8
+    },
+    {
+      "timeline_entry_id": "T003",
+      "timeline_type": "flashback",
+      "sequence_index": 3,
+      "absolute_time": "四年前",
+      "relative_time": "回溯（四年前雾隐绿岛）",
+      "duration": "unknown",
+      "location": "雾隐绿岛",
+      "participants": [
+        "银尘",
+        "格兰仕",
+        "吉尔伽美什",
+        "漆拉"
+      ],
+      "current_task": "日常相处、接收魂兽暴动讯息",
+      "event_ids": [
+        "E013",
+        "E014",
+        "E015",
+        "E016",
+        "E017"
+      ],
+      "plot_description": "四使徒在绿岛日常嬉闹，漆拉到访告知北之森双魂兽暴动，吉尔伽美什神色凝重",
+      "result": "吉尔伽美什得知暴动、未决",
+      "relation_to_other_entries": [
+        {
+          "relation_type": "after",
+          "target_timeline_entry": "T002"
+        }
+      ],
+      "confidence": 0.8
+    }
+  ],
+  "cliffhanger_analysis": {
+    "enabled": false,
+    "last_scene_ids": [],
+    "immediate_conflicts": [],
+    "unfinished_actions": [],
+    "characters_in_danger": [],
+    "active_time_pressure": [],
+    "urgency": "unknown",
+    "must_continue_states": [],
+    "resolved_at_chapter_end": false
+  },
+  "style_profile": {
+    "narrative_person": "第三人称",
+    "viewpoint_pattern": "第三人称限知，分场景在特蕾娅、幽冥、银尘视角间切换",
+    "sentence_length_tendency": "偏长，多描写性长句",
+    "paragraph_length_tendency": "偏长",
+    "dialogue_ratio": "medium",
+    "action_description_ratio": "high",
+    "environment_description_ratio": "medium",
+    "psychological_description_ratio": "high",
+    "dominant_sensory_channels": [
+      "视觉（刀刃、冰晶、血肉）",
+      "触觉（冰冷、撕裂）",
+      "听觉（尖叫、咯咯骨声）",
+      "嗅觉（恶臭）"
+    ],
+    "common_rhetorical_devices": [
+      "比喻（死神镰刀、莲花、骨蛇、蛔虫、黑色莲花）",
+      "通感（阴冷鬼手摸食道）"
+    ],
+    "dominant_emotional_tones": [
+      "恐怖",
+      "绝望",
+      "温柔（霓虹线）",
+      "凝重"
+    ],
+    "pace": "战斗段急促→心脏石室慢→绿岛段轻松后转凝重",
+    "pace_changes": [
+      "S001-S002战斗急促，S003对话慢，S004轻松转沉重"
+    ],
+    "transition_patterns": [
+      "【时间】【地点】双重标记切换",
+      "六年前→四年前时间跳跃"
+    ],
+    "distinctive_expression_patterns": [
+      "以身体恐怖（触角穿刺、肉块畸形）渲染恐惧",
+      "用‘阴冷鬼手摸食道/胃壁’具象化精神污染",
+      "战斗与温情并置"
+    ],
+    "evidence_examples": [
+      "仿佛死神挥舞着镰刀，不停地在耳边擦过",
+      "仿佛一只沾满黏液的滑腻冰冷黑手，沿着你的食道一直摸进你的胃里",
+      "如同一朵黑色的莲花"
+    ]
+  },
+  "entity_resolution_issues": [
+    {
+      "issue_id": "ER001",
+      "references": [
+        "连体双生少女",
+        "存活女孩",
+        "神氏家族小女儿"
+      ],
+      "possible_resolution": "依据previous_context，存活者即日后神音；寄养神氏家族对应‘神音初登场编造神斯之妹身份’",
+      "resolution_status": "unresolved",
+      "confidence": 0.5,
+      "reason": "本章未点名，仅据previous_context推测为神音，不能在本章事实层断定"
+    },
+    {
+      "issue_id": "ER002",
+      "references": [
+        "橙色的闪电",
+        "霓虹",
+        "红发男子"
+      ],
+      "possible_resolution": "三称谓指同一人，本章已自报名霓虹",
+      "resolution_status": "resolved",
+      "confidence": 0.9,
+      "reason": "本章明确红发男子自报名‘霓虹’，与前章‘橙色身影’为同一新一代侵蚀者"
+    }
+  ],
+  "continuity_issues": [
+    {
+      "issue_id": "CI001",
+      "issue_type": "epithet_ambiguity",
+      "severity": "info",
+      "current_chapter_value": "本章霓虹为新一代侵蚀者、特蕾娅使徒，具无感天赋",
+      "previous_context_value": "霓虹为四度使徒，红发赤膊刺青天使面容不会说话，侵蚀者，天赋无感",
+      "related_entities": [
+        "霓虹",
+        "特蕾娅"
+      ],
+      "description": "完全一致，无冲突",
+      "recommended_action": "none",
+      "evidence": []
+    },
+    {
+      "issue_id": "CI002",
+      "issue_type": "epithet_ambiguity",
+      "severity": "info",
+      "current_chapter_value": "本章幽冥收‘伤害转化魂力’天赋者为使徒、寄养神氏家族",
+      "previous_context_value": "神音为二度使徒/杀戮使徒，侵蚀者（连体双胞胎存活者），天赋伤害转化",
+      "related_entities": [
+        "幽冥",
+        "连体双生少女",
+        "神音"
+      ],
+      "description": "一致，本章交代神音成为幽冥使徒的起源，无冲突",
+      "recommended_action": "none",
+      "evidence": []
+    }
+  ],
+  "interpretation_candidates": [
+    {
+      "candidate_id": "IC001",
+      "interpretation_type": "motivation_inference",
+      "content": "幽冥选择伤害转化者并非因其魂力上限，而是无法承受精神浸染天赋的恐怖",
+      "supporting_observations": [
+        "幽冥自述真实理由是无法抵抗精神浸染的阴冷恶心"
+      ],
+      "alternative_explanations": [
+        "祭司称是因其天赋与幽冥异曲同工"
+      ],
+      "confidence": 0.6,
+      "canon_eligible": false
+    },
+    {
+      "candidate_id": "IC002",
+      "interpretation_type": "causality_inference",
+      "content": "北之森双魂兽暴动是四年前‘浩劫’的直接诱因",
+      "supporting_observations": [
+        "previous_context载四年前‘自由、宽恕暴动’引发浩劫",
+        "本章漆拉报此讯"
+      ],
+      "alternative_explanations": [
+        "也可能暴动被镇压、另有他因引发浩劫"
+      ],
+      "confidence": 0.55,
+      "canon_eligible": false
+    }
+  ],
+  "chapter_end_state": {
+    "current_time": "四年前（白天）",
+    "active_locations": [
+      "雾隐绿岛行宫前庭"
+    ],
+    "active_characters": [
+      "吉尔伽美什",
+      "漆拉",
+      "银尘",
+      "格兰仕"
+    ],
+    "ongoing_events": [
+      "吉尔伽美什与漆拉密谈北之森魂兽暴动"
+    ],
+    "unfinished_tasks": [
+      "应对自由、宽恕同时暴动（决议未出）"
+    ],
+    "unresolved_hooks": [
+      "H001",
+      "H002",
+      "H003"
+    ],
+    "critical_character_states": [
+      "吉尔伽美什神色凝重",
+      "银尘格兰仕被遣走不知情"
+    ],
+    "critical_item_states": [],
+    "next_chapter_continuity_constraints": [
+      "吉尔伽美什须就双魂兽暴动作决断",
+      "四年前浩劫由此而起（回溯线）"
+    ]
+  },
+  "validation_issues": [],
+  "quality_checks": {
+    "all_scenes_have_source_spans": true,
+    "all_critical_events_have_evidence": true,
+    "all_state_changes_have_evidence": true,
+    "dreams_and_memories_separated": true,
+    "character_claims_not_treated_as_confirmed_fact": true,
+    "planned_events_not_treated_as_occurred": true,
+    "unknown_values_not_fabricated": true,
+    "timeline_order_checked": true,
+    "entity_aliases_checked": true,
+    "latest_chapter_cliffhanger_checked": true
+  }
+}
