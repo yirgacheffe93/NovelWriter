@@ -2,7 +2,7 @@
 本项目主要是用来构建小说撰写的Agent/harness项目工程
 
 # 技术栈
-- 前端：React 18, TypeScript
+- 前端：Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS 4
 - 数据库：SQLite
 
 ---
