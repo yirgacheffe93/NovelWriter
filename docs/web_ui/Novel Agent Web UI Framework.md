@@ -1,6 +1,6 @@
 # Web UI Framework
 
-## 1. Purpose
+# 1. Purpose
 
 本项目的 Web UI 是一个面向小说创作与续写的工作台。
 
@@ -196,7 +196,7 @@ Project 折叠：
 
 ---
 
-# 5. Agent Panel
+# 5. Agent Panel Collapse
 
 Agent Panel 位于最右侧。
 
@@ -288,12 +288,13 @@ Settings
 - 切换项目
 - 搜索项目
 - 当前项目高亮
-- 删除项目
+- 归档项目（Archive）
 - 项目重命名
+
+第一版不提供物理删除：项目只允许归档，归档后从常用列表隐藏。
 
 后续可以增加：
 
-- Archive
 - Favorite
 - Tags
 - Project Settings
@@ -354,8 +355,10 @@ Chapter Sidebar 负责当前 Project 内的章节管理。
 - 创建章节
 - 选择章节
 - 修改章节标题
-- 删除章节
+- 删除章节（仅限未被引用的章节）
 - 当前章节高亮
+
+删除章节是物理删除，只允许用于未被 Session、AgentRun、Generation 引用、也未保留任何 Harness Trace 的章节。被引用过的章节应从常用列表隐藏而不是删除。UI 必须二次确认。
 
 ---
 
@@ -363,17 +366,27 @@ Chapter Sidebar 负责当前 Project 内的章节管理。
 
 章节必须有明确顺序。
 
-例如：
-
 ```ts
-Chapter {
-  id
-  projectId
-  index
-  title
-  content
+export interface Chapter {
+  id: string;
+  projectId: string;
+  index: number;
+  title: string;
+  filePath: string;
+  status: ChapterStatus;
+  wordCount: number;
+  revision: number;
+  contentHash: string;
+  createdAt: string;
+  updatedAt: string;
 }
+
+export type ChapterStatus =
+  | "draft"
+  | "final";
 ```
+
+正文不属于这份结构：Chapter content 的 Source of Truth 是 Markdown 文件，SQLite 只保存 metadata。Editor 按 `filePath` 读取正文。
 
 UI 默认按照：
 
@@ -545,11 +558,15 @@ Target Length
 
 ────────────────
 
+Context（默认折叠，第一版可为空）
+
+────────────────
+
 Generation
 
 正文……
 
-[ Accept ] [ Retry ]
+[ Accept ] [ Retry ] [ Discard ]
 
 ────────────────
 ```
@@ -558,7 +575,7 @@ Generation
 
 # 13. Agent Panel Sections
 
-Agent Panel 长期可以包含四个 section：
+这是「面板分区」维度。Agent Panel 长期可以包含四个 section：
 
 ```text
 Instruction
@@ -570,7 +587,9 @@ Execution
 Generation
 ```
 
-未来：
+MVP 实现 Instruction 与 Generation，Context 与 Execution 先占位。
+
+另一个维度是「Agent 执行流程」，它不等于面板分区，未来在 Execution View 中展示：
 
 ```text
 Instruction
@@ -590,9 +609,9 @@ Review
 
 ---
 
-# 14. MVP Agent Panel
+# 14. Agent Panel Input
 
-第一版只实现：
+本节只描述 MVP Agent Panel 的输入区；面板整体结构见第 12 节，MVP 范围以第 32 节验收标准为准。
 
 ## Instruction
 
@@ -622,25 +641,37 @@ Review
 
 可以允许自由输入。
 
+生成长度属于请求内容，随 LLMCall 保存，Generation 不重复保存。
+
 ---
 
 ## Continue
 
-点击后发起 Agent Task。
+点击后创建 AgentRun。
 
-状态：
+AgentRun 的持久化状态：
 
 ```text
-Idle
+pending
 
+running
+
+completed
+
+failed
+
+cancelled
+```
+
+UI 展示时可以在 `running` 内部细分，例如：
+
+```text
 Preparing Context
 
 Generating
-
-Completed
-
-Failed
 ```
+
+这些是依据 AgentEvent 派生的显示标签，不是持久化状态，不要写回 AgentRun。
 
 ---
 
@@ -694,15 +725,9 @@ Generation disposition = accepted
 
 ## Retry
 
-Retry 使用相同：
+Retry 复用原 Generation 的 Context、Instruction 与 Target Length 重新生成。
 
-```text
-Context
-Instruction
-Generation Settings
-```
-
-重新生成。
+这些内容不重复保存在 Generation 上，而是随原 Generation 的 `llmCallId` 指向的 LLMCall 保存，Retry 时按 `llmCallId` 取回。
 
 需要创建新的 AgentRun、LLMCall 和 Generation Record。新 Generation 通过 `parentGenerationId` 指向当前 Generation，旧 Run 保持 completed。
 
@@ -799,28 +824,44 @@ Evaluator
 
 每一个需要交给用户审阅的 Agent 输出都应该生成 Generation Record。内部 Planner / Reviewer 调用只记录 LLMCall。
 
-例如：
-
 ```ts
-Generation {
-  id
-
-  runId
-  llmCallId
-
-  output
-
-  status
-  disposition
-
-  baseChapterRevision
-  baseContentHash
-  operation
-
-  createdAt
-  decidedAt
+export interface Generation {
+  id: string;
+  runId: string;
+  llmCallId: string;
+  role: GenerationRole;
+  output?: string;
+  baseChapterRevision?: number;
+  baseContentHash?: string;
+  operation?: GenerationOperation;
+  parentGenerationId?: string;
+  status: GenerationStatus;
+  disposition: GenerationDisposition;
+  createdAt: string;
+  decidedAt?: string;
 }
+
+export type GenerationRole =
+  | "planner"
+  | "writer"
+  | "reviewer"
+  | "summarizer";
+
+export type GenerationStatus =
+  | "completed"
+  | "failed";
+
+export type GenerationDisposition =
+  | "pending"
+  | "accepted"
+  | "discarded";
+
+export type GenerationOperation =
+  | "append"
+  | "replace";
 ```
+
+`status` 表示模型生成是否成功；`disposition` 表示用户如何处理成功结果。`disposition` 只允许从 `pending` 转为 `accepted` 或 `discarded`，两个终止值不能互相转换。
 
 后续 UI 可以查看：
 
@@ -976,21 +1017,20 @@ AppShell
 │
 └── AgentPanel
     ├── AgentInput
-    ├── GenerationStatus
-    ├── GenerationDisposition
-    └── GenerationPreview
+    ├── GenerationPreview
+    └── GenerationActions
 ```
 
-后续增加：
+后续在 AgentPanel 下增加：
 
 ```text
-AgentPanel
+ContextView
 
-├── ContextView
-├── PlanView
-├── ExecutionView
-├── GenerationPreview
-└── GenerationHistory
+PlanView
+
+ExecutionView
+
+GenerationHistory
 ```
 
 ---
@@ -999,7 +1039,7 @@ AgentPanel
 
 至少需要维护以下状态：
 
-```ts
+```text
 currentProjectId
 
 currentChapterId
@@ -1016,6 +1056,8 @@ chapterSaveStatus
 
 agentInstruction
 
+agentTargetLength
+
 agentStatus
 
 currentGeneration
@@ -1023,7 +1065,13 @@ currentGeneration
 currentGenerationDisposition
 ```
 
-`agentStatus` 对应 AgentRun 的执行状态；`currentGenerationDisposition` 对应用户对生成结果的处理状态，两者不能共用一个枚举。
+`agentStatus` 对应 `AgentRunStatus`：`pending` / `running` / `completed` / `failed` / `cancelled`。
+
+`currentGenerationDisposition` 对应 `GenerationDisposition`：`pending` / `accepted` / `discarded`。
+
+两者不能共用一个枚举。
+
+UI 偏好（Sidebar 与 Agent Panel 折叠状态、Theme、最近打开的 Project）属于 UI State，持久化在浏览器 localStorage，不进入 Server State。详见 Persistence Model。
 
 ---
 
@@ -1044,6 +1092,7 @@ UI State
 Server State：
 
 ```text
+session
 projects
 chapters
 chapter
@@ -1061,6 +1110,26 @@ active panel
 ```
 
 避免所有状态塞进一个大的全局 store。
+
+---
+
+## 24.1 Session
+
+AgentRun 必须归属一个 Session（`agent_runs.session_id` 非空），因此 UI 在发起 Agent 任务前必须先拿到当前 Project 的 Session。
+
+```text
+打开 Project
+    ↓
+按 projectId 查找 active Session
+    ↓
+存在则复用，不存在则创建
+    ↓
+发起 Continue / Retry（创建 AgentRun）
+```
+
+Session 属于 Server State，持久化在 SQLite。
+
+Session 只允许从 `active` 转为 `closed`，关闭前必须清空 `activeChapterId`。第一版 UI 不提供显式的关闭入口。
 
 ---
 
@@ -1087,7 +1156,7 @@ Chapter：
 例如：
 
 ```text
-/projects/novel-001/chapters/chapter-012
+/projects/project_xxx/chapters/chapter_xxx
 ```
 
 刷新页面后必须能够恢复到对应章节。
@@ -1096,7 +1165,30 @@ Chapter：
 
 ---
 
-# 26. Suggested Technology
+# 26. Agent API
+
+UI 不直接调用模型，也不直接操作 SQLite，而是通过 Harness 提供的 Agent API 访问 Agent 能力。
+
+本节只约定 UI 依赖的最小操作集合；权威契约由 Harness 定义，本文档不做展开。
+
+| Operation | 输入 | 输出 |
+|---|---|---|
+| Continue | projectId, chapterId, instruction, targetLength | runId, generationId |
+| Retry | generationId | runId, generationId |
+| Accept | generationId, baseChapterRevision, baseContentHash | 更新后的 Chapter revision |
+| Discard | generationId | disposition |
+| Get Run | runId | AgentRun 与 AgentEvent 列表 |
+| List Generations | chapterId | Generation 列表 |
+
+约定：
+
+- Accept 必须回传客户端持有的 `baseChapterRevision` 与 `baseContentHash`，由服务端检测冲突；冲突时返回 stale generation conflict，不能覆盖较新的正文
+- 失败通过局部错误返回，不能导致整个页面崩溃
+- 第一版不要求 streaming；后续可以增加事件流接口供 Execution View 使用
+
+---
+
+# 27. Suggested Technology
 
 项目采用 TypeScript。
 
@@ -1153,7 +1245,7 @@ ProseMirror
 
 ---
 
-# 27. Responsive Strategy
+# 28. Responsive Strategy
 
 第一阶段：
 
@@ -1177,7 +1269,7 @@ Desktop First
 
 ---
 
-# 28. Visual Style
+# 29. Visual Style
 
 整体风格：
 
@@ -1215,7 +1307,7 @@ Cursor
 
 ---
 
-# 29. Interaction Priority
+# 30. Interaction Priority
 
 主要使用场景：
 
@@ -1241,9 +1333,9 @@ Accept
 
 ---
 
-# 30. MVP Development Order
+# 31. MVP Development Order
 
-Codex 应按以下顺序开发。
+开发按以下顺序进行。
 
 ## Phase 1 — Static Layout
 
@@ -1315,7 +1407,7 @@ Auto Save
 接入：
 
 ```text
-Agent API
+Agent API（见第 26 节）
 ```
 
 完成：
@@ -1356,7 +1448,7 @@ Generation History
 
 ---
 
-# 31. MVP Acceptance Criteria
+# 32. MVP Acceptance Criteria
 
 第一阶段 UI 完成后，用户必须能够完成以下流程：
 
@@ -1408,7 +1500,7 @@ Editor 始终自动填满剩余空间。
 
 ---
 
-# 32. Non-Goals
+# 33. Non-Goals
 
 当前阶段明确不实现：
 
@@ -1442,7 +1534,7 @@ Billing
 
 ---
 
-# 33. Core Mental Model
+# 34. Core Mental Model
 
 整个 Web UI 始终围绕以下结构设计：
 
