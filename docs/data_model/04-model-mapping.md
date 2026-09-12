@@ -143,7 +143,7 @@ Context
 
 完整模型 Request / Response 保存在 `llm_calls`，因此 replay 不依赖 Context cache。
 
-Generation 通过 `llmCallId` 关联准确的模型调用，并以 `status` 表示生成结果、以 `disposition` 表示用户的 Accept / Discard 决策。
+Generation 通过 `llmCallId` 关联准确的模型调用，并以 `status` 表示生成结果、以 `disposition` 表示生成结果是否已写入正文。
 
 ---
 

@@ -1052,7 +1052,7 @@ export interface Generation {
   disposition: GenerationDisposition;
 
   createdAt: string;
-  decidedAt?: string;
+  settledAt?: string;
 }
 ```
 
@@ -1075,17 +1075,20 @@ export type GenerationStatus =
 
 export type GenerationDisposition =
   | "pending"
-  | "accepted"
-  | "discarded";
+  | "applied"
+  | "conflict";
 
 export type GenerationOperation =
   | "append"
   | "replace";
 ```
 
-`status` 表示模型生成是否成功，`disposition` 表示用户如何处理成功结果。失败 Generation 的 `output` 可以为空，且 disposition 必须保持 `pending`。
+`status` 表示模型生成是否成功，`disposition` 表示生成结果是否已进入正文。失败 Generation 的 `output` 可以为空，且 disposition 必须保持 `pending`。
 
-`disposition` 只允许从 `pending` 转为 `accepted` 或 `discarded`，两个终止值不能互相转换。
+`disposition` 只允许从 `pending` 转为 `applied` 或 `conflict`，两个终止值不能互相转换：
+
+- `applied`：写入前校验通过，正文已更新
+- `conflict`：写入前校验失败（Chapter revision 或 contentHash 已变化），正文未被覆盖
 
 准确的 model、instruction、prompt 和完整 response 通过 `llmCallId` 查询，避免在 Generation 与 LLMCall 中保存两份可能漂移的数据。
 
@@ -1147,11 +1150,11 @@ CREATE TABLE generations (
         CHECK (status IN ('completed', 'failed')),
 
     disposition TEXT NOT NULL DEFAULT 'pending'
-        CHECK (disposition IN ('pending', 'accepted', 'discarded')),
+        CHECK (disposition IN ('pending', 'applied', 'conflict')),
 
     created_at TEXT NOT NULL,
 
-    decided_at TEXT,
+    settled_at TEXT,
 
     FOREIGN KEY (run_id)
         REFERENCES agent_runs(id)
@@ -1182,9 +1185,9 @@ CREATE TABLE generations (
     ),
 
     CHECK (
-        (disposition = 'pending' AND decided_at IS NULL)
+        (disposition = 'pending' AND settled_at IS NULL)
         OR
-        (disposition IN ('accepted', 'discarded') AND decided_at IS NOT NULL)
+        (disposition IN ('applied', 'conflict') AND settled_at IS NOT NULL)
     )
 );
 
@@ -1196,10 +1199,10 @@ ON generations(run_id, created_at);
 
 因为它属于 Harness Trace，而不是正式小说正文。
 
-只有：
+只有写入前校验通过：
 
 ```text
-Accept
+verify revision + contentHash
 ```
 
 之后，内容才进入 Chapter File。
@@ -1211,10 +1214,12 @@ Generated text
       ↓
 Generation
 
-Accept
+verify revision + contentHash
       ↓
 Chapter Content
 ```
+
+校验由系统在写入前自动执行，不需要用户确认；不一致时 Generation 记为 `conflict`，正文保持原样。
 
 ---
 
@@ -1240,7 +1245,7 @@ generation.created
 run.completed
 ```
 
-用户之后可能产生独立的 `generation.accept.started`、`generation.accepted` 或 `generation.discarded` 事件。
+写入正文时还会产生 `generation.write.started`，随后是 `generation.applied` 或 `generation.conflict`。
 
 未来还可以增加：
 
@@ -1284,9 +1289,9 @@ export type AgentEventType =
   | "llm.requested"
   | "llm.completed"
   | "generation.created"
-  | "generation.accept.started"
-  | "generation.accepted"
-  | "generation.discarded";
+  | "generation.write.started"
+  | "generation.applied"
+  | "generation.conflict";
 ```
 
 `data` 使用 JSON payload。
@@ -1639,14 +1644,14 @@ export interface GenerationRepository {
   updateDisposition(
     id: string,
     disposition: GenerationDisposition,
-    decidedAt: string
+    settledAt: string
   ): Promise<void>;
 }
 ```
 
 `saveContent` 使用 optimistic concurrency control。`expectedRevision` 与当前 Chapter 不一致时必须失败，不能覆盖较新的正文。
 
-Accept 由应用层 service 协调 ChapterRepository、GenerationRepository 和 SessionPersistence；任何单一 Repository 都不跨边界隐藏这项操作。
+写入由应用层 service 协调 ChapterRepository、GenerationRepository 和 SessionPersistence；任何单一 Repository 都不跨边界隐藏这项操作。
 
 ---
 
@@ -1814,98 +1819,72 @@ create Generation
 generation.created
         ↓
 run.completed
-        ↓
-Preview
 ```
 
-此时：
-
-```text
-Chapter Content
-```
-
-没有发生变化。
+Generation 创建完成后立即进入写入流程（见第 37 节）。
 
 ---
 
-# 37. Data Flow: Accept Generation
+# 37. Data Flow: Apply Generation
 
 ```text
-Generation Preview
-        ↓
-Accept
+Generation created
         ↓
 verify Generation status = completed
 and disposition = pending
         ↓
 verify Chapter revision + contentHash
         ↓
-generation.accept.started
+generation.write.started
 (contains expected result hash)
         ↓
 write temp file + atomic rename
         ↓
 SQLite transaction:
 update Chapter metadata
-Generation disposition = accepted
-generation.accepted
+Generation disposition = applied
+generation.applied
 ```
+
+写入由系统在生成完成后自动执行，不需要用户确认。
 
 这是非常重要的数据边界。
 
-Agent 永远不要默认直接覆盖小说正文。
+Agent 永远不要无条件覆盖小说正文：写入前必须校验 revision 与 contentHash。
 
-如果 Chapter 的 revision 或 contentHash 已变化，Accept 必须返回 stale generation conflict，由用户选择重新生成或人工合并。
+如果校验失败，不得写入正文：Generation disposition 记为 `conflict`，产生 `generation.conflict` 事件，并把冲突反馈到对话里。
 
-文件系统与 SQLite 不能共享一个原子事务。启动恢复程序查找只有 `generation.accept.started`、没有 `generation.accepted` 的操作：正文 hash 等于事件中的预期 hash 时完成 SQLite 更新，否则保留 Generation 为 pending 并报告冲突。
+文件系统与 SQLite 不能共享一个原子事务。启动恢复程序查找只有 `generation.write.started`、没有 `generation.applied` 的操作：正文 hash 等于事件中的预期 hash 时完成 SQLite 更新，否则保留 Generation 为 pending 并报告冲突。
 
 ---
 
-# 38. Data Flow: Retry
+# 38. Data Flow: Regenerate
+
+用户对结果不满意时，直接在对话里再说一句，不提供 Retry 按钮。
 
 ```text
 Generation A
       ↓
-Retry
+用户发送新指令
       ↓
 New AgentRun
       ↓
 Generation B
 ```
 
-Generation B：
-
-```text
-parentGenerationId = Generation A
-```
-
 原 Generation 不删除。
 
-Generation A 所属 AgentRun 在生成 A 后已经完成；Retry 创建新 Run，不回滚也不修改旧 Run 的终止状态。
+Generation A 所属 AgentRun 在生成 A 后已经完成；新的指令创建新 Run，不回滚也不修改旧 Run 的终止状态。
+
+`parentGenerationId` 不由 UI 建立，保留供未来表达生成谱系。
 
 这样可以分析：
 
 ```text
-为什么用户 Retry
-哪个版本最终 Accept
+用户在什么情况下再次生成
+每次生成是否成功写入（applied / conflict）
 哪种 Prompt 效果更好
 ```
-
----
-
-# 38.1 Data Flow: Discard
-
-```text
-Generation Preview
-        ↓
-Discard
-        ↓
-Generation disposition = discarded
-        ↓
-generation.discarded
-```
-
-Discard 不修改 Chapter，也不修改已经终止的 AgentRun。
 
 ---
 
@@ -2200,9 +2179,10 @@ LLM
 Generation
 → generation.created
 
-User
-→ generation.accepted
-→ generation.discarded
+写入
+→ generation.write.started
+→ generation.applied
+→ generation.conflict
 ```
 
 不要试图记录模型内部 reasoning。
@@ -2268,9 +2248,9 @@ CacheStore
                                │
                            Generation
                                │
-                            Preview
+                     verify revision + hash
                                │
-                             Accept
+                             applied
                                │
                                ▼
                          Chapter File

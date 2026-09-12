@@ -4,7 +4,7 @@
 
 本项目的 Web UI 是一个面向小说创作与续写的工作台。
 
-核心目标不是构建普通聊天页面，而是构建一个类似 IDE 的小说创作环境：
+核心目标是「以 Editor 为主视图、右栏为 Agent 对话」的小说创作环境：
 
 ```text
 Project → Chapter → Editor ← Agent
@@ -37,7 +37,7 @@ Chapter Editor 是整个页面的视觉和交互中心。
 
 ## 2.2 IDE-like Workspace
 
-整体交互参考现代 IDE，而不是普通 AI Chat 页面。
+整体空间布局参考现代 IDE：左侧导航、中间编辑、右侧 Agent。
 
 推荐参考的空间模型：
 
@@ -50,9 +50,9 @@ Projects → Chapters → Editor ← Agent
 
 左侧负责内容导航。
 
-右侧负责 Agent 能力。
+右侧是 Agent 对话区，负责表达意图。
 
-中间负责实际创作。
+中间负责实际创作，是视觉与交互的中心。
 
 ---
 
@@ -86,13 +86,12 @@ Projects → Chapters → Editor ← Agent
 ├─────────────┬─────────────────┬────────────────────────┬─────────────────┤
 │ Projects    │ Chapters        │ Chapter Editor         │ Agent Panel     │
 │             │                 │                        │                 │
-│ Novel A     │ Chapter 01      │ Chapter Title          │ Continue        │
+│ Novel A     │ Chapter 01      │ Chapter Title          │ 你：继续写…     │
 │ Novel B     │ Chapter 02      │                        │                 │
-│ Novel C     │ Chapter 03      │ Novel Content...       │ Instruction     │
+│ Novel C     │ Chapter 03      │ Novel Content...       │ Agent：夜幕…    │
 │             │ Chapter 04      │                        │                 │
-│             │                 │                        │ Context         │
-│             │                 │                        │ Plan            │
-│             │                 │                        │ Generation      │
+│             │                 │                        │                 │
+│             │                 │                        │ [ 输入框 ] [ ↑ ]│
 └─────────────┴─────────────────┴────────────────────────┴─────────────────┘
 ```
 
@@ -517,77 +516,69 @@ Editor 应该只是：
 />
 ```
 
-Agent 生成结果通过独立状态进入 Editor。
-
-这样后续可以实现：
+Agent 生成结果通过独立状态进入 Editor：
 
 ```text
 Generate
 ↓
-Preview
-↓
-Accept
+写入前校验 revision / contentHash
 ↓
 写入 Editor
 ```
 
-而不是 Agent 直接修改正文。
+Agent 可以写正文，但只能经这条通道写入，不允许无条件覆盖。
 
 ---
 
 # 12. Agent Panel
 
-Agent Panel 是用户操作 Novel Agent 的主要入口。
+Agent Panel 是用户与 Novel Agent 对话的入口，位于最右侧。
 
-第一版推荐结构：
+第一版结构：
 
 ```text
 Agent
 
 ────────────────
 
-Instruction
+[ 消息流 ]
 
-[ 继续写主角进入古城后的剧情        ]
+你 · 14:32
+继续写主角进入古城后的剧情
 
-Target Length
+Agent · 14:33 · 已写入正文
+夜幕完全落下的时候……
 
-[ 2000 words ]
-
-[ Continue ]
-
-────────────────
-
-Context（默认折叠，第一版可为空）
+[ 生成中... ]
 
 ────────────────
 
-Generation
+[ 输入框                        ] [ ↑ ]
 
-正文……
-
-[ Accept ] [ Retry ] [ Discard ]
+Enter 发送 · ⇧Enter 换行 · ⌘Z 撤销
 
 ────────────────
 ```
+
+对话区显示完整生成结果，同一份内容同时写入 Editor。
+
+Agent Panel 不提供 Accept / Retry / Discard 按钮。生成结果自动写入正文；「重试」等同于再说一句；「丢弃」用 Editor 的 ⌘Z。
 
 ---
 
 # 13. Agent Panel Sections
 
-这是「面板分区」维度。Agent Panel 长期可以包含四个 section：
+这是「面板分区」维度。Agent Panel 由两部分组成：
 
 ```text
-Instruction
+对话区
 
-Context
-
-Execution
-
-Generation
+输入区
 ```
 
-MVP 实现 Instruction 与 Generation，Context 与 Execution 先占位。
+消息流本身已经承载了 Instruction 与 Generation 的记录，不再单独分区。
+
+后续会增加 Context 与 Execution 两个展示分区（见第 16、17 节），它们属于 Phase 5。
 
 另一个维度是「Agent 执行流程」，它不等于面板分区，未来在 Execution View 中展示：
 
@@ -615,7 +606,7 @@ Review
 
 ## Instruction
 
-用户输入自然语言要求。
+用户在底部输入框里用自然语言描述要求。
 
 例如：
 
@@ -629,25 +620,11 @@ Review
 
 ---
 
-## Target Length
+## 发送
 
-例如：
+Enter 发送，Shift+Enter 换行。
 
-```text
-1000
-2000
-3000
-```
-
-可以允许自由输入。
-
-生成长度属于请求内容，随 LLMCall 保存，Generation 不重复保存。
-
----
-
-## Continue
-
-点击后创建 AgentRun。
+发送后创建 AgentRun。
 
 AgentRun 的持久化状态：
 
@@ -675,81 +652,72 @@ Generating
 
 ---
 
-# 15. Generation Preview
+## 生成参数
 
-Agent 生成内容不能直接覆盖 Editor。
+第一版不提供 Target Length 这类独立参数控件，字数、风格等要求直接写进指令文本。
 
-必须先进入 Preview。
-
-例如：
-
-```text
-Generation
-
-────────────────
-
-夜幕完全落下的时候……
-
-……
-
-────────────────
-
-[ Accept ]
-
-[ Retry ]
-
-[ Discard ]
-```
+这些内容属于请求内容，随 LLMCall 保存，Generation 不重复保存。
 
 ---
 
-## Accept
+# 15. 生成与写入
 
-Accept 后：
+生成结果不经过 Preview，直接写入 Chapter 正文。
+
+写入方式按指令自动判断：
 
 ```text
-Generation
-    ↓
-检查 Chapter revision / contentHash
-    ↓
-原子保存 Chapter
-    ↓
-Generation disposition = accepted
-    ↓
-刷新 Chapter Editor
+"继续写 / 往下写"        → append，追加到正文末尾
+
+"重写 / 改写 / 替换"     → replace，替换整章正文
 ```
 
-如果生成期间 Chapter 已被修改，Accept 显示 stale generation conflict，不能覆盖较新的正文。
+判断依据属于 Harness。UI 不提供「追加还是替换」的控件。
 
 ---
 
-## Retry
+## 写入前校验
 
-Retry 复用原 Generation 的 Context、Instruction 与 Target Length 重新生成。
+写入是破坏性操作，并发保护必须保留，只是从「用户点 Accept 时」挪到「自动写入前」：
 
-这些内容不重复保存在 Generation 上，而是随原 Generation 的 `llmCallId` 指向的 LLMCall 保存，Retry 时按 `llmCallId` 取回。
+```text
+Generation 生成完成
+    ↓
+校验 Chapter revision / contentHash 是否仍等于生成开始时的值
+    ↓
+一致   → 原子保存 Chapter，Generation disposition = applied
+    ↓
+不一致 → 不写入正文，Generation disposition = conflict
+        并在对话中提示「正文已变更，本次生成未写入」
+```
 
-需要创建新的 AgentRun、LLMCall 和 Generation Record。新 Generation 通过 `parentGenerationId` 指向当前 Generation，旧 Run 保持 completed。
+生成期间用户改过正文时，生成结果不会被写入，也不会覆盖较新的正文。
 
 ---
 
-## Discard
+## 撤销
 
-Discard：
+写入后正文只是一次普通编辑，撤销使用 Editor 的 ⌘Z。
 
-```text
-丢弃当前 Preview
-```
+撤销是纯前端行为，不落库；刷新页面后 undo 栈丢失。
 
-但后台可以保留 Generation Trace。
+---
 
-后台将 Generation disposition 更新为 `discarded`；旧 AgentRun 已经 completed，不随 Discard 改变。
+## 重试
+
+不提供 Retry 按钮。用户再说一句即可。
+
+每一次发送都会创建新的 AgentRun、LLMCall 和 Generation Record。
+
+UI 不再建立 Generation 之间的 `parentGenerationId` 关联，该字段保留供未来使用。
+
+后台保留每一次 Generation，用于 Harness Trace 与失败分析。
 
 ---
 
 # 16. Context View
 
-虽然第一版可以不实现完整 Context Manager，但 UI 要提前预留 Context 区域。
+属于 Phase 5。第一版不实现完整 Context Manager，也不在面板里预留区域。
 
 例如：
 
@@ -822,7 +790,9 @@ Evaluator
 
 # 18. Generation History
 
-每一个需要交给用户审阅的 Agent 输出都应该生成 Generation Record。内部 Planner / Reviewer 调用只记录 LLMCall。
+每一次写入正文的 Agent 输出都应该生成 Generation Record。内部 Planner / Reviewer 调用只记录 LLMCall。
+
+会话内的历史由对话区本身呈现；跨会话的完整历史仍由 Generation 记录支撑。
 
 ```ts
 export interface Generation {
@@ -838,7 +808,7 @@ export interface Generation {
   status: GenerationStatus;
   disposition: GenerationDisposition;
   createdAt: string;
-  decidedAt?: string;
+  settledAt?: string;
 }
 
 export type GenerationRole =
@@ -853,24 +823,24 @@ export type GenerationStatus =
 
 export type GenerationDisposition =
   | "pending"
-  | "accepted"
-  | "discarded";
+  | "applied"
+  | "conflict";
 
 export type GenerationOperation =
   | "append"
   | "replace";
 ```
 
-`status` 表示模型生成是否成功；`disposition` 表示用户如何处理成功结果。`disposition` 只允许从 `pending` 转为 `accepted` 或 `discarded`，两个终止值不能互相转换。
+`status` 表示模型生成是否成功；`disposition` 表示生成结果是否已进入正文。`disposition` 只允许从 `pending` 转为 `applied` 或 `conflict`，两个终止值不能互相转换。
 
 后续 UI 可以查看：
 
 ```text
 Generation History
 
-18:41 Continue
-18:32 Retry
-18:20 Continue
+18:41 继续写主角进入古城后的剧情
+18:32 再压抑一点
+18:20 重写这一段
 ```
 
 点击可以查看：
@@ -928,12 +898,12 @@ Generating chapter...
 
 错误应该局部展示。
 
-例如 Agent 请求失败：
+例如 Agent 请求失败时，错误显示在对话区里，正文不受影响：
 
 ```text
-Generation failed.
+Agent · 18:41 · 生成失败
 
-[ Retry ]
+本次生成没有写入正文。再说一句即可重试。
 ```
 
 不能因为 Agent API 失败导致整个页面崩溃。
@@ -982,12 +952,13 @@ Start writing...
 
 ---
 
-## No Generation
+## No Message
 
 Agent Panel：
 
 ```text
-Tell the agent what you want to write next.
+告诉 Agent 你想写什么。
+生成结果会直接写入编辑器，撤销用编辑器里的 ⌘Z。
 ```
 
 ---
@@ -1016,9 +987,9 @@ AppShell
 │   └── EditorStatus
 │
 └── AgentPanel
-    ├── AgentInput
-    ├── GenerationPreview
-    └── GenerationActions
+    ├── ChatMessageList
+    │   └── ChatMessage
+    └── Composer
 ```
 
 后续在 AgentPanel 下增加：
@@ -1054,22 +1025,16 @@ chapterDraft
 
 chapterSaveStatus
 
-agentInstruction
-
-agentTargetLength
+agentDraft
 
 agentStatus
 
-currentGeneration
-
-currentGenerationDisposition
+messages
 ```
 
-`agentStatus` 对应 `AgentRunStatus`：`pending` / `running` / `completed` / `failed` / `cancelled`。
+`messages` 是当前 Session 的对话记录，属于 Server State；每条 agent 消息携带对应 Generation 的 `disposition`。
 
-`currentGenerationDisposition` 对应 `GenerationDisposition`：`pending` / `accepted` / `discarded`。
-
-两者不能共用一个枚举。
+`agentStatus` 对应 `AgentRunStatus`：`pending` / `running` / `completed` / `failed` / `cancelled`。为 `null` 时表示没有进行中的 AgentRun。
 
 UI 偏好（Sidebar 与 Agent Panel 折叠状态、Theme、最近打开的 Project）属于 UI State，持久化在浏览器 localStorage，不进入 Server State。详见 Persistence Model。
 
@@ -1124,7 +1089,7 @@ AgentRun 必须归属一个 Session（`agent_runs.session_id` 非空），因此
     ↓
 存在则复用，不存在则创建
     ↓
-发起 Continue / Retry（创建 AgentRun）
+发送消息（创建 AgentRun）
 ```
 
 Session 属于 Server State，持久化在 SQLite。
@@ -1173,16 +1138,14 @@ UI 不直接调用模型，也不直接操作 SQLite，而是通过 Harness 提�
 
 | Operation | 输入 | 输出 |
 |---|---|---|
-| Continue | projectId, chapterId, instruction, targetLength | runId, generationId |
-| Retry | generationId | runId, generationId |
-| Accept | generationId, baseChapterRevision, baseContentHash | 更新后的 Chapter revision |
-| Discard | generationId | disposition |
+| Send | projectId, chapterId, instruction | runId, generationId |
 | Get Run | runId | AgentRun 与 AgentEvent 列表 |
 | List Generations | chapterId | Generation 列表 |
+| List Messages | chapterId | ChatMessage 列表 |
 
 约定：
 
-- Accept 必须回传客户端持有的 `baseChapterRevision` 与 `baseContentHash`，由服务端检测冲突；冲突时返回 stale generation conflict，不能覆盖较新的正文
+- 服务端在写入正文前校验 `baseChapterRevision` 与 `baseContentHash`；不一致时不写入正文，Generation 记为 `conflict`
 - 失败通过局部错误返回，不能导致整个页面崩溃
 - 第一版不要求 streaming；后续可以增加事件流接口供 Execution View 使用
 
@@ -1289,10 +1252,10 @@ editor-focused
 
 大量 Dashboard 图表
 
-聊天气泡式界面
-
 过度动画
 ```
+
+右侧是对话区，但视觉上要保持 IDE 的克制：不要彩色气泡、不要头像、不要拟人化文案。
 
 参考：
 
@@ -1318,15 +1281,11 @@ Cursor
     ↓
 阅读 / 修改正文
     ↓
-输入续写要求
+在对话区提出要求
     ↓
-Agent Generate
+Agent 生成并写入正文
     ↓
-Preview
-    ↓
-Accept
-    ↓
-继续编辑
+继续编辑（不满意就 ⌘Z，或再说一句）
 ```
 
 整个 UI 必须围绕这个闭环优化。
@@ -1413,19 +1372,15 @@ Agent API（见第 26 节）
 完成：
 
 ```text
-Instruction
+对话区
 
-Generate
+消息发送
 
 Loading State
 
-Generation Preview
+生成结果写入 Editor
 
-Accept
-
-Retry
-
-Discard
+⌘Z 撤销
 ```
 
 ---
@@ -1465,15 +1420,15 @@ Generation History
 
 6. 输入续写要求
 
-7. 点击 Continue
+7. 在对话区发送指令
 
-8. 查看生成结果
+8. 查看 Agent 的回复
 
-9. Accept 生成内容
+9. 系统检查 Chapter revision 并写入正文
 
-10. 系统检查 Chapter revision 并保存正文
+10. Editor 显示新内容
 
-11. Editor 刷新为已保存内容
+11. 按 ⌘Z 可以撤销这次写入
 ```
 
 同时：
@@ -1574,4 +1529,4 @@ What should happen next?
 AI-native Novel Writing IDE
 ```
 
-而不是一个带小说功能的聊天机器人。
+右侧是对话，但整个产品不是聊天机器人：正文是主体，对话只是驱动正文的方式。

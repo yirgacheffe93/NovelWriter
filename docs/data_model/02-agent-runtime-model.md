@@ -87,14 +87,14 @@ interface Generation {
   parentGenerationId?: string
 
   status: "completed" | "failed"
-  disposition: "pending" | "accepted" | "discarded"
+  disposition: "pending" | "applied" | "conflict"
 
   createdAt: string
-  decidedAt?: string
+  settledAt?: string
 }
 ```
 
-`status` 表示生成是否成功；`disposition` 表示用户如何处理结果。model、instruction、prompt 和完整 response 由 `llmCallId` 关联的 LLMCall 提供。
+`status` 表示生成是否成功；`disposition` 表示生成结果是否已进入正文（写入前校验通过为 `applied`，校验失败为 `conflict`）。model、instruction、prompt 和完整 response 由 `llmCallId` 关联的 LLMCall 提供。
 
 ---
 
@@ -130,10 +130,10 @@ generation.created
 
 run.completed
 
-generation.accepted
+generation.applied
 ```
 
-`run.completed` 在 Generation 创建并持久化后发生。Accept、Discard 或 Retry 不改变旧 AgentRun 的终止状态。
+`run.completed` 在 Generation 创建并持久化后发生。后续的写入（applied / conflict）或新指令都不改变旧 AgentRun 的终止状态。
 
 ---
 

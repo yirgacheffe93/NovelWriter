@@ -99,7 +99,7 @@ Context 选择策略
 
 Agent Planning
 
-Generation 是否 Accept
+生成结果是否写入正文
 
 Chapter 保存
 
@@ -291,7 +291,7 @@ LiteLLM 不知道：
 
 产生了哪个 Generation
 
-用户最后是否 Accept
+生成结果最终是否写入正文
 ```
 
 这些属于 Harness 自身语义。
@@ -789,7 +789,7 @@ provider unavailable
 
 Reviewer 判定不通过
 
-用户点击 Retry
+用户再说一句
 ```
 
 这种情况应该创建：
@@ -800,7 +800,7 @@ Reviewer 判定不通过
 
 因为 Agent 做出了新的执行决策。
 
-如果是用户在 Generation Preview 点击 Retry，还必须创建新的 AgentRun，并通过新 Generation 的 `parentGenerationId` 指向旧 Generation。旧 AgentRun 保持 completed。Run 内部的 Reviewer 重试只创建新的 LLMCall，不必创建新 Run。
+如果是用户发出新的指令，还必须创建新的 AgentRun。旧 AgentRun 保持 completed。Run 内部的 Reviewer 重试只创建新的 LLMCall，不必创建新 Run。
 
 ---
 
@@ -922,7 +922,7 @@ update LLMCall
    ↓
 create Generation
    ↓
-Generation Preview
+写入正文
 ```
 
 ---
