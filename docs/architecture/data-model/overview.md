@@ -164,17 +164,17 @@ data/
         └── ...
 ```
 
-当前仓库中的既有数据管线映射如下：
+Project 内的非正文数据按以下分类落到 project-relative path：
 
-| Current path | Data class | Future project-relative path |
-|---|---|---|
-| `data/raw/` | immutable/imported source | `sources/raw/` |
-| `data/new_generated/` | generated draft source | `sources/generated/` |
-| `data/chapters/` | derived chapter extraction | `artifacts/chapters/` |
-| `data/wiki/` | derived durable knowledge | `artifacts/wiki/` |
-| `data/wiki_tmp/` | build state | `artifacts/build-state/` |
+| Data class | Project-relative path |
+|---|---|
+| immutable/imported source | `sources/raw/` |
+| generated draft source | `sources/generated/` |
+| derived chapter extraction | `artifacts/chapters/` |
+| derived durable knowledge | `artifacts/wiki/` |
+| build state | `artifacts/build-state/` |
 
-本轮设计不要求立即移动已有文件。Repository 在迁移完成前负责兼容当前路径；新 Project 使用 project-relative path。
+Repository 负责解析这些路径；所有 Project 一律使用 project-relative path。
 
 运行时缓存：
 
@@ -304,8 +304,10 @@ Project
 
 ## 6.1 Chapter Metadata
 
+`ChapterMetadata` 是持久化在 SQLite 里的章节元数据，正文不在其中。
+
 ```ts
-export interface Chapter {
+export interface ChapterMetadata {
   id: string;
 
   projectId: string;
@@ -326,6 +328,16 @@ export interface Chapter {
 
   createdAt: string;
   updatedAt: string;
+}
+```
+
+应用层读取章节时使用 `ChapterDocument`。它是元数据与正文的组合视图，不落库，正文来自 Markdown 文件：
+
+```ts
+export interface ChapterDocument {
+  metadata: ChapterMetadata;
+
+  content: string;
 }
 ```
 
@@ -575,9 +587,9 @@ export interface ArtifactProvenance {
 
 规则：
 
-- `data/raw` 是导入来源，默认不可由 Editor 覆盖。
-- `data/new_generated` 是尚未进入正式 Chapter 的续写来源。
-- `data/chapters` 和 `data/wiki` 是持久化派生数据，必须携带 `ArtifactProvenance`。
+- `sources/raw` 是导入来源，默认不可由 Editor 覆盖。
+- `sources/generated` 是尚未进入正式 Chapter 的续写来源。
+- `artifacts/chapters` 和 `artifacts/wiki` 是持久化派生数据，必须携带 `ArtifactProvenance`。
 - `.cache` 不保存唯一的来源、canon level 或 schema version。
 - `sourceHash` 与当前来源不一致时，读取方必须把 Artifact 视为 stale。
 
@@ -2095,7 +2107,7 @@ story/outline.md
 characters/*.md
 ```
 
-同时兼容当前仓库的 `data/raw`、`data/new_generated`、`data/chapters`、`data/wiki` 和 `data/wiki_tmp`；其分类与未来路径见第 3 节。MVP 不要求先移动这些既有资产。
+派生数据与导入来源的分类见第 3 节。
 
 Memory 可以等 Agent Loop 跑通以后实现。
 

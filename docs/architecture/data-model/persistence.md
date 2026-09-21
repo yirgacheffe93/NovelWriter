@@ -91,7 +91,7 @@ relationship
 
 ## 5. Derived Artifacts
 
-现有 `data/chapters` 章节提取结果和 `data/wiki` 知识文档属于持久化派生数据。
+章节提取结果与 Wiki 知识文档属于持久化派生数据。
 
 它们必须携带来源路径、来源哈希、schema version 和 canon level。来源变化时将其标记为 stale 并重建，但不能像普通 cache 一样静默删除。
 

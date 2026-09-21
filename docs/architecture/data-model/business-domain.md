@@ -14,33 +14,20 @@
 
 一本小说对应一个 Project。
 
-```ts
-interface Project {
-  id: string
-  name: string
-  description?: string
-  status: "active" | "archived"
-  createdAt: string
-  updatedAt: string
-}
-```
+字段的权威定义（含 `rootPath` 与时间戳）见 [数据模型总览](overview.md) 第 4 节。从业务视角看，它只需要回答三件事：这本小说叫什么、怎么描述它、它是否还在使用中（`active` / `archived`）。
 
 ---
 
 ### Chapter
 
-Chapter 表示小说中的一个章节。
+Chapter 表示小说中的一个章节，由元数据与正文两部分组成。
 
-```ts
-interface Chapter {
-  id: string
-  projectId: string
-  index: number
-  title: string
-  content: string
-  status: "draft" | "final"
-}
-```
+正文的 Source of Truth 是 Markdown 文件，因此业务模型里分成两个类型：
+
+- `ChapterMetadata`：章节身份、顺序与保存状态，持久化在 SQLite
+- `ChapterDocument`：应用层读取章节时的组合视图，正文来自 Markdown 文件
+
+字段的权威定义见 [数据模型总览](overview.md) 第 6 节。
 
 ---
 

@@ -1,30 +1,25 @@
-import type { Chapter } from "@/lib/types";
+import {
+  SAVE_STATE_CLASS,
+  SAVE_STATE_TEXT,
+  type SaveState,
+} from "@/features/workspace/save-state";
+import { countWords } from "@/features/workspace/word-count";
+import type { ChapterMetadata } from "@/features/workspace/types";
 
 interface ChapterEditorProps {
-  chapter: Chapter;
+  chapter: ChapterMetadata;
   content: string;
   onChange: (value: string) => void;
-  /** 返回 true 表示已撤销一次生成写入，调用方无需再走浏览器原生 undo */
-  onUndo: () => boolean;
+  saveState: SaveState;
 }
 
 export default function ChapterEditor({
   chapter,
   content,
   onChange,
-  onUndo,
+  saveState,
 }: ChapterEditorProps) {
-  const characterCount = content.replace(/\s/g, "").length;
-
-  function handleKeyDown(event: React.KeyboardEvent<HTMLTextAreaElement>) {
-    const isUndo =
-      (event.metaKey || event.ctrlKey) &&
-      !event.shiftKey &&
-      event.key.toLowerCase() === "z";
-    if (isUndo && onUndo()) {
-      event.preventDefault();
-    }
-  }
+  const characterCount = countWords(content);
 
   return (
     <main className="flex min-w-0 flex-1 flex-col bg-white">
@@ -40,17 +35,19 @@ export default function ChapterEditor({
       <textarea
         value={content}
         onChange={(event) => onChange(event.target.value)}
-        onKeyDown={handleKeyDown}
         spellCheck={false}
         placeholder="Start writing..."
         className="min-h-0 flex-1 resize-none px-8 py-6 text-[15px] leading-7 outline-none placeholder:text-zinc-300"
       />
 
-      <div className="flex shrink-0 items-center justify-between border-t border-zinc-200 px-8 py-2 text-xs text-zinc-400">
-        <span className="tabular-nums">
+      <div className="flex shrink-0 items-center justify-between border-t border-zinc-200 px-8 py-2 text-xs">
+        <span className="tabular-nums text-zinc-400">
           {characterCount.toLocaleString()} 字
         </span>
-        <span>Saved</span>
+        {/* 侧栏/DB 是已保存字数，此处是当前草稿字数，脏时两者不等是正常的 */}
+        <span className={SAVE_STATE_CLASS[saveState]}>
+          {SAVE_STATE_TEXT[saveState]}
+        </span>
       </div>
     </main>
   );

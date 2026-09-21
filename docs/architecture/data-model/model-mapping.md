@@ -41,9 +41,7 @@ AgentRun
 
 ## 3. Business → Agent
 
-AgentRun 通过业务对象 ID 关联小说数据。
-
-例如：
+AgentRun 通过业务对象 ID 关联小说数据。完整定义见 [数据模型总览](overview.md) 第 14 节，这里只列出关联字段：
 
 ```ts
 interface AgentRun {
@@ -52,7 +50,7 @@ interface AgentRun {
   projectId: string
   chapterId?: string
 
-  type: "continue" | "rewrite"
+  type: AgentRunType
 }
 ```
 
@@ -61,7 +59,7 @@ interface AgentRun {
 错误示例：
 
 ```ts
-interface Chapter {
+interface ChapterMetadata {
   content: string
 
   model: string
@@ -73,7 +71,7 @@ interface Chapter {
 正确方式：
 
 ```text
-Chapter
+ChapterMetadata
    ↑
    │ target
 AgentRun
@@ -85,12 +83,11 @@ AgentRun
 
 例如 Chapter：
 
-应用层看到：
+应用层看到的是元数据与正文的组合视图。完整定义见 [数据模型总览](overview.md) 第 6 节：
 
 ```ts
-interface Chapter {
-  id: string
-  title: string
+interface ChapterDocument {
+  metadata: ChapterMetadata
   content: string
 }
 ```

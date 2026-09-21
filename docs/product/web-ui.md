@@ -363,29 +363,11 @@ Chapter Sidebar 负责当前 Project 内的章节管理。
 
 ## 8.2 Chapter Order
 
-章节必须有明确顺序。
+章节按 `ChapterMetadata.index` 升序排列。
 
-```ts
-export interface Chapter {
-  id: string;
-  projectId: string;
-  index: number;
-  title: string;
-  filePath: string;
-  status: ChapterStatus;
-  wordCount: number;
-  revision: number;
-  contentHash: string;
-  createdAt: string;
-  updatedAt: string;
-}
+`ChapterMetadata` 的权威定义见 [数据模型总览](../architecture/data-model/overview.md) 第 6 节，这里不再重复。UI 只依赖其中的 `index` / `title` / `status` / `wordCount` / `revision` / `contentHash`。
 
-export type ChapterStatus =
-  | "draft"
-  | "final";
-```
-
-正文不属于这份结构：Chapter content 的 Source of Truth 是 Markdown 文件，SQLite 只保存 metadata。Editor 按 `filePath` 读取正文。
+正文不在元数据里：Chapter content 的 Source of Truth 是 Markdown 文件。Editor 按 `filePath` 读取正文，写入前用 `revision` / `contentHash` 做并发校验。
 
 UI 默认按照：
 
@@ -794,44 +776,9 @@ Evaluator
 
 会话内的历史由对话区本身呈现；跨会话的完整历史仍由 Generation 记录支撑。
 
-```ts
-export interface Generation {
-  id: string;
-  runId: string;
-  llmCallId: string;
-  role: GenerationRole;
-  output?: string;
-  baseChapterRevision?: number;
-  baseContentHash?: string;
-  operation?: GenerationOperation;
-  parentGenerationId?: string;
-  status: GenerationStatus;
-  disposition: GenerationDisposition;
-  createdAt: string;
-  settledAt?: string;
-}
+`Generation` 的权威定义见 [数据模型总览](../architecture/data-model/overview.md) 第 16 节，这里不再重复。UI 只依赖其中的 `id` / `runId` / `role` / `output` / `status` / `disposition` / `operation` / `settledAt`。
 
-export type GenerationRole =
-  | "planner"
-  | "writer"
-  | "reviewer"
-  | "summarizer";
-
-export type GenerationStatus =
-  | "completed"
-  | "failed";
-
-export type GenerationDisposition =
-  | "pending"
-  | "applied"
-  | "conflict";
-
-export type GenerationOperation =
-  | "append"
-  | "replace";
-```
-
-`status` 表示模型生成是否成功；`disposition` 表示生成结果是否已进入正文。`disposition` 只允许从 `pending` 转为 `applied` 或 `conflict`，两个终止值不能互相转换。
+`status` 表示模型生成是否成功；`disposition` 表示生成结果是否已进入正文，只允许从 `pending` 转为 `applied` 或 `conflict`。
 
 后续 UI 可以查看：
 
@@ -1032,7 +979,7 @@ agentStatus
 messages
 ```
 
-`messages` 是当前 Session 的对话记录，属于 Server State；每条 agent 消息携带对应 Generation 的 `disposition`。
+`messages` 是当前 Session 的对话记录，属于 Server State。它不是持久化实体，而是由 AgentRun 与 Generation 投影得到的读取视图，字段与查询语义见 [Agent Runtime 模型](../architecture/data-model/agent-runtime.md) 第 3 节。
 
 `agentStatus` 对应 `AgentRunStatus`：`pending` / `running` / `completed` / `failed` / `cancelled`。为 `null` 时表示没有进行中的 AgentRun。
 
@@ -1148,6 +1095,32 @@ UI 不直接调用模型，也不直接操作 SQLite，而是通过 Harness 提�
 - 服务端在写入正文前校验 `baseChapterRevision` 与 `baseContentHash`；不一致时不写入正文，Generation 记为 `conflict`
 - 失败通过局部错误返回，不能导致整个页面崩溃
 - 第一版不要求 streaming；后续可以增加事件流接口供 Execution View 使用
+
+---
+
+## 26.1 Workspace API
+
+Agent 之外，UI 还需要一组业务读写操作。它与 Agent API 同层，不经过 LLM 模块。
+
+| Operation | 输入 | 输出 |
+|---|---|---|
+| List Projects | — | Project[] |
+| Create Project | name | Project |
+| Rename Project | projectId, name | Project |
+| Archive Project | projectId | Project |
+| List Chapters | projectId | ChapterMetadata[] |
+| Create Chapter | projectId, title | ChapterMetadata |
+| Rename Chapter | chapterId, title | ChapterMetadata |
+| Delete Chapter | chapterId | — |
+| Read Chapter | chapterId | ChapterDocument |
+| Save Chapter Content | chapterId, content, expectedRevision | ChapterMetadata |
+
+约定：
+
+- `Save Chapter Content` 必须携带 `expectedRevision`，不一致时返回冲突，不得覆盖正文
+- `Delete Chapter` 只允许用于未被 Session / AgentRun / Generation 引用的章节
+- Project 不提供物理删除，只有 `Archive`
+- 返回的 `ChapterDocument` 是元数据与正文的组合视图，正文来自 Markdown 文件
 
 ---
 
@@ -1294,6 +1267,28 @@ Agent 生成并写入正文
 
 # 31. MVP Development Order
 
+## 31.1 阶段定义
+
+文档里出现的「第一版」「第一阶段」「MVP」「Phase N」含义如下。
+
+**MVP = 第一版 = Phase 1 到 Phase 4。** Phase 5 属于 MVP 之后。
+
+| 阶段 | 内容 | 完成条件 |
+|---|---|---|
+| Phase 1 | 静态布局 | 四栏布局、两个 Sidebar 与 Agent Panel 可独立折叠、Editor 自动填充剩余空间；数据来自 mock |
+| Phase 2 | 项目 / 章节导航 | 点击可切换项目与章节，URL 反映当前章节，刷新后仍处于同一章节 |
+| Phase 3 | Editor 持久化 | 正文可读写，保存状态可见，并发保存有明确冲突处理 |
+| Phase 4 | Agent 生成 | 对话可发送指令，生成结果经校验写入正文，可撤销 |
+| Phase 5 | Agent Trace | Context / Execution / Generation History 视图（MVP 之外） |
+
+**当前阶段：Phase 1 已完成，Phase 2 未开始。**
+
+第 32 节的验收标准针对完整 MVP（Phase 4 结束），不是 Phase 1。
+
+---
+
+## 31.2 开发顺序
+
 开发按以下顺序进行。
 
 ## Phase 1 — Static Layout
@@ -1405,7 +1400,7 @@ Generation History
 
 # 32. MVP Acceptance Criteria
 
-第一阶段 UI 完成后，用户必须能够完成以下流程：
+MVP（Phase 1 到 Phase 4）完成后，用户必须能够完成以下流程：
 
 ```text
 1. 打开应用

@@ -1,21 +1,14 @@
-import AppShell from "@/components/AppShell";
-import {
-  mockChapterContents,
-  mockChapters,
-  mockProjects,
-} from "@/lib/mock-data";
+import EmptyWorkspace from "@/features/workspace/components/EmptyWorkspace";
+import { listProjects } from "@/features/workspace/server/project-repository";
+import { redirect } from "next/navigation";
 
-export default function Page() {
-  const currentProject = mockProjects[0];
-  const currentChapter = mockChapters[0];
+// 项目列表读自 SQLite，必须动态渲染，否则 build 时会把首屏静态化
+export const dynamic = "force-dynamic";
 
-  return (
-    <AppShell
-      projects={mockProjects}
-      chapters={mockChapters}
-      initialChapterContent={mockChapterContents[currentChapter.id] ?? ""}
-      currentProject={currentProject}
-      currentChapter={currentChapter}
-    />
-  );
+export default async function Page() {
+  const projects = await listProjects();
+  if (projects.length === 0) {
+    return <EmptyWorkspace />;
+  }
+  redirect(`/projects/${projects[0].id}`);
 }
