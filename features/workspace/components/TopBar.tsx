@@ -1,4 +1,3 @@
-import { Settings } from "lucide-react";
 import {
   SAVE_STATE_CLASS,
   SAVE_STATE_TEXT,
@@ -30,13 +29,6 @@ export default function TopBar({
         <span className={SAVE_STATE_CLASS[saveState]}>
           {SAVE_STATE_TEXT[saveState]}
         </span>
-        <button
-          type="button"
-          aria-label="Settings"
-          className="text-zinc-400 transition-colors hover:text-zinc-900"
-        >
-          <Settings size={15} />
-        </button>
       </div>
     </header>
   );

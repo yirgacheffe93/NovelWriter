@@ -50,6 +50,15 @@ export function createChapter(
   projectId: string,
   title: string,
 ): ChapterMetadata {
+  return createChapterWithContent(projectId, title, "");
+}
+
+/** 创建带正文的章节（txt 导入用）：wordCount / contentHash 按正文计算。 */
+export function createChapterWithContent(
+  projectId: string,
+  title: string,
+  content: string,
+): ChapterMetadata {
   const trimmed = title.trim();
   if (!trimmed) {
     throw new Error("章节标题不能为空");
@@ -78,16 +87,24 @@ export function createChapter(
     title: trimmed,
     filePath,
     status: "draft",
-    wordCount: 0,
+    wordCount: countWords(content),
     revision: 0,
-    contentHash: createHash("sha256").update("").digest("hex"),
+    contentHash: createHash("sha256").update(content).digest("hex"),
     createdAt: now,
     updatedAt: now,
   };
 
-  writeChapterFile(filePath, "");
+  writeChapterFile(filePath, content);
   insertChapterRow(chapter);
   return chapter;
+}
+
+/** txt 导入批量建章：逐章走 createChapterWithContent（无跨章事务，见其注释）。 */
+export function importChapters(
+  projectId: string,
+  items: { title: string; content: string }[],
+): ChapterMetadata[] {
+  return items.map((item) => createChapterWithContent(projectId, item.title, item.content));
 }
 
 /** 读取章节正文。文件不存在视为空章节（新建章节的正文就是空文件）。 */

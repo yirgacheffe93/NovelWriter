@@ -17,6 +17,7 @@ import {
   createChapterAction,
   createProjectAction,
   deleteChapterAction,
+  importNovelAction,
   renameChapterAction,
   renameProjectAction,
   restoreProjectAction,
@@ -264,6 +265,36 @@ export default function AppShell({
     }
   }
 
+  async function handleImportNovel(file: File) {
+    try {
+      const formData = new FormData();
+      formData.append("file", file);
+      const imported = await importNovelAction(formData);
+
+      // 本地状态补齐导入结果：切项目时布局若未重挂载，侧栏/会话仍需立即正确
+      const importedChapters = imported.items.map((item) => item.chapter);
+      setProjects((prev) => [...prev, imported.project]);
+      setChapters((prev) => [...prev, ...importedChapters]);
+      const next = { ...sessionsRef.current };
+      for (const { chapter, content } of imported.items) {
+        next[chapter.id] = {
+          content,
+          savedContent: content,
+          revision: chapter.revision,
+          status: "idle",
+        };
+      }
+      applySessions(next);
+      setDialog(null);
+      router.push(
+        `/projects/${imported.project.id}/chapters/${importedChapters[0].id}`,
+      );
+    } catch (error) {
+      // 原型阶段不做错误 UI：弹窗保持打开，用户可重试或取消
+      console.error("导入小说失败", error);
+    }
+  }
+
   async function handleRenameChapter(title: string) {
     if (dialog?.kind !== "renameChapter") return;
     try {
@@ -410,6 +441,7 @@ export default function AppShell({
       {dialog?.kind === "newProject" && (
         <NewProjectDialog
           onCreate={handleCreateProject}
+          onImport={handleImportNovel}
           onClose={() => setDialog(null)}
         />
       )}

@@ -1,24 +1,36 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 interface NewProjectDialogProps {
   /** 只回传用户填写的文本，实体创建与状态变更由 AppShell 负责 */
   onCreate: (name: string, description: string) => void;
+  /** 拖入/选择 .txt 文件即导入（新建同名项目并拆分章节），状态变更由调用方负责 */
+  onImport: (file: File) => void;
   onClose: () => void;
 }
 
 export default function NewProjectDialog({
   onCreate,
+  onImport,
   onClose,
 }: NewProjectDialogProps) {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
+  const [dragOver, setDragOver] = useState(false);
+  const fileInputRef = useRef<HTMLInputElement>(null);
   const canSubmit = name.trim().length > 0;
 
   function submit() {
     if (!canSubmit) return;
     onCreate(name.trim(), description.trim());
+  }
+
+  function handleFiles(files: FileList | null) {
+    const file = files?.[0];
+    if (file && file.name.toLowerCase().endsWith(".txt")) {
+      onImport(file);
+    }
   }
 
   return (
@@ -87,6 +99,55 @@ export default function NewProjectDialog({
             </button>
           </div>
         </form>
+
+        <div className="mt-4 flex items-center gap-3 text-[11px] text-zinc-300">
+          <span className="h-px flex-1 bg-zinc-100" />
+          或从 txt 导入
+          <span className="h-px flex-1 bg-zinc-100" />
+        </div>
+
+        {/* 拖拽/点击导入区：拖入 .txt 即导入，点击打开文件选择 */}
+        <div
+          role="button"
+          tabIndex={0}
+          onClick={() => fileInputRef.current?.click()}
+          onKeyDown={(event) => {
+            if (event.key === "Enter" || event.key === " ") {
+              fileInputRef.current?.click();
+            }
+          }}
+          onDragOver={(event) => {
+            event.preventDefault();
+            setDragOver(true);
+          }}
+          onDragLeave={() => setDragOver(false)}
+          onDrop={(event) => {
+            event.preventDefault();
+            setDragOver(false);
+            handleFiles(event.dataTransfer.files);
+          }}
+          className={`mt-3 flex cursor-pointer flex-col items-center gap-1 rounded border border-dashed px-3 py-4 text-center transition-colors ${
+            dragOver
+              ? "border-zinc-400 bg-zinc-50"
+              : "border-zinc-300 hover:border-zinc-400 hover:bg-zinc-50"
+          }`}
+        >
+          <span className="text-xs text-zinc-500">拖入 .txt 小说文件</span>
+          <span className="text-[11px] text-zinc-400">
+            将新建同名项目，并按章节标题自动拆分
+          </span>
+          <input
+            ref={fileInputRef}
+            type="file"
+            accept=".txt"
+            className="hidden"
+            onChange={(event) => {
+              handleFiles(event.target.files);
+              // 允许重新选择同一文件
+              event.target.value = "";
+            }}
+          />
+        </div>
       </div>
     </div>
   );
