@@ -1,6 +1,10 @@
 import { PanelLeftClose, PanelLeftOpen, Pencil, Trash2 } from "lucide-react";
 import Link from "next/link";
+import SidebarResizeHandle from "./SidebarResizeHandle";
 import type { ChapterMetadata } from "@/features/workspace/types";
+
+const MIN_WIDTH = 180;
+const MAX_WIDTH = 520;
 
 interface ChapterSidebarProps {
   projectId: string;
@@ -12,6 +16,8 @@ interface ChapterSidebarProps {
   onNewChapter: () => void;
   onRenameChapter: (chapter: ChapterMetadata) => void;
   onDeleteChapter: (chapter: ChapterMetadata) => void;
+  width: number;
+  onWidthChange: (width: number) => void;
 }
 
 export default function ChapterSidebar({
@@ -24,6 +30,8 @@ export default function ChapterSidebar({
   onNewChapter,
   onRenameChapter,
   onDeleteChapter,
+  width,
+  onWidthChange,
 }: ChapterSidebarProps) {
   if (collapsed) {
     return (
@@ -41,7 +49,10 @@ export default function ChapterSidebar({
   }
 
   return (
-    <aside className="flex w-[260px] shrink-0 flex-col border-r border-zinc-200 bg-zinc-50">
+    <aside
+      style={{ width }}
+      className="relative flex shrink-0 flex-col border-r border-zinc-200 bg-zinc-50"
+    >
       <div className="flex h-9 items-center gap-2 px-3">
         <span className="truncate text-[11px] font-semibold uppercase tracking-wide text-zinc-400">
           {projectName}
@@ -94,6 +105,13 @@ export default function ChapterSidebar({
           />
         ))}
       </nav>
+
+      <SidebarResizeHandle
+        width={width}
+        min={MIN_WIDTH}
+        max={MAX_WIDTH}
+        onWidthChange={onWidthChange}
+      />
     </aside>
   );
 }

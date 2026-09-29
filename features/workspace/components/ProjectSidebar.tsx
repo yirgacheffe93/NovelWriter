@@ -2,6 +2,7 @@ import {
   Archive,
   ChevronDown,
   ChevronRight,
+  Folder,
   Library,
   PanelLeftClose,
   Pencil,
@@ -13,7 +14,11 @@ import {
 import Link from "next/link";
 import { useState } from "react";
 import { createPortal } from "react-dom";
+import SidebarResizeHandle from "./SidebarResizeHandle";
 import type { ChapterMetadata, Project } from "@/features/workspace/types";
+
+const MIN_WIDTH = 160;
+const MAX_WIDTH = 420;
 
 interface ProjectSidebarProps {
   projects: Project[];
@@ -25,6 +30,9 @@ interface ProjectSidebarProps {
   onRenameProject: (project: Project) => void;
   onArchiveProject: (project: Project) => void;
   onRestoreProject: (project: Project) => void;
+  onOpenSettings: () => void;
+  width: number;
+  onWidthChange: (width: number) => void;
 }
 
 export default function ProjectSidebar({
@@ -37,6 +45,9 @@ export default function ProjectSidebar({
   onRenameProject,
   onArchiveProject,
   onRestoreProject,
+  onOpenSettings,
+  width,
+  onWidthChange,
 }: ProjectSidebarProps) {
   const activeProjects = projects.filter(
     (project) => project.status !== "archived",
@@ -65,11 +76,11 @@ export default function ProjectSidebar({
   }
 
   return (
-    <aside className="flex w-[220px] shrink-0 flex-col border-r border-zinc-200 bg-zinc-50">
+    <aside
+      style={{ width }}
+      className="relative flex shrink-0 flex-col border-r border-zinc-200 bg-zinc-50"
+    >
       <div className="flex h-9 items-center gap-2 px-3">
-        <span className="shrink-0 text-[13px] font-semibold uppercase tracking-wide text-zinc-500">
-          Projects
-        </span>
         <div className="flex min-w-0 flex-1 items-center gap-1.5 rounded border border-zinc-200 bg-white px-2 py-1">
           <Search size={12} className="shrink-0 text-zinc-400" />
           <input
@@ -106,6 +117,7 @@ export default function ProjectSidebar({
           collapsed={workspaceCollapsed}
           onToggle={() => setWorkspaceCollapsed((value) => !value)}
         >
+          <Folder size={12} className="shrink-0" />
           Work Space
         </SectionHeader>
 
@@ -145,10 +157,21 @@ export default function ProjectSidebar({
         )}
       </nav>
 
-      <div className="mt-auto flex items-center gap-1.5 border-t border-zinc-200 px-3 py-2 text-xs text-zinc-500">
+      <button
+        type="button"
+        onClick={onOpenSettings}
+        className="mt-auto flex items-center gap-1.5 border-t border-zinc-200 px-3 py-2 text-xs text-zinc-500 transition-colors hover:bg-zinc-100 hover:text-zinc-900"
+      >
         <Settings size={13} className="shrink-0" />
         Settings
-      </div>
+      </button>
+
+      <SidebarResizeHandle
+        width={width}
+        min={MIN_WIDTH}
+        max={MAX_WIDTH}
+        onWidthChange={onWidthChange}
+      />
     </aside>
   );
 }

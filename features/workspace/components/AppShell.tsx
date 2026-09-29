@@ -11,6 +11,7 @@ import NewChapterDialog from "./NewChapterDialog";
 import NewProjectDialog from "./NewProjectDialog";
 import ProjectSidebar from "./ProjectSidebar";
 import RenameDialog from "./RenameDialog";
+import SettingsDialog from "./SettingsDialog";
 import TopBar from "./TopBar";
 import {
   archiveProjectAction,
@@ -51,7 +52,8 @@ type DialogState =
   | { kind: "renameChapter"; chapter: ChapterMetadata }
   | { kind: "deleteChapter"; chapter: ChapterMetadata }
   | { kind: "renameProject"; project: Project }
-  | { kind: "archiveProject"; project: Project };
+  | { kind: "archiveProject"; project: Project }
+  | { kind: "settings" };
 
 const SAVE_DEBOUNCE_MS = 800;
 
@@ -69,6 +71,9 @@ export default function AppShell({
   const [projectSidebarCollapsed, setProjectSidebarCollapsed] = useState(false);
   const [chapterSidebarCollapsed, setChapterSidebarCollapsed] = useState(false);
   const [agentPanelCollapsed, setAgentPanelCollapsed] = useState(false);
+  // 侧栏宽度（默认值与 web-ui.md §3 推荐宽度一致）；切换项目重挂载会回默认
+  const [projectSidebarWidth, setProjectSidebarWidth] = useState(220);
+  const [chapterSidebarWidth, setChapterSidebarWidth] = useState(260);
 
   const [projects, setProjects] = useState(initialProjects);
   const [chapters, setChapters] = useState(initialChapters);
@@ -398,6 +403,9 @@ export default function AppShell({
             setDialog({ kind: "archiveProject", project: target })
           }
           onRestoreProject={handleRestoreProject}
+          onOpenSettings={() => setDialog({ kind: "settings" })}
+          width={projectSidebarWidth}
+          onWidthChange={setProjectSidebarWidth}
         />
 
         <ChapterSidebar
@@ -414,6 +422,8 @@ export default function AppShell({
           onDeleteChapter={(chapter) =>
             setDialog({ kind: "deleteChapter", chapter })
           }
+          width={chapterSidebarWidth}
+          onWidthChange={setChapterSidebarWidth}
         />
 
         {currentChapter ? (
@@ -435,6 +445,8 @@ export default function AppShell({
         <AgentPanel
           collapsed={agentPanelCollapsed}
           onToggle={() => setAgentPanelCollapsed((value) => !value)}
+          projectId={project.id}
+          chapterId={currentChapterId}
         />
       </div>
 
@@ -492,6 +504,10 @@ export default function AppShell({
           onConfirm={handleArchiveProject}
           onClose={() => setDialog(null)}
         />
+      )}
+
+      {dialog?.kind === "settings" && (
+        <SettingsDialog onClose={() => setDialog(null)} />
       )}
     </div>
   );
