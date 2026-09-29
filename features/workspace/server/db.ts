@@ -21,8 +21,12 @@ let db: DatabaseSync | null = null;
 
 export function getDb(): DatabaseSync {
   if (db) return db;
-  fs.mkdirSync(DATA_DIR, { recursive: true });
-  db = new DatabaseSync(DB_PATH);
+  // 测试可用 NOVELWRITER_DB_PATH 指向临时库，避免污染 data/novelwriter.db
+  const dbPath = process.env.NOVELWRITER_DB_PATH ?? DB_PATH;
+  fs.mkdirSync(path.dirname(dbPath), { recursive: true });
+  db = new DatabaseSync(dbPath);
+  // llm.md §14：外键约束依赖该 PRAGMA，每个连接必须开启
+  db.exec("PRAGMA foreign_keys = ON");
   migrate(db);
   return db;
 }

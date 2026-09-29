@@ -107,12 +107,19 @@ export function importChapters(
   return items.map((item) => createChapterWithContent(projectId, item.title, item.content));
 }
 
-/** 读取章节正文。文件不存在视为空章节（新建章节的正文就是空文件）。 */
+/**
+ * 读取章节正文。新建章节总会先写入空文件（见 createChapterWithContent），
+ * 因此 ENOENT 必是正文文件丢失或路径故障：告警后按空正文返回，保证页面
+ * 仍可打开，但服务端日志保留异常线索，不当作"新建空章节"静默吞掉。
+ */
 export function readChapterContent(filePath: string): string {
   try {
     return fs.readFileSync(dataPath(filePath), "utf8");
   } catch (error) {
-    if ((error as NodeJS.ErrnoException).code === "ENOENT") return "";
+    if ((error as NodeJS.ErrnoException).code === "ENOENT") {
+      console.error(`章节正文文件缺失：${filePath}`);
+      return "";
+    }
     throw error;
   }
 }

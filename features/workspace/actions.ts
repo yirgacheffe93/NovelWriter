@@ -14,6 +14,7 @@ import {
 } from "./server/chapter-repository";
 import {
   createProject,
+  deleteProject,
   getProject,
   updateProject,
 } from "./server/project-repository";
@@ -57,7 +58,14 @@ export async function importNovelAction(
   const projectName = name.replace(/\.txt$/i, "");
   const items = parseNovelTxt(Buffer.from(await file.arrayBuffer()), projectName);
   const project = await createProjectAction(projectName, "");
-  const chapters = importChapters(project.id, items);
+  let chapters: ChapterMetadata[];
+  try {
+    chapters = importChapters(project.id, items);
+  } catch (error) {
+    // 导入中途失败：回滚刚建的项目（行+目录），不留部分导入的幽灵项目
+    deleteProject(project.id);
+    throw error;
+  }
   return {
     project,
     items: items.map((item, index) => ({

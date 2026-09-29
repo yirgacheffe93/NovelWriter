@@ -1114,6 +1114,7 @@ Agent 之外，UI 还需要一组业务读写操作。它与 Agent API 同层，
 | Delete Chapter | chapterId | — |
 | Read Chapter | chapterId | ChapterDocument |
 | Save Chapter Content | chapterId, content, expectedRevision | ChapterMetadata |
+| Import TXT | file(.txt) | Project + ChapterMetadata[] |
 
 约定：
 
@@ -1121,6 +1122,7 @@ Agent 之外，UI 还需要一组业务读写操作。它与 Agent API 同层，
 - `Delete Chapter` 只允许用于未被 Session / AgentRun / Generation 引用的章节
 - Project 不提供物理删除，只有 `Archive`
 - 返回的 `ChapterDocument` 是元数据与正文的组合视图，正文来自 Markdown 文件
+- `Import TXT` 按标题行拆章（第X章/回/节或序章/前言/尾声等，无标记时用短行启发式）。产品预期：**首个被接受标题之前的内容（网站声明、广告、简介等）是导入噪音，丢弃**；标题之后的正文零丢失，正文中段的假标题并入上一章；整本无标题时归为单章（书名=文件名去扩展名）
 
 ---
 

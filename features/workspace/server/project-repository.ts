@@ -1,7 +1,8 @@
 /**
  * Project 持久化：project.json（可移植配置 SoT）+ SQLite 索引。
  * 写入次序是硬约束（overview §5）：先原子写入 project.json，再刷新 SQLite 索引。
- * 不提供物理删除（§45）：归档通过 updateProject 改 status 实现。
+ * 业务层不提供物理删除（§45）：归档通过 updateProject 改 status 实现；
+ * deleteProject 仅供导入失败回滚。
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -91,6 +92,27 @@ function toProject(row: ProjectRow): Project {
     createdAt: row.created_at,
     updatedAt: row.updated_at,
   };
+}
+
+/**
+ * 物理删除项目（仅导入失败回滚用，见文件头注释）。
+ * 删章节行 → 删项目行 → 删项目目录；目录删除失败只留孤儿文件，不抛错。
+ */
+export function deleteProject(projectId: string): void {
+  const db = getDb();
+  const row = db
+    .prepare("SELECT root_path FROM projects WHERE id = ?")
+    .get(projectId) as unknown as { root_path: string } | undefined;
+  if (!row) {
+    throw new Error(`项目不存在：${projectId}`);
+  }
+
+  db.prepare("DELETE FROM chapters WHERE project_id = ?").run(projectId);
+  db.prepare("DELETE FROM projects WHERE id = ?").run(projectId);
+  fs.rmSync(path.join(process.cwd(), row.root_path), {
+    recursive: true,
+    force: true,
+  });
 }
 
 function writeProjectJson(project: Project): void {
