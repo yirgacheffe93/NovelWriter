@@ -1,0 +1,16 @@
+# LiteLLM Proxy 单实例（本地网关，仅监听本机，plan.md 步骤 1）。
+# 镜像固定版本、不浮动（plan.md：不使用 latest）；升级需有意为之。
+# 网关持有供应商密钥；Next.js 只持有访问网关的 LITELLM_API_KEY。
+services:
+  litellm:
+    image: ghcr.io/berriai/litellm:1.99.3
+    command: ["--config", "/app/config.yaml"]
+    ports:
+      - "127.0.0.1:4000:4000"
+    volumes:
+      - ./litellm/config.yaml:/app/config.yaml:ro
+    environment:
+      # 供应商密钥由网关持有，经 .env 注入，不落盘到 config.yaml
+      OPENAI_API_KEY: ${OPENAI_API_KEY:?请在 .env 设置供应商密钥 OPENAI_API_KEY}
+      OPENAI_MODEL_ID: ${OPENAI_MODEL_ID:?请在 .env 设置实际模型 ID（如 gpt-4o-mini）}
+      LITELLM_MASTER_KEY: ${LITELLM_MASTER_KEY:?请在 .env 设置网关 master key（与应用的 LITELLM_API_KEY 一致）}

@@ -1,0 +1,7 @@
+# LiteLLM Proxy 配置：模型别名 → 供应商模型（plan.md 首版只映射一个别名）。
+# 真实模型 ID 与密钥部署时经环境变量注入，不写在本文件。
+model_list:
+  - model_name: novel-writer
+    litellm_params:
+      model: openai/${OPENAI_MODEL_ID}
+      api_key: os.environ/OPENAI_API_KEY
