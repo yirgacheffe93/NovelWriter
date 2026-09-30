@@ -9,11 +9,21 @@
 | | |
 |---|---|
 | **编辑器优先** | 四栏工作台——项目 / 章节 / 正文 / Agent；侧栏可折叠，宽度可拖拽 |
+| **章节栏** | 标题栏固定不动，列表自己滚；一屏约 10 章，两端用「⋯」表示还有内容 |
+| **记忆目录** | 项目的 `memory/` 读成侧栏树（时间线 / 人物 / 地点 / 物品 / 生物），点开是只读预览 |
 | **本地持久化** | SQLite 存元数据，正文以 Markdown 落盘；数据目录可放在仓库之外 |
 | **自动保存** | 800ms 防抖写盘，携带 `revision` 做乐观并发校验，冲突时不触碰正文文件 |
 | **URL 即状态** | `/projects/:projectId/chapters/:chapterId`，刷新或分享链接都能恢复现场 |
 | **TXT 导入** | 按标题自动拆章；导入中途失败会回滚，不留半成品项目 |
 | **Agent 对话** | 经 LiteLLM 网关调用模型；每次调用连同用量、耗时落 `llm_calls` |
+
+章节栏：每个分组的标题栏固定在滚动容器之外，只有列表内容滚动；章节多时列表高度封顶在 10 行左右，滚动位置之外还有章节的那一端会亮起一行「⋯」。
+
+![章节栏与记忆树](docs/pics/workspace_260930.png)
+
+记忆：`memory/` 下的目录结构即侧栏树，条目内容是只读预览——文件由「构建小说 memory」的 skill 生成，界面不提供编辑。文件不存在时侧栏计数为 0，预览显示空态。
+
+![记忆预览](docs/pics/memory_260930.png)
 
 ## 快速开始
 
@@ -69,7 +79,7 @@ src/
 ├── ui/workspace/            工作台客户端组件
 ├── agent/                   Agent 运行时内核（与小说无关）
 ├── llm/                     模型调用契约、服务与 LiteLLM 适配
-├── novel/                   小说业务：类型、仓储与 TXT 导入
+├── novel/                   小说业务：类型、仓储、TXT 导入与记忆读取
 └── storage/                 SQLite 连接、迁移与数据目录解析
 docs/
 ├── product/                 产品与交互设计
@@ -90,11 +100,14 @@ docs/
 - [Harness 数据结构总览](docs/architecture/data-model/overview.md)：数据模型主文档
 - [LLM 模块设计](docs/architecture/llm.md)：调用契约、记录与安全约束
 - [LLM 接入计划](docs/architecture/llm-integration-plan.md)：实施顺序与验收
+- [Agent 对话 Context 设计](docs/architecture/agent-context.md)：一次请求里模型看到什么（设计提案，未实现）
 - [Agent / Harness 层评审](docs/reviews/harness-review.md)：对照 `anthropics/commerce-agents` 的差距分析与优化建议
 
 ## 当前状态与已知边界
 
 Web UI 处于交互原型阶段。Agent 已接入真实模型，但**对话尚未接地**——不会带上当前章节或项目设定，因此还回答不了"这一章讲了什么"。数据模型里设计的 Session / AgentRun / Generation / AgentEvent 尚未落库。下一步见[评审](docs/reviews/harness-review.md)的 P0-2。
+
+记忆只做了一半：目录树与只读预览已经能用，但**生成记忆的 skill 还没写**，`memory/` 目前要靠手工或外部流程产出。
 
 已知边界：
 
