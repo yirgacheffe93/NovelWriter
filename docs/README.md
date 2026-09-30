@@ -8,6 +8,7 @@
 
 ## 技术架构
 
+- [代码结构设计](architecture/structure.md)：分层、依赖方向与目录，是代码结构的**唯一权威定义**。
 - [Harness 数据结构总览](architecture/data-model/overview.md)：完整数据结构与持久化设计，是数据模型的主文档。
 - [业务领域模型](architecture/data-model/business-domain.md)：Project、Chapter 和故事资料等业务概念。
 - [Agent Runtime 模型](architecture/data-model/agent-runtime.md)：Session、AgentRun、Generation 和 AgentEvent。
@@ -15,6 +16,7 @@
 - [模型映射](architecture/data-model/model-mapping.md)：业务、运行时与存储模型之间的关系。
 - [日志与可观测性](architecture/data-model/observability.md)：日志、事件、指标与敏感数据规则。
 - [LLM 模块](architecture/llm.md)：模型调用接口、记录、错误和安全约束。
+- [LLM 接入计划](architecture/llm-integration-plan.md)：网关接入、服务端适配与调用记录的实施顺序与验收。
 
 ## 参考资料
 
@@ -23,10 +25,14 @@
 ## 评审与改进
 
 - [Web UI 问题与修复建议](reviews/web-ui-review.md)
+- [代码审查记录](reviews/code-review.md)：工作台持久化、TXT 导入与目录结构。
+- [Agent / Harness 层评审](reviews/harness-review.md)：对照 `anthropics/commerce-agents` 的差距分析与优化建议。
 
 ## 维护约定
 
 - 文件名统一使用小写 kebab-case，避免空格和序号承担分类职责。
 - 数据结构发生冲突时，以 `architecture/data-model/overview.md` 为准，再同步更新对应专题文档。
+- **代码结构只在 `architecture/structure.md` 定义一次**。其他文档只说明自己那一层放在哪里并链接过去，不重复罗列目录树。
 - 产品范围或阶段变化时，同时更新根目录 `README.md` 的“当前状态”和相关产品文档。
 - 代码路径变化时，必须搜索并更新文档中的路径引用。
+- 描述尚未实现的设计时，标注它是目标而非现状；`structure.md` §7 是这种标注的范例。

@@ -1,9 +1,9 @@
-import AppShell from "@/features/workspace/components/AppShell";
+import AppShell from "@/ui/workspace/AppShell";
 import {
   listChapters,
   readChapterContent,
-} from "@/features/workspace/server/chapter-repository";
-import { listProjects } from "@/features/workspace/server/project-repository";
+} from "@/novel/chapter-repository";
+import { listProjects } from "@/novel/project-repository";
 import { notFound } from "next/navigation";
 
 // 项目与章节列表读自 SQLite，必须动态渲染

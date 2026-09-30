@@ -146,26 +146,28 @@ Generation 通过 `llmCallId` 关联准确的模型调用，并以 `status` 表�
 
 ## 6. Recommended Code Boundary
 
-```text
-packages/
+目录见[代码结构设计](../structure.md)。本节只说明模型之间的代码边界：
 
-domain/
+```text
+src/novel/      业务模型
 ├── project.ts
 ├── chapter.ts
 └── character.ts
 
-agent/
+src/agent/      运行时模型
 ├── session.ts
 ├── run.ts
 ├── generation.ts
 └── event.ts
 
-storage/
+src/storage/    持久化
 ├── repositories/
 ├── sqlite/
 ├── filesystem/
 └── cache/
 ```
+
+`src/novel/` 与 `src/agent/` 之间不互相 import：业务模型由工具注入运行时，见[代码结构设计](../structure.md) §3 与 §4。
 
 ---
 

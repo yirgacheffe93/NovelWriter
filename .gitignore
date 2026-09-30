@@ -42,4 +42,9 @@ yarn-error.log*
 next-env.d.ts
 
 # local app data (SQLite index and project directories)
+# 数据目录默认在仓库内，可在 Settings 里改到仓库之外；指向位置记在下面的引导配置里
 /data/
+/.novelwriter.json
+
+# 各人本机的编辑器/Agent 工具配置，不进仓库
+.claude/

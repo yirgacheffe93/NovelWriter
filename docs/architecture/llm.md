@@ -110,20 +110,23 @@ Agent Workflow
 
 # 4. Package Structure
 
-推荐：
+目录位置见[代码结构设计](structure.md) §5，本模块对应其中的 `src/llm/`：
 
 ```text
-packages/
-└── llm/
-    ├── types.ts
-    ├── client.ts
-    ├── service.ts
-    ├── config.ts
-    ├── call-repository.ts
-    │
-    └── providers/
-        └── litellm.ts
+src/llm/
+├── types.ts
+├── client.ts
+├── service.ts
+├── config.ts
+├── errors.ts
+├── call-repository.ts
+├── settings-repository.ts
+│
+└── providers/
+    └── litellm.ts
 ```
+
+`errors.ts` 与 `settings-repository.ts` 是实现期新增的：前者是稳定的错误类别，后者存 Settings 弹窗配置的网关参数。
 
 后续可以扩展：
 

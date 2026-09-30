@@ -314,25 +314,35 @@ error
 
 ## 9. Project Layout
 
-推荐：
+代码目录见[代码结构设计](../structure.md)。本节只规定**运行时产物**的位置：
 
 ```text
-novel-agent/
+NovelWriter/            代码仓库
 
-├── data/
-│   ├── novel.db
-│   └── projects/
+├── src/                  代码
 │
-├── .cache/
+├── .novelwriter.json     引导配置：数据目录的位置（gitignore）
+│
+├── .cache/               可丢弃
 │   ├── context/
 │   └── summaries/
 │
-├── logs/
-│   ├── app.log
-│   └── error.log
-│
-└── packages/
+└── logs/                 不可重新生成
+    ├── app.log
+    └── error.log
 ```
+
+数据目录**默认**是仓库内的 `data/`，但可以指向仓库之外：
+
+```text
+<数据目录>/               位置记在 .novelwriter.json
+├── novelwriter.db        SQLite 索引，可由 project.json 重建
+└── projects/
+```
+
+数据与代码分开存放，两者可以各自独立备份与版本控制。指向位置由 Settings 弹窗修改，解析见 `src/storage/paths.ts`。
+
+引导配置为什么不能放进数据库：数据目录里装着 SQLite，而配置就在那个 SQLite 里——读不到。
 
 注意：
 
@@ -606,17 +616,13 @@ runLogger.info("Context built", {
 
 ## 18. Recommended Package Structure
 
-```text
-packages/
+整体分层见[代码结构设计](../structure.md)。本节只规定日志模块的落点：它属于该文档中的 `storage/` 一层，因为 `agent/`、`llm/`、`novel/` 都要写日志，而它们都不能反向依赖别的业务层。
 
-├── logging/
-│   ├── logger.ts
-│   ├── console-logger.ts
-│   └── file-logger.ts
-│
-├── agent/
-├── storage/
-└── domain/
+```text
+src/storage/
+├── logger.ts
+├── console-logger.ts
+└── file-logger.ts
 ```
 
 Harness Core 只依赖：

@@ -1,5 +1,5 @@
-import EmptyWorkspace from "@/features/workspace/components/EmptyWorkspace";
-import { listProjects } from "@/features/workspace/server/project-repository";
+import EmptyWorkspace from "@/ui/workspace/EmptyWorkspace";
+import { listProjects } from "@/novel/project-repository";
 import { redirect } from "next/navigation";
 
 // 项目列表读自 SQLite，必须动态渲染，否则 build 时会把首屏静态化

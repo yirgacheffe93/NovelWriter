@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test features/"
+    "test": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test src/"
   },
   "dependencies": {
     "lucide-react": "^1.45.0",

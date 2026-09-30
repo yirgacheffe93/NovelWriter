@@ -156,9 +156,10 @@ data/
     │   │   └── 0003.md
     │   │
     │   └── memory/
-    │       ├── story-summary.md
-    │       ├── timeline.json
-    │       └── facts.json
+    │       └── novel/
+    │           ├── story-summary.md
+    │           ├── timeline.json
+    │           └── facts.json
     │
     └── novel-002/
         └── ...
@@ -199,6 +200,8 @@ SQLite 保存 Project metadata。
 ```text
 data/projects/{projectId}/
 ```
+
+`data/` 是记录在 `rootPath` 里的**约定前缀**，不是固定的物理位置：数据目录的基准路径可以指向仓库之外（见[日志与可观测性](observability.md) §9 与 `src/storage/paths.ts`）。因此 `rootPath` 与 `chapters.file_path` 里的 `data/` 一律按约定理解，解析时替换基准目录即可，换基准不需要重写已有记录。
 
 ---
 
@@ -438,6 +441,8 @@ story/
 禁止出现的表达
 ```
 
+它同时是 **User Memory**：作者偏好不另设存储位置，就写在这里，见 §9。
+
 ---
 
 ## 7.4 outline.md
@@ -505,16 +510,33 @@ role: protagonist
 
 # 9. Memory
 
-Memory 表示由 Harness 维护的小说长期状态。
+Memory 分两部分。它们的**性质不同**，不能用同一套规则管理：
 
-推荐：
+| | `novel/` | `user/` |
+|---|---|---|
+| 来源 | 派生：从章节正文提取 | 原生：作者直接书写 |
+| 能否重建 | 能，删除后重跑即可 | **不能**，删除即永久丢失 |
+| 冲突时 | 正文为准，重建 Memory | `user/` 为准 |
+| 备份 | 不需要 | 必须 |
+
+`user/` 没有独立文件：**它就是 `story/style.md`**（§7.3）。理由是可调试性——模型学到的偏好若存在别处，作者看到输出不对时无从查起；写进 `style.md` 则可见、可改、可进版本控制。
+
+`novel/` 推荐：
 
 ```text
-memory/
+memory/novel/
 ├── story-summary.md
 ├── timeline.json
 └── facts.json
 ```
+
+这三份都是**派生数据**，必须满足：
+
+- 每条记录可追溯到来源章节（`timeline.json` 的 `chapterId` 即为此）
+- 可以全量重建，不做增量补丁——增量追加会让抽取误差逐章累积，且无法回滚
+- 来源正文变更后未更新的条目视为 stale，不得当作事实使用
+
+来源与 stale 的通用规则见 §9.4。
 
 ---
 
@@ -544,6 +566,10 @@ story-summary.md
   ]
 }
 ```
+
+时间线承载**剧情连续性**：到某一章为止发生过什么。
+
+它不承载设定一致性——"某个细节原文怎么写"要靠读取对应章节，"某个人物是什么样"要靠 `characters/` 与 `facts.json`，三者不互相替代。
 
 ---
 
@@ -1435,6 +1461,17 @@ Context 是：
 某次 Agent Run 为模型选择的数据集合
 ```
 
+默认的选择策略：
+
+| 内容 | 何时进入 Context |
+|---|---|
+| `story/premise.md`、`story/style.md` | 每轮，静态部分 |
+| 最近一到两章正文 | 每轮，全文 |
+| `story/outline.md` 的当前条目、`memory/novel/timeline.json` | 每轮 |
+| 更早的章节、`characters/`、`memory/novel/facts.json` | 不预取，由模型按需读取 |
+
+更早的章节不保留全文，由时间线承载。**"这一章发生过什么"由 timeline 回答，"某个细节原文怎么写"由模型读取对应章节回答**，二者不互相替代（§9.2）。
+
 可以记录在：
 
 ```text
@@ -1923,7 +1960,7 @@ Generation A 所属 AgentRun 在生成 A 后已经完成；新的指令创建新
 | Context Cache | `.cache` |
 | Embedding | `.cache` |
 | Rebuildable Summary Cache | `.cache` |
-| User-confirmed Story Summary | Project `memory/story-summary.md` |
+| User-confirmed Story Summary | Project `memory/novel/story-summary.md` |
 
 禁止同一份核心内容在多个地方成为 Source of Truth。
 
@@ -1978,45 +2015,12 @@ db.prepare(`
 
 # 41. Recommended Package Structure
 
-推荐：
+分层与目录见[代码结构设计](../structure.md)。本节只说明数据模型的分工落点：
 
 ```text
-packages/
-│
-├── core/
-│   ├── project.ts
-│   ├── chapter.ts
-│   ├── session.ts
-│   ├── generation.ts
-│   └── event.ts
-│
-├── storage/
-│   ├── project-repository.ts
-│   ├── chapter-repository.ts
-│   ├── generation-repository.ts
-│   │
-│   ├── sqlite/
-│   │   ├── database.ts
-│   │   ├── project-repository.ts
-│   │   ├── chapter-repository.ts
-│   │   └── generation-repository.ts
-│   │
-│   └── filesystem/
-│       └── chapter-content-store.ts
-│
-├── llm/
-│   ├── llm-service.ts
-│   └── llm-call-repository.ts
-│
-├── session/
-│   ├── persistence.ts
-│   └── sqlite-persistence.ts
-│
-├── cache/
-│   ├── cache-store.ts
-│   └── file-cache-store.ts
-│
-└── agent/
+src/novel/      业务实体与仓储（project / chapter / character）
+src/agent/      运行时实体（session / run / generation / event）
+src/storage/    SQLite 连接、迁移与文件存储
 ```
 
 重点是：
@@ -2032,6 +2036,8 @@ implementation
 ```
 
 分开。
+
+关于何时才真的拆出 interface 层，见[代码结构设计](../structure.md) §6：没有第二个实现时先不拆，避免抽出错的接口。
 
 ---
 
