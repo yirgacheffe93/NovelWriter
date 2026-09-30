@@ -1,9 +1,13 @@
 import { ArrowUp, PanelRightClose, PanelRightOpen } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import SidebarResizeHandle from "./SidebarResizeHandle";
 import {
   sendAgentChatAction,
   type AgentChatMessage,
 } from "@/actions/llm";
+
+const MIN_WIDTH = 260;
+const MAX_WIDTH = 640;
 
 interface AgentPanelProps {
   collapsed: boolean;
@@ -11,6 +15,8 @@ interface AgentPanelProps {
   /** 随对话写入 llm_calls 的项目/章节关联（llm-integration-plan.md 步骤 3） */
   projectId: string;
   chapterId: string | null;
+  width: number;
+  onWidthChange: (width: number) => void;
 }
 
 /** 面板内展示的消息；error 标记来自模型的失败回复（配置缺失/网关不可达等）。 */
@@ -26,6 +32,8 @@ export default function AgentPanel({
   onToggle,
   projectId,
   chapterId,
+  width,
+  onWidthChange,
 }: AgentPanelProps) {
   // 对话历史只存组件 state（刷新即清空）；runId 让多轮落在同一个会话
   const [messages, setMessages] = useState<ChatItem[]>([]);
@@ -97,7 +105,18 @@ export default function AgentPanel({
   }
 
   return (
-    <aside className="flex w-[360px] shrink-0 flex-col border-l border-zinc-200 bg-zinc-50">
+    <aside
+      style={{ width }}
+      className="relative flex shrink-0 flex-col border-l border-zinc-200 bg-zinc-50"
+    >
+      <SidebarResizeHandle
+        width={width}
+        min={MIN_WIDTH}
+        max={MAX_WIDTH}
+        onWidthChange={onWidthChange}
+        edge="left"
+      />
+
       <div className="flex h-9 shrink-0 items-center gap-2 px-3">
         <span className="text-[11px] font-semibold uppercase tracking-wide text-zinc-400">
           Agent

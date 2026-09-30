@@ -18,6 +18,7 @@ import {
   createChapterAction,
   createProjectAction,
   deleteChapterAction,
+  deleteProjectAction,
   importNovelAction,
   renameChapterAction,
   renameProjectAction,
@@ -25,6 +26,10 @@ import {
   saveChapterContentAction,
 } from "@/actions/workspace";
 import { deriveSaveState } from "./save-state";
+import {
+  usePersistedNumber,
+  usePersistedToggle,
+} from "./persisted-layout";
 import type { ChapterMetadata, Project } from "@/novel/types";
 
 interface AppShellProps {
@@ -53,6 +58,7 @@ type DialogState =
   | { kind: "deleteChapter"; chapter: ChapterMetadata }
   | { kind: "renameProject"; project: Project }
   | { kind: "archiveProject"; project: Project }
+  | { kind: "deleteProject"; project: Project }
   | { kind: "settings" };
 
 const SAVE_DEBOUNCE_MS = 800;
@@ -68,12 +74,30 @@ export default function AppShell({
   const { chapterId } = useParams<{ projectId: string; chapterId?: string }>();
   const currentChapterId = chapterId ?? null;
 
-  const [projectSidebarCollapsed, setProjectSidebarCollapsed] = useState(false);
-  const [chapterSidebarCollapsed, setChapterSidebarCollapsed] = useState(false);
-  const [agentPanelCollapsed, setAgentPanelCollapsed] = useState(false);
-  // 侧栏宽度（默认值与 web-ui.md §3 推荐宽度一致）；切换项目重挂载会回默认
-  const [projectSidebarWidth, setProjectSidebarWidth] = useState(220);
-  const [chapterSidebarWidth, setChapterSidebarWidth] = useState(260);
+  // 布局状态全部持久化：切项目会重挂载本组件，组件内 state 会退回默认值，
+  // 用户刚折叠的侧栏或刚拖好的宽度都会被重置。见 persisted-layout.ts。
+  const [projectSidebarCollapsed, toggleProjectSidebar] = usePersistedToggle(
+    "novelwriter.layout.projectSidebarCollapsed",
+  );
+  const [chapterSidebarCollapsed, toggleChapterSidebar] = usePersistedToggle(
+    "novelwriter.layout.chapterSidebarCollapsed",
+  );
+  const [agentPanelCollapsed, toggleAgentPanel] = usePersistedToggle(
+    "novelwriter.layout.agentPanelCollapsed",
+  );
+  // 宽度默认值与 web-ui.md §3 推荐值一致
+  const [projectSidebarWidth, setProjectSidebarWidth] = usePersistedNumber(
+    "novelwriter.layout.projectSidebarWidth",
+    220,
+  );
+  const [chapterSidebarWidth, setChapterSidebarWidth] = usePersistedNumber(
+    "novelwriter.layout.chapterSidebarWidth",
+    260,
+  );
+  const [agentPanelWidth, setAgentPanelWidth] = usePersistedNumber(
+    "novelwriter.layout.agentPanelWidth",
+    360,
+  );
 
   const [projects, setProjects] = useState(initialProjects);
   const [chapters, setChapters] = useState(initialChapters);
@@ -380,6 +404,21 @@ export default function AppShell({
     }
   }
 
+  async function handleDeleteProject() {
+    if (dialog?.kind !== "deleteProject") return;
+    const target = dialog.project;
+    try {
+      await deleteProjectAction(target.id);
+      setProjects((prev) => prev.filter((item) => item.id !== target.id));
+      setChapters((prev) => prev.filter((item) => item.projectId !== target.id));
+      setDialog(null);
+      // 删掉的正是当前打开的项目：回首页，否则 URL 指向已不存在的项目
+      if (target.id === project.id) router.push("/");
+    } catch (error) {
+      console.error("删除项目失败", error);
+    }
+  }
+
   return (
     <div className="flex h-full flex-col bg-white text-zinc-900">
       <TopBar
@@ -394,7 +433,7 @@ export default function AppShell({
           chapters={chapters}
           currentProjectId={project.id}
           collapsed={projectSidebarCollapsed}
-          onToggle={() => setProjectSidebarCollapsed((value) => !value)}
+          onToggle={toggleProjectSidebar}
           onNewProject={() => setDialog({ kind: "newProject" })}
           onRenameProject={(target) =>
             setDialog({ kind: "renameProject", project: target })
@@ -403,6 +442,9 @@ export default function AppShell({
             setDialog({ kind: "archiveProject", project: target })
           }
           onRestoreProject={handleRestoreProject}
+          onDeleteProject={(target) =>
+            setDialog({ kind: "deleteProject", project: target })
+          }
           onOpenSettings={() => setDialog({ kind: "settings" })}
           width={projectSidebarWidth}
           onWidthChange={setProjectSidebarWidth}
@@ -414,7 +456,7 @@ export default function AppShell({
           chapters={projectChapters}
           currentChapterId={currentChapterId}
           collapsed={chapterSidebarCollapsed}
-          onToggle={() => setChapterSidebarCollapsed((value) => !value)}
+          onToggle={toggleChapterSidebar}
           onNewChapter={() => setDialog({ kind: "newChapter" })}
           onRenameChapter={(chapter) =>
             setDialog({ kind: "renameChapter", chapter })
@@ -444,9 +486,11 @@ export default function AppShell({
 
         <AgentPanel
           collapsed={agentPanelCollapsed}
-          onToggle={() => setAgentPanelCollapsed((value) => !value)}
+          onToggle={toggleAgentPanel}
           projectId={project.id}
           chapterId={currentChapterId}
+          width={agentPanelWidth}
+          onWidthChange={setAgentPanelWidth}
         />
       </div>
 
@@ -502,6 +546,17 @@ export default function AppShell({
           description={`「${dialog.project.name}」将从默认列表隐藏，可随时从「已归档」分组恢复。`}
           confirmLabel="归档"
           onConfirm={handleArchiveProject}
+          onClose={() => setDialog(null)}
+        />
+      )}
+
+      {dialog?.kind === "deleteProject" && (
+        <ConfirmDialog
+          heading="永久删除项目"
+          description={`将删除「${dialog.project.name}」的全部章节正文与项目目录，此操作不可撤销。如果只是想让它离开列表，请用「归档」。`}
+          confirmLabel="永久删除"
+          danger
+          onConfirm={handleDeleteProject}
           onClose={() => setDialog(null)}
         />
       )}

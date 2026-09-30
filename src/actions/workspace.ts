@@ -146,3 +146,11 @@ export async function restoreProjectAction(
     updatedAt: new Date().toISOString(),
   });
 }
+
+/**
+ * 永久删除项目：库行、章节行与磁盘上的项目目录一并删除，不可恢复。
+ * 只由归档分组的「删除」调用；工作区中的「归档」走 archiveProjectAction。
+ */
+export async function deleteProjectAction(projectId: string): Promise<void> {
+  deleteProject(projectId);
+}

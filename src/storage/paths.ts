@@ -61,6 +61,23 @@ export function resolveDataPath(relativePath: string): string {
   return path.join(getDataDir(), relativePath.replace(/^data\//, ""));
 }
 
+/**
+ * 解析并确认结果是数据目录**内部**的路径（严格深于数据目录），否则抛错。
+ *
+ * 删除类操作必须走这里：`root_path` 读自数据库，形如 `data/../../foo` 的值
+ * 经 `path.join` 会逃出数据目录，而调用方接下来要对它 `rm -rf`。
+ *
+ * 空串或 `data/` 会解析成数据目录本身，也一并拒绝——那等于删掉全部项目。
+ */
+export function resolveDataPathInside(relativePath: string): string {
+  const base = getDataDir();
+  const resolved = resolveDataPath(relativePath);
+  if (!resolved.startsWith(base + path.sep)) {
+    throw new Error(`路径不是数据目录下的具体条目，已拒绝：${relativePath}`);
+  }
+  return resolved;
+}
+
 function readConfiguredDir(): string | null {
   try {
     const parsed = JSON.parse(fs.readFileSync(CONFIG_PATH, "utf8")) as {

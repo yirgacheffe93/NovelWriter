@@ -8,7 +8,7 @@ import fs from "node:fs";
 import path from "node:path";
 import type { Project } from "./types";
 import { getDb } from "../storage/db";
-import { resolveDataPath } from "../storage/paths";
+import { resolveDataPath, resolveDataPathInside } from "../storage/paths";
 
 interface ProjectRow {
   id: string;
@@ -96,8 +96,10 @@ function toProject(row: ProjectRow): Project {
 }
 
 /**
- * 物理删除项目（仅导入失败回滚用，见文件头注释）。
- * 删章节行 → 删项目行 → 删项目目录；目录删除失败只留孤儿文件，不抛错。
+ * 物理删除项目：删章节行 → 删项目行 → 删项目目录。
+ * 两个调用方：导入失败回滚，以及归档分组里的「删除」（§45 的业务删除是归档，
+ * 这里是不可恢复的物理删除，经 deleteProjectAction 暴露）。
+ * 目录删除失败只留孤儿文件，不抛错。
  */
 export function deleteProject(projectId: string): void {
   const db = getDb();
@@ -108,12 +110,18 @@ export function deleteProject(projectId: string): void {
     throw new Error(`项目不存在：${projectId}`);
   }
 
+  // root_path 按约定是 data/projects/<id>。若损坏成 data/projects，下面会删掉
+  // 全部项目；若为空或 data，则删掉数据目录本身。两者都不该发生，拒绝执行。
+  if (!/^data\/projects\/[^/]+$/.test(row.root_path)) {
+    throw new Error(`项目路径不符合约定，已拒绝删除：${row.root_path}`);
+  }
+
+  // 再解析并校验目录：越界时抛错，此时库行尚未删除，项目仍完整可访问
+  const projectDir = resolveDataPathInside(row.root_path);
+
   db.prepare("DELETE FROM chapters WHERE project_id = ?").run(projectId);
   db.prepare("DELETE FROM projects WHERE id = ?").run(projectId);
-  fs.rmSync(resolveDataPath(row.root_path), {
-    recursive: true,
-    force: true,
-  });
+  fs.rmSync(projectDir, { recursive: true, force: true });
 }
 
 function writeProjectJson(project: Project): void {

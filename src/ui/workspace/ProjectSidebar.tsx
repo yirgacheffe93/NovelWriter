@@ -15,6 +15,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { createPortal } from "react-dom";
 import SidebarResizeHandle from "./SidebarResizeHandle";
+import { usePersistedToggle } from "./persisted-layout";
 import type { ChapterMetadata, Project } from "@/novel/types";
 
 const MIN_WIDTH = 160;
@@ -30,6 +31,7 @@ interface ProjectSidebarProps {
   onRenameProject: (project: Project) => void;
   onArchiveProject: (project: Project) => void;
   onRestoreProject: (project: Project) => void;
+  onDeleteProject: (project: Project) => void;
   onOpenSettings: () => void;
   width: number;
   onWidthChange: (width: number) => void;
@@ -45,6 +47,7 @@ export default function ProjectSidebar({
   onRenameProject,
   onArchiveProject,
   onRestoreProject,
+  onDeleteProject,
   onOpenSettings,
   width,
   onWidthChange,
@@ -55,10 +58,13 @@ export default function ProjectSidebar({
   const archivedProjects = projects.filter(
     (project) => project.status === "archived",
   );
-  // 分组折叠状态：均默认展开。切项目会重挂载侧栏，若删除区默认折叠，
-  // 选中归档项目后列表会「消失」——保持与工作区一致的默认展开行为
-  const [workspaceCollapsed, setWorkspaceCollapsed] = useState(false);
-  const [deleteCollapsed, setDeleteCollapsed] = useState(false);
+  // 分组折叠状态：默认展开，实际值从 localStorage 恢复，见 usePersistedCollapsed
+  const [workspaceCollapsed, toggleWorkspace] = usePersistedToggle(
+    "novelwriter.projects.workspaceCollapsed",
+  );
+  const [archivedCollapsed, toggleArchived] = usePersistedToggle(
+    "novelwriter.projects.archivedCollapsed",
+  );
 
   if (collapsed) {
     return (
@@ -108,14 +114,14 @@ export default function ProjectSidebar({
         + New Project
       </button>
 
-      {/* 列表区：Work Space 分组 + Delete 分组，共用滚动容器 */}
+      {/* 列表区：Work Space 分组 + 归档分组，共用滚动容器 */}
       <nav
         aria-label="Projects"
         className="min-h-0 flex-1 overflow-y-auto px-2 pb-2"
       >
         <SectionHeader
           collapsed={workspaceCollapsed}
-          onToggle={() => setWorkspaceCollapsed((value) => !value)}
+          onToggle={toggleWorkspace}
         >
           <Folder size={12} className="shrink-0" />
           Work Space
@@ -136,13 +142,13 @@ export default function ProjectSidebar({
         {archivedProjects.length > 0 && (
           <div className="mt-2">
             <SectionHeader
-              collapsed={deleteCollapsed}
-              onToggle={() => setDeleteCollapsed((value) => !value)}
+              collapsed={archivedCollapsed}
+              onToggle={toggleArchived}
             >
-              <Trash2 size={12} className="shrink-0" />
-              Delete
+              <Archive size={12} className="shrink-0" />
+              Archived
             </SectionHeader>
-            {!deleteCollapsed &&
+            {!archivedCollapsed &&
               archivedProjects.map((project) => (
                 <ProjectItem
                   key={project.id}
@@ -151,6 +157,7 @@ export default function ProjectSidebar({
                   selected={project.id === currentProjectId}
                   archived
                   onRestore={onRestoreProject}
+                  onDelete={onDeleteProject}
                 />
               ))}
           </div>
@@ -212,6 +219,7 @@ function ProjectItem({
   onRename,
   onArchive,
   onRestore,
+  onDelete,
 }: {
   project: Project;
   selected: boolean;
@@ -220,6 +228,7 @@ function ProjectItem({
   onRename?: (project: Project) => void;
   onArchive?: (project: Project) => void;
   onRestore?: (project: Project) => void;
+  onDelete?: (project: Project) => void;
 }) {
   const projectChapters = chapters.filter(
     (chapter) => chapter.projectId === project.id,
@@ -265,14 +274,24 @@ function ProjectItem({
       {/* hover/focus 显形的行内操作；opacity-0 仍可聚焦，键盘 Tab 进入时显形 */}
       <div className="flex shrink-0 items-center gap-1 pl-1 opacity-0 transition-opacity group-hover:opacity-100 group-focus-within:opacity-100">
         {archived ? (
-          <button
-            type="button"
-            onClick={() => onRestore?.(project)}
-            aria-label={`恢复「${project.name}」`}
-            className="rounded p-0.5 text-zinc-400 transition-colors hover:text-zinc-900"
-          >
-            <RotateCcw size={12} />
-          </button>
+          <>
+            <button
+              type="button"
+              onClick={() => onRestore?.(project)}
+              aria-label={`恢复「${project.name}」`}
+              className="rounded p-0.5 text-zinc-400 transition-colors hover:text-zinc-900"
+            >
+              <RotateCcw size={12} />
+            </button>
+            <button
+              type="button"
+              onClick={() => onDelete?.(project)}
+              aria-label={`永久删除「${project.name}」`}
+              className="rounded p-0.5 text-zinc-400 transition-colors hover:text-red-600"
+            >
+              <Trash2 size={12} />
+            </button>
+          </>
         ) : (
           <>
             <button

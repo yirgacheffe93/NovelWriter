@@ -6,27 +6,37 @@ interface SidebarResizeHandleProps {
   min: number;
   max: number;
   onWidthChange: (width: number) => void;
+  /**
+   * 把手贴在哪条边。右侧栏（Agent 面板）在屏幕右边，把手挂左缘，
+   * 且向左拖是变宽——位移要取反。
+   */
+  edge?: "right" | "left";
 }
 
 /**
- * 侧栏右侧边缘的拖动把手（6px，覆盖在 border 上，hover/拖动时显形）。
+ * 侧栏边缘的拖动把手（6px，覆盖在 border 上，hover/拖动时显形）。
  * setPointerCapture 保证拖出把手仍持续收到 move；宽度 = 起始快照 + 累计位移，实时 clamp。
+ * 需要父元素 position: relative。
  */
 export default function SidebarResizeHandle({
   width,
   min,
   max,
   onWidthChange,
+  edge = "right",
 }: SidebarResizeHandleProps) {
   // 非 null 即拖动中；pointerup/cancel 复位（capture 随事件自动释放）
   const startRef = useRef<{ width: number; x: number } | null>(null);
+  const direction = edge === "left" ? -1 : 1;
 
   return (
     <div
       role="separator"
       aria-orientation="vertical"
       aria-label="拖动调整侧栏宽度"
-      className="absolute -right-[3px] top-0 z-10 h-full w-[6px] cursor-col-resize hover:bg-zinc-300 active:bg-zinc-300"
+      className={`absolute top-0 z-10 h-full w-[6px] cursor-col-resize hover:bg-zinc-300 active:bg-zinc-300 ${
+        edge === "left" ? "-left-[3px]" : "-right-[3px]"
+      }`}
       onPointerDown={(event) => {
         event.preventDefault();
         event.currentTarget.setPointerCapture(event.pointerId);
@@ -35,7 +45,8 @@ export default function SidebarResizeHandle({
       onPointerMove={(event) => {
         if (!startRef.current) return;
         const next =
-          startRef.current.width + (event.clientX - startRef.current.x);
+          startRef.current.width +
+          direction * (event.clientX - startRef.current.x);
         onWidthChange(Math.min(max, Math.max(min, next)));
       }}
       onPointerUp={() => {
