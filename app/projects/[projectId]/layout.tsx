@@ -4,6 +4,7 @@ import {
   readChapterContent,
 } from "@/novel/chapter-repository";
 import { listProjects } from "@/novel/project-repository";
+import { readProjectMemory } from "@/novel/memory-store";
 import { notFound } from "next/navigation";
 
 // 项目与章节列表读自 SQLite，必须动态渲染
@@ -33,6 +34,9 @@ export default async function ProjectLayout({ params }: ProjectLayoutProps) {
     baselineContents[chapter.id] = readChapterContent(chapter.filePath);
   }
 
+  // 记忆目录清单：只读，文件由构建 memory 的 skill 写入（src/novel/memory-store.ts）
+  const memory = readProjectMemory(projectId);
+
   // 不渲染 children：编辑器会话必须活在 [chapterId] 段之上的 AppShell 里，
   // 切章节才不会重挂载、内存草稿才不会丢；chapters/*/page.tsx 仅作 URL 载体。
   return (
@@ -41,6 +45,7 @@ export default async function ProjectLayout({ params }: ProjectLayoutProps) {
       projects={projects}
       chapters={chapters}
       baselineContents={baselineContents}
+      memory={memory}
     />
   );
 }

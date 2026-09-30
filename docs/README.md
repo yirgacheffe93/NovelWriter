@@ -17,6 +17,7 @@
 - [日志与可观测性](architecture/data-model/observability.md)：日志、事件、指标与敏感数据规则。
 - [LLM 模块](architecture/llm.md)：模型调用接口、记录、错误和安全约束。
 - [LLM 接入计划](architecture/llm-integration-plan.md)：网关接入、服务端适配与调用记录的实施顺序与验收。
+- [Agent 对话 Context 设计](architecture/agent-context.md)：一次请求里模型看到什么。**设计提案，未实现。**
 
 ## 参考资料
 

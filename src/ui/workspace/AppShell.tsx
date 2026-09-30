@@ -7,6 +7,7 @@ import ChapterEditor from "./ChapterEditor";
 import ChapterSidebar from "./ChapterSidebar";
 import ConfirmDialog from "./ConfirmDialog";
 import EditorEmptyState from "./EditorEmptyState";
+import MemoryPreview from "./MemoryPreview";
 import NewChapterDialog from "./NewChapterDialog";
 import NewProjectDialog from "./NewProjectDialog";
 import ProjectSidebar from "./ProjectSidebar";
@@ -30,6 +31,11 @@ import {
   usePersistedNumber,
   usePersistedToggle,
 } from "./persisted-layout";
+import {
+  findMemoryItem,
+  isMemoryPath,
+  type ProjectMemory,
+} from "@/novel/memory";
 import type { ChapterMetadata, Project } from "@/novel/types";
 
 interface AppShellProps {
@@ -41,6 +47,8 @@ interface AppShellProps {
   chapters: ChapterMetadata[];
   /** 各章节的磁盘正文初始快照（SoT 是 .md 文件），仅初始化时消费 */
   baselineContents: Record<string, string>;
+  /** 记忆目录清单（只读，由构建 memory 的 skill 写入） */
+  memory: ProjectMemory;
 }
 
 /** 一个章节的编辑会话：正文草稿 + 最近保存基线 + 已知 revision + 保存状态 */
@@ -68,11 +76,20 @@ export default function AppShell({
   projects: initialProjects,
   chapters: initialChapters,
   baselineContents,
+  memory,
 }: AppShellProps) {
   const router = useRouter();
-  // 布局里的 useParams 返回全部动态参数（含子段 chapterId），URL 即状态（§25）
-  const { chapterId } = useParams<{ projectId: string; chapterId?: string }>();
+  // 布局里的 useParams 返回全部动态参数（含子段 chapterId 与 memory 的 catch-all），
+  // URL 即状态（§25）
+  const { chapterId, path: rawMemoryPath } = useParams<{
+    projectId: string;
+    chapterId?: string;
+    path?: string[];
+  }>();
   const currentChapterId = chapterId ?? null;
+  // useParams 给的 catch-all 段是百分号编码的，而侧栏与磁盘用的是原始名
+  // （中文实体名必然经过编码），所以只在这一处解码，下游一律比较解码后的值
+  const memoryPath = rawMemoryPath?.map(decodePathSegment);
 
   // 布局状态全部持久化：切项目会重挂载本组件，组件内 state 会退回默认值，
   // 用户刚折叠的侧栏或刚拖好的宽度都会被重置。见 persisted-layout.ts。
@@ -464,11 +481,18 @@ export default function AppShell({
           onDeleteChapter={(chapter) =>
             setDialog({ kind: "deleteChapter", chapter })
           }
+          memory={memory}
+          currentMemoryPath={memoryPath ?? null}
           width={chapterSidebarWidth}
           onWidthChange={setChapterSidebarWidth}
         />
 
-        {currentChapter ? (
+        {isMemoryPath(memoryPath) ? (
+          <MemoryPreview
+            path={memoryPath ?? []}
+            entry={findMemoryItem(memory, memoryPath)}
+          />
+        ) : currentChapter ? (
           // key 强制每章重建 textarea，浏览器原生 undo 栈不跨章串用
           <ChapterEditor
             key={currentChapter.id}
@@ -566,4 +590,18 @@ export default function AppShell({
       )}
     </div>
   );
+}
+
+/**
+ * URL 路径段 → 原始名字。
+ *
+ * 非法转义（比如实体名里带 `%`）会让 decodeURIComponent 抛错，此时按原样返回：
+ * 名字怪异只该导致这一条点不开，不该把整页带崩。对已解码的段调用是幂等的。
+ */
+function decodePathSegment(segment: string): string {
+  try {
+    return decodeURIComponent(segment);
+  } catch {
+    return segment;
+  }
 }

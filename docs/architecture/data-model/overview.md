@@ -145,21 +145,19 @@ data/
     │   │   ├── style.md
     │   │   └── outline.md
     │   │
-    │   ├── characters/
-    │   │   ├── protagonist.md
-    │   │   ├── heroine.md
-    │   │   └── antagonist.md
-    │   │
     │   ├── chapters/
     │   │   ├── 0001.md
     │   │   ├── 0002.md
     │   │   └── 0003.md
     │   │
     │   └── memory/
-    │       └── novel/
-    │           ├── story-summary.md
-    │           ├── timeline.json
-    │           └── facts.json
+    │       ├── timeline.md
+    │       ├── characters/
+    │       │   ├── protagonist.md
+    │       │   └── heroine.md
+    │       ├── places/
+    │       ├── items/
+    │       └── creatures/
     │
     └── novel-002/
         └── ...
@@ -455,10 +453,10 @@ story/
 
 # 8. Characters
 
-人物信息使用独立文件。
+人物是记忆的一类，落在 `memory/characters/`（§9）。一个实体一个文件，文件名即人名。
 
 ```text
-characters/
+memory/characters/
 ├── protagonist.md
 ├── heroine.md
 └── antagonist.md
@@ -521,22 +519,30 @@ Memory 分两部分。它们的**性质不同**，不能用同一套规则管理
 
 `user/` 没有独立文件：**它就是 `story/style.md`**（§7.3）。理由是可调试性——模型学到的偏好若存在别处，作者看到输出不对时无从查起；写进 `style.md` 则可见、可改、可进版本控制。
 
-`novel/` 推荐：
+`novel/` 落在项目的 `memory/` 下，五类各一处：
 
 ```text
-memory/novel/
-├── story-summary.md
-├── timeline.json
-└── facts.json
+memory/
+├── timeline.md            时间线：单文件，按事件先后
+├── characters/<名字>.md   人物
+├── places/<名字>.md       地点
+├── items/<名字>.md        重要物品
+└── creatures/<名字>.md    非人类生物
 ```
 
-这三份都是**派生数据**，必须满足：
+约定：
 
-- 每条记录可追溯到来源章节（`timeline.json` 的 `chapterId` 即为此）
-- 可以全量重建，不做增量补丁——增量追加会让抽取误差逐章累积，且无法回滚
-- 来源正文变更后未更新的条目视为 stale，不得当作事实使用
+- **一个实体一个文件，文件名即实体名。** 不需要索引或元数据——侧栏列目录、预览读文件，都由这一条约定推出。
+- **这些文件由「构建小说 memory」的 skill 生成**，界面只读。人可读、可进版本控制，但不作为手工编辑对象。
+- 全部是**派生数据**，必须满足：
+
+  - 每条内容可追溯到来源章节
+  - 可以全量重建，不做增量补丁——增量追加会让抽取误差逐章累积，且无法回滚
+  - 来源正文变更后未更新的条目视为 stale，不得当作事实使用
 
 来源与 stale 的通用规则见 §9.4。
+
+代码侧：纯类型与纯函数在 `src/novel/memory.ts`（客户端可引用），读盘在 `src/novel/memory-store.ts`（仅服务端）。
 
 ---
 
